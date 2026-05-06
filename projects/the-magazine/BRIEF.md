@@ -80,5 +80,39 @@ Pending proposals: see proposals/
 
 ---
 
+## CV inputs — what modulates agent behavior
+
+These are the contextual signals that adjust how both agents
+behave each session without changing their module specifications
+or governance rules.
+
+Archive state
+Both agents read archive-log.md before every session. What has
+been made shapes what needs to be made next. Which print eras
+have been covered. Which aspect ratios are overrepresented.
+What the collection is missing.
+
+Cultural calendar
+The Creative Director factors current cultural moments into
+timing decisions — art world events, seasonal references,
+relevant anniversaries in print culture history. Never forced.
+Always considered.
+
+Alfred's standing direction
+Any active instructions Alfred has given that adjust the session
+beyond the standard brief. If Alfred says "push risograph this
+issue" or "I want the closing piece to be landscape" — that is
+CV input. It lives here when standing, or is passed at session
+start when one-off.
+
+Pending module proposals
+Both agents are aware of proposals/ before generating. A pending
+proposal signals a territory the collection is considering.
+Agents do not generate from proposed modules — but awareness of
+the proposal informs research direction.
+
+---
+
 ## Version
+1.1.0 — CV inputs section added.
 1.0.0 — Initial brief. Written by Alfred for the-magazine.

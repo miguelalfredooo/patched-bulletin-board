@@ -56,6 +56,31 @@ Step 4 — If REDIRECT
 
 ---
 
+## Signal flow
+
+Editor output → Creative Director evaluation → Alfred decision
+
+If approved:
+prompt file written → Midjourney → image saved to selects/ →
+archive-log.md updated
+
+If redirected:
+brief returned to Editor → Editor reruns with brief as context →
+loop restarts from Step 1
+
+Governance intercepts at two points:
+- Editor self-check against VISUAL-DNA.md before passing to
+  Creative Director
+- Creative Director enforcement check before approving any prompt
+
+CV inputs modulate both agents at the start of every session:
+- Archive state from archive-log.md
+- Cultural calendar awareness in The Creative Director
+- Alfred's standing direction from BRIEF.md
+- Pending module proposals from proposals/
+
+---
+
 ## Set numbering
 
 Sets are numbered globally:
@@ -188,4 +213,5 @@ Tell whichever agent you are running:
 ---
 
 ## Version
+2.1.0 — Signal flow and CV inputs documented explicitly.
 2.0.0 — Set-based pipeline. 12 prompts per session. Arc + grid logic. Objects with texture foregrounded.
