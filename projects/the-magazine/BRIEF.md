@@ -34,7 +34,7 @@ Alfred does not generate. He directs, approves, and publishes.
 ## What a successful issue looks like
 
 A successful issue:
-- Has a coherent cultural thread that connects all 12 pieces without
+- Has a coherent cultural thread connecting all 12 pieces without
   making them feel repetitive
 - Works as a 3x4 Instagram grid — designed, not assembled
 - Introduces at least two distinct print eras or technologies within the set
@@ -47,8 +47,8 @@ A successful collection over time:
 - Never repeats a combination already in the archive
 - Expands its module layer deliberately — only when a new territory has
   enough depth to sustain multiple issues
-- Feels like it was made by someone with a specific point of view, not by
-  an algorithm with broad taste
+- Feels like it was made by someone with a specific point of view,
+  not by an algorithm with broad taste
 
 ---
 
