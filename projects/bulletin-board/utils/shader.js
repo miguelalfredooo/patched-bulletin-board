@@ -7,7 +7,11 @@
  * - Color quantization
  * - Contrast & saturation adjustment
  * - Pixelation
+ *
+ * Uses sharp for fast, dependency-free image processing
  */
+
+const sharp = require('sharp');
 
 // Bayer 4×4 dither matrix (matches alfredo-studio)
 const bayer4 = [
@@ -40,19 +44,15 @@ const PRESETS = {
 /**
  * Process pixel data with shader parameters
  *
- * @param {Uint8ClampedArray} pixels - RGBA pixel data
+ * @param {Buffer} pixelBuffer - Raw RGBA pixel buffer
  * @param {number} width - Image width
  * @param {number} height - Image height
  * @param {Object} params - Shader parameters
- * @param {number} params.pixelSize - Grid resolution
- * @param {number} params.colorLevels - Color quantization levels
- * @param {number} params.ditherAmount - Dithering intensity (0-1)
- * @param {number} params.contrast - Contrast multiplier (0.6-1.8)
- * @param {number} params.saturation - Saturation multiplier
- * @returns {Uint8ClampedArray} Processed pixel data
+ * @returns {Buffer} Processed pixel data
  */
-function processPixels(pixels, width, height, params) {
-  const processed = new Uint8ClampedArray(pixels);
+function processPixelBuffer(pixelBuffer, width, height, params) {
+  const processed = Buffer.alloc(pixelBuffer.length);
+  pixelBuffer.copy(processed);
 
   for (let y = 0; y < height; y++) {
     for (let x = 0; x < width; x++) {
@@ -93,62 +93,54 @@ function processPixels(pixels, width, height, params) {
 }
 
 /**
- * Apply shader effect to image data
- * Requires 'canvas' npm package: npm install canvas
+ * Apply shader effect to image
  *
- * @param {Buffer} imageBuffer - Image file buffer (PNG, JPG, etc.)
+ * @param {Buffer|string} input - Image file buffer or path
  * @param {Object|string} params - Shader parameters or preset name
- * @returns {Promise<Buffer>} Processed image buffer
+ * @returns {Promise<Buffer>} Processed image buffer (PNG)
  */
-async function processImage(imageBuffer, params) {
+async function processImage(input, params) {
   try {
-    const canvas = require('canvas');
-    const { Image } = canvas;
-
     // Resolve preset name to params
     const shaderParams = typeof params === 'string'
       ? PRESETS[params] || PRESETS.editorial
       : params;
 
-    // Load image
-    const img = new Image();
-    img.src = imageBuffer;
+    // Load and get metadata
+    let image = sharp(input);
+    const metadata = await image.metadata();
 
-    const imgW = img.width;
-    const imgH = img.height;
+    const imgW = metadata.width;
+    const imgH = metadata.height;
 
     // Downsample to pixel size
-    const outW = Math.floor(imgW / shaderParams.pixelSize);
-    const outH = Math.floor(imgH / shaderParams.pixelSize);
+    const outW = Math.max(1, Math.floor(imgW / shaderParams.pixelSize));
+    const outH = Math.max(1, Math.floor(imgH / shaderParams.pixelSize));
 
-    if (outW <= 0 || outH <= 0) return imageBuffer;
+    // Get raw pixel data
+    const downsampled = await sharp(input)
+      .resize(outW, outH, { fit: 'fill' })
+      .raw()
+      .toBuffer({ resolveWithObject: true });
 
-    // Downsample pass
-    const srcCanvas = canvas.createCanvas(outW, outH);
-    const srcCtx = srcCanvas.getContext('2d');
-    srcCtx.imageSmoothingEnabled = false;
-    srcCtx.drawImage(img, 0, 0, outW, outH);
+    const pixels = downsampled.data;
+    const processed = processPixelBuffer(pixels, outW, outH, shaderParams);
 
-    const imageData = srcCtx.getImageData(0, 0, outW, outH);
-    const processed = processPixels(imageData.data, outW, outH, shaderParams);
-    imageData.data.set(processed);
-    srcCtx.putImageData(imageData, 0, 0);
+    // Create image from processed buffer and upscale
+    const result = await sharp(processed, {
+      raw: {
+        width: outW,
+        height: outH,
+        channels: 4,
+      },
+    })
+      .resize(imgW, imgH, { kernel: 'nearest' })
+      .png()
+      .toBuffer();
 
-    // Upsample with pixelated rendering
-    const outCanvas = canvas.createCanvas(imgW, imgH);
-    const outCtx = outCanvas.getContext('2d');
-    outCtx.imageSmoothingEnabled = false;
-    outCtx.drawImage(srcCanvas, 0, 0, imgW, imgH);
-
-    return outCanvas.toBuffer('image/png');
+    return result;
   } catch (err) {
-    if (err.code === 'MODULE_NOT_FOUND') {
-      throw new Error(
-        'Canvas module not found. Install with: npm install canvas\n' +
-        'See https://github.com/Automattic/node-canvas for system requirements.'
-      );
-    }
-    throw err;
+    throw new Error(`Shader processing failed: ${err.message}`);
   }
 }
 
@@ -200,7 +192,6 @@ function paramsFromGradient(t, direction = 'diagonal') {
 
 module.exports = {
   processImage,
-  processPixels,
   paramsFromMouse,
   paramsFromGradient,
   PRESETS,
