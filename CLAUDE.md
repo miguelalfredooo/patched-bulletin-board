@@ -236,14 +236,27 @@ Max Arias should load in the webchat with:
 
 ## Gotchas & Troubleshooting
 
+### "No API key found for provider 'anthropic'"
+
+**Root cause:** Auth profiles file is in legacy flat format instead of canonical format.
+
+**Fix:** Run the automated repair:
+```bash
+openclaw doctor --fix
+```
+
+This converts `auth-profiles.json` to canonical format and restarts the gateway.
+
+**Details:** See [AUTH-FIX.md](./AUTH-FIX.md) for full explanation and verification steps.
+
 ### "All models failed" / "No API key found"
 
 **Root cause:** Agent's isolated auth store is empty or malformed.
 
 **Fix:**
 1. Verify `~/.openclaw/agents/main/agent/auth-profiles.json` exists
-2. Check it has correct format (provider + mode + apiKey)
-3. Restart gateway: `pkill -f openclaw-gateway && sleep 2 && openclaw gateway &`
+2. Run `openclaw doctor --fix` (recommended)
+3. Or manually restart gateway: `pkill -f openclaw-gateway && sleep 2 && openclaw gateway &`
 
 ### "Gateway closed (1006)" / WebSocket disconnections
 
