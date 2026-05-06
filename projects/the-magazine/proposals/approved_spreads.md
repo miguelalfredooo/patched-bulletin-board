@@ -25,6 +25,6 @@ NEVER LIST DRAFT:
 - Never a spread where the print production process is not the primary visual subject alongside the editorial content — the halftone grain, the newsprint absorption, the ink ghosting must be as legible as the layout itself
 
 ALFRED'S DECISION:
-[ ] Approved — create module
+[x] Approved — create module
 [ ] Rejected — reason:
 [ ] Deferred — revisit after

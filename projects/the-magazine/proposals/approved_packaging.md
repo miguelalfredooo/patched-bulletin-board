@@ -25,6 +25,6 @@ NEVER LIST DRAFT:
 - Never objects.md territory — this module never produces the production tool or instrument, only the surface designed to sell the product
 
 ALFRED'S DECISION:
-[ ] Approved — create module
+[x] Approved — create module
 [ ] Rejected — reason:
 [ ] Deferred — revisit after
