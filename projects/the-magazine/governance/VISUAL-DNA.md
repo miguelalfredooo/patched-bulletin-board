@@ -159,8 +159,40 @@ The collection does not reference digital-native aesthetics (no pixel art, no we
 
 ---
 
+## Prompt Rules
+
+These are hard technical requirements. The Editor self-checks against every rule before passing to the Creative Director. The Creative Director catches any violation before approving. No exceptions.
+
+**1. Aspect ratio — always vary**
+No two consecutive prompts use the same ratio. Choose based on what the composition demands.
+Approved ratios: `--ar 1:1` · `--ar 4:5` · `--ar 5:7` · `--ar 4:3` · `--ar 16:9` · `--ar 2:1` · `--ar 23:14`
+
+**2. Every prompt ends with:** `--chaos 20 --p m7446277342072143883`
+This is the last thing in every prompt, always, without exception.
+
+**3. The `--p` flag is never omitted and never modified.**
+It is the-magazine's visual signature. Changing it changes the collection. Do not touch it.
+
+**4. `--chaos 20` is not optional.**
+It introduces controlled variation within the style reference. It runs every time.
+
+**5. Prompt length — one sentence maximum.**
+Precise and spare. No comma-separated lists of attributes. No over-specification. Trust the style reference to carry the visual identity. Only expand beyond one sentence if Alfred explicitly requests more detail.
+
+---
+
+**Self-check format for prompt rules:**
+Before passing to the Creative Director, The Editor confirms:
+- [ ] Aspect ratio specified and different from the previous prompt
+- [ ] Prompt is one sentence or fewer (unless Alfred requested more)
+- [ ] Prompt ends with `--chaos 20 --p m7446277342072143883`
+- [ ] `--p` flag is unmodified
+
+---
+
 ## Version history
 
 | Version | Notes |
 |---------|-------|
 | 1.0.0 | Initial specification. Written from collection of ten pieces. Objects and textures as active categories. |
+| 1.1.0 | Added Prompt Rules section. Aspect ratio variation, `--chaos 20`, `--p` flag, and one-sentence prompt length. Hard rules enforced by both agents. |
