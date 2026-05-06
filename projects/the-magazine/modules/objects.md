@@ -29,7 +29,7 @@ One Midjourney prompt. One sentence. Ends with --chaos 20 --p m74462773420721438
 
 ## Voice / register
 
-Graphic culture as subject. The piece reads as printed matter — a screen print, a sticker, a magazine cover, a price tag, a logo mark. Typography is structural. Color signals category, era, or brand logic. The production process is always visible and identifiable.
+Graphic culture as subject. The piece reads as printed matter — a screen print, a sticker, a magazine cover, a price tag, a logo mark. Color signals category, era, or brand logic. The production process is always visible and identifiable. When type appears, it is structural — it defines the composition.
 
 Knowing without being ironic. Playful without being cute. Referential without being nostalgic.
 
@@ -37,7 +37,6 @@ Knowing without being ironic. Playful without being cute. Referential without be
 
 ## Always
 
-- Typography present as a structural element, not an afterthought
 - Flat graphic execution — no atmospheric depth, no dimensional rendering
 - Specific print reference — identifiable era, technology, and cultural context
 - High contrast legibility — reads at a glance, rewards closer attention

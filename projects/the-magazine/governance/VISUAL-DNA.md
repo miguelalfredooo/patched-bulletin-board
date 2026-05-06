@@ -1,7 +1,7 @@
 # VISUAL-DNA.md — the-magazine
 ## Visual governance specification
 
-**Version:** 1.3.0
+**Version:** 1.4.0
 **Status:** Active
 **Last updated:** 2026-05
 
@@ -15,7 +15,7 @@ The visual language is flat, typographic, and vernacular. It draws from specific
 
 It is knowing without being ironic. Playful without being cute. Referential without being nostalgic.
 
-Typography is not decoration. In this collection, type is often the primary visual element — the thing the eye goes to first, the thing the piece is built around. Every piece has text. The choice of typeface, weight, color, and placement is the design decision.
+When type appears, it is not decoration. In this collection, type is often the primary visual element — the thing the eye goes to first, the thing the piece is built around. The choice of typeface, weight, color, and placement is a design decision as significant as the object itself.
 
 ---
 
@@ -29,9 +29,9 @@ Designed objects from the graphic culture of the 20th and 21st century. Screen p
 
 **Graphic language**
 - Flat vector or print-reproduction quality — no dimensional rendering, no drop shadows, no gradients unless the gradient IS the reference
-- Typography is structural, not decorative — it defines the composition
 - Layout follows print production logic: columns, banners, grids, bleeds
 - Objects present as finished printed matter, not as sketches or concepts
+- When type is present, it is structural — it defines the composition, not decorates it
 
 **Color**
 - High contrast color relationships — black on white, color on black, single-color on neutral
@@ -200,3 +200,4 @@ Before passing to the Creative Director, The Editor confirms:
 | 1.1.0 | Added Prompt Rules section. Aspect ratio variation, `--chaos 20`, `--p` flag, and one-sentence prompt length. Hard rules enforced by both agents. |
 | 1.2.0 | Added Rule 6 — prompt file generator. Every approved prompt saved to prompts/prompt_[number].md by the Creative Director on approval. |
 | 1.3.0 | Typography removed from Always list — present when the reference demands it, not mandatory in every piece. Objects section language softened accordingly. |
+| 1.4.0 | Typography fully optional — present only when cultural reference demands it. Removed mandatory framing from Voice Statement and Objects graphic language. |
