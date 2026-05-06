@@ -1,0 +1,15 @@
+{
+  "name": "bulletin-board",
+  "version": "1.0.0",
+  "description": "A magazine for product designers and creative thinkers exploring AI, speculative culture, artifacts, and the mysterious intersections of technology and meaning.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "figlet": "^1.11.0"
+  }
+}
