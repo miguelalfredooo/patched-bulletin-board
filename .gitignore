@@ -14,3 +14,7 @@ auth-profiles.json
 *.key
 .env
 CREDENTIALS*
+
+# Generated images — tracked by .gitkeep, not committed to repo
+projects/the-magazine/images/selects/**/*.png
+projects/the-magazine/images/selects/**/*.jpg

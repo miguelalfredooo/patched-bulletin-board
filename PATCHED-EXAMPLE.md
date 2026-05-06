@@ -43,9 +43,9 @@ patched-bulletin-board — OpenClaw workspace running on Claude
 |--------|---------|-------|---------|
 | objects | Designed graphic culture objects from the 20th–21st century print era | The Editor | 1.0.0 |
 | textures | Print process surfaces examined as subject | The Editor | 1.0.0 |
-| ephemera | Small-format commercial print designed for brief functional life | The Editor | proposed |
-| packaging | Mass-market commercial product packaging 1955–1995 | The Editor | proposed |
-| spreads | Designed editorial two-page layouts from the offset newsprint era | The Editor | proposed |
+| ephemera | Small-format commercial print designed for brief functional life | The Editor | 1.0.0 |
+| packaging | Mass-market commercial product packaging 1955–1995 | The Editor | 1.0.0 |
+| spreads | Designed editorial two-page layouts from the offset newsprint era | The Editor | 1.0.0 |
 
 ### Agents
 

@@ -37,7 +37,6 @@ The texture is always readable as belonging to a specific technology and moment.
 
 ## Always
 
-- Typography present as a structural element, not an afterthought
 - Flat graphic execution — the process surface is the subject
 - Specific process reference — identifiable technology, era, and production context
 - Process-accurate color — CMYK separation, spot color combinations, overprint logic

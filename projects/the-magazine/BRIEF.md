@@ -73,7 +73,7 @@ what that making looks like — is as important as what the piece depicts.
 
 ## Current state
 
-Active modules: objects, textures
+Active modules: objects, textures, ephemera, packaging, spreads
 Active categories: objects (all issues currently)
 Issues shipped: see archive-log.md
 Pending proposals: see proposals/
