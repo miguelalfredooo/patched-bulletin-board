@@ -1,32 +1,84 @@
-# Project Brief — The Unnamed Archive
+# BRIEF.md — the-magazine
+## Project context and collection goals
 
-## The Team
+---
 
-- **Alfred** — art editor, historian, curator. Project lead.
-- **Max Arias** — cultural curator, cultural + design anthropology background. Collection structure, curatorial framing, Midjourney prompts.
+## What this is
 
-## The Project
+the-magazine is a curated visual collection spanning art, objects, culture,
+social living, art history, pop culture, and design trends.
 
-A speculative visual collection presenting material evidence from pre-historic civilizations — presented not as art, not as speculation, but as artifact. Museum documentation aesthetic. No explanation. The viewer decides.
+It is not a publication about those things. It is a publication made from
+them — assembled from the graphic language those worlds have produced over
+the last seventy years. Screen prints, stickers, magazine covers, price tags,
+logo marks, commercial illustration. The designed surface of everyday life,
+examined with the same seriousness a museum gives to painting.
 
-## The Collection — 42 pieces / 6 weeks daily
+Every issue is a 12-piece set. Every piece belongs to a specific moment in
+print culture history. Together they read as a magazine — an editorial arc
+and a visual grid simultaneously.
 
-| Week | Series |
-|------|--------|
-| 1 | **The Objects** — single artifacts, pure documentation |
-| 2 | **The Beings** — figurines, face-forms, entity taxonomy |
-| 3 | **The Signals** — inscriptions, relief carvings, language evidence |
-| 4 | **The Sites** — ritual landscapes, interiors, ruins |
-| 5 | **The Materials** — extreme close-ups, surface texture |
-| 6 | **The Collection** — archive assembles, typologies |
+---
 
-## Where We Stand
+## Who Alfred is
 
-- ~12–15 pieces covered by existing Midjourney work
-- ~27–30 pieces still to generate
-- Series V (Materials) and VI (Collection) are empty — built last
+Alfred is the operator and creative vision behind the-magazine. He makes the
+final decisions: which issues ship, which module proposals are approved, which
+redirects are accepted. The Editor and Creative Director work for him, not
+around him.
 
-## Key Files
+Alfred does not generate. He directs, approves, and publishes.
 
-- `projects/PROJECT-BRIEF.md` — this document
-- `projects/collection-v1.md` — full prompts by series
+---
+
+## What a successful issue looks like
+
+A successful issue:
+- Has a coherent cultural thread that connects all 12 pieces without
+  making them feel repetitive
+- Works as a 3x4 Instagram grid — designed, not assembled
+- Introduces at least two distinct print eras or technologies within the set
+- Has at least one piece that surprises — a cultural reference or texture
+  combination nobody would have predicted from the thread alone
+- Reads as a magazine when scrolled through in sequence
+
+A successful collection over time:
+- Covers a wide range of print eras, technologies, and cultural registers
+- Never repeats a combination already in the archive
+- Expands its module layer deliberately — only when a new territory has
+  enough depth to sustain multiple issues
+- Feels like it was made by someone with a specific point of view, not by
+  an algorithm with broad taste
+
+---
+
+## What the agents should know about Alfred's taste
+
+Alfred is drawn to graphic culture that exists outside fine art institutions —
+the commercial, the vernacular, the ephemeral. Things designed to sell, to
+signal belonging, to mark a moment. He is interested in what those objects
+reveal about the cultures that made them.
+
+He values specificity over breadth. One deeply researched cultural reference
+is worth more than three generic ones.
+
+He is not interested in nostalgia. The collection references the past because
+the past produced interesting graphic culture — not because old things are
+inherently better. The tone is always curious and present, never wistful.
+
+He responds to texture. The surface quality of a piece — how it was made,
+what that making looks like — is as important as what the piece depicts.
+
+---
+
+## Current state
+
+Active modules: objects, textures
+Active categories: objects (all issues currently)
+Issues shipped: see archive-log.md
+Pending proposals: see proposals/
+
+---
+
+## Version
+1.0.0 — Initial brief. Written by Alfred for the-magazine.

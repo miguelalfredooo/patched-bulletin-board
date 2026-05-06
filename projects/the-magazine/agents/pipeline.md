@@ -38,6 +38,12 @@ Step 2 — Run The Creative Director
   Evaluates: the set as a coherent issue — arc, grid, variety, cultural specificity
   Produces: APPROVED SET or REDIRECT with specific brief
 
+Step 2b — Module proposals
+  If The Editor or Creative Director included a proposal,
+  Claude Code writes proposals/proposed_[name].md
+  Alfred reviews before the next session begins
+  Alfred approves or rejects via Claude Code
+
 Step 3 — If APPROVED
   The Creative Director writes prompts/prompt_set_[number].md with all 12 prompts
   Alfred generates each image in Midjourney in sequence
@@ -155,6 +161,7 @@ Each entry:
   modules/textures.md                       — Module specification for textures category.
   prompts/                                  — Approved prompt sets live here.
   images/selects/                           — All approved generated images live here.
+  proposals/                               — Pending, approved, and rejected module proposals.
 
 ---
 
@@ -168,6 +175,7 @@ Each entry:
 - Alfred generates in sequence, following the arc order.
 - Alfred is the only one who posts. The agents never publish directly.
 - What is not in archive-log.md does not exist for the pipeline.
+- Alfred reviews all pending proposals in proposals/ before starting a new session.
 
 ---
 
