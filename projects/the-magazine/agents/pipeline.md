@@ -8,10 +8,22 @@ Read this first at the start of every session.
 
 ## The two agents
 
-The Editor — researches, generates, and self-checks one prompt per session.
-The Creative Director — evaluates, approves or redirects, logs.
+The Editor — researches and generates a complete set of 12 prompts per session.
+The Creative Director — evaluates the full set as a coherent issue, approves or redirects.
 
-One session. One prompt. One decision. One output.
+One session. One set. One decision. One issue.
+
+---
+
+## The set
+
+Every session produces 12 prompts. All objects. Texture foregrounded as co-equal subject in every prompt — the object and its print surface quality are the same decision.
+
+The 12 prompts must work simultaneously as:
+- An editorial arc — opening piece, middle pieces, closing piece. A sequence with intention.
+- A 3x4 Instagram grid — variety in aspect ratio, color weight, and cultural reference so the grid reads as designed, not assembled.
+
+Each prompt earns its position twice: in the reading order and in the layout.
 
 ---
 
@@ -19,17 +31,18 @@ One session. One prompt. One decision. One output.
 
 Step 1 — Run The Editor
   Reads: archive-log.md, governance/VISUAL-DNA.md, STYLE-GUIDE.md, BRIEF.md
-  Produces: CATEGORY, CULTURAL GROUND, PROMPT, SELF-CHECK
+  Produces: 12 prompt candidates as a complete set with arc and grid rationale
 
 Step 2 — Run The Creative Director
-  Reads: archive-log.md, governance/VISUAL-DNA.md, BRIEF.md, Editor output
-  Produces: APPROVED or REDIRECT
+  Reads: archive-log.md, governance/VISUAL-DNA.md, BRIEF.md, Editor's full set
+  Evaluates: the set as a coherent issue — arc, grid, variety, cultural specificity
+  Produces: APPROVED SET or REDIRECT with specific brief
 
 Step 3 — If APPROVED
-  The Creative Director writes an approved prompt file to prompts/prompt_[number].md using the prompt file format.
-  Alfred generates the image in Midjourney
-  Alfred saves the image to images/selects/ using the naming convention below
-  Alfred appends the log entry to archive-log.md
+  The Creative Director writes prompts/prompt_set_[number].md with all 12 prompts
+  Alfred generates each image in Midjourney in sequence
+  Alfred saves each image to images/selects/ using the naming convention below
+  Alfred appends all 12 log entries to archive-log.md
 
 Step 4 — If REDIRECT
   Alfred runs The Editor again with the Creative Director's brief as context
@@ -37,88 +50,122 @@ Step 4 — If REDIRECT
 
 ---
 
-## File naming convention
+## Set numbering
 
-Generated images follow this pattern:
+Sets are numbered globally:
+  prompt_set_001.md — first issue
+  prompt_set_002.md — second issue
 
-  gen_[category]_[zero-padded number].jpg
+Images within a set:
+  gen_objects_001.jpg through gen_objects_012.jpg — first set
+  gen_objects_013.jpg through gen_objects_024.jpg — second set
 
-Examples:
-  gen_objects_001.jpg
-  gen_textures_002.jpg
-  gen_objects_003.jpg
+Numbers are global and continuous. archive-log.md is the source of truth for the next number.
 
-Numbers are global across categories — not per category.
-The archive-log is the source of truth for the next number.
+---
+
+## Prompt file format
+
+Each approved set is saved as prompts/prompt_set_[number].md
+
+File structure:
+
+  # prompt_set_001.md — the-magazine
+  ## Issue [number] — [YYYY-MM-DD]
+
+  CULTURAL THREAD: [one sentence describing the thematic or aesthetic thread connecting all 12]
+  GRID LOGIC: [one sentence describing how the 12 work as a visual layout]
+  ARC: [opening — middle — closing, one phrase each]
+
+  ---
+
+  ### 01 — [position: opening / middle / closing]
+  DATE: [YYYY-MM-DD]
+  CATEGORY: objects
+  CULTURAL GROUND: [one sentence]
+  PROMPT: [full Midjourney prompt — one sentence ending with --chaos 20 --p m7446277342072143883]
+  ASPECT RATIO: [--ar x:x]
+  GRID POSITION: [1 of 12 — top left / etc]
+  STATUS: approved
+  CAPTION: [object name / series number]
+
+  ### 02 — [position]
+  [same structure]
+
+  ... through 12
+
+  ---
+
+  LOG ENTRIES:
+  [All 12 log entries formatted for direct paste into archive-log.md]
 
 ---
 
 ## Handoff format
 
-The Editor passes to The Creative Director using this exact format:
+The Editor passes the full set to The Creative Director:
 
-  CATEGORY: [objects / textures]
-  CULTURAL GROUND: [one sentence]
-  PROMPT: [full Midjourney prompt]
-  SELF-CHECK: passed / flagged: [reason if flagged]
+  SET SUMMARY:
+  CULTURAL THREAD: [one sentence]
+  GRID LOGIC: [one sentence]
+  ARC: [opening — middle — closing]
 
-The Creative Director passes to Alfred using this exact format on approval:
+  SELF-CHECK: passed / flagged: [any flags across the set]
 
-  APPROVED
-  CAPTION: [object name / series number]
-  ARC NOTE: [one sentence]
-  LOG ENTRY:
-    DATE: [YYYY-MM-DD]
-    FILE: gen_[category]_[number].jpg
-    CATEGORY: [objects / textures]
-    PROMPT SUMMARY: [10 words max]
-    ARC NOTE: [one sentence]
+  01 — CULTURAL GROUND: [one sentence] / PROMPT: [full prompt] / AR: [ratio]
+  02 — CULTURAL GROUND: [one sentence] / PROMPT: [full prompt] / AR: [ratio]
+  ... through 12
+
+The Creative Director passes to Alfred on approval:
+
+  APPROVED — ISSUE [number]
+  [full prompt_set file contents]
 
 On redirect:
 
   REDIRECT
-  BRIEF: [category, gap, cultural moment, why now]
+  BRIEF: [what the set needs — arc issue, grid issue, cultural specificity issue, texture issue]
 
 ---
 
 ## archive-log.md format
 
-Each entry follows this structure:
+Each entry:
 
-  ## [YYYY-MM-DD]
-  - FILE: gen_[category]_[number].jpg
-  - CATEGORY: [objects / textures]
+  ## [YYYY-MM-DD] — Set [number]
+  - FILE: gen_objects_[number].jpg
+  - CATEGORY: objects
   - PROMPT SUMMARY: [10 words max]
   - ARC NOTE: [one sentence]
-
-Entries are appended chronologically. Never edit or delete existing entries.
-The log is the archive's memory. Treat it accordingly.
+  - GRID POSITION: [position in set]
 
 ---
 
 ## File map
 
-  governance/VISUAL-DNA.md     — Always and Never rules. Both agents read this.
-  STYLE-GUIDE.md               — How to translate visual DNA into Midjourney prompts. Editor reads this.
-  BRIEF.md                     — Project context and collection goals. Both agents read this.
-  archive-log.md               — Living record of every generated piece. Both agents read this.
-  agents/editor/SOUL.md        — The Editor's personality. Loaded before every Editor session.
-  agents/editor/AGENTS.md      — The Editor's operating spec.
-  agents/creative-director/SOUL.md        — The Creative Director's personality. Loaded before every CD session.
-  agents/creative-director/AGENTS.md      — The Creative Director's operating spec.
-  modules/objects.md           — Module specification for the objects category.
-  modules/textures.md          — Module specification for the textures category.
-  images/selects/              — All approved generated images live here.
-  prompts/                     — All approved prompt files live here. Written by the Creative Director on approval.
+  governance/VISUAL-DNA.md                  — Always and Never rules. Both agents read this.
+  STYLE-GUIDE.md                            — Visual DNA to prompt translation. Editor reads this.
+  BRIEF.md                                  — Project context and goals. Both agents read this.
+  archive-log.md                            — Living record of every approved output. Both agents read this.
+  agents/editor/SOUL.md                     — The Editor's personality.
+  agents/editor/AGENTS.md                   — The Editor's operating spec.
+  agents/creative-director/SOUL.md          — The Creative Director's personality.
+  agents/creative-director/AGENTS.md        — The Creative Director's operating spec.
+  modules/objects.md                        — Module specification for objects category.
+  modules/textures.md                       — Module specification for textures category.
+  prompts/                                  — Approved prompt sets live here.
+  images/selects/                           — All approved generated images live here.
 
 ---
 
 ## Rules
 
-- One prompt per session. Never flood the Creative Director with options.
-- Never approve without reading the archive first.
-- Never generate without reading governance first.
-- The Creative Director never rewrites a prompt — redirects only.
+- One set of 12 per session. Never submit a partial set.
+- Every prompt foregrounds texture as co-equal subject with the object.
+- No two consecutive prompts use the same aspect ratio.
+- No two prompts in a set reference the same print era or technology.
+- The Creative Director evaluates the set as a whole — not prompt by prompt.
+- Alfred generates in sequence, following the arc order.
 - Alfred is the only one who posts. The agents never publish directly.
 - What is not in archive-log.md does not exist for the pipeline.
 
@@ -130,9 +177,7 @@ Tell whichever agent you are running:
 
   "Read pipeline.md. Then proceed."
 
-That single instruction orients the full session.
-
 ---
 
 ## Version
-1.0.0 — Two-agent pipeline. Editor → Creative Director → Alfred → Archive.
+2.0.0 — Set-based pipeline. 12 prompts per session. Arc + grid logic. Objects with texture foregrounded.
