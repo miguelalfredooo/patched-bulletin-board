@@ -17,6 +17,26 @@ A speculative visual collection presenting material evidence from pre-historic c
 4. **`SOUL.md`** — Max's voice, stance, and aesthetic core. How to think about curation and evidence.
 5. **`AGENTS.md`** — Operating instructions with validation checklist. When to read VISUAL-DNA, how to validate prompts before submission.
 
+## How the framework maps to files
+
+The Patched framework concepts map to specific files in every
+project:
+
+Module layer        → modules/
+Behavior layer      → agents/
+Governance layer    → governance/VISUAL-DNA.md
+Signal flow         → agents/pipeline.md
+CV inputs           → BRIEF.md
+Patch map           → agents/pipeline.md
+Module proposals    → proposals/
+Archive             → archive-log.md + prompts/
+
+Every concept from PATCHED.md has a physical home.
+If you are reading a project for the first time,
+start with pipeline.md and BRIEF.md.
+
+---
+
 ## Repo layout
 
 - `VISUAL-DNA.md` — **The aesthetic specification. Required reading.** All work derives from this.

@@ -43,6 +43,24 @@ images/selects/                 — All approved outputs live here.
 
 ---
 
+## Signal flow and CV inputs
+
+Signal flow — how information moves through the pipeline —
+is documented in pipeline.md. It shows the sequence of agent
+handoffs, where governance intercepts, and what happens on
+approval versus redirect.
+
+CV inputs — contextual signals that modulate agent behavior
+each session — are documented in BRIEF.md. Archive state,
+cultural calendar, operator standing direction, and pending
+proposals are all CV inputs. They adjust how agents behave
+without changing their module specifications or governance rules.
+
+Both are filled in per project. The templates contain
+placeholders — replace with project-specific content.
+
+---
+
 ## Starting a new session
 
 Tell whichever agent you are running:

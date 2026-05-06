@@ -36,6 +36,45 @@ Step 4 — If REDIRECT
 
 ---
 
+## Signal flow
+
+Editor output → Creative Director evaluation →
+[Operator] decision
+
+If approved:
+prompt file written → output generated → saved to selects/ →
+archive-log.md updated
+
+If redirected:
+brief returned to Editor → Editor reruns → loop restarts
+
+Governance intercepts at two points:
+- Editor self-check against VISUAL-DNA.md before passing
+- Creative Director enforcement check before approving
+
+CV inputs modulate both agents at session start:
+- Archive state from archive-log.md
+- Cultural calendar awareness in The Creative Director
+- [Operator] standing direction from BRIEF.md
+- Pending module proposals from proposals/
+
+---
+
+## CV inputs
+
+[List the contextual signals specific to this project that
+modulate agent behavior without changing module specifications.
+
+Standard CV inputs for all two-agent projects:
+- Archive state — what has been made shapes what comes next
+- Cultural calendar — timing awareness for The Creative Director
+- Operator standing direction — active instructions from BRIEF.md
+- Pending proposals — awareness of proposals/ before generating
+
+Add project-specific CV inputs here as the project develops.]
+
+---
+
 ## File naming convention
 
 Generated outputs follow this pattern:

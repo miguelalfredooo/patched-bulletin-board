@@ -1,7 +1,7 @@
 # PATCHED.md
 ### A modular framework for designing AI-driven experience systems
 
-**Version:** 0.1.0
+**Version:** 0.2.0
 **Status:** Draft
 **Last updated:** 2026-05
 
@@ -11,6 +11,7 @@
 
 | Version | Status | Notes |
 |---------|--------|-------|
+| 0.2.0 | Draft | Signal flow and CV inputs located in pipeline.md and BRIEF.md respectively — documented per project. |
 | 0.1.0 | Draft | Initial framework. Terminology, layer definitions, and templates. |
 
 ---
@@ -394,6 +395,23 @@ Naming boundaries prevents scope creep.]
 
 ---
 
+## Where signal flow and CV inputs live
+
+Signal flow is documented in pipeline.md — the sequence of
+agent handoffs, governance interception points, and loop
+conditions. It is not abstracted into a separate document.
+It lives where the pipeline is defined.
+
+CV inputs are documented in BRIEF.md — the contextual signals
+that modulate agent behavior each session without changing
+module specifications or governance rules. Archive state,
+cultural calendar, operator standing direction, and pending
+proposals are all CV inputs.
+
+Both are per-project. Neither lives in PATCHED.md itself.
+
+---
+
 ## How to Use This in a Project
 
 1. **Start with governance.** Before writing a single module, define your Always and Never lists. They are the rack — everything else lives inside them.
@@ -456,6 +474,6 @@ Version the change. Document why.
 
 ---
 
-*PATCHED — v0.1.0*
+*PATCHED — v0.2.0*
 *A modular framework for designing AI-driven experience systems*
 *Project agnostic. Drop in and use.*
