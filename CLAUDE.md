@@ -179,23 +179,28 @@ He posts to Instagram manually. Do not attempt to publish.
 
 OpenClaw auto-loads these files on agent startup. They inject Max Arias's identity, voice, operating rules, and user context into every session.
 
-### Step 4: Agent Auth Store
+### Step 4: Agent Auth Store (Multi-Agent Setup)
 
-OpenClaw maintains isolated auth stores for each agent. The agent needs access to your Anthropic credentials.
+OpenClaw maintains isolated auth stores for each agent. Each agent needs access to your Anthropic credentials.
 
-Create/update `~/.openclaw/agents/main/agent/auth-profiles.json`:
+For **each agent** (coda, maeve, victor), create/update `~/.openclaw/agents/{agent-id}/agent/auth-profiles.json`:
 
 ```json
 {
-  "anthropic:default": {
-    "provider": "anthropic",
-    "mode": "api_key",
-    "apiKey": "your-actual-api-key-here"
+  "version": 1,
+  "profiles": {
+    "anthropic:default:default": {
+      "type": "api_key",
+      "provider": "anthropic",
+      "key": "your-actual-api-key-here"
+    }
   }
 }
 ```
 
-**Why:** Isolated agents can't read the global gateway auth by default. They need their own credential store.
+**Critical:** Use the **actual API key string**, not `$ANTHROPIC_API_KEY`. Environment variables are not reliably inherited by child agent processes. Storing the literal key ensures agents can always access it.
+
+**Why:** Isolated agents can't read the global gateway auth by default. They need their own credential store with literal keys, not env var references.
 
 ### Step 5: Start the Gateway
 
@@ -236,27 +241,36 @@ Max Arias should load in the webchat with:
 
 ## Gotchas & Troubleshooting
 
-### "No API key found for provider 'anthropic'"
+### "No API key found for provider 'anthropic'" (Multi-Agent)
 
-**Root cause:** Auth profiles file is in legacy flat format instead of canonical format.
+**Root cause (most common):** Auth profiles files use `$ANTHROPIC_API_KEY` env var reference, but the env var is not inherited by agent child processes.
 
-**Fix:** Run the automated repair:
-```bash
-openclaw doctor --fix
+**Fix:** Use literal API keys in auth-profiles.json files instead of env var references:
+
+```json
+{
+  "version": 1,
+  "profiles": {
+    "anthropic:default:default": {
+      "type": "api_key",
+      "provider": "anthropic",
+      "key": "sk-ant-api03-..." // Use actual key, not $ANTHROPIC_API_KEY
+    }
+  }
+}
 ```
 
-This converts `auth-profiles.json` to canonical format and restarts the gateway.
+Apply this to **all agents** in:
+- `~/.openclaw/agents/coda/agent/auth-profiles.json`
+- `~/.openclaw/agents/maeve/agent/auth-profiles.json`
+- `~/.openclaw/agents/victor/agent/auth-profiles.json`
 
-**Details:** See [AUTH-FIX.md](./AUTH-FIX.md) for full explanation and verification steps.
+Then restart the gateway:
+```bash
+pkill -f openclaw-gateway && sleep 2 && source ~/.zshrc && openclaw gateway &
+```
 
-### "All models failed" / "No API key found"
-
-**Root cause:** Agent's isolated auth store is empty or malformed.
-
-**Fix:**
-1. Verify `~/.openclaw/agents/main/agent/auth-profiles.json` exists
-2. Run `openclaw doctor --fix` (recommended)
-3. Or manually restart gateway: `pkill -f openclaw-gateway && sleep 2 && openclaw gateway &`
+**Why:** Child processes don't reliably inherit parent env vars. Literal keys in config files are more reliable than env var references.
 
 ### "Gateway closed (1006)" / WebSocket disconnections
 
@@ -270,6 +284,25 @@ This converts `auth-profiles.json` to canonical format and restarts the gateway.
 ```
 
 Restart gateway.
+
+### "Agent 'main' no longer exists in configuration" (Multi-Agent Migration)
+
+**Root cause:** Migrating from single-agent (`agentId: main`) to multi-agent setup (`agentId: coda/maeve/victor`). Old session state still references the deleted "main" agent.
+
+**Fix:**
+1. Remove old agent state directory:
+```bash
+rm -rf ~/.openclaw/agents/main
+```
+
+2. Restart gateway:
+```bash
+openclaw gateway restart
+```
+
+3. Access the chat UI at http://127.0.0.1:18789/ — it will default to the new default agent (Coda).
+
+**Details:** When you change `agents.list[]` in `openclaw.json` from a single agent to multiple agents, OpenClaw doesn't auto-migrate old session history. The stale `~/.openclaw/agents/main/` directory causes routing errors. Removing it forces the gateway to create fresh state for the new agents.
 
 ### Port 18789 already in use
 
@@ -305,17 +338,54 @@ export ANTHROPIC_API_KEY="your-key-here"
 openclaw gateway --verbose 2>&1 | head -100
 ```
 
+### Agent Won't Load on Main / Redirects to Webchat (Multi-Agent)
+
+**Symptom:** Agent shows "401 Unauthorized" for control-ui-config.json, or loads but redirects to webchat. Other agents work fine.
+
+**Root cause:** Stale device registration or corrupted session state
+
+**Fix:**
+1. **Clear device and session state:**
+```bash
+rm -rf ~/.openclaw/devices ~/.openclaw/agents/{agent-id}/sessions
+```
+
+2. **Restart gateway:**
+```bash
+openclaw gateway restart
+```
+
+3. **Clear browser state:**
+   - DevTools → **Storage** → **Clear site data for localhost:18789**
+   - DevTools → **Service Workers** → **Unregister**
+   - Browser cache: **Shift+Cmd+Delete**
+   - Close and reopen browser tab
+
+4. **Reload with token:**
+```
+http://127.0.0.1:18789/#token={gateway-token}
+```
+
+Agent should load on main now.
+
+**Why:** Gateway rebuilds device pairing and session state cleanly, clearing corruption from failed restarts or stale registrations.
+
+**Prevention:** Always use `openclaw gateway restart` instead of `pkill` to avoid stale device state.
+
+---
+
 ### Workspace not loading (bootstrap files not injected)
 
 **Root cause:** `agents.defaults.workspace` is wrong or bootstrap files don't exist.
 
 **Fix:**
-1. Verify `openclaw.json` has: `"workspace": "/Users/blackmachete/openclaw-artifacts"`
-2. Verify all 4 bootstrap files exist in repo root:
+1. Verify `openclaw.json` has correct workspace path
+2. Verify all 5 bootstrap files exist:
    - IDENTITY.md
    - SOUL.md
    - AGENTS.md
    - USER.md
+   - MEMORY.md (required for all agents)
 3. Restart gateway
 
 ### Discord token not working
@@ -327,6 +397,81 @@ openclaw gateway --verbose 2>&1 | head -100
 2. Update `openclaw.json` channels.discord.token
 3. Ensure bot has "Send Messages" permission in target channel
 4. Restart gateway
+
+### "unauthorized: gateway token missing" (Multi-Agent)
+
+**Root cause:** Browser doesn't have the gateway token stored (first connection, profile switch, or cache clear).
+
+**Fix:** Use token-in-URL format (uses fragment, not query parameter):
+```
+http://127.0.0.1:18789/#token=ba85e09db4e23965753c977916fa85bc98299c695a07dde9
+```
+
+Or clear browser service worker cache:
+1. DevTools: `Cmd+Option+I`
+2. **Application** tab → **Service Workers** → **Unregister**
+3. **Storage** → **Cookies** → Clear localhost:18789
+4. Close DevTools and hard refresh: `Cmd+Shift+R`
+
+**Why:** Each Chrome profile has isolated localStorage. Using fragment URL works across profiles without needing per-profile setup.
+
+### "unauthorized: too many failed authentication attempts"
+
+**Root cause:** Multiple failed token entries triggered rate limiting.
+
+**Fix:** Restart the gateway to reset auth attempt counter:
+```bash
+openclaw gateway restart
+```
+
+Then retry with correct token URL.
+
+### Anthropic model not available (only LM Studio models load)
+
+**Root cause:** Anthropic provider not defined in `models.providers` section of `openclaw.json`.
+
+**Fix:** Add Anthropic provider to openclaw.json:
+```json
+"anthropic": {
+  "baseUrl": "https://api.anthropic.com",
+  "models": [
+    {
+      "id": "claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6",
+      "reasoning": false,
+      "input": ["text"],
+      "cost": {
+        "input": 3,
+        "output": 15,
+        "cacheRead": 0.3,
+        "cacheWrite": 3.75
+      },
+      "contextWindow": 200000,
+      "maxTokens": 16000
+    }
+  ]
+}
+```
+
+Then restart: `openclaw gateway restart`
+
+### One agent works but another doesn't (session naming mismatch)
+
+**Root cause:** Agent has local `models.json` file overriding global gateway config, or agent-specific configuration causing routing issues.
+
+**Fix:** Check agent's directory for local config files:
+```bash
+ls ~/.openclaw/agents/{agent-id}/agent/
+```
+
+If `models.json` exists and it's outdated, delete it:
+```bash
+rm ~/.openclaw/agents/{agent-id}/agent/models.json
+```
+
+Then restart gateway: `openclaw gateway restart`
+
+**Why:** Agent-local config files take precedence over global gateway config. For multi-agent consistency, use only global config (in `openclaw.json`) and let agents inherit it.
 
 ---
 
