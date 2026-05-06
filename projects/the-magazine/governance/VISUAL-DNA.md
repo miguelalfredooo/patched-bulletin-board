@@ -1,7 +1,7 @@
 # VISUAL-DNA.md — the-magazine
 ## Visual governance specification
 
-**Version:** 1.0.0
+**Version:** 1.3.0
 **Status:** Active
 **Last updated:** 2026-05
 
@@ -41,11 +41,11 @@ Designed objects from the graphic culture of the 20th and 21st century. Screen p
 - Muted or flat color is correct when that is the production reference
 
 **Typography**
-- Always present and legible as a visual element
-- Specific type references: bold condensed sans-serif, vintage display faces, outline type, handstamped letterforms, grotesque block type
+- Present when the reference demands it — type is a primary visual element in many pieces, not present in all
+- When type appears: specific references apply — bold condensed sans-serif, vintage display faces, outline type, handstamped letterforms, grotesque block type
 - Type can be in any language — Japanese, English, invented — if it fits the visual register
 - Numbers, codes, and labels are valid typographic elements (edition numbers, product codes, dates)
-- Type weight and placement define visual hierarchy — no ornamental type
+- When type is present, weight and placement define visual hierarchy — no ornamental type
 
 **Print production texture**
 - Grain, halftone dots, registration marks, paper stock texture, screen print coverage irregularity
@@ -101,7 +101,6 @@ The printed surfaces and visual patterns produced by specific print technologies
 
 ### Always
 
-- **Typography present** — every piece has text as a structural element, not as an afterthought
 - **Flat graphic execution** — no atmospheric depth, no dimensional rendering, no volumetric lighting
 - **Specific print reference** — the piece belongs to an identifiable era, technology, and cultural context
 - **High contrast legibility** — the composition reads at a glance and rewards closer attention
@@ -200,3 +199,4 @@ Before passing to the Creative Director, The Editor confirms:
 | 1.0.0 | Initial specification. Written from collection of ten pieces. Objects and textures as active categories. |
 | 1.1.0 | Added Prompt Rules section. Aspect ratio variation, `--chaos 20`, `--p` flag, and one-sentence prompt length. Hard rules enforced by both agents. |
 | 1.2.0 | Added Rule 6 — prompt file generator. Every approved prompt saved to prompts/prompt_[number].md by the Creative Director on approval. |
+| 1.3.0 | Typography removed from Always list — present when the reference demands it, not mandatory in every piece. Objects section language softened accordingly. |
