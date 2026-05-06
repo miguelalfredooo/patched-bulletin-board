@@ -179,6 +179,9 @@ It introduces controlled variation within the style reference. It runs every tim
 **5. Prompt length — one sentence maximum.**
 Precise and spare. No comma-separated lists of attributes. No over-specification. Trust the style reference to carry the visual identity. Only expand beyond one sentence if Alfred explicitly requests more detail.
 
+**6. Every approved prompt is saved as `prompts/prompt_[number].md`.**
+The number matches the archive-log entry. The Creative Director writes this file on approval. The file is the permanent record of what was approved and why — it travels with the image in the archive.
+
 ---
 
 **Self-check format for prompt rules:**
@@ -196,3 +199,4 @@ Before passing to the Creative Director, The Editor confirms:
 |---------|-------|
 | 1.0.0 | Initial specification. Written from collection of ten pieces. Objects and textures as active categories. |
 | 1.1.0 | Added Prompt Rules section. Aspect ratio variation, `--chaos 20`, `--p` flag, and one-sentence prompt length. Hard rules enforced by both agents. |
+| 1.2.0 | Added Rule 6 — prompt file generator. Every approved prompt saved to prompts/prompt_[number].md by the Creative Director on approval. |

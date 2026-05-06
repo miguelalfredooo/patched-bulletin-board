@@ -26,6 +26,7 @@ Step 2 — Run The Creative Director
   Produces: APPROVED or REDIRECT
 
 Step 3 — If APPROVED
+  The Creative Director writes an approved prompt file to prompts/prompt_[number].md using the prompt file format.
   Alfred generates the image in Midjourney
   Alfred saves the image to images/selects/ using the naming convention below
   Alfred appends the log entry to archive-log.md
@@ -108,6 +109,7 @@ The log is the archive's memory. Treat it accordingly.
   modules/objects.md           — Module specification for the objects category.
   modules/textures.md          — Module specification for the textures category.
   images/selects/              — All approved generated images live here.
+  prompts/                     — All approved prompt files live here. Written by the Creative Director on approval.
 
 ---
 

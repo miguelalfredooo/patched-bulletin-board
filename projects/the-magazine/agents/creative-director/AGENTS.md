@@ -93,6 +93,15 @@ LOG ENTRY:
   CATEGORY: [objects / textures]
   PROMPT SUMMARY: [10 words max]
   ARC NOTE: [one sentence]
+PROMPT FILE: prompts/prompt_[number].md — write file with:
+  DATE: [YYYY-MM-DD]
+  CATEGORY: [objects / textures]
+  CULTURAL GROUND: [one sentence from Editor output]
+  PROMPT: [full approved Midjourney prompt]
+  ASPECT RATIO: [--ar value]
+  STATUS: approved
+  CAPTION: [object name / series number]
+  ARC NOTE: [one sentence]
 
 On redirect:
 
