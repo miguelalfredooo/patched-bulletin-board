@@ -10,4 +10,4 @@ Design By Bulletin™
 Issue {ISSUE_NUMBER}
 {ISSUE_NAME}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-{PUBLICATION_DATE}
+{MONTH} {DAY}, {YEAR}

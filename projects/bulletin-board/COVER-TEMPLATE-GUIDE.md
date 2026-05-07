@@ -9,7 +9,9 @@ Standard cover format for all Design By Bulletin™ issues. Combines the officia
 **Variables:**
 - `{ISSUE_NUMBER}` — e.g., `010`
 - `{ISSUE_NAME}` — e.g., `Aperture — Opening, Revealing, Closing`
-- `{PUBLICATION_DATE}` — e.g., `2026-05-07`
+- `{MONTH}` — e.g., `May`
+- `{DAY}` — e.g., `7`
+- `{YEAR}` — e.g., `2026`
 
 ## How to Use
 
@@ -22,7 +24,9 @@ cp COVER-TEMPLATE.txt ISSUE-XXX-THEME-cover.txt
 Open the new file and substitute:
 - `{ISSUE_NUMBER}` with the issue number (e.g., `010`)
 - `{ISSUE_NAME}` with the full theme line (e.g., `Aperture — Opening, Revealing, Closing`)
-- `{PUBLICATION_DATE}` with the date (e.g., `2026-05-07`)
+- `{MONTH}` with the month name (e.g., `May`)
+- `{DAY}` with the day (e.g., `7`)
+- `{YEAR}` with the year (e.g., `2026`)
 
 ### Step 3: Save with issue naming convention
 Files should follow: `ISSUE-NNN-THEME-cover.txt` or embed in the main issue file.
@@ -44,7 +48,7 @@ Design By Bulletin™
 Issue 010
 Aperture — Opening, Revealing, Closing
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-05-07
+May 7, 2026
 ```
 
 ### Issue 009 — Material
@@ -60,7 +64,7 @@ Design By Bulletin™
 Issue 009
 Material
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-05-07
+May 7, 2026
 ```
 
 ### Issue 008 — Threshold
@@ -76,7 +80,7 @@ Design By Bulletin™
 Issue 008
 Threshold
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2026-05-07
+May 7, 2026
 ```
 
 ---
@@ -119,5 +123,5 @@ When displayed in Telegram:
 ---
 
 **Template Version:** 1.0  
-**Created:** 2026-05-07  
+**Created:** May 7, 2026  
 **Status:** Official standard
