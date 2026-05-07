@@ -75,6 +75,31 @@ Curated publication catalog for Victor (Visual Curator), Maeve (Researcher), and
 
 ---
 
+## 6. Music & Sound Culture
+
+**Ambient aesthetic, emerging artists, obscure/up-and-coming work, cultural vibe**
+
+- **Bandcamp** — Independent musicians, emerging artists, genre exploration; direct artist access
+- **Discogs** — Music database + marketplace; deep genre dives, rare releases, producer/label discovery
+- **Spotify Playlists** — Curator-created playlists, algorithmic recommendations, mood/genre signals
+- **YouTube Music / Links** — Live sessions, artist retrospectives, production breakdowns, genre history
+
+**Why these matter:** Music is design culture. Emerging sounds signal emerging aesthetics. Bandcamp/Discogs reveal what's being made outside mainstream (vaporwave, hyperpop, experimental electronic). Ambient/vibe sets editorial mood. A song or producer direction can inform visual aesthetic, color choices, compositional rhythm. "What are designers listening to?" often precedes "What will designers make?"
+
+**Curation philosophy:**
+- Prioritize obscure/up-and-coming over mainstream
+- Look for producers/artists working at genre boundaries
+- Extract playlists or songs that match today's theme/vibe
+- Consider sonic palette as design reference (production quality, frequencies, texture)
+
+**How to scout:**
+- Bandcamp: Browse by tag/genre, look for new releases, emerging labels
+- Discogs: Dig into genre histories, rare releases, producer connections
+- YouTube: Artist interviews, production breakdowns, live sessions
+- Create daily Spotify playlists that match editorial direction/theme
+
+---
+
 ## Core Principle
 
 **All sources are available for all sections.**
@@ -160,14 +185,15 @@ These are editorial directions, not source assignments. When exploring any theme
 
 | Theme | Explore Across |
 |-------|---|
-| Emerging tools & innovation | Product Hunt, GitHub, Hacker News discussions, Figma Blog, Substack makers |
+| Emerging tools & innovation | Product Hunt, GitHub, Hacker News discussions, Figma Blog, Substack makers, Bandcamp (indie tools/synths) |
 | Platform shifts | Apple Developer News, Figma Blog, TechCrunch, The Verge, designer reactions on Hacker News |
 | Research & methodology | Nielsen Norman Group, UX Collective, A List Apart, but also: Wired long-form, Substack research essays |
-| Visual culture & trends | Behance, Awwwards, It's Nice That, but also: The Verge design criticism, Wired culture pieces, Photography essays |
+| Visual culture & trends | Behance, Awwwards, It's Nice That, but also: The Verge design criticism, Wired culture pieces, Photography essays, Bandcamp (aesthetic signals) |
 | Industry consolidation | TechCrunch, The Verge, Fast Company, but also: Hacker News discussion, indie blog reactions |
-| Philosophy & practice | Substack, independent blogs, but also: UX Collective, A List Apart, Nielsen Norman Group research |
-| Identity & branding | Print Mag, Creative Boom, Behance, but also: Figma Blog (design system case studies), Fast Company |
-| Craft & standards | Smashing Magazine, A List Apart, but also: GitHub design system repos, Webflow case studies |
+| Philosophy & practice | Substack, independent blogs, but also: UX Collective, A List Apart, Nielsen Norman Group research, YouTube artist interviews |
+| Identity & branding | Print Mag, Creative Boom, Behance, but also: Figma Blog (design system case studies), Fast Company, Discogs (cultural identity through music) |
+| Craft & standards | Smashing Magazine, A List Apart, but also: GitHub design system repos, Webflow case studies, YouTube production breakdowns |
+| Sonic/ambient aesthetic | Bandcamp, Discogs, Spotify (emerging ambient, experimental, genre boundaries), YouTube sessions |
 
 ---
 
@@ -212,6 +238,35 @@ These are editorial directions, not source assignments. When exploring any theme
 **Why:** [How it fits the theme + visual register + distinct angle]
 **Quality check:** [High/strong]
 ```
+
+---
+
+## Music in Editorial Context
+
+Music isn't a primary content source, but contextual input for:
+
+### For Editorial Director (Theme Setting)
+- "Today's vibe is [emerging ambient producer name]" — sets the editorial mood
+- Creates internal reference point for what the issue should feel like
+- Informs color palette, pacing, compositional choices
+
+### For Maeve (Research Context)
+- What are designers/culture makers listening to?
+- Does music culture reveal design thinking? (e.g., hyperpop's maximalism → UI trends 6 months later)
+- Link songs/playlists in research briefs as cultural context
+
+### For Victor (Visual Aesthetic)
+- Music production aesthetic informs visual direction
+- Genre/producer style guides color, texture, compositional rhythm
+- "This section feels like [artist name] — how do we visualize that?"
+
+### For Managing Editor (Narrative Tone)
+- Audio landscape shapes written voice/pacing
+- Sonic quality (clean/noisy, sparse/dense) informs prose style
+- Links optional: "This section reads like [song title]" as internal note
+
+### Optional: Ambient Editorial Experience
+Future enhancement: Spotify playlist URI in issue metadata so readers can listen while exploring design digest.
 
 ---
 
