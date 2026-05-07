@@ -72,12 +72,31 @@ Set the mix in the morning brief; all agents adjust their intensity accordingly.
 - Commands: `/start`, `digest`, `preview`, `change`, `help`
 - See [BULLETIN-BOT.md](../BULLETIN-BOT.md) for full reference
 
+## Album Cover Generation (In Progress)
+
+Each issue receives a Midjourney-generated album cover created by Creative Director + Editor at 10:30am:
+
+**The System:**
+- Editorial Director sets Editorial Mix (6 parametric faders)
+- Generator creates two complementary prompts (literal + abstract/metaphorical)
+- Creative Director reviews, customizes, posts to Midjourney
+- Cover archived with issue and linked in web platform
+
+**Two Prompt Types:**
+- **Prompt A** — Direct integration of theme, sonic mood, visual language
+- **Prompt B** — Metaphorical interpretation of the same elements
+
+The cover's visual weight, emotional register, and explicit/implicit theming are controlled by the Editorial Mix values. High Visual → bold composition. High Music → mood-driven. High Theme → explicit reference.
+
+See [MIDJOURNEY-INTEGRATION.md](docs/MIDJOURNEY-INTEGRATION.md) for complete system and Creative Director decision framework.
+
 ## Future: Rich Web Experience
 
-Beyond Telegram, Design By Bulletin will include:
-- Midjourney-generated assets for editorial illustration
+Beyond Telegram with Midjourney integration:
+- Album cover images with each issue
 - Web platform with interactive theme archive
 - Visual/sonic layer controls for readers
+- Deep linking between covers and issue content
 
 ## Getting Started
 

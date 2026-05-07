@@ -219,5 +219,22 @@ State it at session start.
 
 ---
 
+## Delivery & Asset Generation
+
+**Telegram Bot** — @DesignByBulletin_bot
+- Act 1 at 8:00am PT: Visual preview (11 ASCII pieces, no text/links)
+- Act 2 at 8:30am PT: Full edition (each piece with title, sentence, link)
+- Onboarding: role → content preference → reading style
+- See [BULLETIN-BOT.md](../BULLETIN-BOT.md) for full reference
+
+**Album Cover Generation** (10:30am PT)
+- Creative Director briefs Midjourney prompt generator with issue data
+- Generator produces two prompts: literal + abstract/metaphorical
+- Creative Director chooses and customizes, posts to Midjourney
+- Image archived with issue metadata when complete
+- See [MIDJOURNEY-INTEGRATION.md](docs/MIDJOURNEY-INTEGRATION.md) for complete workflow
+
+---
+
 ## Version
-1.1.0 — Added Editorial Mix module intensity framework for parametric control of editorial emphasis.
+1.2.0 — Added Midjourney album cover generation workflow and prompt system. Creative Director + Editor collaborate to generate visual assets reflecting Editorial Mix.
