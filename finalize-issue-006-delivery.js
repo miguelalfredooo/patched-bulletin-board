@@ -69,62 +69,6 @@ async function sendMessage(text) {
   });
 }
 
-/**
- * Send photo to Telegram
- */
-async function sendPhoto(filePath, caption = '') {
-  return new Promise((resolve, reject) => {
-    const fileBuffer = fs.readFileSync(filePath);
-    const boundary = 'Boundary' + Date.now();
-
-    let body = '';
-    body += `--${boundary}\r\n`;
-    body += 'Content-Disposition: form-data; name="chat_id"\r\n\r\n';
-    body += `${CHAT_ID}\r\n`;
-
-    if (caption) {
-      body += `--${boundary}\r\n`;
-      body += 'Content-Disposition: form-data; name="caption"\r\n\r\n';
-      body += `${caption}\r\n`;
-    }
-
-    body += `--${boundary}\r\n`;
-    body += 'Content-Disposition: form-data; name="photo"; filename="image.png"\r\n';
-    body += 'Content-Type: image/png\r\n\r\n';
-
-    const bodyStart = Buffer.from(body);
-    const bodyEnd = Buffer.from(`\r\n--${boundary}--\r\n`);
-    const payload = Buffer.concat([bodyStart, fileBuffer, bodyEnd]);
-
-    const options = {
-      hostname: 'api.telegram.org',
-      port: 443,
-      path: `/bot${BOT_TOKEN}/sendPhoto`,
-      method: 'POST',
-      headers: {
-        'Content-Type': `multipart/form-data; boundary=${boundary}`,
-        'Content-Length': payload.length,
-      },
-    };
-
-    const req = https.request(options, (res) => {
-      let data = '';
-      res.on('data', (chunk) => { data += chunk; });
-      res.on('end', () => {
-        try {
-          const parsed = JSON.parse(data);
-          resolve(parsed);
-        } catch (e) {
-          reject(e);
-        }
-      });
-    });
-
-    req.on('error', reject);
-    req.write(payload);
-    req.end();
-  });
-}
 
 /**
  * Delay between messages
@@ -157,17 +101,8 @@ Full issue incoming: Cover + Editorial + Color Renders + Theme
     sent++;
     await delay(500);
 
-    // MESSAGE 2 — ASCII Cover
-    console.log('📨 [2] ASCII Cover...');
-    const coverPath = path.join(COVERS_DIR, 'momentum-006-cover.png');
-    if (fs.existsSync(coverPath)) {
-      await sendPhoto(coverPath, 'Cover: ASCII Art Interpretation');
-      sent++;
-      await delay(500);
-    }
-
-    // MESSAGE 3 — Pure text issue (split into 3 messages due to Telegram limit)
-    console.log('📨 [3-5] Pure text issue (3 messages)...');
+    // MESSAGE 2 — Pure text issue (split into 3 messages due to Telegram limit)
+    console.log('📨 [2-4] Pure text issue (3 messages)...');
     const issueContent = fs.readFileSync(path.join(PROJECT_DIR, 'ISSUE-006-momentum-neon.txt'), 'utf8');
     const lines = issueContent.split('\n');
     let currentMessage = '';
@@ -193,8 +128,8 @@ Full issue incoming: Cover + Editorial + Color Renders + Theme
       await delay(500);
     }
 
-    // MESSAGE 6 — Theme & Closing
-    console.log('📨 [6] Theme & Closing...');
+    // MESSAGE 5 — Theme & Closing
+    console.log('📨 [5] Theme & Closing...');
     await sendMessage(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 MOMENTUM — Issue 006
@@ -225,9 +160,9 @@ Cultural Thread:
     console.log(`\n📊 SUMMARY`);
     console.log(`   Total messages: ${sent}`);
     console.log(`   - 1 opening banner`);
-    console.log(`   - 1 ASCII cover image`);
-    console.log(`   - 3 pure text issue (editorial + 11 sections + closing)`);
+    console.log(`   - 3 pure text issue (ASCII in code blocks + editorial + 11 sections)`);
     console.log(`   - 1 theme & closing`);
+    console.log(`\n✨ ASCII art in code blocks with default monospace font (Markdown mode)`);
     console.log(`\n🎨 Issue 006 MOMENTUM finalized and delivered to Telegram!`);
 
   } catch (err) {
