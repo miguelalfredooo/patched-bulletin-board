@@ -237,6 +237,8 @@ These are editorial directions, not source assignments. When exploring any theme
 | Identity & branding | Print Mag, Creative Boom, Behance, but also: Figma Blog (design system case studies), Fast Company, Discogs (cultural identity through music) |
 | Craft & standards | Smashing Magazine, A List Apart, but also: GitHub design system repos, Webflow case studies, YouTube production breakdowns |
 | Sonic/ambient aesthetic | Bandcamp, Discogs, Spotify (emerging ambient, experimental, genre boundaries), YouTube sessions |
+| Process & workflow | Lenny's Podcast, Dive Club (YouTube), tool creator interviews, building narratives |
+| AI culture & tools | Lenny's Podcast (AI discussions), UX Collective, Hacker News, independent blogs discussing AI practice |
 
 ---
 
@@ -281,6 +283,35 @@ These are editorial directions, not source assignments. When exploring any theme
 **Why:** [How it fits the theme + visual register + distinct angle]
 **Quality check:** [High/strong]
 ```
+
+---
+
+## 6.5 Podcasts & Video Resources
+
+**Process, workflows, tools, techniques, AI culture, building things**
+
+- **Lenny's Podcast** — Product strategy, growth, building, founder stories; deep-dive interviews with builders/operators
+- **Dive Club (YouTube)** — Web design process, frontend techniques, tool workflows; live building sessions and tutorials
+- **Other relevant podcasts/videos** — Design process interviews, tool creation, behind-the-scenes building
+
+**Why these matter:** 
+- Audio/video content captures *how* things are made (not just what was made)
+- Process-focused content reveals emerging tools, techniques, workflows
+- Building narratives show design/product thinking in real-time
+- AI culture discussions (Lenny's + Dive Club) surface practitioner perspectives on AI tools
+- Long-form interviews reveal philosophy behind tools and design decisions
+
+**How to use:**
+- Maeve scouts for emerging process/tool signals (new workflow patterns, techniques trending)
+- Assignment Editor identifies patterns across episodes (3 episodes on component systems = signal about design systems thinking)
+- Managing Editor translates process insights into "how things are made" narratives
+- Victor extracts visual references from building/design process content
+
+**Curation approach:**
+- Episodes about tool creation, design process, workflow optimization
+- Interviews with builders/designers discussing their practice
+- Technical deep-dives on emerging techniques or tools
+- AI culture discussions and perspectives from practitioners
 
 ---
 
