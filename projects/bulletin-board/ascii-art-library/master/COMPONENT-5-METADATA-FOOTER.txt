@@ -1,0 +1,28 @@
+# COMPONENT 5: METADATA FOOTER
+# Test and staging area for publication metadata
+
+## Current Standard Format
+
+*Published: May 12, 2026*
+*Theme: Worn — Temporal depth and what time-in-contact reveals about care*
+
+*Published: May 11, 2026*
+*Theme: Material — Substance as irreducible fact of creation and meaning*
+
+## Current Rules
+1. Two lines of italicized text
+2. Format: *Published: [DATE]* + *Theme: [NAME] — [DESCRIPTION]*
+3. Theme description: 8-15 words
+4. Appears at end of every issue file
+5. Italicized for visual distinction
+
+## Proposed New Rules (TEST HERE)
+- [Add any new rules or modifications here]
+- [Test format/styling changes]
+- [Adjust description length]
+- [Verify archive consistency]
+
+## Status
+- ✅ All 10 footers (one per issue) complete
+- ✅ Consistent format across all issues
+- Ready for: Testing archival/SEO implications
