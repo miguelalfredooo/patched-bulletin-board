@@ -35,15 +35,16 @@ Curated publication catalog for Victor (Visual Curator), Maeve (Researcher), and
 
 ## 3. Major Tech & Business News
 
-**Hardware rumors, industry acquisitions, legal/regulatory shifts, AI developments**
+**Hardware rumors, industry acquisitions, legal/regulatory shifts, AI developments, community discussion**
 
 - **TechCrunch** — Startup funding, product launches, AI developments, industry consolidation
 - **The Verge** — Hardware design, tech criticism, design-focused product reviews
 - **9to5Mac / MacRumors** — Apple design leaks, hardware rumors, ecosystem announcements
 - **Fast Company** — Co.Design section specifically; business strategy, innovation trends
 - **Wired** — Long-form tech journalism, culture intersections, design criticism
+- **Hacker News** (news.ycombinator.com) — Community discussion on tech, tools, AI; designer/developer discourse; tool releases + critical commentary
 
-**Why these matter:** Context for shifts in design practice (e.g., new iPhone form factor → design community responds), market consolidation (acquisitions change tool ecosystems), regulatory changes (copyright law → AI training debates).
+**Why these matter:** Context for shifts in design practice (e.g., new iPhone form factor → design community responds), market consolidation (acquisitions change tool ecosystems), regulatory changes (copyright law → AI training debates). Hacker News specifically: early signals on emerging tools, practitioner reactions to announcements, contrarian perspectives on design trends.
 
 ---
 
@@ -87,7 +88,7 @@ Curated publication catalog for Victor (Visual Curator), Maeve (Researcher), and
 - **Tertiary:** Behance, Print Mag
 
 ### Design & AI Tools
-- **Primary:** Product Hunt, GitHub, Figma Blog, Adobe Blog
+- **Primary:** Product Hunt, GitHub, Figma Blog, Adobe Blog, Hacker News
 - **Secondary:** Google for Developers, TechCrunch, The Verge
 - **Tertiary:** Substack (indie voices)
 
