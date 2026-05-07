@@ -11,9 +11,9 @@ Complete operational reference for the @DesignByBulletin_bot Telegram bot.
 | Bot name | Design by Bulletin™ |
 | Telegram username | @DesignByBulletin_bot |
 | Telegram URL | t.me/DesignByBulletin_bot |
-| Bot ID | 8662552111 |
-| Token prefix | 8662552111:AAHpfx… |
-| Created | 2026-05-06 |
+| Bot ID | 8649394460 |
+| Token prefix | 8649394460:AAE-qmm0k… |
+| Created | 2026-05-07 |
 
 ---
 
@@ -232,4 +232,4 @@ openclaw cron run f7eae541-e3ec-4abe-859c-1aba22498b46  # Act 2
 
 ---
 
-*Last updated: 2026-05-06*
+*Last updated: 2026-05-07*
