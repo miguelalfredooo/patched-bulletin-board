@@ -29,9 +29,19 @@ See **[SETUP.md](SETUP.md)** for detailed workflow.
 
 ### Explore the System
 
+**System & Operations:**
 - **[DESIGN-BY-BULLETIN.md](DESIGN-BY-BULLETIN.md)** — Complete system documentation
 - **[TOOLS.md](TOOLS.md)** — All production scripts and commands
 - **[SETUP.md](SETUP.md)** — Setup, configuration, issue creation
+
+**Design & Composition:**
+- **[ASCII-COMPOSITION-GUIDE.md](ASCII-COMPOSITION-GUIDE.md)** — Layout, vertical flow, negative space as design
+- **[BAUHAUS-ASCII-PRINCIPLES.md](BAUHAUS-ASCII-PRINCIPLES.md)** — Grid, hierarchy, reduction, asymmetric balance, modularity
+- **[TYPOGRAPHY-AS-DESIGN.md](TYPOGRAPHY-AS-DESIGN.md)** — Typography as primary design element with Bauhaus principles & section identification standards
+
+**Philosophy & Framework:**
+- **[framework/PATCHED.md](framework/PATCHED.md)** — Patched framework philosophy
+- **[_system/ANDERSON-SYMMETRY-LENS.md](_system/ANDERSON-SYMMETRY-LENS.md)** — Wes Anderson visual constraint framework
 
 ## Tech Stack
 
