@@ -91,35 +91,39 @@ Each section has visual discovery + editorial curation:
 
 ### Visual Formats (5 styles)
 
-**A: Classic Object**
-- Letterforms as design elements (not labels)
-- Smushing + kerning rules applied
-- Consistent row height
-- Drop caps, word fragments
+See `governance/ASCII-VISUAL-DNA.md` for complete format specifications. Each format serves different compositional goals:
 
-**B: Geometric Frame**
-- Box drawing characters (single, double, heavy)
-- Nested containers
-- Proportional spacing
-- Symmetrical layouts
+**Format A: Classic Object**
+- Clean outline of single subject
+- High character definition
+- Recognition by silhouette first
+- Best for: Recognizable objects, precise forms
 
-**C: Typographic**
-- Full ASCII/FIGlet palette
-- Text as primary visual
-- Kerning precision
-- Hierarchy through spacing
+**Format B: Geometric Frame**
+- Subject inside ruled borders
+- Box drawing characters (─ ═ ║ ┌ ┐ └ ┘ etc.)
+- Nested containers, symmetrical
+- Best for: Structured, architectural subjects
 
-**D: Two Column**
-- Parallel narratives
-- Split visual/text
+**Format C: Typographic**
+- Full ASCII/FIGlet via utils/figlet.js (always leftPad=2)
+- Text as primary visual element
+- Font selection by register (masthead, opinions, tools, theme, closing, default)
+- Best for: Typographic sections, titles, concepts
+
+**Format D: Two Column**
+- Two subjects in dialogue, left ~20–22 chars, right fills remainder
+- Parallel narratives or visual comparison
 - Balanced composition
-- Column-aware line breaking
+- Best for: Paired concepts, before/after, dialogue
 
-**E: Full Spread**
-- Maximalist layout
-- All 45 chars × 15 lines utilized
-- Complex nesting
-- Multiple visual weights
+**Format E: Full Spread**
+- Full 42-character width, all 15 lines utilized
+- Three density zones, eye travels across
+- Complex nesting, multiple visual weights
+- Best for: Expansive subjects, dense information, panoramic views
+
+**Constraint:** No two consecutive pieces use same format. All five formats must appear across the 11 pieces.
 
 ### Character Palette
 
@@ -151,10 +155,10 @@ Top: ▀  Bottom: ▄  Left: ▌  Right: ▐
 
 ## Telegram Constraints
 
-- **Max width:** 45 characters
-- **Max height per message:** 15 lines
-- **Total message limit:** 3000 characters
-- **Code block required:** All art wrapped in ``` for proper monospace rendering
+- **Max width:** 42 characters (Telegram safe render at 375px viewport)
+- **Max height per piece:** 15 lines
+- **Total message limit:** 3000–4096 characters (splitting handled automatically)
+- **Code block required:** All ASCII art wrapped in ``` for proper monospace rendering
 - **Message splitting:** Long digests split across multiple messages automatically
 
 ## Architecture
@@ -254,32 +258,67 @@ Latest run tested:
 - Telegram-optimized formatting
 - Multi-section output
 
-## Integration of Both Systems
+## Editorial Mix Framework
 
-Design By Bulletin **bridges two agent ecosystems**:
+The Editorial Director controls six parametric faders (0–100%) that modulate how each editorial layer influences daily output:
 
-### The Visual Loop (Victor + Maeve + Coda)
-1. **Coda** scans the archive for gaps and coverage
-2. **Maeve** researches what each section needs based on current events, trends, themes
-3. **Victor** evaluates visual content — what fits, what doesn't, what directions to pursue
-4. **Coda** catalogs selections with full provenance and metadata
+| Fader | Control | Effect |
+|-------|---------|--------|
+| **Music** | Sonic qualities (tempo, production, frequency) | How heavily mood/texture influence composition and prose |
+| **Visual** | ASCII composition and form language | How much Victor's selections drive narrative structure |
+| **Research** | Maeve scouting intensity | Surface-level vs. deep signal synthesis |
+| **Process** | "Making" and workflow emphasis | How much methodology/tool philosophy features |
+| **Theme** | Explicit vs. implicit theming | Whether theme is visible in every sentence or felt aesthetically |
+| **AI Culture** | Tool philosophy and AI tool presence | How much AI/creative tools feature in selections |
 
-### The Editorial Loop (Bulletin Board)
-1. **Assignment Editor** receives visual curator's selections, identifies signals and patterns
-2. **Managing Editor** develops narratives that contextualize the visual findings
-3. **Editorial Director** reviews and approves sections for publication
+**Example Editorial Mix:**
+```json
+{
+  "music": 70,      // Sonic mood matters; texture integration required
+  "visual": 85,     // High visual weight; composition is statement
+  "research": 55,   // Moderate scouting depth
+  "process": 40,    // Process is secondary
+  "theme": 75,      // Explicit thematic weaving
+  "ai_culture": 20  // Not a focus today
+}
+```
 
-### The Rendering Loop
-1. Format approved narrative + visual selections as ASCII
-2. Optimize for Telegram (45 chars wide, 15 lines, 3000 char limit)
-3. Deliver as two acts (visual preview + full edition)
+See `projects/bulletin-board/BRIEF.md` for complete Editorial Mix framework with example mixes.
 
-The six agents work in **parallel when possible**:
-- Maeve researches while Victor evaluates while Coda catalogs
-- Assignment Editor scouts while Managing Editor develops
-- Editorial Director reviews everything before rendering
+## Album Cover Generation
 
-**Result:** A daily digest that's both visually curated AND editorially coherent, delivered with rhythm and timing.
+Each issue receives a Midjourney-generated album cover (optional, ~10:30am PT):
+
+1. **Creative Director** analyzes Editorial Mix + theme + sonic reference + visual language
+2. **Generator** creates two complementary prompts (literal + abstract/metaphorical)
+3. **Director** reviews, customizes, posts to Midjourney
+4. **Image** is archived with issue metadata
+
+The cover's visual register, emotional tone, and explicit/implicit theming are controlled by Editorial Mix values.
+
+See `projects/bulletin-board/docs/MIDJOURNEY-INTEGRATION.md` for complete system and prompt generation details.
+
+## Integration of Six-Agent System
+
+Design By Bulletin **coordinates six specialized agents** with parametric control:
+
+### Visual Discovery (Morning)
+1. **Maeve (Researcher)** — Scout all 20+ sources at Research intensity
+2. **Victor (Visual Curator)** — Select 3–5 pieces per section at Visual intensity
+3. **Coda (Synthesis)** — Extract patterns, identify themes
+
+### Editorial Curation (Mid-Morning → Delivery)
+1. **Assignment Editor** — Commission narratives based on research + visual patterns
+2. **Managing Editor** — Develop one-sentence narratives (Act 2), integrate sonic layer, adjust voice by intensity
+3. **Editorial Director** — Set Editorial Mix, generate album cover (optional), final review, READY/REDIRECT decision
+
+### Parallel Execution
+- Maeve/Victor/Coda work in parallel during discovery
+- Assignment Editor commissions while Managing Editor writes
+- Editorial Director reviews everything before queueing cron jobs
+
+### Result
+A daily digest that is **visually curated, sonically coherent, and editorially intentional**, with parametric control over emphasis across all editorial layers.
 
 ## Configuration
 
@@ -340,20 +379,25 @@ Alfred should receive each morning:
 
 ## Documentation
 
-Full setup and technical details in `/Users/blackmachete/design-by-bulletin/README.md`:
-- Masthead specifications
-- Section taxonomy
-- ASCII system details
-- Five visual formats with examples
-- Complete character palette reference
-- Telegram delivery rules
-- Editorial process workflows
-- Source evaluation guidelines
-- Onboarding flow steps
-- Full changelog
+**Core Reference:**
+- `projects/bulletin-board/README.md` — Project overview and six-agent system
+- `projects/bulletin-board/BRIEF.md` — Editorial guidelines and Editorial Mix framework
+- `projects/bulletin-board/STYLE-GUIDE.md` — Voice (Apartamento), three-layer integration
+- `projects/bulletin-board/DOCUMENTATION.md` — Master navigation and glossary
+
+**Governance & Specs:**
+- `projects/bulletin-board/governance/ASCII-VISUAL-DNA.md` — ASCII format specs
+- `projects/bulletin-board/governance/ASCII-CONSTRUCTION.md` — ASCII construction methodology
+- `projects/bulletin-board/docs/SOURCES.md` — 20+ curated sources and scouting instructions
+- `projects/bulletin-board/docs/SHADER-SYSTEM.md` — Image processing system
+- `projects/bulletin-board/docs/MIDJOURNEY-INTEGRATION.md` — Album cover generation
+
+**Delivery & Configuration:**
+- `projects/bulletin-board/BULLETIN-BOT.md` — Telegram bot configuration and troubleshooting
+- `projects/bulletin-board/agents/pipeline.md` — Six-agent workflow and signal flow
 
 ## See Also
 
-- [Bulletin Board](README.md) — The three-agent editorial system
+- [Bulletin Board](README.md) — The six-agent editorial system foundation
 - [Setup & Configuration](SETUP.md) — How to run and access agents
 - [Editorial Board](EDITORIAL-BOARD.md) — Editorial roles and workflow
