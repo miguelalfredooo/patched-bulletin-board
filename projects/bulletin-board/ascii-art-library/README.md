@@ -15,15 +15,21 @@ Each variation serves different layout and presentation contexts.
 
 ```
 ascii-art-library/
+├── source/
+│   └── [110 files] issue-[#]-[section]-neon.txt
 ├── expanded/
 │   └── [110 files] issue-[#]-[section]-expanded-neon.txt
 ├── compact/
 │   └── [220 files] issue-[#]-[section]-compact-left-neon.txt
 │                   issue-[#]-[section]-compact-right-neon.txt
-├── [110 original source files] issue-[#]-[section]-neon.txt
-├── VARIATION-EXAMPLES.md
-└── README.md (this file)
+├── README.md (this file)
+└── VARIATION-EXAMPLES.md
 ```
+
+**Directory breakdown:**
+- `source/` — Original ASCII art files, unmodified
+- `expanded/` — 14-line centered hero versions for featured display
+- `compact/` — 9-line variations with integrated section names (left or right aligned)
 
 ## File Naming Convention
 
