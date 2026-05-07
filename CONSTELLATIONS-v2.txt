@@ -1,0 +1,143 @@
+
+═══════════════════════════════════════════════════════════════
+  CONSTELLATIONS — Star Maps with Composed Flow
+═══════════════════════════════════════════════════════════════
+
+Ancient stories written in light-years. Arranged with vertical
+rhythm: dense → sparse → medium → peak → breath → descent.
+
+─────────────────────────────────────────────────────────────
+
+HEAVY OPENING — Ursa Major (The Big Bear)
+
+```
+★               ★
+  ╲           ╱
+    .───────.
+    │   │   │
+    │   .   │
+    .       .
+      ╲   ╱
+        ★
+```
+
+
+LIGHT RESET — Minimal Point
+
+```
+  .
+```
+
+
+MEDIUM BUILD — Cassiopeia (The Queen)
+
+```
+★
+ ╲
+  .───.───.───.
+       │ │ │
+       . . .
+         │
+         ★
+```
+
+
+HEAVY MID — Pegasus (Winged Horse) with Nested Structure
+
+```
+╔══════════════════╗
+║    .───────.    ║
+║    │╲     ╱│    ║
+║    │ .───. │    ║
+║    │ │     │    ║
+║    .─.     .    ║
+║     ╲│    ╱     ║
+║      .───.      ║
+╚══════════════════╝
+```
+
+
+LIGHT PAUSE — Three Points
+
+```
+  .
+   .
+    .
+```
+
+
+MEDIUM RISE — Cygnus (The Swan)
+
+```
+        ★
+        │
+    .───.───.
+   ╱│ ╲   ╱ │
+  . │  ..   │
+   ╲│       │
+    .───────.
+```
+
+
+HEAVY CLIMAX — Orion (The Hunter) Full Frame
+
+```
+╔════════════════════════════════════╗
+║    ★         ★                    ║
+║     ╲       ╱                     ║
+║      .─────.                      ║
+║       │ ◆ │                       ║
+║       │ . │                       ║
+║      .─────.                      ║
+║     ╱       ╲                     ║
+║    ★         ★                    ║
+╚════════════════════════════════════╝
+```
+
+
+SPARSE DESCENT — Single Line
+
+```
+  ──────────────────
+```
+
+
+MEDIUM ANCHOR — Draco (The Dragon)
+
+```
+.─────.     .
+│╲    │╲   ╱
+│ .   │ .─.
+│  ╲  │ │
+.───.─. │
+  │   ╲ │
+  .     .
+```
+
+
+LIGHT CLOSE — Minimal Marker
+
+```
+  ★
+```
+
+─────────────────────────────────────────────────────────────
+
+COMPOSITION PRINCIPLES APPLIED:
+
+Visual weight balanced vertically:
+• Opening (heavy) orients reader
+• Sections 2-3 (light/medium) settle in
+• Section 4 (heavy) builds momentum
+• Section 5 (light) provides breath
+• Section 6 (medium) continues build
+• Section 7 (very heavy) climax
+• Section 8 (sparse) descent begins
+• Section 9 (medium) anchors page
+• Section 10 (light) closes gently
+
+No two consecutive sections same visual weight.
+Negative space intentional. Size varies throughout.
+Eye guided downward through rhythm.
+
+═══════════════════════════════════════════════════════════════
