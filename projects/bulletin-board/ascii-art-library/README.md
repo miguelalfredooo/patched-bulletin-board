@@ -1,57 +1,116 @@
-# ASCII Art Library
+# ASCII Art Library — Component 2
 
-This directory contains the complete ASCII art collection for Design By Bulletin™. These pieces are used in ACT 1 (Visual Preview) of each issue.
+Complete ASCII art asset system for Design By Bulletin™ with three layout variations.
 
-## Structure
+## Overview
 
-**Issue 006 — Momentum** (Complete)
-- 11 ASCII art pieces (one per editorial section)
-- 5 color variations each:
-  - `neon-ascii-color.txt` — Neon colors with ANSI codes
-  - `gold-silver-ascii-color.txt` — Gold & silver palette
-  - `green-purple-ascii-color.txt` — Green & purple palette
-  - `orange-navy-ascii-color.txt` — Orange & navy palette
-  - `pink-cyan-ascii-color.txt` — Pink & cyan palette
+**330 total ASCII art files** across three layout options:
+- **110 Expanded** — Full 14-line standalone pieces
+- **110 Compact-Left** — ASCII left, section name right
+- **110 Compact-Right** — Section name left, ASCII right
 
-## Sections (per issue)
+Each variation serves different layout and presentation contexts.
 
-1. **Art** — Visual foundation
-2. **Painting** — Color and form
-3. **Illustration** — Line and composition
-4. **Sculpture** — Space and material
-5. **Culture** — Social context
-6. **Photography** — Light and frame
-7. **Art History** — Lineage and tradition
-8. **Opinions** — Critical perspective
-9. **Design & AI Tools** — Digital practice
-10. **Product & Process** — Making and craft
-11. **Visual & Brand** — Identity and mark
+## Directory Structure
 
-## Usage
-
-These files are reference assets for:
-- **Populating ACT 1 sections** in issue markdown files
-- **Slideshow gallery** (planned feature to browse ASCII art exclusively)
-- **Color variation experiments** for Telegram UI rendering
-
-## Rendering Notes
-
-- Files with `ascii-color.txt` contain ANSI escape sequences `[38;2;R;G;Bm` for RGB color
-- Pure text versions (no color) can be extracted by stripping ANSI codes
-- Telegram rendering uses monospace fonts—test color versions for terminal display compatibility
+```
+ascii-art-library/
+├── expanded/
+│   └── [110 files] issue-[#]-[section]-expanded-neon.txt
+├── compact/
+│   └── [220 files] issue-[#]-[section]-compact-left-neon.txt
+│                   issue-[#]-[section]-compact-right-neon.txt
+├── [110 original source files] issue-[#]-[section]-neon.txt
+├── VARIATION-EXAMPLES.md
+└── README.md (this file)
+```
 
 ## File Naming Convention
 
 ```
-momentum-006-[section]-[color]-ascii-color.txt
+issue-[NUMBER]-[SECTION]-[VARIATION]-neon.txt
 ```
 
-- `momentum-006` — Issue 006, Momentum theme
-- `[section]` — Section number (1-11) or name
-- `[color]` — Color palette name or "neon" for RGB colors
-- `ascii-color.txt` — Contains ANSI color escape codes
+**Examples:**
+- `issue-006-art-expanded-neon.txt` — Issue 6, Art section, expanded
+- `issue-007-culture-compact-left-neon.txt` — Issue 7, Culture, compact left-aligned
+- `issue-010-visual-brand-compact-right-neon.txt` — Issue 10, Visual & Brand, compact right-aligned
+
+## Sections (11 per issue)
+
+1. art
+2. painting
+3. illustration
+4. sculpture
+5. culture
+6. photography
+7. art-history
+8. opinions
+9. design-tools
+10. product-process
+11. visual-brand
+
+## Issues (10 total)
+
+001, 002, 003, 004, 005, 006, 007, 008, 009, 010
+
+## Variation Details
+
+### Expanded (110 files)
+- **Location:** `expanded/`
+- **Line count:** Exactly 14 lines
+- **Format:** Standalone, centered, no text labels
+- **Use cases:**
+  - Hero/feature display
+  - Full-page visual preview
+  - Gallery collections
+  - Print layouts
+  - Telegram code block delivery
+
+### Compact-Left (110 files)
+- **Location:** `compact/`
+- **Filename suffix:** `-compact-left-`
+- **Format:** ASCII on left, section name (**Bold**) on right
+- **Line count:** ~9 lines
+- **Use cases:**
+  - Left-to-right reading flow
+  - Alternating visual rhythm
+  - Mobile layouts with limited width
+  - Social media cards
+
+### Compact-Right (110 files)
+- **Location:** `compact/`
+- **Filename suffix:** `-compact-right-`
+- **Format:** Section name (**Bold**) on left, ASCII on right
+- **Line count:** ~9 lines
+- **Use cases:**
+  - Right-to-left balance
+  - Alternating layout mirror
+  - Column/sidebar designs
+  - Balanced asymmetric compositions
+
+## Quick Reference
+
+| Variation | Location | Filename Pattern | Best For |
+|-----------|----------|------------------|----------|
+| Expanded | `expanded/` | `issue-#-section-expanded-neon.txt` | Feature displays, galleries, print |
+| Compact-Left | `compact/` | `issue-#-section-compact-left-neon.txt` | Left-flow layouts, alternating rhythms |
+| Compact-Right | `compact/` | `issue-#-section-compact-right-neon.txt` | Right-balance layouts, mirrors |
+
+## Asset Count Summary
+
+| Category | Count |
+|----------|-------|
+| Issues | 10 |
+| Sections per issue | 11 |
+| Variations per section | 3 |
+| **Total variation files** | **330** |
+| Original source files | 110 |
+| **Grand total in library** | **440** |
 
 ---
 
-**Status:** Complete for Issue 006. Other issues planned.  
-**Last Updated:** 2026-05-07
+**Location:** `/projects/bulletin-board/ascii-art-library/`  
+**Part of:** Design By Bulletin™ — Component 2 (Section ASCII Art)  
+**Status:** Complete and ready for use  
+**Last updated:** 2026-05-07
