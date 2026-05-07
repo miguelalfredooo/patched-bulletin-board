@@ -1,17 +1,18 @@
-# Midjourney Album Cover Generation
+# Midjourney Prompt Generation for Issue Album Covers
 
-Creative Director and Editor collaborate to generate Midjourney prompts that create visual assets reflecting the day's issue — theme, sonic mood, visual language, and research signals.
+Creative Director and Editor collaborate to generate Midjourney **prompts** for the entire issue's album cover. These prompts reflect the day's theme, sonic mood, visual language, and research signals.
 
 ---
 
 ## What This Is
 
-Beyond the Telegram digest, Design By Bulletin will eventually offer a rich web experience where each issue includes an album cover image generated via Midjourney. This cover:
+**Important:** We generate **prompts only**. No actual images are created. These prompts describe what an album cover for the entire digest should look like — capturing the essence of all 11 sections in a single visual.
 
+Each day's prompt:
 - Reflects the issue's theme without stating it
 - Echoes the sonic mood (tempo, production quality, texture)
 - Integrates visual language (color palette, compositional density)
-- Serves as visual anchor for the issue in archive
+- Is archived with the issue for future reference (web platform, reader use)
 
 ---
 
@@ -56,7 +57,7 @@ Editorial Director provides Coda with:
 
 ### 4. Generator Creates Dual Prompts (10:00am)
 
-Coda runs the prompt generator:
+Coda runs the prompt generator to create two complementary prompts:
 
 ```javascript
 const { generatePrompts } = require('./utils/midjourney-prompt-generator');
@@ -75,33 +76,33 @@ console.log('Prompt B (Abstract):', result.promptB);
 console.log('Guidance:', result.guidance);
 ```
 
-This generates:
+Output includes:
 - **Prompt A** — Literal integration of theme, sonic mood, visual language
 - **Prompt B** — Abstract/metaphorical take on the same elements
 - **Guidance** — Creative Director notes on emotional register, visual weight, theme integration
 
-### 5. Creative Director Chooses & Generates (10:30am)
+### 5. Creative Director Reviews & Archives (10:30am)
 
 Creative Director reviews both prompts:
 - **Prompt A** for direct, thematic approaches
 - **Prompt B** for subtle, emergent approaches
 
-Posts the chosen prompt to Midjourney with guidance notes.
+Creative Director:
+1. **Chooses** Prompt A or B (or combines elements)
+2. **Archives** the chosen prompt with issue metadata in archive-log.md
+3. **Notes** Creative Director's rationale (why this prompt captures the issue)
 
-Midjourney command:
+Example archive entry:
+```markdown
+**Album Cover Prompt (Literal):**
+"a sharp album cover that punctures toward 'The Ritual in Tools', 
+rendered as glass, sitting in architectural space, with negative space..."
+
+**Director's Note:** Visual mix is high (85%), so composition is statement. 
+Chose Prompt A for direct thematic reference and geometric clarity.
 ```
-/imagine [paste full prompt A or B]
 
-[add any custom adjustments, e.g., "more texture" or "higher contrast"]
-```
-
-### 6. Review & Archive (11:00am)
-
-Once Midjourney completes generation:
-1. Creative Director & Editor review the output
-2. Select final image (or generate 2–3 variations if needed)
-3. Add image metadata to issue in archive-log.md
-4. Image appears in web platform alongside published issue
+The prompt is **ready for future use** — when Design By Bulletin has a web platform, someone can post this prompt to Midjourney to generate the cover image.
 
 ---
 
@@ -247,34 +248,39 @@ Mix: Music 70, Visual 85, Research 55, Process 40, Theme 75, AI Culture 20
 
 Sonic Reference: Japanese city pop — sparse, meditative, precise
 
-Midjourney Direction:
-- Generate around 10:30am after visual selection complete
+Album Cover Prompt:
+- Generate prompt at 10:30am after visual selection complete
 - Use Prompt A (literal) — visual mix is high, theme-forward
-- Add directive: "high contrast, geometric, monochromatic except single accent"
-- Review before Act 2 delivery (8:30am)
+- Archive prompt with issue metadata (no image generation at this stage)
 ```
 
 ### In archive-log.md
 
-Track each issue's generated cover:
+Track each issue's album cover prompt:
 
 ```markdown
 ## Issue 004 — 2026-05-08
 **Theme:** The Ritual in Tools
-**Midjourney Prompt:** [A]
-**Image:** `assets/covers/2026-05-08-the-ritual-in-tools.png`
-**Prompt Notes:** High contrast, geometric clarity. Visual mix 85% drove sharp composition.
+**Sonic Reference:** Japanese city pop — sparse, meditative, precise
+**Album Cover Prompt (Literal):**
+a sharp album cover that punctures toward "The Ritual in Tools", rendered as glass, 
+sitting in architectural space, with negative space, fog, air, light diffusion, mood: 
+slow breathing pace, color palette: muted cool tones, soft grays, single accent color...
+
+**Director's Note:** High visual mix (85%) drove bold, geometric composition choice.
 ```
 
 ---
 
 ## Future: Web Experience
 
-As the web platform develops, album covers will:
-- Appear above the 11-section digest
-- Link to Midjourney generation details
-- Be included in theme/archive browsing
-- Serve as visual identity for each issue
+When Design By Bulletin launches a web platform, archived album cover prompts will be used to:
+- Generate actual cover images via Midjourney (on-demand or batch processing)
+- Display covers above 11-section digests
+- Link covers to prompt details for transparency
+- Build visual archive of issue themes over time
+
+For now: **We generate and archive the prompts. Actual image generation happens later when we have a web platform to display them.**
 
 ---
 

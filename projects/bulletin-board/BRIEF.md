@@ -227,14 +227,14 @@ State it at session start.
 - Onboarding: role → content preference → reading style
 - See [BULLETIN-BOT.md](../BULLETIN-BOT.md) for full reference
 
-**Album Cover Generation** (10:30am PT)
+**Album Cover Prompts** (10:30am PT)
 - Creative Director briefs Midjourney prompt generator with issue data
 - Generator produces two prompts: literal + abstract/metaphorical
-- Creative Director chooses and customizes, posts to Midjourney
-- Image archived with issue metadata when complete
+- Creative Director archives the chosen prompt with issue metadata
+- Prompts ready for future use when web platform generates actual images
 - See [MIDJOURNEY-INTEGRATION.md](docs/MIDJOURNEY-INTEGRATION.md) for complete workflow
 
 ---
 
 ## Version
-1.2.0 — Added Midjourney album cover generation workflow and prompt system. Creative Director + Editor collaborate to generate visual assets reflecting Editorial Mix.
+1.2.1 — Midjourney prompt generation for issue album covers (not actual images). Prompts archived for future web platform use. Music section remains as ASCII art section.
