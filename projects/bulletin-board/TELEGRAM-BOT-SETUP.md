@@ -107,17 +107,21 @@ Each Telegram user gets a completely isolated session with no cross-user context
 ### 2. Agent Workspace (`~/.openclaw/workspace-bulletin-bot/`)
 
 #### AGENTS.md
-Contains bot instructions. Current version is minimal for testing:
-- No assumption of previous context
-- Responds to basic commands
-- Treats every message as fresh input
+Contains bot instructions with complete production implementation:
+- Full onboarding flow (3-question preference capture)
+- All command handlers (`digest`, `preview`, `change`, `help`, etc.)
+- Session isolation instructions
+- Critical output rules (forbid thinking/reasoning/debug output)
+- Editorial voice guidelines
 
-Full production instructions will include:
-- `/start` → onboarding (3 questions)
-- `digest` → send today's edition
-- `preview` → ASCII visual only
-- `change` → restart onboarding
-- `help` → command reference
+**Critical file paths:**
+```
+Issue archive log: /Users/blackmachete/projects/patched-editorial/projects/bulletin-board/archive-log.md
+Issue files: /Users/blackmachete/projects/patched-editorial/ISSUE-*.txt (PARENT directory, not bulletin-board subdir)
+Today's date: 2026-05-07
+```
+
+**Common mistake:** Issue files are in `/patched-editorial/ISSUE-*.txt` (13 files), not in `/patched-editorial/projects/bulletin-board/` (2 files only). Both commands must specify the parent directory path.
 
 #### auth-profiles.json
 ```json
