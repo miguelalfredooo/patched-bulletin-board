@@ -14,7 +14,7 @@ function renderText(text, register = 'default') {
     figlet.text(text, {
       font: FONTS[register] || FONTS.default,
       horizontalLayout: 'fitted',
-      width: 36
+      width: 42
     }, (err, data) => {
       if (err) reject(err);
       else resolve(data);

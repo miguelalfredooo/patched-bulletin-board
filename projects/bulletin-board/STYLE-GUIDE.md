@@ -44,7 +44,7 @@ finally caught up."
 Before you write, Victor has selected visuals. Know what they look like.
 
 **Visual governance (see ASCII-VISUAL-DNA.md):**
-- All visuals are 36 characters wide, 15 lines tall — constraints that shape composition
+- All visuals are 42 characters wide, 15 lines tall — constraints that shape composition
 - Five formats: Classic Object, Geometric Frame, Typographic, Two Column, Full Spread
 - Quality threshold: High/strong only. Never mediocre.
 - No labels, no titles, no links in Act 1 visual preview — art speaks alone
@@ -229,7 +229,7 @@ Don't write in isolation. As you write each section:
 
 ### Example: The "Ritual in Tools" Issue
 
-**Visual:** Minimal UI screenshot, 36 chars, sparse, geometric
+**Visual:** Minimal UI screenshot, 42 chars, sparse, geometric
 **Sonic:** Japanese city pop, clean production, deliberate pacing
 **Your writing for Design & AI Tools:**
 - Short, measured sentences (matching sparse visual)

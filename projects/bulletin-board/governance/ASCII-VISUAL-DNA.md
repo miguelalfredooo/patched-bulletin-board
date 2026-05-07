@@ -27,7 +27,7 @@ the same visual vocabulary applied to everything. That is not this.
 
 These apply to every piece in every issue without exception:
 
-- Maximum 36 characters wide
+- Maximum 42 characters wide
 - Maximum 15 lines tall
 - Rendered in Telegram code blocks — monospace, fixed-width
 - Full Unicode palette available: block fills, box drawing, braille
@@ -125,7 +125,7 @@ FIGlet font selection by register:
   Banner3, Big, Shadow
 
 Character density for typographic pieces should feel intentional —
-the letterforms should read clearly at the 36-character width without
+the letterforms should read clearly at the 42-character width without
 feeling compressed or stretched.
 
 Never:
@@ -165,7 +165,7 @@ Never:
 
 ### Format E — Full Spread
 
-A wide composition that uses the full 36-character width as a single
+A wide composition that uses the full 42-character width as a single
 continuous visual field. No columns, no frames — the composition is
 the container.
 
@@ -284,7 +284,7 @@ standard that the best examples in each category demonstrate.
 ## Enforcement notes
 
 Before delivering any piece, check:
-- [ ] Width does not exceed 36 characters
+- [ ] Width does not exceed 42 characters
 - [ ] Height does not exceed 15 lines
 - [ ] Format is appropriate for the section and subject
 - [ ] Character density matches the editorial register
@@ -299,4 +299,4 @@ Before delivering any piece, check:
 | Version | Notes |
 |---------|-------|
 | 1.0.0 | Initial specification. Approach A — reference-based guardrails without scraping. Five formats, density guide, section mapping, asciiart.eu aesthetic standard. |
-| 1.1.0 | Width reduced from 45 to 36 — safe render at 375px Telegram viewport. |
+| 1.1.0 | Width reduced from 45 to 42 — safe render at 375px Telegram viewport. |

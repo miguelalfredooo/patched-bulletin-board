@@ -232,7 +232,7 @@ Stars:         * or .  * . or built from / \ - _
 
 ## Composition rules for each format
 
-### Format A — Classic Object (max 36w × 15h)
+### Format A — Classic Object (max 42w × 15h)
 
 Construction sequence:
 1. Determine the bounding box: how wide and how tall is the subject?
@@ -258,7 +258,7 @@ Example — a 35mm film camera, side view:
 - The body uses . and - and | and '
 - The film compartment uses underscores
 
-### Format B — Geometric Frame (max 36w × 15h)
+### Format B — Geometric Frame (max 42w × 15h)
 
 Frame construction first. Then subject inside.
 
@@ -276,7 +276,7 @@ Medium:  +-------+      Mixed:  ╓───────╖
 The subject should fill 50-70% of the interior.
 Leave at least 1 character of padding inside the frame on all sides.
 
-### Format C — Typographic (max 36w × 15h)
+### Format C — Typographic (max 42w × 15h)
 
 FIGlet font selection by letter count:
 
@@ -299,8 +299,8 @@ For words 6-9 letters, use Small or Lean:
 
 For single letters or initials, use Block or Shadow for maximum impact.
 
-Center the letterform within the 36-character width.
-Calculate: (36 - letterform_width) / 2 = left padding spaces.
+Center the letterform within the 42-character width.
+Calculate: (42 - letterform_width) / 2 = left padding spaces.
 
 ### Format C — Programmatic generation
 
@@ -326,14 +326,14 @@ The agent's job for Format C:
 1. Choose the correct font for the register
 2. Choose the word or phrase — one word maximum for most pieces
 3. Call renderText(word, register) from utils/figlet.js
-4. Verify output fits within 36 characters wide
+4. Verify output fits within 42 characters wide
 5. If it does not fit, try a narrower font or shorten the word
 
 The agent never hand-draws letterforms for Format C.
 
 ---
 
-### Format D — Two Column (max 36w × 15h)
+### Format D — Two Column (max 42w × 15h)
 
 Column split: 20 chars | 3 chars gap | 22 chars
 Or: 22 chars | 1 char gap | 22 chars
@@ -344,7 +344,7 @@ Both columns must have the same height.
 The relationship between columns is the editorial point.
 The gap between them is intentional negative space.
 
-### Format E — Full Spread (max 36w × 15h)
+### Format E — Full Spread (max 42w × 15h)
 
 The composition has a reading direction: left to right, or top to
 bottom, or center outward.
@@ -380,7 +380,7 @@ For every piece, verify:
 - [ ] Are dark areas denser than light areas?
 
 **Width check**
-- [ ] Does every line fit within 36 characters?
+- [ ] Does every line fit within 42 characters?
 - [ ] Are trailing spaces trimmed?
 
 **Height check**
@@ -493,4 +493,4 @@ Unmistakable.
 |---------|-------|
 | 1.0.0 | Initial construction guide. Extracted from asciiart.eu quality analysis. Silhouette-first method, character assignment system, format construction rules, failure modes. |
 | 1.1.0 | Added Format C programmatic generation section — figlet library required, font registry, agent instructions. |
-| 1.2.0 | Width reduced to 36 for Telegram 375px viewport. |
+| 1.2.0 | Width reduced to 42 for Telegram 375px viewport. |
