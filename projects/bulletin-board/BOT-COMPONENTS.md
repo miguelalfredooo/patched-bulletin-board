@@ -269,52 +269,56 @@ Full 14-line standalone piece, centered, no text
 
 **Location:** `/Users/blackmachete/projects/patched-editorial/projects/bulletin-board/ascii-art-library/`
 
-**Structure:** Organized by issue number for efficient cataloging:
+**Structure:** Organized by variation type for efficient gallery browsing:
 
 ```
 ascii-art-library/
-├── 001/
-│   ├── source/     [11 files] issue-001-[section]-neon.txt
-│   ├── expanded/   [11 files] issue-001-[section]-expanded-neon.txt
-│   └── compact/    [22 files] issue-001-[section]-compact-left/right-neon.txt
-├── 002/ — 010/
-│   └── [same structure: 11 source + 11 expanded + 22 compact]
-├── README.md       (complete organization guide)
+├── source/       [110 files] issue-[#]-[section]-neon.txt
+├── expanded/     [110 files] issue-[#]-[section]-expanded-neon.txt
+├── compact/      [220 files] issue-[#]-[section]-compact-{left|right}-neon.txt
+├── README.md     (complete organization guide)
 └── VARIATION-EXAMPLES.md (visual examples)
 ```
 
-**Per-issue breakdown (44 files each):**
-- `source/` — 11 original ASCII files
-- `expanded/` — 11 centered hero versions (14 lines)
-- `compact/` — 22 left/right layout variations (9 lines)
+**Breakdown by variation:**
+- `source/` — 110 original ASCII files (all issues, all sections)
+- `expanded/` — 110 centered hero versions (14 lines each)
+- `compact/` — 220 left/right layout variations (110 left + 110 right)
 
-### Access Patterns
+### Gallery Query Patterns
 
-**By specific issue:**
-```
-ascii-art-library/006/expanded/issue-006-art-expanded-neon.txt
-ascii-art-library/010/compact/issue-010-culture-compact-left-neon.txt
-```
-
-**All 11 sections for an issue:**
-```
-ls ascii-art-library/007/expanded/issue-007-*-expanded-neon.txt
+**Get all Art sections (all variations):**
+```bash
+ls source/issue-*-art-neon.txt
+ls expanded/issue-*-art-expanded-neon.txt
+ls compact/issue-*-art-compact-*.txt
 ```
 
-**Specific section across all issues:**
+**Get all Issue 006 sections (all variations):**
+```bash
+ls *006* | grep -E "(source|expanded|compact)"
 ```
-ls ascii-art-library/*/source/issue-*-art-neon.txt
+
+**Get all hero/expanded versions:**
+```bash
+ls expanded/issue-*-expanded-neon.txt
+```
+
+**Get all Culture sections across all issues:**
+```bash
+ls *culture*.txt
 ```
 
 ### Current Inventory
 
 - ✅ **440 total files** (110 source + 330 variations)
-- ✅ **330 variation files** (110 × 3 layout options)
+- ✅ **110 source** (original files)
 - ✅ **110 expanded** (14-line centered hero pieces)
-- ✅ **220 compact** (110 left-aligned + 110 right-aligned)
+- ✅ **110 compact-left** (left-aligned with text right)
+- ✅ **110 compact-right** (right-aligned with text left)
 - ✅ **All 10 issues complete** (001-010)
 - ✅ **All 11 sections per issue**
-- ✅ **Ready for flexible extraction and layout integration**
+- ✅ **Optimized for gallery features and batch queries**
 
 ### Quick Reference
 

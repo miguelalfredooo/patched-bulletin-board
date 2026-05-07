@@ -4,8 +4,9 @@ Complete ASCII art asset system for Design By Bulletin™ with three layout vari
 
 ## Overview
 
-**330 total ASCII art files** across three layout options:
-- **110 Expanded** — Full 14-line standalone pieces
+**440 total ASCII art files** across three layout options:
+- **110 Source** — Original ASCII art (unmodified)
+- **110 Expanded** — Full 14-line centered hero pieces
 - **110 Compact-Left** — ASCII left, section name right
 - **110 Compact-Right** — Section name left, ASCII right
 
@@ -13,27 +14,23 @@ Each variation serves different layout and presentation contexts.
 
 ## Directory Structure
 
-Organized by issue number, with all variations co-located:
-
 ```
 ascii-art-library/
-├── 001/
-│   ├── source/     [11 files] original ASCII art
-│   ├── expanded/   [11 files] 14-line centered hero versions
-│   └── compact/    [22 files] 9-line left/right variations
-├── 002/
-│   └── [same structure]
-├── ...
-├── 010/
-│   └── [same structure]
+├── source/
+│   └── [110 files] issue-[#]-[section]-neon.txt
+├── expanded/
+│   └── [110 files] issue-[#]-[section]-expanded-neon.txt
+├── compact/
+│   └── [220 files] issue-[#]-[section]-compact-left-neon.txt
+│                   issue-[#]-[section]-compact-right-neon.txt
 ├── README.md (this file)
 └── VARIATION-EXAMPLES.md
 ```
 
-**Per-issue breakdown (each issue contains 44 files):**
-- `NNN/source/` — 11 original ASCII art files
-- `NNN/expanded/` — 11 centered hero versions (14 lines)
-- `NNN/compact/` — 22 left/right layout variations (9 lines each)
+**Directory breakdown:**
+- `source/` — Original ASCII art files, unmodified
+- `expanded/` — 14-line centered hero versions for featured display
+- `compact/` — 9-line variations with integrated section names (left or right aligned)
 
 ## File Naming Convention
 
@@ -42,9 +39,9 @@ issue-[NUMBER]-[SECTION]-[VARIATION]-neon.txt
 ```
 
 **Examples:**
-- `issue-006-art-expanded-neon.txt` — Issue 6, Art section, expanded
-- `issue-007-culture-compact-left-neon.txt` — Issue 7, Culture, compact left-aligned
-- `issue-010-visual-brand-compact-right-neon.txt` — Issue 10, Visual & Brand, compact right-aligned
+- `source/issue-006-art-neon.txt` — Issue 6, Art section, original
+- `expanded/issue-006-painting-expanded-neon.txt` — Issue 6, Painting, hero centered
+- `compact/issue-010-visual-brand-compact-right-neon.txt` — Issue 10, Visual & Brand, compact right-aligned
 
 ## Sections (11 per issue)
 
@@ -66,10 +63,20 @@ issue-[NUMBER]-[SECTION]-[VARIATION]-neon.txt
 
 ## Variation Details
 
+### Source (110 files)
+- **Location:** `source/`
+- **Line count:** Variable (5-13 lines)
+- **Format:** Original, unmodified
+- **Use cases:**
+  - Reference originals
+  - Inline with text
+  - Embedded layouts
+  - Minimal width displays
+
 ### Expanded (110 files)
 - **Location:** `expanded/`
 - **Line count:** Exactly 14 lines
-- **Format:** Standalone, centered, no text labels
+- **Format:** Center-aligned, no text labels
 - **Use cases:**
   - Hero/feature display
   - Full-page visual preview
@@ -103,9 +110,32 @@ issue-[NUMBER]-[SECTION]-[VARIATION]-neon.txt
 
 | Variation | Location | Filename Pattern | Best For |
 |-----------|----------|------------------|----------|
+| Source | `source/` | `issue-#-section-neon.txt` | Reference, embedded layouts |
 | Expanded | `expanded/` | `issue-#-section-expanded-neon.txt` | Feature displays, galleries, print |
 | Compact-Left | `compact/` | `issue-#-section-compact-left-neon.txt` | Left-flow layouts, alternating rhythms |
 | Compact-Right | `compact/` | `issue-#-section-compact-right-neon.txt` | Right-balance layouts, mirrors |
+
+## Gallery Query Examples
+
+**Get all Art sections:**
+```bash
+ls source/issue-*-art-neon.txt
+```
+
+**Get all hero versions:**
+```bash
+ls expanded/issue-*-expanded-neon.txt
+```
+
+**Get all Issue 006 sections (all variations):**
+```bash
+ls *-art-neon.txt | grep "issue-006"
+```
+
+**Get all Culture sections across all issues:**
+```bash
+ls *culture*.txt
+```
 
 ## Asset Count Summary
 
@@ -113,10 +143,11 @@ issue-[NUMBER]-[SECTION]-[VARIATION]-neon.txt
 |----------|-------|
 | Issues | 10 |
 | Sections per issue | 11 |
-| Variations per section | 3 |
-| **Total variation files** | **330** |
-| Original source files | 110 |
-| **Grand total in library** | **440** |
+| Source files | 110 |
+| Expanded files | 110 |
+| Compact-Left files | 110 |
+| Compact-Right files | 110 |
+| **Total files** | **440** |
 
 ---
 
