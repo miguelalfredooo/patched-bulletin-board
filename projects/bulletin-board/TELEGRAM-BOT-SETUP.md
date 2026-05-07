@@ -49,7 +49,10 @@ Each Telegram user gets a completely isolated session with no cross-user context
           "dmPolicy": "open",
           "groupPolicy": "allowlist",
           "allowFrom": ["*"],
-          "dmHistoryLimit": 0
+          "dmHistoryLimit": 0,
+          "streaming": {
+            "mode": "off"
+          }
         }
       }
     }
@@ -61,6 +64,7 @@ Each Telegram user gets a completely isolated session with no cross-user context
 - `botToken`: Current active token from BotFather (not the deleted bot's token)
 - `dmPolicy: "open"`: Allows any user to DM the bot
 - `dmHistoryLimit: 0`: Optional — prevents Telegram-side chat history from being prepended to context (redundant with per-peer sessions, but doesn't hurt)
+- `streaming.mode: "off"`: Disables streaming preview (typing indicator). Bot sends complete message at once. Tradeoff: no visual feedback during long message generation, but cleaner UX
 
 #### Agent entry
 ```json
@@ -70,12 +74,20 @@ Each Telegram user gets a completely isolated session with no cross-user context
       {
         "id": "bulletin-bot",
         "name": "Design By Bulletin™ Bot",
-        "workspace": "/Users/blackmachete/.openclaw/workspace-bulletin-bot"
+        "workspace": "/Users/blackmachete/.openclaw/workspace-bulletin-bot",
+        "thinkingDefault": "off",
+        "reasoningDefault": "off",
+        "verboseDefault": "off"
       }
     ]
   }
 }
 ```
+
+**Critical fields:**
+- `thinkingDefault: "off"` — Disables extended thinking budget at model level
+- `reasoningDefault: "off"` — Suppresses reasoning visibility in delivery
+- `verboseDefault: "off"` — Suppresses verbose tool progress output (prevents "Exec: list files" leaking to Telegram)
 
 #### Binding
 ```json
@@ -193,6 +205,49 @@ openclaw gateway restart
 ```
 
 Without cleanup, the old bloated `main` session persists and could be referenced by new sessions.
+
+### Output Suppression — Three Critical Defaults
+
+**The Problem:** Initial testing showed verbose internal output leaking to Telegram:
+- "Exec: list files..." (tool progress during execution)
+- "completed: command..." (command completion logs)
+- "Thinking..." (Telegram's native typing indicator)
+
+**Root Causes:**
+1. `verboseDefault` not set → Tool execution progress sent live to channel
+2. `thinkingDefault` and `reasoningDefault` not set → Extended thinking could leak
+3. `streaming.mode` not set → Telegram's streaming preview shows typing indicator
+
+**The Solution:** Three configuration layers
+
+**Layer 1: Agent-level defaults (openclaw.json agent entry)**
+```json
+"thinkingDefault": "off",
+"reasoningDefault": "off",
+"verboseDefault": "off"
+```
+- Suppresses extended thinking budget at model level
+- Hides reasoning from delivery pipeline
+- Prevents verbose tool progress output (the "Exec:" leaks)
+
+**Layer 2: Account-level streaming (openclaw.json Telegram account)**
+```json
+"streaming": {
+  "mode": "off"
+}
+```
+- Disables streaming preview mode
+- Bot sends complete message at once instead of live updates
+- Eliminates Telegram's typing indicator
+- Tradeoff: Users see no feedback during long generation, but cleaner output
+
+**Why This Matters:**
+- Public bot should never expose internal reasoning or tool calls
+- Typing indicator can look like internal output leaking
+- Tool progress spam ruins user experience
+- Complete message delivery maintains editorial tone
+
+**Testing:** After making these changes, restart gateway: `openclaw gateway restart`
 
 ---
 
