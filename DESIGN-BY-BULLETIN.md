@@ -233,6 +233,39 @@ Design By Bulletin™
 ━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
+## Issues
+
+Designed issues are thematic, standalone publications built using the core system. Each issue:
+- Selects a specific theme (e.g., "Momentum")
+- Curates 11 sections aligned with the theme
+- Generates an ASCII cover using the image-to-ASCII converter
+- Delivers as pure text issue + cover image to Telegram
+- Includes editorial metadata (Editorial Mix, sonic reference, cultural thread)
+
+### Issue 006 — MOMENTUM (2026-05-09)
+
+**Theme:** Momentum as cultural acceleration, velocity as permission
+
+**Delivery Format:**
+1. ASCII Cover — Styled image-to-ASCII PNG (generated from Midjourney reference)
+2. Pure Text Issue — 11 sections with title, one-sentence narrative, source link per section
+3. Theme & Editorial Mix — Metadata about tone, sonic references, cultural threads
+
+**Editorial Mix:**
+- Music: 75% | Visual: 85% | Research: 60%
+- Process: 50% | Theme: 70% | AI Culture: 65%
+
+**Sonic Reference:** High-BPM electronic, industrial percussion, synth surge (140–160 BPM)
+
+**Cultural Thread:** Velocity as cultural acceleration. Tools as engines. Speed obsession resurfaces from Futurism.
+
+**Sections:** Standard 11 (Art, Painting, Illustration, Sculpture, Culture, Photography, Art History, Opinions, Design & AI Tools, Product & Process, Visual & Brand)
+
+**Tools Used:**
+- `ascii-cover-generator.html` — Browser-based converter (image → ASCII PNG)
+- `export-ascii-cover.js` — Automated CLI export with color saturation boost and auto-scaled resolution
+- `finalize-issue-006-delivery.js` — Complete Telegram delivery (cover + text + theme)
+
 ## Delivery & Status
 
 ### Live Cron Jobs
@@ -242,11 +275,16 @@ Design By Bulletin™
 - ✅ Onboarding Flow — Active, on-demand
 - ⏸️ Grid Edition — Experimental, currently disabled
 
+### Curated Issues
+
+- ✅ Issue 006: MOMENTUM — Complete, delivered to Telegram (2026-05-09)
+
 ### Message Delivery
 
-Telegram integration uses OpenClaw's telegram plugin with:
-- Direct message delivery to Alfred (user 7774590281)
+Telegram integration with:
+- Direct message delivery to user (Telegram ID: 7774590281)
 - Code block formatting for ASCII preservation
+- Multi-message support for content exceeding Telegram limits
 - Auto-splitting for messages exceeding 3000 chars
 - Message confirmation (some edge cases with 4096 char limit noted)
 

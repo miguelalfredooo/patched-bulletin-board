@@ -308,6 +308,64 @@ Before delivering any piece, check:
 
 ---
 
+## Hero Masthead Design (Act 1 Preview)
+
+The hero masthead is a single bold ASCII image that opens each issue. It is the visual declaration of the day's theme and editorial direction.
+
+### Design Principles
+
+**Minimal type, maximum detail:**
+- Use typography sparingly — typically one word or phrase, positioned strategically
+- Let geometric composition and density carry the visual weight
+- The image should be striking at small Telegram viewport size
+
+**Bauhaus + ASCII aesthetic:**
+- Bold geometric forms (circles, squares, triangles, grids)
+- High-contrast density relationships — not uniform fill
+- Use of negative space as compositional element
+- Constructivist asymmetry — balanced but not symmetrical
+- Structural honesty — geometry visible and celebrated
+
+**Character approach:**
+- Combine geometric box-drawing characters (─ │ ╭ ╮ etc.)
+- Layer in block fills and texture (█ ▓ ▒ ░)
+- Use braille halftone for gradient and depth (⠀ ⠁ ⠃ ⠇ ⠟ ⠿)
+- Half-blocks for smooth curves and diagonal transitions (▀ ▄)
+- Minimal use of ASCII text — reserve for conceptual clarity only
+
+**Rendering:**
+- Monochromatic mode: Single color creates editorial identity (midnight cool, default warm)
+- Multi-color mode: Per-character coloring creates visual depth and hierarchy
+- File size target: 400–500KB PNG for Telegram optimization
+- Aspect ratio: Flexible, optimized for hero preview (not constrained to 42-char width)
+
+### Examples
+
+**Introspective/Archival (monochromatic midnight):**
+- Fingerprint-like patterns with forensic precision
+- Field recordings represented as waveform geometry
+- Metadata arranged as structural elements
+- Cool blue on navy for forensic atmosphere
+
+**Bold/Signal (multi-color default):**
+- Dominant geometric shapes (circle, grid, bold form)
+- Color density as meaning — not decoration
+- High-contrast architecture
+- Warm off-white on dark for clarity and impact
+
+### Quality Gate
+
+Before rendering to PNG:
+- [ ] Composition is bold and immediately recognizable
+- [ ] Type usage is minimal and purposeful (one word maximum)
+- [ ] Geometric forms show intentional density variation
+- [ ] Negative space is deliberate and balanced
+- [ ] The piece would work as a single visual statement without supporting text
+- [ ] Character choice feels earned — not generic
+- [ ] The image reflects the day's theme and Editorial Mix intensity
+
+---
+
 ## Version history
 
 | Version | Notes |
@@ -315,3 +373,4 @@ Before delivering any piece, check:
 | 1.0.0 | Initial specification. Approach A — reference-based guardrails without scraping. Five formats, density guide, section mapping, asciiart.eu aesthetic standard. |
 | 1.1.0 | Width reduced from 45 to 42 — safe render at 375px Telegram viewport. |
 | 1.2.0 | Format C alignment fix. tools register changed from Lean to Small font for uniform vertical edges. leftPad=2 rule locked in for all renderText calls. |
+| 1.3.0 | Hero Masthead specification added. Act 1 delivery changed to single bold hero image (monochromatic or multi-color). Bauhaus + ASCII aesthetic principles documented. PNG rendering with 400–500KB target. |

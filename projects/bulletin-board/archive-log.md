@@ -7,15 +7,25 @@ Append-only. One entry per issue.
 
 <!-- Format:
 ## Issue [N] — [date]
-THEME: [theme]
-EDITORIAL MIX: Music [%], Visual [%], Research [%], Process [%], Theme [%], AI Culture [%]
-SONIC REFERENCE: [genre/mood/tempo]
-ASCII FORMATS USED: [A, B, C, D, E — list which appeared]
-RENDERING: [multi-color or monochromatic + theme]
-COVER IMAGE: [filename if generated]
-CLOSING SENTENCE: [the closing line]
-NOTES: [anything worth flagging for future issues]
+- **THEME:** [theme]
+- **EDITORIAL MIX:** Music [%], Visual [%], Research [%], Process [%], Theme [%], AI Culture [%]
+- **SONIC REFERENCE:** [genre/mood/tempo]
+- **RENDERING:** [mono-color theme or multi-color theme]
+- **COVER IMAGE:** [filename.jpg + file size if generated]
+- **CLOSING SENTENCE:** [the closing line]
+- **CULTURAL THREAD:** [thematic convergence across sources]
+- **CURATOR NOTE:** [editorial observation on decisions and signals]
 -->
+
+## Issue 006 — 2026-05-09
+- **THEME:** Momentum
+- **EDITORIAL MIX:** Music 75%, Visual 85%, Research 60%, Process 50%, Theme 70%, AI Culture 65%
+- **SONIC REFERENCE:** High-BPM electronic, industrial percussion, synth surge (140–160 BPM, aggressive production)
+- **RENDERING:** Multi-color (default theme) — bright, bold, energetic, high-contrast color density
+- **COVER IMAGE:** 2026-05-09-cover.jpg (Midjourney, pending generation with neon accent colors)
+- **CLOSING SENTENCE:** "Momentum is not a direction — it's a state of permission."
+- **CULTURAL THREAD:** Velocity as cultural acceleration. Tools as engines. Speed obsession resurfaces from Futurism. Kinetic energy made visible in static form. AI amplifies iteration cycles. Design systems move faster. What does momentum mean when everything accelerates?
+- **CURATOR NOTE:** Bright, bold issue celebrating speed and kinetic energy. High Visual (85%) drives composition through geometric aggression. High Music (75%) channels synth-wave tempo into prose tone. AI Culture (65%) reflects on tool velocity and model acceleration. No restraint — colors are neon, forms are aggressive, pace is relentless. Momentum as permission.
 
 ## Issue 005 — 2026-05-08
 - **THEME:** Signal

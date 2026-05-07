@@ -71,16 +71,18 @@ Set the mix in the morning brief; all agents adjust their intensity accordingly.
 ## Delivery
 
 **Telegram Bot** — @DesignByBulletin_bot
-- **Act 1 (8:00am PT):** Visual preview — 11 ASCII pieces rendered as PNG (4.54:1 aspect ratio)
-- **Act 2 (8:30am PT):** Full edition — 11 sections with title, sentence, link per section + Midjourney issue cover image (visual reveal)
+- **Act 1 (8:00am PT):** Hero ASCII preview — single masthead image rendered as PNG (flexible aspect ratio, 400–500KB)
+- **Act 2 (8:30am PT):** Full edition — 11 sections with title, sentence, link per section + Midjourney issue cover image (visual reveal, ~450KB compressed JPG)
 - Onboarding flow: role → content preference → reading style
 - Commands: `/start`, `digest`, `preview`, `change`, `help`
 - See [BULLETIN-BOT.md](../BULLETIN-BOT.md) for full reference
 
 **Visual Rendering:**
 - ASCII art → PNG via `utils/ascii-render.js` (supports multi-color and monochromatic modes)
-- Three themes: `default` (dark), `midnight` (cool), `editorial` (light)
-- Monochromatic mode: single-color per image for editorial control
+- Cover images: Compressed JPG at 85% quality (fast Telegram delivery, no quality loss on monochromatic designs)
+- Three ASCII themes: `default` (dark), `midnight` (cool), `editorial` (light)
+- Monochromatic mode: single-color rendering for strong editorial identity per issue
+- Hero images: Bold single-piece mastheads representing each issue's visual philosophy
 
 ## Future: Rich Web Experience
 
@@ -156,8 +158,10 @@ bulletin-board/
 │   ├── verify-links.js                 # Link health checker
 │   └── generate-ascii-art.js           # ASCII art generator
 │
-├── covers/                             # Issue cover images (Midjourney + Act 1 PNG)
-│   └── [YYYY-MM-DD]-cover.png         # Midjourney-generated issue cover (visual reveal in Act 2)
+├── covers/                             # Issue visual assets
+│   ├── [YYYY-MM-DD]-cover.jpg         # Midjourney cover (compressed JPG, ~450KB, visual reveal in Act 2)
+│   ├── [YYYY-MM-DD]-hero.png          # Hero ASCII masthead (Act 1 preview)
+│   └── [YYYY-MM-DD]-act1.png          # Full Act 1 composition (11 pieces, optional archive)
 │
 ├── modules/                            # 11 section specifications
 │   ├── art.md
@@ -246,10 +250,11 @@ AI Culture: 20% (Not focused today)
 **Editorial Director** makes final decisions:
 
 **Act 1 (8:00am):** Visual preview
-- 11 ASCII pieces rendered as PNG (4.54:1 aspect ratio — 486×2208px)
-- Can be multi-color (visual richness) or monochromatic (thematic identity)
-- No text labels, no links
-- Closing sentence + "Full edition in 30 minutes"
+- Single hero ASCII masthead rendered as PNG (monochromatic or multi-color)
+- 400–500KB file size (optimized for instant Telegram delivery)
+- Can emphasize thematic identity through color choice (midnight cool, default warm)
+- No text labels, no links — pure visual statement
+- Caption: "Full edition in 30 minutes"
 
 **Act 2 (8:30am):** Full edition
 - 11 sections: title + one sentence + link per section
@@ -290,6 +295,30 @@ AI Culture: 20% (Not focused today)
 - No source repeats within single issue (except music)
 - Music exception: different artists/playlists can use same platform (Bandcamp, Discogs, Spotify, YouTube) multiple times
 
+## Generative AI Engine (Experimental)
+
+Design By Bulletin incorporates generative AI at three layers:
+
+1. **Editorial Research & Synthesis** (Claude Sonnet 4.6)
+   - Maeve scouts and identifies signals across sources
+   - Coda synthesizes patterns and extracts cultural themes
+   - Assignment Editor commissions narratives and visual direction
+   - All agents modulated by Editorial Mix framework (parametric control)
+
+2. **Visual Generation** (Midjourney)
+   - Creative Director writes custom prompts reflecting theme + sonic mood + visual language
+   - Generates issue cover images (4:5 aspect ratio, compressed JPG)
+   - Covers serve as visual reveal at end of Act 2 delivery
+   - Prompts informed by Paul Rand (restraint, clarity) and Bauhaus (geometric boldness) principles
+
+3. **ASCII Rendering Pipeline** (Node.js + SVG + sharp)
+   - Converts ASCII art text to PNG with per-character coloring
+   - Supports multi-color (visual richness) and monochromatic (editorial identity) modes
+   - Three themes enable color-driven editorial decisions
+   - Hero images and full compositions rendered to optimize Telegram delivery
+
+**Status:** Experimental. Generative AI is a tool in the editorial process, not the primary driver. Human editorial judgment (via Editorial Mix and agent roles) remains central.
+
 ## Integration with OpenClaw
 
 Design By Bulletin runs as six agents in OpenClaw:
@@ -297,6 +326,7 @@ Design By Bulletin runs as six agents in OpenClaw:
 - **Editorial tier:** Assignment Editor, Managing Editor, Editorial Director
 - **Shared workspace:** `/Users/blackmachete/.openclaw/workspace-bulletin-bot/`
 - **Model:** Claude Sonnet 4.6
+- **Generative engines:** Claude (research), Midjourney (covers), sharp/SVG (ASCII rendering)
 - **Delivery:** Telegram bot (@DesignByBulletin_bot)
 
 ## Troubleshooting

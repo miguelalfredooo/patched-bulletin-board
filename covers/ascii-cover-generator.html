@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASCII Cover Generator — Design By Bulletin</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0a0a0a;
+      color: #e8e8e0;
+      font-family: 'Courier New', monospace;
+      padding: 40px;
+      line-height: 1.2;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 24px;
+      color: #00ffff;
+    }
+
+    .controls {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      align-items: end;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    label {
+      font-size: 12px;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    input[type="file"],
+    select {
+      padding: 8px 12px;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: #e8e8e0;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      cursor: pointer;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #00ffff;
+      color: #000;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    button:hover {
+      background: #00cccc;
+      transform: scale(1.05);
+    }
+
+    button:disabled {
+      background: #666;
+      color: #999;
+      cursor: not-allowed;
+      transform: scale(1);
+    }
+
+    .preview-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .preview-column {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    h2 {
+      font-size: 14px;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 20px;
+    }
+
+    #ascii-preview {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      padding: 20px;
+      border-radius: 4px;
+      overflow-x: auto;
+      font-size: 10px;
+      line-height: 1.1;
+      white-space: pre;
+      color: #e8e8e0;
+      max-height: 600px;
+      overflow-y: auto;
+      font-family: 'Courier New', monospace;
+    }
+
+    #rendered-cover {
+      background: #0a0a0a;
+      border: 2px solid #333;
+      border-radius: 4px;
+      padding: 40px;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #e8e8e0;
+      font-family: 'Courier New', monospace;
+      overflow: hidden;
+    }
+
+    #rendered-cover pre {
+      white-space: pre;
+      font-size: 11px;
+      line-height: 1.1;
+      text-align: center;
+    }
+
+    .info {
+      color: #aaa;
+      font-size: 12px;
+      margin-top: 15px;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.02);
+      border-left: 2px solid #00ffff;
+      border-radius: 2px;
+    }
+
+    canvas {
+      display: none;
+    }
+
+    @media (max-width: 1000px) {
+      .preview-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 ASCII Cover Generator</h1>
+    <p style="color: #aaa; margin-bottom: 30px;">Convert images to styled ASCII art covers for Design By Bulletin issues</p>
+
+    <div class="controls">
+      <div class="control-group">
+        <label for="imageInput">Upload Image</label>
+        <input type="file" id="imageInput" accept="image/*">
+      </div>
+
+      <div class="control-group">
+        <label for="resolution">Resolution</label>
+        <select id="resolution">
+          <option value="ULTRA_LOW">Ultra Low (32×32)</option>
+          <option value="LOW">Low (42×15)</option>
+          <option value="MEDIUM">Medium (64×48)</option>
+          <option value="HIGH" selected>High (80×60)</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="charset">Character Set</label>
+        <select id="charset">
+          <option value="MINIMAL">Minimal</option>
+          <option value="LOW">Low</option>
+          <option value="MEDIUM" selected>Medium</option>
+          <option value="BOLD">Bold</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="fontSize">Font Size</label>
+        <select id="fontSize">
+          <option value="8">8px</option>
+          <option value="9">9px</option>
+          <option value="10">10px</option>
+          <option value="11">11px</option>
+          <option value="12" selected>12px</option>
+          <option value="14">14px</option>
+          <option value="16">16px</option>
+          <option value="18">18px</option>
+          <option value="20">20px</option>
+          <option value="24">24px</option>
+          <option value="28">28px</option>
+          <option value="32">32px</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <button id="convertBtn" disabled>Convert to ASCII</button>
+      </div>
+
+      <div class="control-group">
+        <button id="downloadBtn" disabled>Download as PNG</button>
+      </div>
+    </div>
+
+    <div id="info" class="info" style="display:none;"></div>
+
+    <div class="preview-section">
+      <div class="preview-column">
+        <h2>ASCII Output</h2>
+        <div id="ascii-preview" style="display:none;"></div>
+      </div>
+      <div class="preview-column">
+        <h2>Cover Preview</h2>
+        <div id="rendered-cover" style="display:none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="hidden-canvas"></canvas>
+  <div id="hidden-render" style="position: absolute; left: -9999px; top: -9999px;"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script>
+    const ASCII_SETS = {
+      MINIMAL: ' .-=+*#█',
+      LOW: '@#*+=-:. ',
+      MEDIUM: '$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\\|()1{}[]?-_+~<>i!lI;:,^`\'. ',
+      BOLD: '█▓▒░$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\\|()1{}[]?-_+~<>i!lI;:,^`\'. ',
+    };
+
+    const RESOLUTIONS = {
+      ULTRA_LOW: { width: 32, height: 32 },
+      LOW: { width: 42, height: 15 },
+      MEDIUM: { width: 64, height: 48 },
+      HIGH: { width: 80, height: 60 },
+    };
+
+    let img = null;
+    let asciiOutput = '';
+
+    function calculateBrightness(r, g, b) {
+      return (r * 299 + g * 587 + b * 114) / 1000;
+    }
+
+    function getAsciiChar(brightness, charSet) {
+      const index = Math.floor((brightness / 255) * (charSet.length - 1));
+      return charSet.charAt(charSet.length - 1 - index) || ' ';
+    }
+
+    document.getElementById('imageInput').addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = (event) => {
+          const imgElement = new Image();
+          imgElement.onload = () => {
+            img = imgElement;
+            document.getElementById('convertBtn').disabled = false;
+            document.getElementById('info').textContent = `✓ Image loaded: ${file.name} (${imgElement.width}×${imgElement.height}px)`;
+            document.getElementById('info').style.display = 'block';
+          };
+          imgElement.src = event.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+
+    document.getElementById('convertBtn').addEventListener('click', () => {
+      if (!img) return;
+
+      const resolution = document.getElementById('resolution').value;
+      const charset = document.getElementById('charset').value;
+      const fontSize = parseInt(document.getElementById('fontSize').value);
+      const dims = RESOLUTIONS[resolution];
+      const charSet = ASCII_SETS[charset];
+
+      // Create canvas and context
+      const canvas = document.getElementById('hidden-canvas');
+      canvas.width = img.width;
+      canvas.height = img.height;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0);
+
+      // Resize to target resolution
+      const tempCanvas = document.createElement('canvas');
+      tempCanvas.width = dims.width;
+      tempCanvas.height = dims.height;
+      const tempCtx = tempCanvas.getContext('2d');
+      tempCtx.drawImage(img, 0, 0, dims.width, dims.height);
+
+      // Get pixel data
+      const imageData = tempCtx.getImageData(0, 0, dims.width, dims.height);
+      const data = imageData.data;
+
+      // Convert to ASCII with color data
+      asciiOutput = '';
+      let coloredHtml = '';
+      let charIndex = 0;
+
+      for (let i = 0; i < data.length; i += 4) {
+        const r = data[i];
+        const g = data[i + 1];
+        const b = data[i + 2];
+        const brightness = calculateBrightness(r, g, b);
+        const char = getAsciiChar(brightness, charSet);
+
+        // Store color info with each character
+        if (charIndex > 0 && charIndex % dims.width === 0) {
+          asciiOutput += '\n';
+          coloredHtml += '</span>\n<span>';
+        }
+
+        asciiOutput += char;
+
+        // Build colored HTML version
+        const rgbColor = `rgb(${r},${g},${b})`;
+        coloredHtml += `<span style="color:${rgbColor}">${char}</span>`;
+
+        charIndex++;
+      }
+
+      // Display ASCII preview
+      const asciiPreview = document.getElementById('ascii-preview');
+      asciiPreview.textContent = asciiOutput;
+      asciiPreview.style.display = 'block';
+
+      // Display rendered cover with colors
+      const renderedCover = document.getElementById('rendered-cover');
+      const preElement = document.createElement('pre');
+      preElement.innerHTML = coloredHtml;
+      preElement.style.fontSize = fontSize + 'px';
+      preElement.style.lineHeight = '1.1';
+      preElement.style.margin = '0';
+      renderedCover.innerHTML = '';
+      renderedCover.appendChild(preElement);
+      renderedCover.style.display = 'flex';
+
+      document.getElementById('downloadBtn').disabled = false;
+      document.getElementById('info').textContent = `✓ Converted: ${dims.width}×${dims.height} characters, ${charset} charset (with color sampling)`;
+      document.getElementById('info').style.display = 'block';
+    });
+
+    document.getElementById('downloadBtn').addEventListener('click', async () => {
+      if (!asciiOutput) return;
+
+      const renderedCover = document.getElementById('rendered-cover');
+
+      try {
+        document.getElementById('downloadBtn').disabled = true;
+        document.getElementById('downloadBtn').textContent = 'Capturing...';
+
+        // Capture the rendered cover as image
+        const canvas = await html2canvas(renderedCover, {
+          backgroundColor: '#0a0a0a',
+          scale: 2,
+        });
+
+        // Download as PNG
+        canvas.toBlob((blob) => {
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = url;
+          link.download = `momentum-cover-ascii-${new Date().toISOString().split('T')[0]}.png`;
+          link.click();
+          URL.revokeObjectURL(url);
+
+          document.getElementById('downloadBtn').disabled = false;
+          document.getElementById('downloadBtn').textContent = 'Download as PNG';
+          document.getElementById('info').textContent = `✓ PNG downloaded successfully!`;
+          document.getElementById('info').style.display = 'block';
+        });
+      } catch (err) {
+        console.error('Screenshot error:', err);
+        document.getElementById('downloadBtn').disabled = false;
+        document.getElementById('downloadBtn').textContent = 'Download as PNG';
+        document.getElementById('info').textContent = `✗ Error capturing screenshot: ${err.message}`;
+        document.getElementById('info').style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>

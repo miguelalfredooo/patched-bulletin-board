@@ -1,0 +1,308 @@
+// send-pngs.js — render Issue 006 MOMENTUM ASCII pieces as PNGs
+// Serves them via local HTTP, sends via Telegram bot API directly
+
+const { renderAsciiImage } = require('./ascii-render');
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
+const https = require('https');
+
+const BOT_TOKEN = process.env.TELEGRAM_TOKEN;
+const CHAT_ID = '7774590281';
+const PORT = 7842;
+
+// ── ASCII pieces for Issue 006 MOMENTUM ─────────────────────────
+
+const pieces = [
+  {
+    label: 'THEME',
+    caption: 'Issue 006 — MOMENTUM',
+    theme: 'default',
+    art: `
+  _|      _|    _|_|
+  _|_|  _|_|  _|    _|
+  _|  _|  _|  _|    _|
+  _|      _|  _|    _|
+  _|      _|    _|_|
+
+  _|_|_|_|_|  _|    _|_|_|_|
+      _|      _|    _|
+      _|      _|    _|_|_|
+      _|      _|    _|
+      _|      _|    _|_|_|_|`
+  },
+  {
+    label: 'ART',
+    caption: 'ART — Theaster Gates',
+    theme: 'default',
+    art: `
+    ╭──────────────────────╮
+    │  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  │
+    │  ▓▓░░░░░░░░░░░░░▓▓  │
+    │  ▓░░  ▄▄▄▄▄▄▄  ░░▓  │
+    │  ▓░  ▄███████▄  ░▓  │
+    │  ▓░  █▀▀▀▀▀▀█   ░▓  │
+    │  ▓░  █  ●●  █   ░▓  │
+    │  ▓░  █▄▄▄▄▄▄█   ░▓  │
+    │  ▓░  ▀███████▀  ░▓  │
+    │  ▓░░  ▀▀▀▀▀▀▀  ░░▓  │
+    │  ▓▓░░░░░░░░░░░░░▓▓  │
+    │  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  │
+    ╰──────────────────────╯`
+  },
+  {
+    label: 'PAINTING',
+    caption: 'PAINTING — Amy Sillman',
+    theme: 'default',
+    art: `
+  ░░▒▒▓▓██████████▓▓▒▒░░··
+  ··░░▒▒▓▓████████▓▓▒▒░░··
+  ····░░▒▒▓▓██████▓▓▒▒░░··
+  ······░░▒▒▓▓████▓▓▒▒░░··
+  ········░░▒▒▓▓██▓▓▒▒░░··
+  ··········░░▒▒▓▓▓▓▒▒░░··
+  ············░░▒▒▒▒▒▒░░··
+  ··············░░▒▒▒▒░░··
+  ················░░░░░░··
+  ··················░░····
+  ························`
+  },
+  {
+    label: 'ILLUSTRATION',
+    caption: 'ILLUSTRATION — Olimpia Zagnoli',
+    theme: 'default',
+    art: `
+  ╔══════════╗  ╔══════╗
+  ║ ▓▓▓▓▓▓▓ ║  ║  S   ║
+  ║ ▓▓▓▓▓▓▓ ║  ║  P   ║
+  ║ ░░░░░░░ ║  ║  E   ║
+  ║ ░░░░░░░ ║  ║  E   ║
+  ║ ·······  ║  ║  D   ║
+  ║ ·······  ║  ╚══════╝
+  ╚══════════╝`
+  },
+  {
+    label: 'SCULPTURE',
+    caption: 'SCULPTURE — Richard Serra',
+    theme: 'default',
+    art: `
+       ·  ·  ·  ·  ·
+     ╱▔▔▔▔▔▔▔▔▔▔▔▔▔╲
+    ╱  ▓▓▓▓▓▓▓▓▓▓▓  ╲
+   │  ▓▓███████████▓▓ │
+   │  ▓██░░░░░░░░██▓  │
+   │  ▓██░  ▄▄  ░██▓  │
+   │  ▓██░ ████ ░██▓  │
+   │  ▓██░  ▀▀  ░██▓  │
+   │  ▓██░░░░░░░░██▓  │
+    ╲  ▓▓███████████  ╱
+     ╲▄▄▄▄▄▄▄▄▄▄▄▄▄╱`
+  },
+  {
+    label: 'CULTURE',
+    caption: 'CULTURE — The Futurists',
+    theme: 'default',
+    art: `
+  ⠀⠀⠀⠀⠀⠀⠠⠤⠤⠤⠤⠄⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⢀⣤⣶⣿⣿⣿⣶⣤⡀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⣴⣿⣿⡿⠛⠉⠙⢿⣿⣿⣦⠀⠀⠀
+  ⠀⠀⠀⣾⣿⣿⠃⠀⠀⠀⠀⠀⢹⣿⣿⣷⠀⠀
+  ⠀⠀⠸⣿⣿⡏⠀⠀⠀⠀⠀⠀⢸⣿⣿⡟⠀⠀
+  ⠀⠀⠀⢿⣿⣿⡀⠀⠀⠀⠀⢀⣿⣿⡿⠀⠀⠀
+  ⠀⠀⠀⠈⢻⣿⣿⣦⣀⣀⣴⣿⣿⡟⠁⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⠉⠛⠛⠉⠀⠀⠀⠀⠀⠀⠀`
+  },
+  {
+    label: 'PHOTOGRAPHY',
+    caption: 'PHOTOGRAPHY — Daido Moriyama',
+    theme: 'midnight',
+    art: `
+  ⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿
+  ⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿
+  ⠟⠟⠟⠟⠻⠿⠿⠿⠿⠿⠿⠿⠿⠻⠟⠟⠟⠟⠟⠟⠟
+  ⠏⠏⠏⠏⠏⠹⠿⠿⠿⠿⠿⠿⠹⠏⠏⠏⠏⠏⠏⠏⠏
+  ⠇⠇⠇⠇⠇⠇⠸⠿⠿⠿⠿⠸⠇⠇⠇⠇⠇⠇⠇⠇⠇
+  ⠃⠃⠃⠃⠃⠃⠃⠘⠿⠿⠘⠃⠃⠃⠃⠃⠃⠃⠃⠃⠃
+  ⠁⠁⠁⠁⠁⠁⠁⠁⠈⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`
+  },
+  {
+    label: 'ART HISTORY',
+    caption: 'ART HISTORY — Giacomo Balla 1912',
+    theme: 'default',
+    art: `
+  ╔══════════════════════╗
+  ║  GIACOMO BALLA       ║
+  ║  ──────────────────  ║
+  ║  Dynamism of a Dog   ║
+  ║  on a Leash          ║
+  ║  ──────────────────  ║
+  ║  1912                ║
+  ║                      ║
+  ║  ░▒▓█▓▒░░▒▓█▓▒░      ║
+  ║  ░▒▓█▓▒░░▒▓█▓▒░      ║
+  ║  ·  ·  ·  ·  ·       ║
+  ╚══════════════════════╝`
+  },
+  {
+    label: 'OPINIONS',
+    caption: 'OPINIONS — Paul Virilio',
+    theme: 'default',
+    art: `
+  \\ \\     /  ____|  |       _ \\    ___|
+   \\ \\   /   __|    |      |   |  |
+    \\ \\ /    |      |      |   |  |
+     \\_/    _____| _____| \\___/  \\____|`
+  },
+  {
+    label: 'DESIGN & AI TOOLS',
+    caption: 'DESIGN & AI TOOLS — Figma',
+    theme: 'default',
+    art: `
+   ___  ___  ___  __  __    _
+  | __||_ _|/ __||  \\/  |  /_\\
+  | _|  | || (_ || |\\/| | / _ \\
+  |_|  |\\___|\\___||_|  |_|/_/ \\_\\`
+  },
+  {
+    label: 'PRODUCT & PROCESS',
+    caption: 'PRODUCT & PROCESS — Iteration',
+    theme: 'default',
+    art: `
+  ┌──────────────────────┐
+  │  ITERATION CYCLE     │
+  │  ────────────────    │
+  │  ▓▓▓▓▓▓▓▓▓▓ 100%    │
+  │  ▓▓▓▓▓▓▓▓░░  80%    │
+  │  ▓▓▓▓▓▓░░░░  60%    │
+  │  ▓▓▓▓░░░░░░  40%    │
+  │  ▓▓░░░░░░░░  20%    │
+  │  ────────────────    │
+  │  SHIP → LEARN →      │
+  │      REPEAT          │
+  └──────────────────────┘`
+  },
+  {
+    label: 'VISUAL & BRAND',
+    caption: 'VISUAL & BRAND — XRI Rebrand',
+    theme: 'default',
+    art: `
+  ██╗  ██╗ ██████╗  ██╗
+  ╚██╗██╔╝ ██╔══██╗ ██║
+   ╚███╔╝  ██████╔╝ ██║
+   ██╔██╗  ██╔══██╗ ╚═╝
+  ██╔╝╚██╗ ██║  ██║ ██╗
+  ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝
+        ╔══════╗
+        ║  →   ║
+        ╚══════╝`
+  },
+  {
+    label: 'MUSIC',
+    caption: 'MUSIC — Shackleton / Blood on My Hands',
+    theme: 'midnight',
+    art: `
+  ⠿⠶⠶⠶⠶⠶⠶⠶⠶⠶⠶⠶⠶⠶⠶⠶⠶⠶⠶⠶⠿
+  ⠿ ▄ ▄▄▄ ▄▄ ▄▄▄▄ ▄▄ ▄▄▄ ▄ ⠿
+  ⠿ █ ███ ██ ████ ██ ███ █ ⠿
+  ⠿ █ ▀▀▀ ▀▀ ▀▀▀▀ ▀▀ ▀▀▀ █ ⠿
+  ⠿ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ⠿
+  ⠿                         ⠿
+  ⠿ · · · ▌▌ ▌▌▌ ▌▌ · · · ⠿
+  ⠿ · · ▌▌▌▌▌▌▌▌▌▌▌▌ · · · ⠿
+  ⠿ · ▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌ · · ⠿
+  ⠿ ▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌ · ⠿
+  ⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿`
+  },
+  {
+    label: 'CLOSING',
+    caption: 'Design By Bulletin™ — Issue 006',
+    theme: 'default',
+    monochromatic: true,
+    art: `
+   ___  ___  ___  __  __  ___  ___  ___
+  | _ \\| __|| _ \\|  \\/  ||_ _|/ __|/ __|
+  |  _/| _| |   /| |\\/| | | | \\__ \\\\__ \\
+  |_|  |___||_|_\\|_|  |_||___||___/|___/
+  |_ _|/ _ \\ | \\| |
+   | || (_) || .\` |
+  |___|\\___/ |_|\\_|`
+  },
+];
+
+// ── Render all PNGs to disk ──────────────────────────────────────
+
+const SERVE_DIR = '/tmp/dbb-momentum';
+if (!fs.existsSync(SERVE_DIR)) fs.mkdirSync(SERVE_DIR);
+
+async function renderAll() {
+  const files = [];
+  for (const piece of pieces) {
+    const buf = await renderAsciiImage(piece.art, {
+      theme: piece.theme || 'default',
+      scale: 2,
+      fontSize: 14,
+      monochromatic: piece.monochromatic || false,
+    });
+    const filename = `${piece.label.replace(/[^a-z0-9]/gi, '-').toLowerCase()}.png`;
+    const filepath = path.join(SERVE_DIR, filename);
+    fs.writeFileSync(filepath, buf);
+    files.push({ ...piece, filepath, filename });
+    process.stderr.write(`  rendered: ${filename} (${buf.length} bytes)\n`);
+  }
+  return files;
+}
+
+// ── Send via Telegram Bot API directly ──────────────────────────
+
+function sendPhoto(filepath, caption) {
+  return new Promise((resolve, reject) => {
+    const FormData = require('form-data');
+    const form = new FormData();
+    form.append('chat_id', CHAT_ID);
+    form.append('caption', caption);
+    form.append('photo', fs.createReadStream(filepath), { filename: path.basename(filepath), contentType: 'image/png' });
+
+    const options = {
+      hostname: 'api.telegram.org',
+      path: `/bot${BOT_TOKEN}/sendPhoto`,
+      method: 'POST',
+      headers: form.getHeaders(),
+    };
+
+    const req = https.request(options, (res) => {
+      let data = '';
+      res.on('data', d => data += d);
+      res.on('end', () => {
+        const parsed = JSON.parse(data);
+        if (parsed.ok) resolve(parsed);
+        else reject(new Error(JSON.stringify(parsed)));
+      });
+    });
+    req.on('error', reject);
+    form.pipe(req);
+  });
+}
+
+// ── Main ─────────────────────────────────────────────────────────
+
+async function main() {
+  process.stderr.write('Rendering PNGs...\n');
+  const files = await renderAll();
+
+  process.stderr.write('Sending to Telegram...\n');
+  for (const f of files) {
+    try {
+      await sendPhoto(f.filepath, f.caption);
+      process.stderr.write(`  sent: ${f.label}\n`);
+      // Small delay to avoid flood limits
+      await new Promise(r => setTimeout(r, 800));
+    } catch (e) {
+      process.stderr.write(`  ERROR ${f.label}: ${e.message}\n`);
+    }
+  }
+  process.stderr.write('Done.\n');
+}
+
+main().catch(e => { process.stderr.write(e.stack + '\n'); process.exit(1); });

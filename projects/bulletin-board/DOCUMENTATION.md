@@ -18,8 +18,14 @@ This is the master guide to all Design By Bulletin documentation. Start here to 
 ### I'm generating ASCII art
 **Start here:** [governance/ASCII-VISUAL-DNA.md](governance/ASCII-VISUAL-DNA.md) → [governance/ASCII-CONSTRUCTION.md](governance/ASCII-CONSTRUCTION.md)
 
-### I'm processing/filtering images
+### I'm rendering ASCII to PNG
+**Start here:** [docs/PNG-RENDERING.md](docs/PNG-RENDERING.md) → Test with `node utils/ascii-render.js`
+
+### I'm processing/filtering source images
 **Start here:** [docs/SHADER-SYSTEM.md](docs/SHADER-SYSTEM.md) → Run `node utils/test-shader.js`
+
+### I'm creating Midjourney cover prompts
+**Start here:** README.md (Generative AI Engine section) → Review past issues in [archive-log.md](archive-log.md) for style examples
 
 ---
 
@@ -201,11 +207,15 @@ projects/bulletin-board/
 
 ## Terminology
 
-**Act 1** — Visual preview (8:00am PT): 11 ASCII pieces rendered as PNG, no text/links, one closing sentence + "Full edition in 30 minutes". Supports multi-color or monochromatic rendering.
+**Act 1** — Visual preview (8:00am PT): Single hero ASCII masthead rendered as PNG (400–500KB), monochromatic or multi-color, no text/links, caption "Full edition in 30 minutes". Supports editorial color identity via theme selection.
 
-**Act 2** — Full edition (8:30am PT): 11 sections with source titles, one-sentence narratives, links, then Midjourney issue cover image as final visual reveal.
+**Act 2** — Full edition (8:30am PT): 11 sections with source titles, one-sentence narratives, links, then Midjourney issue cover image (compressed JPG, ~450KB) as final visual reveal.
 
-**Monochromatic Mode** — Single-color ASCII PNG rendering for thematic identity. All characters use one color (theme.text) instead of per-character coloring.
+**Hero Image** — Single bold ASCII masthead representing the issue's visual and thematic philosophy. Rendered to PNG, sized for Telegram mobile display, optimized for instant delivery.
+
+**Monochromatic Mode** — Single-color ASCII PNG rendering for strong editorial identity. All characters use one color (theme.text) instead of per-character coloring. Common for introspective or thematically unified issues.
+
+**Compressed Cover** — Midjourney-generated issue cover saved as JPG at 85% quality. Typical file size: 400–500KB. Aspect ratio: 4:5 (Telegram optimal). Serves as visual reveal at end of Act 2.
 
 **Apartamento Register** — Editorial voice: intimate, unhurried, specific without being academic, notices details others miss.
 

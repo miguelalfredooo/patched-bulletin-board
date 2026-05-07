@@ -247,6 +247,148 @@ The bulletin-board agents are configured in the main gateway at `~/.openclaw/ope
 }
 ```
 
+---
+
+## Creating New Issues
+
+Issues are curated, theme-driven publications. Each issue follows a standard workflow:
+
+### 1. Define the Theme
+
+Choose a theme (e.g., "Momentum", "Acceleration", "Stillness") and establish:
+- **Theme statement** — One sentence capturing the core concept
+- **Editorial Mix** — Parametric control (six faders: Music, Visual, Research, Process, Theme, AI Culture)
+- **Sonic reference** — BPM range, instruments, mood (optional)
+- **Cultural thread** — Historical context or contemporary resonance (optional)
+
+### 2. Curate Content
+
+For each of the 11 sections (Art, Painting, Illustration, Sculpture, Culture, Photography, Art History, Opinions, Design & AI Tools, Product & Process, Visual & Brand):
+
+1. Select a source (article, website, artwork)
+2. Write a one-sentence narrative explaining why it matters for this theme
+3. Add the source link
+
+Example format:
+```
+[Section Title]
+[One sentence explaining the connection to theme]
+[Source link]
+```
+
+### 3. Generate the ASCII Cover
+
+**Option A: Interactive (Browser)**
+```bash
+open covers/ascii-cover-generator.html
+# → Upload source image (Midjourney render, p5.js screenshot, etc.)
+# → Select: HIGH resolution, MEDIUM charset, 20–24px font
+# → Download PNG
+```
+
+**Option B: CLI (Automated)**
+```bash
+node export-ascii-cover.js covers/[issue-name]-midjourney.png [issue-name]-cover.png 20
+```
+
+### 4. Create the Pure Text Issue
+
+Create a file: `ISSUE-006-[theme]-[scheme].txt`
+
+Structure:
+```
+[ASCII Art Banner]
+
+ACT 1 — VISUAL NOTICE
+[Brief preview note]
+
+[11 Sections with ASCII art + title + narrative + link]
+
+ACT 2 — EDITORIAL
+[Sources and editorial content]
+
+[Closing statement]
+```
+
+### 5. Prepare Metadata
+
+Create a section in the issue file documenting:
+- Theme name and date
+- Editorial Mix values
+- Sonic reference (if applicable)
+- Cultural thread or historical context
+
+### 6. Deliver to Telegram
+
+```bash
+node finalize-issue-006-delivery.js
+```
+
+This sends:
+1. Opening banner
+2. ASCII cover image
+3. Pure text issue (auto-split for Telegram limits)
+4. Theme & editorial mix
+
+---
+
+## Issue File Structure
+
+```
+bulletin-board/
+├── ISSUE-006-momentum-neon.txt              [Pure text issue]
+├── ISSUE-006-momentum-orange-navy.txt       [Alternative scheme]
+├── ISSUE-006-momentum-*.txt                 [Other schemes]
+│
+├── covers/
+│   ├── momentum-006-cover.png               [Final ASCII cover]
+│   └── momentum-006-midjourney.png          [Source image]
+│
+└── docs/
+    └── DESIGN-BY-BULLETIN.md                [System documentation]
+```
+
+---
+
+## Common Workflows
+
+### Quick Start: Generate a New Issue
+
+```bash
+# 1. Have source image ready (Midjourney or p5.js)
+# 2. Generate ASCII cover
+node export-ascii-cover.js covers/my-image.png my-issue-cover.png 20
+
+# 3. Create pure text issue file
+# 4. Define theme metadata
+# 5. Deliver
+node finalize-issue-006-delivery.js
+```
+
+### Adjust Cover Style
+
+Experiment with font sizes (larger = more detail due to auto-scaling):
+```bash
+node export-ascii-cover.js covers/image.png cover.png 12    # Tight, detailed
+node export-ascii-cover.js covers/image.png cover.png 20    # Balanced
+node export-ascii-cover.js covers/image.png cover.png 28    # Large, bold
+```
+
+### Send Text-Only (Testing)
+
+Before full delivery, test text content:
+```bash
+node send-issue-text-only.js
+```
+
+### Generate Colored ASCII Variants
+
+To create alternative ASCII rendering with colors:
+```bash
+node momentum-image-to-ascii-color.js
+# Outputs to covers/ascii-color/ directory
+```
+
 Each agent runs in its own isolated workspace with its own configuration and state, but they share the main gateway's model providers and authentication settings.
 
 ## Support

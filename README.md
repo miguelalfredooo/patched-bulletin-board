@@ -21,22 +21,34 @@ Two agents run the publication:
 Location: `projects/the-magazine/`
 
 ### bulletin-board — Design by Bulletin™
-A daily automated editorial digest for designers covering art,
-design, AI culture, photography, and illustration.
+A curated editorial publication for designers covering art, design, AI culture,
+photography, and illustration. Combines Midjourney generative imagery with pure
+ASCII art and parametric editorial controls.
 
 **System:** Six-agent editorial collective (Maeve, Victor, Coda for research/visual discovery;
 Assignment Editor, Managing Editor, Editorial Director for editorial curation). Parametric
 control via Editorial Mix (six intensity faders: Music, Visual, Research, Process, Theme, AI Culture).
 
-**Delivery:** Telegram bot (@DesignByBulletin_bot) with two-act structure:
-- Act 1 (8:00am PT): Visual preview only (11 ASCII pieces, no text)
-- Act 2 (8:30am PT): Full edition (each piece with title, sentence, link)
+**Delivery:** Telegram with multi-format issues:
+- ASCII Cover: HTML-based image-to-ASCII converter generates styled PNG covers
+- Pure Text Issue: 11 editorial sections with ASCII art and linked sources
+- Theme & Editorial Mix: Metadata about issue tone, sonic references, cultural threads
 
-**Tech:** Node.js with sharp (image processing), figlet (ASCII typography), sharp (image shader).
-Tone reference: Apartamento (intimate, unhurried, specific without being academic).
+**Tech Stack:**
+- Core: Node.js, sharp (image processing)
+- ASCII Generation: Browser-based p5.js converter + automated export scripts
+- Color Sampling: ANSI 24-bit color codes for image-informed ASCII
+- Font Rendering: SVG-to-PNG conversion for high-quality cover generation
+- Telegram Bot: HTTPS multipart form-data for photo/document delivery
+
+**Workflow:**
+1. Generate ASCII cover from source image (Midjourney/p5.js) via HTML converter
+2. Create pure text issue with 11 sections and editorial content
+3. Define theme metadata (Editorial Mix, sonic reference, cultural thread)
+4. Export and deliver to Telegram via automated scripts
 
 Location: `projects/bulletin-board/`
-Full documentation: `projects/bulletin-board/README.md`
+Full documentation: See DESIGN-BY-BULLETIN.md, SETUP.md, TOOLS.md
 
 ---
 

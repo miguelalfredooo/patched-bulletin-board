@@ -1,0 +1,247 @@
+
+═══════════════════════════════════════
+  Design By Bulletin™ — Issue 006
+  2026-05-09
+═══════════════════════════════════════
+
+🎨 COLOR SCHEME: Orange-Navy
+
+ACT 1 — VISUAL PREVIEW (8:00am PT)
+────────────────────────────────────────
+
+[PNG Rendering - Monochromatic Hero Masthead]
+Files: momentum-006-*-momentum-orange-navy.png (all 11 sections)
+
+PURE ASCII ARTWORK (Text Format)
+────────────────────────────────────────
+
+Section 1 — Art (Format A):
+```
+    ╭─────────────┮
+    │ ∟∟∟ ▓▓▓ ∟ │
+    │ █ ▀▀▀ █   │
+    │ ▀ ███ ▀   │
+    │   ███     │
+    │ ▀▀ █ ▀▀   │
+    ╰─────────────╯
+```
+
+Section 2 — Painting (Format B):
+```
+╔═══════════════════╗
+║ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ║
+║ ▓░░░░░░░░░░░▓▓ ║
+║ ▓░ ███ ░░░░░▓▓ ║
+║ ▓░ █▀█ ░░░░░▓▓ ║
+║ ▓░ ███ ░░░░░▓▓ ║
+║ ▓░░░░░░░░░░░▓▓ ║
+║ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ║
+╚═══════════════════╝
+```
+
+Section 3 — Illustration (Format D):
+```
+╭──────────┐ ◆
+│ ◇◆◇◆◇◆◇  │ ◆◆
+│◆ ▀█▀ ▀█ │ ◆◆◆
+│◇ █▄█ █▄ │ ◆
+│◆◇◆◇◆◇◆  │
+╰──────────┘
+```
+
+Section 4 — Sculpture (Format C):
+```
+  ███╗   ███╗
+  ████╗ ████║
+  █╔═██╗██╔═╝
+  █║ ██║██║
+  █║██╔╝██║
+  ██╚═╝ ╚═╝
+```
+
+Section 5 — Culture (Format E):
+```
+⠿⠾⠽⠻⠟⠯⠷⠾⠿⠾⠽⠻⠟⠯⠷⠾
+⠿ ░▒▓█████▓▒░ ⠿ ░▒▓ ⠿
+⠾ █░░░░░░░░█ ⠾ ░▒▓ ⠾
+⠽ █░ ◊◊◊ ░█ ⠽ ░▒▓ ⠽
+⠻ █░░░░░░░░█ ⠻ ░▒▓ ⠻
+⠟ ░▒▓█████▓▒░ ⠟ ░▒▓ ⠟
+⠯⠷⠾⠿⠾⠽⠻⠟⠯⠷⠾⠽⠻⠟⠯⠷⠾
+```
+
+Section 6 — Photography (Format A):
+```
+    ╔═══════════╗
+    ║ ◇━━━━━━━◇ ║
+    ║ █  ⠿⠾  █ ║
+    ║ █ ⠽⠻⠟ █ ║
+    ║ █  ⠯⠷  █ ║
+    ║ ◇━━━━━━━◇ ║
+    ╚═══════════╝
+```
+
+Section 7 — Art History (Format B):
+```
+┌─────────────────┐
+│ ╭╮ ╔╗ ╭╮ ┌─┐ │
+│ ││ ║║ ││ │░│ │
+│ ╰╯ ╚╝ ╰╯ └─┘ │
+│ ╔════════════╗ │
+│ ║ ▓▒░░░░▒▓ ║ │
+│ ╚════════════╝ │
+└─────────────────┘
+```
+
+Section 8 — Opinions (Format C):
+```
+  █████╗ ██╗████╗
+  ██╔══╝ ██║██╔═╝
+  ██║    ██║██║
+  ██║    ██║██║
+  ╚█████╗██║██║
+   ╚════╝╚═╝╚═╝
+```
+
+Section 9 — Design & AI Tools (Format D):
+```
+ ╔══════════╗  ◆
+ ║ ▄▄▄▄▄▄  ║  ◆◆
+ ║ █    █  ║  ◆◆◆
+ ║ █ ▀▀ █  ║  ◆
+ ║ █▄▄▄▄█  ║
+ ╚══════════╝
+```
+
+Section 10 — Product & Process (Format E):
+```
+⠿⠾⠽⠻⠟⠯⠷⠾⠿⠾⠽⠻⠟⠯⠷⠾
+⠿ ░▒▓█████▓▒░ ⠿ ░▒▓ ⠿
+⠾ █░░░░░░░░█ ⠾ ░▒▓ ⠾
+⠽ █░ ◊◊◊ ░█ ⠽ ░▒▓ ⠽
+⠻ █░░░░░░░░█ ⠻ ░▒▓ ⠻
+⠟ ░▒▓█████▓▒░ ⠟ ░▒▓ ⠟
+⠯⠷⠾⠿⠾⠽⠻⠟⠯⠷⠾⠽⠻⠟⠯⠷⠾
+```
+
+Section 11 — Visual & Brand (Format A):
+```
+▀▀▀█████▀▀▀ ▀▀▀█████▀▀▀
+█████░░░█████ █░░░█
+█░░░░░░░░░░█ █░░░█
+█░ ▓▓▓▓ ░░█ █░░░█
+█░░░░░░░░░░█ █░░░█
+█████▓▓▓█████ █████
+```
+
+ACT 2 — FULL EDITION (8:30am PT)
+────────────────────────────────────────
+
+1. Art
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📍 [PNG] momentum-006-01-*-momentum-orange-navy.png
+
+**MoMA: "Speed and Motion in Contemporary Practice"**
+Kinetic sculptures reframe stillness as laziness, acceleration as intention.
+
+🔗 https://moma.org/explore/collection
+
+2. Painting
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📍 [PNG] momentum-006-02-*-momentum-orange-navy.png
+
+**Frieze New York: Emerging Abstractionists**
+Gestural mark-making at 140 BPM — brushwork as percussion.
+
+🔗 https://friezeartfair.com/exhibitions
+
+3. Illustration
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📍 [PNG] momentum-006-03-*-momentum-orange-navy.png
+
+**It's Nice That: Motion Design Experiments**
+Static frames suggesting velocity through optical density gradients.
+
+🔗 https://www.itsnicethat.com
+
+4. Sculpture
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📍 [PNG] momentum-006-04-*-momentum-orange-navy.png
+
+**Artforum: Kinetic Systems**
+Engineering as aesthetic — motors, pulleys, and the visible cost of speed.
+
+🔗 https://www.artforum.com
+
+5. Culture
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📍 [PNG] momentum-006-05-*-momentum-orange-navy.png
+
+**The New Yorker: Acceleration Culture**
+Why moving fast feels like permission to move at all.
+
+🔗 https://www.newyorker.com
+
+6. Photography
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📍 [PNG] momentum-006-06-*-momentum-orange-navy.png
+
+**Photography Is Magic: Motion Blur Studies**
+Shutter speed as editorial decision — what blurs, what holds still.
+
+🔗 https://www.photographyismagic.com
+
+7. Art History
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📍 [PNG] momentum-006-07-*-momentum-orange-navy.png
+
+**Reflex: Futurism Reconsidered**
+Speed as political statement, still relevant a century later.
+
+🔗 https://www.reflex-mag.com
+
+8. Opinions
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📍 [PNG] momentum-006-08-*-momentum-orange-navy.png
+
+**Wired: The Algorithmic Pace Problem**
+When iteration cycles compress, what gets lost in the acceleration.
+
+🔗 https://www.wired.com
+
+9. Design & AI Tools
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📍 [PNG] momentum-006-09-*-momentum-orange-navy.png
+
+**Designer Notes: Models at Scale**
+AI amplifies iteration velocity — 100 variants in an afternoon.
+
+🔗 https://www.designernotes.com
+
+10. Product & Process
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📍 [PNG] momentum-006-10-*-momentum-orange-navy.png
+
+**Design Observer: Agile Aesthetics**
+Two-week sprints shape visual language. What does haste look like?
+
+🔗 https://designobserver.com
+
+11. Visual & Brand
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📍 [PNG] momentum-006-11-*-momentum-orange-navy.png
+
+**Brand New: Identity Systems at Speed**
+Modular design as permission to move fast without losing coherence.
+
+🔗 https://www.underconsideration.com/brandnew
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**"Momentum is not a direction — it's a state of permission."**
+
+[COVER IMAGE - Midjourney: Isometric neon composition]
+
+═══════════════════════════════════════
+Design By Bulletin™ — All versions ready
+═══════════════════════════════════════

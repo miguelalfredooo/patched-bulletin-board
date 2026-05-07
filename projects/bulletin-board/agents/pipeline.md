@@ -60,9 +60,11 @@ One session. One issue. One decision. Two acts. Parametric control via Editorial
   Produces: Final prose, checked for Apartamento register
 
 **Step 4 — Visual + Link Generation**
-  Assignment Editor generates Act 1 ASCII pieces
-  Reads: ASCII-VISUAL-DNA.md, ASCII-CONSTRUCTION.md, Victor's visual language
-  Produces: 11 ASCII pieces (5 formats, no repeats, 42-char wide, 15-line tall)
+  Assignment Editor generates Act 1 hero masthead
+  Reads: ASCII-VISUAL-DNA.md, ASCII-CONSTRUCTION.md, Victor's visual language, theme direction
+  Produces: Single bold hero ASCII image (minimal type, detailed geometry, Bauhaus-informed)
+  Renders to PNG: Monochromatic or multi-color based on Editorial Mix, theme selection
+  File size: 400–500KB (optimized for Telegram delivery)
 
   Assignment Editor verifies links
   Runs: verify-links.js
@@ -106,10 +108,11 @@ Editorial Mix modulates all agents:
 ## Issue structure
 
 **Act 1 — Visual Preview (8:00am PT)**
-- Locked masthead via figlet (Format C)
-- 11 ASCII pieces — one per section, no labels, no links
-- No text except: one closing sentence + "Full edition in 30 minutes"
-- Format constraint: use all 5 formats across 11 pieces, no consecutive repeats
+- Single hero ASCII masthead rendered as PNG (monochromatic or multi-color)
+- 400–500KB file size (optimized for Telegram, no buffering delays)
+- No text labels, no links — pure visual statement
+- Caption: "Full edition in 30 minutes"
+- Optional: Full 11-piece ASCII composition archived for reference, not delivered
 
 **Act 2 — Full Edition (8:30am PT)**
 - 11 sections in order:
@@ -173,10 +176,11 @@ Each entry after a successful issue:
   **Theme:** [one word or short phrase]
   **Editorial Mix:** Music [%], Visual [%], Research [%], Process [%], Theme [%], AI Culture [%]
   **Sonic Reference:** [genre/mood/producer]
-  **ASCII Formats:** [A, B, C, D, E distribution]
-  **Sources Used:** [11 sources, one per section]
-  **Cover Image:** [filename if generated]
-  **Notes:** [optional curator/editorial director observation]
+  **Rendering:** [mono-color theme or multi-color theme]
+  **Cover Image:** [compressed JPG filename + file size]
+  **Closing Sentence:** [the closing line]
+  **Cultural Thread:** [thematic convergence across sources]
+  **Curator Note:** [optional observation on the issue's editorial decisions]
 
 ---
 
