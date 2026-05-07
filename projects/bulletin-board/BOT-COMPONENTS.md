@@ -86,7 +86,33 @@ Worn • May 12, 2026
 
 **In `/preview` command:** Hero cover is first thing in code block
 **In `/digest` command:** Hero cover is first thing in code block
+**Standalone mode:** Hero cover can be sent alone as a complete message in code block
 **Wrapping:** Always inside triple backticks (```)
+
+### Standalone Usage
+
+The hero cover is completely self-contained and requires no additional context. It can be used independently as:
+- A standalone announcement of a new issue
+- A cover/intro card separate from the full editorial content
+- A visual marker in any context needing issue identification
+
+**Example standalone delivery:**
+```
+██████╗ ██████╗ ██████╗ ™
+██╔══██╗██╔══██╗██╔══██╗
+██║  ██║██████╔╝██████╔╝
+██║  ██║██╔══██╗██╔══██╗
+██████╔╝██████╔╝██████╔╝
+╚═════╝ ╚═════╝ ╚═════╝
+
+Design By Bulletin™
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Issue 006
+Momentum • May 9, 2026
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+This can be sent as a complete message with no prose or additional sections.
 
 ### Current Implementation
 
