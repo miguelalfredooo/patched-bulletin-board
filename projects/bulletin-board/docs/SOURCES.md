@@ -8,14 +8,16 @@ Curated publication catalog for Victor (Visual Curator), Maeve (Researcher), and
 
 **Thought leadership, methodology, deep-dive case studies**
 
-- **UX Collective** (Medium) — Essays on design systems, interaction design, research
+- **Medium.com** — Broad platform for independent design essays, case studies, and philosophy
+  - **UX Collective** (Medium) — Essays on design systems, interaction design, research
+  - **Bootcamp** (Medium) — Product design case studies, design thinking methodology
+  - **Independent design writers** (Medium) — Personal essays, contrarian takes, process narratives
 - **Smashing Magazine** — In-depth tutorials, technique articles, design trends
 - **Nielsen Norman Group (NN/g)** — Usability research, evidence-based design reports
-- **Bootcamp** (Medium) — Product design case studies, design thinking methodology
 - **A List Apart** — Web design and development craft, accessibility, standards
 - **Prototypr.io** — Prototyping tools, design process, interaction patterns
 
-**Why these matter:** Direct source for design methodology signals, emerging UX patterns, accessibility innovations.
+**Why these matter:** Direct source for design methodology signals, emerging UX patterns, accessibility innovations. Medium specifically: indie designer voices, experimental essays, detailed case studies outside traditional publications.
 
 ---
 
@@ -228,17 +230,18 @@ These are editorial directions, not source assignments. When exploring any theme
 
 | Theme | Explore Across |
 |-------|---|
-| Emerging tools & innovation | Product Hunt, GitHub, Hacker News discussions, Figma Blog, Substack makers, Bandcamp (indie tools/synths) |
-| Platform shifts | Apple Developer News, Figma Blog, TechCrunch, The Verge, designer reactions on Hacker News |
-| Research & methodology | Nielsen Norman Group, UX Collective, A List Apart, but also: Wired long-form, Substack research essays |
-| Visual culture & trends | Behance, Awwwards, It's Nice That, but also: The Verge design criticism, Wired culture pieces, Photography essays, Bandcamp (aesthetic signals) |
-| Industry consolidation | TechCrunch, The Verge, Fast Company, but also: Hacker News discussion, indie blog reactions |
-| Philosophy & practice | Substack, independent blogs, but also: UX Collective, A List Apart, Nielsen Norman Group research, YouTube artist interviews |
-| Identity & branding | Print Mag, Creative Boom, Behance, but also: Figma Blog (design system case studies), Fast Company, Discogs (cultural identity through music) |
-| Craft & standards | Smashing Magazine, A List Apart, but also: GitHub design system repos, Webflow case studies, YouTube production breakdowns |
-| Sonic/ambient aesthetic | Bandcamp, Discogs, Spotify (emerging ambient, experimental, genre boundaries), YouTube sessions |
-| Process & workflow | Lenny's Podcast, Dive Club (YouTube), tool creator interviews, building narratives |
-| AI culture & tools | Lenny's Podcast (AI discussions), UX Collective, Hacker News, independent blogs discussing AI practice |
+| Emerging tools & innovation | Product Hunt, GitHub, Hacker News discussions, Reddit (r/design), Bluesky designers, Figma Blog, Substack makers, Medium essays, Bandcamp (indie tools/synths) |
+| Platform shifts | Apple Developer News, Figma Blog, TechCrunch, The Verge, designer reactions on Hacker News, X discourse, Bluesky community |
+| Research & methodology | Nielsen Norman Group, UX Collective, A List Apart, Medium essays, but also: Wired long-form, Substack research essays, Reddit design discussions |
+| Visual culture & trends | Behance, Awwwards, It's Nice That, YouTube creators, but also: The Verge design criticism, Wired culture pieces, Photography essays, Bandcamp (aesthetic signals), Reddit design communities |
+| Industry consolidation | TechCrunch, The Verge, Fast Company, X commentary, Bluesky reactions, but also: Hacker News discussion, Reddit threads, indie blog reactions |
+| Philosophy & practice | Substack, Medium essays, independent blogs, but also: UX Collective, A List Apart, Nielsen Norman Group research, YouTube artist interviews, Reddit AMA threads |
+| Identity & branding | Print Mag, Creative Boom, Behance, but also: Figma Blog (design system case studies), Fast Company, X designer voices, Medium case studies, Discogs (cultural identity through music) |
+| Craft & standards | Smashing Magazine, A List Apart, YouTube tutorials, but also: GitHub design system repos, Webflow case studies, Medium technical essays, Reddit critiques |
+| Sonic/ambient aesthetic | Bandcamp, Discogs, Spotify (emerging ambient, experimental, genre boundaries), YouTube sessions, Bluesky music communities |
+| Process & workflow | Lenny's Podcast, Dive Club (YouTube), tool creator interviews, YouTube creators, Medium process essays, building narratives |
+| AI culture & tools | Lenny's Podcast (AI discussions), UX Collective, Medium AI essays, Hacker News, X/Bluesky AI discussions, independent blogs discussing AI practice, Reddit AI tool threads |
+| Community signals & sentiment | Reddit design communities, X designer discourse, Bluesky indie maker networks, YouTube comments/community features, real-time reactions to tool launches |
 
 ---
 
@@ -286,12 +289,32 @@ These are editorial directions, not source assignments. When exploring any theme
 
 ---
 
-## 6.5 Podcasts & Video Resources
+## 6.5 Social Networks & Community Platforms
+
+**Real-time signals, designer/developer discourse, community reactions, emerging voices**
+
+- **Bluesky** — Decentralized social network; designer + developer community; real-time signal detection; contrarian takes on industry news; indie maker announcements
+- **X (Twitter)** — Industry voices, designer hot-takes, tool announcements, community reactions; threading reveals nuanced perspectives on trends; real-time cultural discourse
+- **Reddit** — Subreddits: r/Design, r/UX_Design, r/web_design, r/graphic_design, r/typography, r/InteriorDesign; community AMA (ask-me-anything) threads; design critiques and feedback; emerging tool discussions; grassroots signal detection
+  - **Why:** Unfiltered designer/developer opinions, emerging frustrations with tools, design debates from practitioners (not just thought leaders)
+  - **Curation approach:** Look for trending threads in design subreddits, detailed critiques, tool comparisons, student work + feedback
+
+**Why these matter:** 
+- Real-time pulse of design community sentiment
+- Emerging frustrations often precede mainstream criticism
+- Designers share work-in-progress and get community feedback
+- Tool reactions surface before publications write about them
+- Bluesky specifically: feeds like "design decentralized" + indie makers creating outside corporate platforms
+
+---
+
+## 6.6 Podcasts & Video Resources
 
 **Process, workflows, tools, techniques, AI culture, building things**
 
 - **Lenny's Podcast** — Product strategy, growth, building, founder stories; deep-dive interviews with builders/operators
 - **Dive Club (YouTube)** — Web design process, frontend techniques, tool workflows; live building sessions and tutorials
+- **YouTube (Channels & Creators)** — Design process channels, typography deep-dives, tool tutorials, artist/creator portfolios, production breakdowns, design criticism essays
 - **Other relevant podcasts/videos** — Design process interviews, tool creation, behind-the-scenes building
 
 **Why these matter:** 
