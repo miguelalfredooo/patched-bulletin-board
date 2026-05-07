@@ -10,16 +10,13 @@ This is the master guide to all Design By Bulletin documentation. Start here to 
 **Start here:** [BRIEF.md](BRIEF.md) → [README.md](README.md) → [agents/pipeline.md](agents/pipeline.md)
 
 ### I'm an agent working on an issue
-**Start here:** [agents/pipeline.md](agents/pipeline.md) (your role) → [STYLE-GUIDE.md](STYLE-GUIDE.md) (voice/tone)
+**Start here:** [agents/pipeline.md](agents/pipeline.md) (your role) → [STYLE-GUIDE.md](STYLE-GUIDE.md) (voice/tone) → [BULLETIN-BOT.md](BULLETIN-BOT.md) (delivery)
 
 ### I'm a curator/researcher scouting sources
 **Start here:** [docs/SOURCES.md](docs/SOURCES.md) → [governance/ASCII-VISUAL-DNA.md](governance/ASCII-VISUAL-DNA.md)
 
 ### I'm generating ASCII art
 **Start here:** [governance/ASCII-VISUAL-DNA.md](governance/ASCII-VISUAL-DNA.md) → [governance/ASCII-CONSTRUCTION.md](governance/ASCII-CONSTRUCTION.md)
-
-### I'm generating Midjourney album covers
-**Start here:** [docs/MIDJOURNEY-INTEGRATION.md](docs/MIDJOURNEY-INTEGRATION.md) → Run `node utils/test-midjourney-prompts.js`
 
 ### I'm processing/filtering images
 **Start here:** [docs/SHADER-SYSTEM.md](docs/SHADER-SYSTEM.md) → Run `node utils/test-shader.js`
@@ -83,6 +80,13 @@ Each module includes:
 
 ## Utilities & Integration
 
+### ASCII-to-PNG Rendering
+**utils/ascii-render.js** — Core ASCII-to-PNG engine using SVG + sharp. Supports multi-color and monochromatic modes. Three themes (default, midnight, editorial). Usage: `renderAsciiImage(text, { theme, fontSize, scale, monochromatic })`.
+
+**utils/act1-png-delivery.js** — Act 1 builder and Telegram prep. Functions: `buildAct1ASCII(pieces, closingSentence)`, `prepareAct1Delivery(ascii, options)`. Returns PNG buffer + caption ready for Telegram.
+
+**docs/PNG-RENDERING.md** — Complete PNG rendering reference. Character coloring, themes, parameters, Telegram integration, troubleshooting.
+
 ### Image Processing
 **docs/SHADER-SYSTEM.md** — Image shader using sharp library. 6 presets (editorial, gameboy, nes, c64, hires, subtle). Parameter reference. Editorial Mix integration (Visual intensity controls shader intensity).
 
@@ -96,12 +100,14 @@ Each module includes:
 ### Link Verification
 **utils/verify-links.js** — HTTP status checking for all links before delivery. Returns original URL if valid, fallback homepage if broken, original if no fallback. 50+ source fallback registry.
 
-### Midjourney Integration
-**docs/MIDJOURNEY-INTEGRATION.md** — Album cover generation system. Editorial Director → prompt generator → Midjourney → archive.
+### Issue Cover Images
+**Workflow:**
+1. Creative Director creates custom Midjourney prompts (manual, not automated)
+2. Generates issue cover via Midjourney
+3. Saves to: `/Users/blackmachete/projects/bulletin-board/covers/[YYYY-MM-DD]-cover.png`
+4. Bot sends as final image in Act 2 delivery
 
-**utils/midjourney-prompt-generator.js** — Generates two complementary prompts per issue (literal + abstract/metaphorical). Five emotional registers mapped to Editorial Mix values. Sonic-to-visual translation.
-
-**utils/test-midjourney-prompts.js** — Test suite generating prompts for 4 example issues (Ritual in Tools, Grain, Archive, Surface).
+**Directory:** `covers/` — Contains Midjourney-generated issue covers + Act 1 PNG backups
 
 ---
 
@@ -167,18 +173,20 @@ projects/bulletin-board/
 ├── docs/
 │   ├── SOURCES.md                     # 20+ curated sources & scouting instructions
 │   ├── SHADER-SYSTEM.md               # Image processing (sharp library)
-│   └── MIDJOURNEY-INTEGRATION.md      # Album cover generation system
+│   └── PNG-RENDERING.md               # ASCII-to-PNG rendering reference
 │
 ├── modules/
 │   ├── art.md, painting.md, ... (11 sections)
 │
 ├── utils/
+│   ├── ascii-render.js                # ASCII-to-PNG core (multi-color & monochromatic)
+│   ├── act1-png-delivery.js           # Act 1 PNG builder for Telegram
 │   ├── shader.js                      # Image processor with 6 presets
 │   ├── figlet.js                      # ASCII typography generator
 │   ├── verify-links.js                # Link health checker
-│   ├── midjourney-prompt-generator.js # Album cover prompt creator
-│   ├── test-shader.js                 # Test suite for shader presets
-│   └── test-midjourney-prompts.js     # Test suite for prompt generation
+│   └── test-shader.js                 # Test suite for shader presets
+│
+├── covers/                             # Issue cover images (Midjourney + Act 1 PNG)
 │
 ├── agents/
 │   ├── pipeline.md                    # Editorial workflow and agent sequence
@@ -193,9 +201,11 @@ projects/bulletin-board/
 
 ## Terminology
 
-**Act 1** — Visual preview (8:00am PT): 11 ASCII pieces, no text/links, one closing sentence.
+**Act 1** — Visual preview (8:00am PT): 11 ASCII pieces rendered as PNG, no text/links, one closing sentence + "Full edition in 30 minutes". Supports multi-color or monochromatic rendering.
 
-**Act 2** — Full edition (8:30am PT): 11 sections with source titles, one-sentence narratives, links.
+**Act 2** — Full edition (8:30am PT): 11 sections with source titles, one-sentence narratives, links, then Midjourney issue cover image as final visual reveal.
+
+**Monochromatic Mode** — Single-color ASCII PNG rendering for thematic identity. All characters use one color (theme.text) instead of per-character coloring.
 
 **Apartamento Register** — Editorial voice: intimate, unhurried, specific without being academic, notices details others miss.
 

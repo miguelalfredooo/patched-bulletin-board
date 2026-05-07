@@ -227,13 +227,6 @@ State it at session start.
 - Onboarding: role → content preference → reading style
 - See [BULLETIN-BOT.md](../BULLETIN-BOT.md) for full reference
 
-**Album Cover Prompts** (10:30am PT)
-- Creative Director briefs Midjourney prompt generator with issue data
-- Generator produces two prompts: literal + abstract/metaphorical
-- Creative Director archives the chosen prompt with issue metadata
-- Prompts ready for future use when web platform generates actual images
-- See [MIDJOURNEY-INTEGRATION.md](docs/MIDJOURNEY-INTEGRATION.md) for complete workflow
-
 ---
 
 ## Version

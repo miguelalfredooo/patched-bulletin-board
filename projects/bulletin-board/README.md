@@ -1,6 +1,10 @@
 # Design By Bulletin™
 
-A daily automated editorial digest for designers covering art, design, AI culture, photography, illustration, and visual culture. Two-act structure: ASCII visual preview (8am), full edition with text and links (8:30am). Delivered via Telegram to Alfred.
+A daily automated editorial digest for designers covering art, design, AI culture, photography, illustration, and visual culture. Three-act structure:
+- **Act 1** (8:00am PT): ASCII visual preview — 11 pieces rendered as PNG, no text/links
+- **Act 2** (8:30am PT): Full edition — all 11 sections with narrative + links, closing with Midjourney issue cover image
+
+Delivered via Telegram to subscribers.
 
 **Tone reference:** Apartamento — intimate, unhurried, specific without being academic. A digest that feels like it was written by someone with taste.
 
@@ -67,36 +71,23 @@ Set the mix in the morning brief; all agents adjust their intensity accordingly.
 ## Delivery
 
 **Telegram Bot** — @DesignByBulletin_bot
-- Published daily at 8:00am (Act 1: visual preview) and 8:30am (Act 2: full edition)
+- **Act 1 (8:00am PT):** Visual preview — 11 ASCII pieces rendered as PNG (4.54:1 aspect ratio)
+- **Act 2 (8:30am PT):** Full edition — 11 sections with title, sentence, link per section + Midjourney issue cover image (visual reveal)
 - Onboarding flow: role → content preference → reading style
 - Commands: `/start`, `digest`, `preview`, `change`, `help`
 - See [BULLETIN-BOT.md](../BULLETIN-BOT.md) for full reference
 
-## Album Cover Prompts (For Future Web Platform)
-
-Each issue includes a generated Midjourney **prompt** (not actual image) created by Creative Director + Editor at 10:30am:
-
-**The System:**
-- Editorial Director sets Editorial Mix (6 parametric faders)
-- Generator creates two complementary prompts (literal + abstract/metaphorical) describing the issue as a whole
-- Creative Director reviews both and archives the chosen prompt with issue metadata
-- Prompt stored for future use when web platform generates actual cover images
-
-**Two Prompt Types:**
-- **Prompt A** — Direct integration of theme, sonic mood, visual language
-- **Prompt B** — Metaphorical interpretation of the same elements
-
-The prompt's visual weight, emotional register, and explicit/implicit theming are controlled by Editorial Mix values. High Visual → bold composition. High Music → mood-driven. High Theme → explicit reference.
-
-When Design By Bulletin has a web platform, these archived prompts will be used to generate actual album covers on-demand.
-
-See [MIDJOURNEY-INTEGRATION.md](docs/MIDJOURNEY-INTEGRATION.md) for complete system and Creative Director decision framework.
+**Visual Rendering:**
+- ASCII art → PNG via `utils/ascii-render.js` (supports multi-color and monochromatic modes)
+- Three themes: `default` (dark), `midnight` (cool), `editorial` (light)
+- Monochromatic mode: single-color per image for editorial control
 
 ## Future: Rich Web Experience
 
-Beyond Telegram with Midjourney integration:
-- Album cover images with each issue
-- Web platform with interactive theme archive
+Beyond Telegram:
+- Web platform with interactive issue archive
+- Customized reading experiences by preference
+- Community discussions around themes and sources
 - Visual/sonic layer controls for readers
 - Deep linking between covers and issue content
 
@@ -157,11 +148,16 @@ bulletin-board/
 │   └── SHADER-SYSTEM.md                # Image processing system (sharp library)
 │
 ├── utils/
+│   ├── ascii-render.js                 # ASCII-to-PNG rendering (multi-color & monochromatic)
+│   ├── act1-png-delivery.js            # Act 1 PNG builder and Telegram prep
 │   ├── shader.js                       # Image processor with 6 presets
 │   ├── test-shader.js                  # Test suite for all 6 presets
 │   ├── figlet.js                       # ASCII typography generator
 │   ├── verify-links.js                 # Link health checker
 │   └── generate-ascii-art.js           # ASCII art generator
+│
+├── covers/                             # Issue cover images (Midjourney + Act 1 PNG)
+│   └── [YYYY-MM-DD]-cover.png         # Midjourney-generated issue cover (visual reveal in Act 2)
 │
 ├── modules/                            # 11 section specifications
 │   ├── art.md
@@ -184,7 +180,7 @@ bulletin-board/
 
 ## Daily Workflow
 
-### Morning: Set the Mix (8:00am)
+### Morning: Set the Mix (8:00am PT)
 
 **Editorial Director** opens the day:
 1. Sets the Editorial Mix (6 intensity faders, 0–100%)
@@ -202,7 +198,7 @@ Theme: 75% (Felt across all sections)
 AI Culture: 20% (Not focused today)
 ```
 
-### Mid-Morning: Discover & Scout (8:00–9:00am)
+### Mid-Morning: Discover & Scout (8:00–9:00am PT)
 
 **Maeve (Researcher)** scouts at Research intensity:
 - Scans all 20+ sources
@@ -219,14 +215,20 @@ AI Culture: 20% (Not focused today)
 - Extracts underlying patterns
 - Maps signals to 11-section framework
 
-### Late Morning: Commission Narratives (9:00–10:00am)
+### Late Morning: Commission Narratives (9:00–10:00am PT)
 
 **Assignment Editor** synthesizes everything:
 - Combines research signals + visual patterns
 - Proposes theme and narrative angles for each of 11 sections
+- Generates Act 1 ASCII pieces (11 pieces, 5 formats, rendered as PNG)
 - Briefs Managing Editor on story direction
 
-### Pre-Delivery: Write & Revise (10:00–11:00am)
+**Creative Director** (optional):
+- Creates custom Midjourney prompts reflecting the issue's theme, sonic mood, and visual language
+- Generates issue cover image via Midjourney
+- Saves cover to `covers/[YYYY-MM-DD]-cover.png`
+
+### Pre-Delivery: Write & Revise (10:00–11:00am PT)
 
 **Managing Editor** develops prose:
 - Writes one sentence per section (fits Act 2 format)
@@ -242,9 +244,20 @@ AI Culture: 20% (Not focused today)
 ### Delivery (8:00am & 8:30am PT)
 
 **Editorial Director** makes final decisions:
-- **Act 1 (8:00am):** Publishes visual preview only (ASCII art, no text/links)
-- **Act 2 (8:30am):** Publishes full edition (ASCII art + title + sentence + link per section)
-- Logs issue to archive-log.md
+
+**Act 1 (8:00am):** Visual preview
+- 11 ASCII pieces rendered as PNG (4.54:1 aspect ratio — 486×2208px)
+- Can be multi-color (visual richness) or monochromatic (thematic identity)
+- No text labels, no links
+- Closing sentence + "Full edition in 30 minutes"
+
+**Act 2 (8:30am):** Full edition
+- 11 sections: title + one sentence + link per section
+- Same closing sentence as Act 1
+- **Issue cover image** as final visual reveal (Midjourney-generated, if available)
+
+**Logging:**
+- Records issue in archive-log.md with theme, Editorial Mix, ASCII formats used, sources, cover filename
 - Waits for reader feedback
 
 ## Editorial Principles
@@ -265,6 +278,12 @@ AI Culture: 20% (Not focused today)
 - No two consecutive pieces use same format
 - All five formats must appear across 11 sections
 - Format C (Typographic) always via `utils/figlet.js` with `leftPad=2`
+
+**PNG Rendering**
+- Act 1: Rendered to PNG at 4.54:1 aspect ratio (486×2208px)
+- Supports two modes: multi-color (per-character coloring) and monochromatic (single color per image)
+- Three themes available: `default` (dark), `midnight` (cool), `editorial` (light)
+- File paths stored under `trustedLocalFileRoots` in openclaw.json for Telegram delivery
 
 **Source Diversity**
 - One source per link across 11 sections

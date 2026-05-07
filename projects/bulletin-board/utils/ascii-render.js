@@ -41,8 +41,10 @@ const DIM_CHARS = /[·\.\`'~\-\s]/;
 
 /**
  * Colorize a single character based on its visual weight.
+ * If monochromatic is true, all characters use the same color.
  */
-function charColor(ch, theme) {
+function charColor(ch, theme, monochromatic = false) {
+  if (monochromatic) return theme.text;
   if (ACCENT_CHARS.test(ch)) return theme.accent;
   if (DIM_CHARS.test(ch)) return theme.dim;
   return theme.text;
@@ -61,9 +63,11 @@ function svgEscape(str) {
 
 /**
  * Build an SVG document from ASCII art text.
- * Each character is individually colored based on its visual weight.
+ * Each character is individually colored based on its visual weight, or monochromatic if specified.
+ *
+ * @param {boolean} [monochromatic=false] \u2014 if true, all characters use theme.text color
  */
-function buildSvg(asciiText, theme, fontSize = 14, fontFamily = 'monospace') {
+function buildSvg(asciiText, theme, fontSize = 14, fontFamily = 'monospace', monochromatic = false) {
   const lines = asciiText.split('\n');
   // Remove trailing empty lines
   while (lines.length && lines[lines.length - 1].trim() === '') lines.pop();
@@ -83,7 +87,7 @@ function buildSvg(asciiText, theme, fontSize = 14, fontFamily = 'monospace') {
     // Build per-character tspans for coloring
     let x = padX;
     for (const ch of line) {
-      const color = charColor(ch, theme);
+      const color = charColor(ch, theme, monochromatic);
       const escaped = svgEscape(ch === ' ' ? '\u00A0' : ch);
       tspans += `<tspan x="${x.toFixed(1)}" y="${y.toFixed(1)}" fill="${color}">${escaped}</tspan>`;
       x += charWidth;
@@ -111,6 +115,7 @@ function buildSvg(asciiText, theme, fontSize = 14, fontFamily = 'monospace') {
  *   @param {string} [options.theme='default']   — theme name or custom theme object
  *   @param {number} [options.fontSize=14]       — font size in px
  *   @param {number} [options.scale=2]           — retina scale factor
+ *   @param {boolean} [options.monochromatic=false] — if true, all chars use single color
  * @returns {Promise<Buffer>}  PNG image buffer
  */
 async function renderAsciiImage(asciiText, options = {}) {
@@ -118,8 +123,9 @@ async function renderAsciiImage(asciiText, options = {}) {
   const theme = typeof themeName === 'object' ? themeName : (THEMES[themeName] || THEMES.default);
   const fontSize = options.fontSize || 14;
   const scale = options.scale || 2;
+  const monochromatic = options.monochromatic || false;
 
-  const svg = buildSvg(asciiText, theme, fontSize);
+  const svg = buildSvg(asciiText, theme, fontSize, 'monospace', monochromatic);
   const scaledSvg = svg.replace(
     /width="(\d+(?:\.\d+)?)" height="(\d+(?:\.\d+)?)"/,
     (_, w, h) => `width="${Math.round(+w * scale)}" height="${Math.round(+h * scale)}" viewBox="0 0 ${w} ${h}"`

@@ -68,14 +68,7 @@ One session. One issue. One decision. Two acts. Parametric control via Editorial
   Runs: verify-links.js
   Produces: All 11 sources verified (no broken links, no repeats except music)
 
-**Step 5 — Album Cover Generation (Optional)**
-  Creative Director generates Midjourney prompts
-  Reads: Editorial Mix, theme, sonic reference, visual language, research signals
-  Runs: midjourney-prompt-generator.js
-  Produces: Two prompts (literal + abstract) + Creative Director guidance
-  Posts to Midjourney, archives cover when complete
-
-**Step 6 — Editorial Director Final Review**
+**Step 5 — Editorial Director Final Review**
   Reviews: Act 1 (ASCII only), Act 2 (with text/links), cover (if generated)
   Reads: BRIEF.md, archive-log.md, entire issue
   Decision: READY or REDIRECT
@@ -92,7 +85,6 @@ Morning brief (Editorial Mix + theme)
   → Assignment Editor commission 
   → Managing Editor prose 
   → Assignment Editor ASCII + verify links
-  → (Optional) Creative Director Midjourney
   → Editorial Director review 
   → READY or REDIRECT
 
@@ -134,11 +126,42 @@ Editorial Mix modulates all agents:
   11. Visual & Brand (Music/Sound Culture sources in any section as needed)
 - Each section: source title, one sentence, one link
 - Closing sentence (same as Act 1)
+- **Issue Cover Image** — Midjourney-generated cover reflecting the issue theme, sent as final visual reveal (if available)
 
-**Album Cover (Optional, ~10:30am PT)**
-- Midjourney-generated image reflecting theme + sonic reference + Editorial Mix
-- Posted to Midjourney by Creative Director, archived when complete
-- See MIDJOURNEY-INTEGRATION.md for prompt generation
+---
+
+## Visual Delivery Options
+
+### ASCII-to-PNG Rendering
+
+Any ASCII art can be rendered to PNG for richer Telegram presentation. Independent of Midjourney covers, can be used at any point in the workflow.
+
+**Rendering modes:**
+- **Multi-color** (default) — Per-character coloring based on visual weight. Dense characters get accent colors, sparse get dim, text gets main color. Rich visual hierarchy.
+- **Monochromatic** — All characters use single color. Clean, editorial aesthetic. Each ASCII piece can have its own color identity via theme selection.
+
+**Available themes:**
+- `default` — Dark (#0a0a0a bg), warm off-white text (evening delivery)
+- `midnight` — Navy (#07080f bg), cool blue text (high contrast)
+- `editorial` — Light (#faf8f2 bg), ink text (accessibility)
+
+**Use cases:**
+- Act 1 visual preview (8:00am PT) — 11 ASCII pieces, typically multi-color for visual richness
+- Custom ASCII pieces — monochromatic for individual sections with distinct color identity
+- Visual separators — monochromatic dividers with theme-specific colors
+- Thematic emphasis — render ASCII art that echoes the day's theme
+
+**Example — monochromatic exploration:**
+```javascript
+const monoAscii = await renderAsciiImage(asciiText, {
+  theme: 'midnight',
+  monochromatic: true,
+  fontSize: 14,
+  scale: 2
+});
+```
+
+See `utils/ascii-render.js` and `utils/act1-png-delivery.js` for implementation.
 
 ---
 
@@ -169,14 +192,12 @@ Each entry after a successful issue:
 - agents/pipeline.md — THIS FILE. Editorial workflow and agent sequence
 - docs/SOURCES.md — 20+ sources and scouting instructions for Maeve/Victor/Coda
 - docs/SHADER-SYSTEM.md — Image processing (sharp library, 6 presets, Editorial Mix integration)
-- docs/MIDJOURNEY-INTEGRATION.md — Album cover prompt generation system
 
 **Modules & Implementation:**
 - modules/*.md — 11 section specifications (Art, Painting, Illustration, etc.)
 - utils/figlet.js — ASCII typography (masthead + Format C pieces)
 - utils/verify-links.js — Link health checking before delivery
-- utils/midjourney-prompt-generator.js — Album cover prompt creation
-- archive-log.md — Published issue log (themes, sources, covers)
+- archive-log.md — Published issue log (themes, sources)
 
 **Telegram Bot:**
 - BULLETIN-BOT.md — Bot configuration, cron jobs, commands, troubleshooting
