@@ -1,0 +1,104 @@
+
+# ADSPACE — Community & Contribution Module
+
+## Full Width (42 chars)
+
+### Version A: Invitation (8 lines)
+```
+╔════════════════════════════════════════╗
+║                                        ║
+║  You have a POV.                       ║
+║  Just start typing.                    ║
+║                                        ║
+║  Have this space.                      ║
+║  Share what matters to you.            ║
+║                                        ║
+╚════════════════════════════════════════╝
+```
+
+### Version B: Minimal (6 lines)
+```
+┌────────────────────────────────────────┐
+│  share your pov                        │
+│  just start typing                     │
+│                                        │
+│  have this space                       │
+└────────────────────────────────────────┘
+```
+
+### Version C: With call-to-action (7 lines)
+```
+╭────────────────────────────────────────╮
+│  your voice matters                    │
+│  you have a perspective the world      │
+│  hasn't heard yet                      │
+│                                        │
+│  submit → designbybulletin.com/submit  │
+╰────────────────────────────────────────╯
+```
+
+### Version D: Two-column (6 lines)
+```
+╭──────────────────────╮ ╭───────────────╮
+│  SHARE YOUR POV      │ │ just start    │
+│                      │ │ typing        │
+│  have this space     │ │               │
+│  submit work here    │ │ contribute    │
+╰──────────────────────╯ ╰───────────────╯
+```
+
+### Version E: Braille accent (8 lines)
+```
+⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿
+⠿                                        ⠿
+⠿  have a perspective.                  ⠿
+⠿  share your pov.                      ⠿
+⠿  just start typing.                   ⠿
+⠿                                        ⠿
+⠿  have this space.                     ⠿
+⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿
+```
+
+---
+
+## Half-Width (20 chars)
+
+### Version F: Sidebar left (5 lines)
+```
+╭──────────────────╮
+│  share your pov  │
+│  just type it    │
+│                  │
+│  have this space │
+╰──────────────────╯
+```
+
+### Version G: Sidebar minimal (4 lines)
+```
+┌──────────────────┐
+│ your voice here  │
+│ just start type  │
+└──────────────────┘
+```
+
+---
+
+## Usage in Issues
+
+Insert after section 6 (Photography) or before section 11 (Visual & Brand).
+Replaces one standard section or appears as standalone module.
+
+**Format compatibility:** A (VE), B (A), C (C), D (D), E (E), F (A), G (A)
+
+**Tone:** Invitation, not demand. Casual, direct, welcoming.
+
+**Line count:** 4–8 lines (keep under 15 to fit Telegram constraints)
+
+---
+
+## Metadata
+
+- **Purpose:** Community contribution portal
+- **Frequency:** Optional, can appear in any issue or once per month
+- **Call-to-action:** URL (designbybulletin.com/submit or similar)
+- **Audience:** Designers, makers, writers, visual thinkers
