@@ -9,7 +9,7 @@ const https = require('https');
 
 const BOT_TOKEN = '8662552111:AAHpfxCGoM6PGbEg4msbSm3bEE6Ucf5o1O0';
 const CHAT_ID = '7774590281';
-const PROJECT_DIR = '/Users/blackmachete/projects/bulletin-board';
+const PROJECT_DIR = '/Users/blackmachete/projects/patched-editorial';
 
 async function sendMessage(text) {
   return new Promise((resolve, reject) => {

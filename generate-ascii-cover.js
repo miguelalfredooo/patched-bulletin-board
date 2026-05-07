@@ -130,8 +130,8 @@ async function convertImageToAsciiPng(inputPath, outputFilename = null) {
     console.log(`🖼️  Converting to PNG...`);
 
     const outputPath = outputFilename
-      ? path.join('/Users/blackmachete/projects/bulletin-board/covers', outputFilename)
-      : path.join('/Users/blackmachete/projects/bulletin-board/covers', `momentum-006-ascii-cover-${new Date().toISOString().split('T')[0]}.png`);
+      ? path.join('/Users/blackmachete/projects/patched-editorial/covers', outputFilename)
+      : path.join('/Users/blackmachete/projects/patched-editorial/covers', `momentum-006-ascii-cover-${new Date().toISOString().split('T')[0]}.png`);
 
     await sharp(Buffer.from(svgContent))
       .png()

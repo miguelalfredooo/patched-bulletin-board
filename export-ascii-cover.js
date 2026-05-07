@@ -145,8 +145,8 @@ async function exportAsciiCover(inputPath, outputFilename = null, fontSize = 12)
     console.log(`📝 Rendering SVG to PNG...`);
 
     const outputPath = outputFilename
-      ? path.join('/Users/blackmachete/projects/bulletin-board/covers', outputFilename)
-      : path.join('/Users/blackmachete/projects/bulletin-board/covers', `momentum-006-cover.png`);
+      ? path.join('/Users/blackmachete/projects/patched-editorial/covers', outputFilename)
+      : path.join('/Users/blackmachete/projects/patched-editorial/covers', `momentum-006-cover.png`);
 
     await sharp(Buffer.from(svgContent))
       .png()
