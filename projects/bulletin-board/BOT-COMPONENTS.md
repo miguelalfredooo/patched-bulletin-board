@@ -1,706 +1,356 @@
-# Design By Bulletin™ — Bot Components System
+# Design By Bulletin™ — Component System
 
-## Component 1: Hero Cover Template
-
-The hero cover is the branded opening of every issue. It appears at the top of ACT 1 (Visual Preview).
-
-### Template Structure
-
-```
-██████╗ ██████╗ ██████╗ ™
-██╔══██╗██╔══██╗██╔══██╗
-██║  ██║██████╔╝██████╔╝
-██║  ██║██╔══██╗██╔══██╗
-██████╔╝██████╔╝██████╔╝
-╚═════╝ ╚═════╝ ╚═════╝
-
-Design By Bulletin™
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Issue [NUMBER]
-[THEME NAME] • [PUBLICATION DATE]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-### Component Breakdown
-
-| Part | Content | Fixed | Variable |
-|------|---------|-------|----------|
-| **Logo** | `██████╗ ██████╗ ██████╗ ™` | ✅ Fixed | — |
-| **Logo Lines 2-6** | Box drawing characters | ✅ Fixed | — |
-| **Masthead** | `Design By Bulletin™` | ✅ Fixed | — |
-| **Top Divider** | `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━` | ✅ Fixed | — |
-| **Issue Number** | `Issue 006` | ❌ Variable | Changes per issue |
-| **Theme + Date** | `Momentum • May 9, 2026` | ❌ Variable | Changes per issue |
-| **Bottom Divider** | `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━` | ✅ Fixed | — |
-
-### Usage Rules
-
-1. **Always include the hero cover** at the start of ACT 1
-2. **Comes before all section ASCII art** (sections 1-11)
-3. **Must be inside code block** when sent to Telegram (for monospace rendering)
-4. **Logo and dividers are identical** across all issues — never change them
-5. **Only update:** Issue number, theme name, and publication date
-
-### Example Variations
-
-**Issue 001 — Presence (May 5, 2026):**
-```
-██████╗ ██████╗ ██████╗ ™
-██╔══██╗██╔══██╗██╔══██╗
-██║  ██║██████╔╝██████╔╝
-██║  ██║██╔══██╗██╔══██╗
-██████╔╝██████╔╝██████╔╝
-╚═════╝ ╚═════╝ ╚═════╝
-
-Design By Bulletin™
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Issue 001
-Presence • May 5, 2026
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-**Issue 010 — Worn (May 12, 2026):**
-```
-██████╗ ██████╗ ██████╗ ™
-██╔══██╗██╔══██╗██╔══██╗
-██║  ██║██████╔╝██████╔╝
-██║  ██║██╔══██╗██╔══██╗
-██████╔╝██████╔╝██████╔╝
-╚═════╝ ╚═════╝ ╚═════╝
-
-Design By Bulletin™
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Issue 010
-Worn • May 12, 2026
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-### Font Requirements
-
-- **Font:** Monospace (Courier, Courier New, or equivalent)
-- **Size:** Standard terminal/code block size
-- **Rendering:** Telegram code blocks preserve alignment automatically
-- **Width:** ~38 characters (optimized for Telegram mobile + desktop)
-
-### Bot Delivery
-
-**In `/preview` command:** Hero cover is first thing in code block
-**In `/digest` command:** Hero cover is first thing in code block
-**Standalone mode:** Hero cover can be sent alone as a complete message in code block
-**Wrapping:** Always inside triple backticks (```)
-
-### Standalone Usage
-
-The hero cover is completely self-contained and requires no additional context. It can be used independently as:
-- A standalone announcement of a new issue
-- A cover/intro card separate from the full editorial content
-- A visual marker in any context needing issue identification
-
-**Example standalone delivery:**
-```
-██████╗ ██████╗ ██████╗ ™
-██╔══██╗██╔══██╗██╔══██╗
-██║  ██║██████╔╝██████╔╝
-██║  ██║██╔══██╗██╔══██╗
-██████╔╝██████╔╝██████╔╝
-╚═════╝ ╚═════╝ ╚═════╝
-
-Design By Bulletin™
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Issue 006
-Momentum • May 9, 2026
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-```
-
-This can be sent as a complete message with no prose or additional sections.
-
-### Current Implementation
-
-- ✅ All 10 issues (001-010) use standardized hero template
-- ✅ Consistent branding across all deliveries
-- ✅ Logo and dividers never change
-- ✅ Only metadata (issue #, theme, date) updates per issue
-
-### File Locations
-
-Hero template appears in each issue file:
-- `/projects/bulletin-board/ISSUE-[#]-[theme]-complete.md`
-- Located immediately after `## ACT 1 — VISUAL PREVIEW` header
-- Lines 9-23 (approximately)
+Complete reference for composing Design By Bulletin issues using modular components.
 
 ---
 
-## Component 2: Section ASCII Art
+## Overview
 
-Individual ASCII art pieces representing each of the 11 editorial sections. These form the visual body of ACT 1 (Visual Preview).
+Every issue consists of two acts delivered via Telegram:
+- **ACT 1:** Visual preview with ASCII art (three composition options)
+- **ACT 2:** Editorial content with prose and sources
 
-### Overview
+Issues are built from **5 reusable components** combined in specific ways.
 
-Each issue contains 11 section ASCII pieces, one for each editorial topic:
-1. **Art** — Visual foundation
-2. **Painting** — Color and form
-3. **Illustration** — Line and composition
-4. **Sculpture** — Space and material
-5. **Culture** — Social context
-6. **Photography** — Light and frame
-7. **Art History** — Lineage and tradition
-8. **Opinions** — Critical perspective
-9. **Design & AI Tools** — Digital practice
-10. **Product & Process** — Making and craft
-11. **Visual & Brand** — Identity and mark
+---
 
-### File Structure
+## Component 1: Issue Cover (COMPONENT-1-ISSUE-COVER)
 
-**Naming Convention:**
+**Purpose:** Branded opening with issue identity (always Codeblock 1)
+
+**Structure:**
 ```
-issue-[#]-[section-name]-neon.txt
+██████╗ ██████╗ ██████╗ ™
+██╔══██╗██╔══██╗██╔══██╗
+██║  ██║██████╔╝██████╔╝
+██║  ██║██╔══██╗██╔══██╗
+██████╔╝██████╔╝██████╔╝
+╚═════╝ ╚═════╝ ╚═════╝
+
+Design By Bulletin™
+━━━━━━━━━━━━━━━━━━━━━━━━━
+Issue [NUMBER]
+[THEME] • [DATE]
+━━━━━━━━━━━━━━━━━━━━━━━━━
+
+                    ◇
+                   ◇ ◇
+                  [HERO-TALL portrait]
+                   ...
+
+                  **[THEME]**
 ```
+
+**Rules:**
+- Logo and dividers are fixed (never change)
+- Update only: Issue number, theme name, publication date
+- Includes HERO-TALL portrait (15-line centered diamond)
+- Always in its own codeblock (Codeblock 1)
+- Monospace rendering required
 
 **Examples:**
-- `issue-006-art-neon.txt` — Section 1, Issue 006
-- `issue-006-painting-neon.txt` — Section 2, Issue 006
-- `issue-006-illustration-neon.txt` — Section 3, Issue 006
-- etc.
-
-**Storage Location:**
-`/projects/bulletin-board/ascii-art-library/`
-
-### Specifications
-
-| Property | Value |
-|----------|-------|
-| **Width** | ~40-50 characters (monospace) |
-| **Height** | 15 lines (standardized) |
-| **Format** | Pure ASCII text, UTF-8 encoded |
-| **Font** | Monospace (Courier, etc.) |
-| **Aspect Ratio** | Approximately 1:3 (wider than tall) |
-| **Style** | Geometric Unicode characters (◆, ▲, ║, ═, etc.) |
-| **Alignment** | Center-aligned within codeblock |
-
-### Example Section
-
-**Issue 006 — Art Section:**
-```
-                ►
-               ►►
-              ►►►
-             ►►►►
-            ►►►►►
-           ►►►►►►
-          ►►►►►►►
-         ►►►►►►►►
-        ►►►►►►►►►
-
-
-
-
-```
-
-### Usage in Issues
-
-**Location:** Appears immediately after section header in ACT 1
-**Format:** Each section wrapped in code block backticks (\`\`\`)
-**Context:** Appears after Hero Cover, before ACT 2
-
-**Example placement:**
-```
-[Hero Cover]
-
-### Section 1 — Art
-```
-[ASCII art for Art section]
-```
-
-### Section 2 — Painting
-```
-[ASCII art for Painting section]
-```
-
-[... continues for all 11 sections ...]
-```
-
-### Standalone Usage
-
-Each section ASCII art can be used independently:
-- Sent as individual artwork cards
-- Used in galleries or collections
-- Shared individually by section topic
-- Reused across different contexts
-
-**Standalone example:**
-```
-[ASCII art for Photography section]
-```
-
-### Variations System
-
-Each section ASCII art now exists in **five layout options**, totaling 550 files:
-
-#### Variation 1: Source
-Original ASCII art (reference)
-```
-    ◇
-   ◇ ◇
-  ◇ ◇ ◇
- ◇ ◇ ◇ ◇
-◇ ◇ ◇ ◇ ◇
-```
-**Use case:** Reference, embedded layouts, minimal width
-
-#### Variation 2: Expanded
-Full 14-line centered hero piece with section name below
-```
-                                         ◇
-                                        ◇ ◇
-                                      ◇ ◇ ◇
-                                     ◇ ◇ ◇ ◇
-                                   ◇ ◇ ◇ ◇ ◇
-                                
-                                      **Art**
-```
-**Use case:** Hero display, gallery view, featured sections
-
-#### Variation 3: Labeled (NEW)
-Center-aligned ASCII + section name (no editorial line)
-```
-                                         ◇
-                                        ◇ ◇
-                                      ◇ ◇ ◇
-                                     ◇ ◇ ◇ ◇
-                                   ◇ ◇ ◇ ◇ ◇
-                                
-                                      **Art**
-```
-**Use case:** Standalone section cards, visual identity
-
-#### Variation 4: Compact-Left (ENHANCED)
-ASCII left | **Name** right + Editorial Grid first line
-```
-    ◇                                 **Art**
-   ◇ ◇
-  ◇ ◇ ◇
- ◇ ◇ ◇ ◇
-◇ ◇ ◇ ◇ ◇
-
-Paintings that age on the canvas...
-```
-**Use case:** Left-to-right flow, contextual layouts, mobile
-
-#### Variation 5: Compact-Right (ENHANCED)
-**Name** left | ASCII right + Editorial Grid first line
-```
-**Art**                                    ◇
-                                          ◇ ◇
-                                        ◇ ◇ ◇
-                                       ◇ ◇ ◇ ◇
-                                      ◇ ◇ ◇ ◇ ◇
-
-Paintings that age on the canvas...
-```
-**Use case:** Right-to-left balance, sidebar layouts
-
-### File Organization
-
-**Location:** `/Users/blackmachete/projects/patched-editorial/projects/bulletin-board/ascii-art-library/`
-
-**Structure:** Organized by variation type for efficient gallery browsing and contextual reuse:
-
-```
-ascii-art-library/
-├── source/       [110 files] issue-[#]-[section]-neon.txt
-├── expanded/     [110 files] issue-[#]-[section]-expanded-neon.txt
-├── labeled/      [110 files] issue-[#]-[section]-labeled-neon.txt (NEW)
-├── compact/      [220 files] issue-[#]-[section]-compact-{left|right}-neon.txt
-├── README.md     (complete organization guide)
-└── VARIATION-EXAMPLES.md (visual examples)
-```
-
-**Breakdown by variation type:**
-- `source/` — 110 original ASCII files (reference, embedded)
-- `expanded/` — 110 centered hero versions (14 lines, featured display)
-- `labeled/` — 110 centered ASCII + section name (standalone cards)
-- `compact/` — 220 left/right variations (110 left + 110 right, with editorial lines)
-
-### Gallery Query Patterns
-
-**Get all Art sections (by variation):**
-```bash
-ls source/issue-*-art-neon.txt        # originals
-ls expanded/issue-*-art-expanded-neon.txt  # heroes
-ls labeled/issue-*-art-labeled-neon.txt    # labeled cards
-ls compact/issue-*-art-compact-*.txt  # with context
-```
-
-**Get all Issue 006 sections (all variations):**
-```bash
-ls *006* | grep -E "(source|expanded|labeled|compact)"
-```
-
-**Get all standalone section cards:**
-```bash
-ls labeled/
-```
-
-**Get all contextual layouts (with editorial lines):**
-```bash
-ls compact/
-```
-
-### Current Inventory
-
-- ✅ **550 total files** (110 source + 440 variations)
-- ✅ **110 source** (original files, reference)
-- ✅ **110 expanded** (14-line centered hero pieces)
-- ✅ **110 labeled** (centered ASCII + section name, standalone)
-- ✅ **110 compact-left** (left-aligned + editorial line)
-- ✅ **110 compact-right** (right-aligned + editorial line)
-- ✅ **All 10 issues complete** (001-010)
-- ✅ **All 11 sections per issue**
-- ✅ **All compact versions enhanced with Editorial Grid first lines**
-- ✅ **Optimized for gallery, contextual, and standalone use**
-
-### Quick Reference
-
-| Need | Location | Filename Pattern |
-|------|----------|------------------|
-| Original Art #6 | `006/source/` | `issue-006-art-neon.txt` |
-| Hero Painting #10 | `010/expanded/` | `issue-010-painting-expanded-neon.txt` |
-| Compact layout | `NNN/compact/` | `issue-NNN-[section]-compact-{left\|right}-neon.txt` |
+- Master reference: `ascii-art-library/master/COMPONENT-1-ISSUE-COVER.txt`
+- Issue 005: `Issue 005`, `Signal • May 8, 2026`
+- Issue 010: `Issue 010`, `Worn • May 12, 2026`
 
 ---
 
----
+## Component 2: Section ASCII Art Variations (COMPONENT-2-*)
 
-## Component 3: Editorial Grid
+**Purpose:** Visual representation of editorial sections
 
-Editorial prose sections forming the intellectual backbone of each issue (ACT 2). Each of the 11 sections pairs with its corresponding ASCII art piece from ACT 1, providing critical context, cultural references, and source attribution.
+**Six variations available:**
+1. **SOURCE** — 5-line diamond (pure art)
+2. **EXPANDED** — 5-line centered hero diamond
+3. **LABELED** — 5-line diamond + section name at vertical midpoint
+4. **COMPACT-LEFT** — 5-line diamond + name right
+5. **COMPACT-RIGHT** — 5-line diamond + name left  
+6. **HERO-TALL** — 15-line portrait diamond
 
-### Overview
+**Asset location:** `ascii-art-library/[variation]/issue-[#]-[section]-[variation]-neon.txt`
 
-The Editorial Grid consists of 11 prose sections, one for each visual section:
-
-1. **Art** — Visual foundation & artistic practice
-2. **Painting** — Color, form, and pigment
-3. **Illustration** — Line, composition, and drawing
-4. **Sculpture** — Space, material, and dimensionality
-5. **Culture** — Social context and cultural significance
-6. **Photography** — Light, frame, and documentation
-7. **Art History** — Lineage, tradition, and historical perspective
-8. **Opinions** — Critical perspective and philosophical angles
-9. **Design & AI Tools** — Digital practice and systems
-10. **Product & Process** — Making, craft, and methodology
-11. **Visual & Brand** — Identity, mark, and visual systems
-
-### Structure & Format
-
-**Naming & Placement:** Appears in ACT 2 of issue files, immediately following the complete ACT 1
-
-**Section Format:**
-```
-**[Section Name] — [Thematic Subtitle]**
-[2-4 sentences of contextual prose, artist/maker references, and thematic development]
-*[Source: Publication/Outlet Name]*
-```
-
-**Components:**
-- **Section Header** — Bold section name + em dash + thematic subtitle that relates to issue theme
-- **Body Text** — Prose (typically 2-4 sentences) that connects visual theme to cultural/critical context
-- **Source Attribution** — Italicized source reference pointing to publication, artist, or reference material
-
-### Specifications
-
-| Property | Value |
-|----------|-------|
-| **Sections per issue** | 11 (one per editorial topic) |
-| **Body length** | 2-4 sentences (~60-120 words per section) |
-| **Prose style** | Narrative, critical, contextual |
-| **References** | Artists, makers, designers, cultural figures, academic concepts |
-| **Source format** | `*[Source: Publisher/Platform]*` |
-| **Consistency** | Thematic coherence with issue theme; balanced across all 11 perspectives |
-
-### Example Editorial Section
-
-**From Issue 010 — Worn:**
-
-```
-**Art — Sherald's Raw Linen**
-Paintings that age on the canvas. Sherald's practice treats material and time as collaborators. The painting wears in rather than deteriorates.
-*[Source: Artsy]*
-```
-
-### Usage in Issues
-
-**Location:** Appears as part of ACT 2, after all visual content
-**Format:** Plain text prose (no code blocks for these sections)
-**Context:** Each section mirrors its corresponding ASCII art piece from ACT 1, providing intellectual depth
-
-**Example placement:**
-```
-## ACT 2 — FULL EDITION
-
-**Art — Sherald's Raw Linen**
-Paintings that age on the canvas...
-*[Source: Artsy]*
-
-**Painting — Dissolution Through Use**
-Cecily Brown's figures dissolving...
-*[Source: Booooooom]*
-
-[... continues for all 11 sections ...]
-```
-
-### Content Characteristics
-
-**Thematic Alignment:** Each issue's Editorial Grid responds to and amplifies the central theme
-
-**Issue 010 (Worn) examples:**
-- Art addresses patina and temporal markers
-- Culture discusses Japanese pottery tradition (wabi-sabi)
-- Photography explores meaning accumulation through repeated viewing
-- Design & AI Tools covers systems maturing through use
-
-**Issue 009 (Material) examples:**
-- Art focuses on materiality as medium (body, flesh, organic matter)
-- Painting emphasizes pigment as substance
-- Illustration highlights paper as protagonist
-- Photography celebrates film stock and grain as aesthetic choice
-
-**Voice and References:** Combines artist/maker names, cultural theory, design practice, and contemporary references. Sources range from specialized publications (Artsy, Frieze, Magnum Photos) to broader cultural platforms (The New Yorker, Wired, Brand New).
-
-### Standalone Usage
-
-Editorial sections can be extracted and used independently:
-- Individual section can be shared as a critical perspective on a topic
-- Multiple sections on a single theme across different issues form a thematic collection
-- Sources enable follow-up research and deeper exploration
-
-**Standalone example:**
-```
-**Photography — Fukase's Ravens**
-Bird photography about sky worn by presence. Light changing through repeated viewings and use of the negative. The image accumulates meaning.
-*[Source: LensCulture]*
-```
-
-### Current Inventory
-
-- ✅ **110 total sections** (11 sections × 10 issues)
-- ✅ **All 10 issues complete** (001-010)
-- ✅ **Thematic coherence** across all sections per issue
-- ✅ **Source diversity** across publications, platforms, and disciplines
-- ✅ **Ready for extraction** as individual critical perspectives
-
-### Thematic Organization
-
-Issues and their overarching themes:
-
-| Issue | Theme | Focus |
-|-------|-------|-------|
-| 001 | Presence | Being visible and situated in space |
-| 002 | Boundary | Edges, limits, and delineation |
-| 003 | Narrative | Story, sequence, and meaning-making |
-| 004 | Rhythm | Pattern, tempo, and temporal structure |
-| 005 | Scale | Proportion, magnitude, and perspective |
-| 006 | Momentum | Movement, force, and continuation |
-| 007 | Interval | Space, gaps, and what is not there |
-| 008 | Threshold | Liminality, transition, and between-states |
-| 009 | Material | Substance, physicality, and irreducible fact |
-| 010 | Worn | Patina, time-in-contact, and care |
-
-Each Editorial Grid section responds to its issue's theme while maintaining the distinct voice and perspective of that particular editorial section (Art, Painting, Culture, etc.).
-
-### File Locations
-
-Editorial Grid appears in each issue file:
-- `/projects/bulletin-board/ISSUE-[#]-[theme]-complete.md`
-- Located immediately after "## ACT 2 — FULL EDITION" header
-- Comprises lines from ~248 to ~291 (approximately)
-- Followed by Closing Sentence and Metadata Footer
+**Master reference:** `ascii-art-library/master/COMPONENT-2-ISSUE-SECTIONS.txt`
 
 ---
 
----
+## Component 3: Editorial Grid (COMPONENT-3-EDITORIAL-GRID)
 
-## Component 4: Closing Sentence
+**Purpose:** Prose content for all 11 sections
 
-The thematic cornerstone of each issue—a single poetic statement that captures the essence of the theme and leaves a lasting impression on readers.
-
-### Structure
-
-**Format:** Single line, in quotation marks, italicized or plain text
-
-**Placement:** Immediately follows the 11-section Editorial Grid, between last source attribution and the Metadata Footer
-
-**Example:**
+**Structure per section:**
 ```
-**CLOSING SENTENCE:**
-"The things worth keeping are the things that show you used them."
+**[SECTION] — [SUBTITLE]**
+[2-4 sentences of prose, 60-120 words]
+*[Source: Attribution]*
 ```
 
-### Characteristics
+**11 Sections per issue:**
+1. Art
+2. Painting
+3. Illustration
+4. Sculpture
+5. Culture
+6. Photography
+7. Art History
+8. Opinions
+9. Design & AI Tools
+10. Product & Process
+11. Visual & Brand
 
-| Property | Value |
-|----------|-------|
-| **Length** | 8-15 words (concise, memorable) |
-| **Voice** | Poetic, distilled, universal |
-| **Scope** | Encapsulates the entire issue's theme |
-| **Tone** | Reflective, often philosophical or paradoxical |
-| **Style** | Aphoristic—can stand alone as wisdom |
-
-### Examples Across Issues
-
-**Issue 001 (Presence):**
-"Your presence changes the room."
-
-**Issue 007 (Interval):**
-"The space between is where meaning lives."
-
-**Issue 008 (Threshold):**
-"Every threshold is a place where you are still both things at once."
-
-**Issue 009 (Material):**
-"Everything digital is downstream of something you can hold."
-
-**Issue 010 (Worn):**
-"The things worth keeping are the things that show you used them."
-
-### Standalone Usage
-
-The Closing Sentence is completely self-contained and can function independently:
-- Sent as a standalone quote or inspiration message
-- Used as a social media caption or post
-- Featured in promotional materials for the issue
-- Quoted in cross-platform marketing without additional context
-
-**Example standalone delivery:**
-```
-"The space between is where meaning lives."
-
-— Design By Bulletin™ Issue 007
-```
-
-### Thematic Function
-
-The Closing Sentence distills 11 perspectives (Art, Painting, Illustration, etc.) into a single truth. It's the moment where all editorial voices converge into one unified statement.
-
-**Relationship to Editorial Grid:**
-- The Editorial Grid explores a theme across disciplines
-- The Closing Sentence reveals the theme's irreducible core
-- Together, they complete the intellectual and emotional arc of the issue
-
-### Current Inventory
-
-- ✅ **10 Closing Sentences** (one per issue, 001-010)
-- ✅ **Each thematically distinct** and issue-specific
-- ✅ **Memorable and quotable** across platforms
-- ✅ **Ready for independent use** as promotional or inspirational content
-
-### File Locations
-
-Closing Sentence appears in each issue file:
-- `/projects/bulletin-board/ISSUE-[#]-[theme]-complete.md`
-- Located after Editorial Grid (Component 3)
-- Format: Appears under bold header `**CLOSING SENTENCE:**`
-- Followed by Metadata Footer (Component 5)
+**Master reference:** `ascii-art-library/master/COMPONENT-3-EDITORIAL-GRID.txt`
 
 ---
 
-## Component 5: Metadata Footer
+## Component 4: Closing Sentence (COMPONENT-4-CLOSING-SENTENCE)
 
-Administrative and archival information that grounds each issue in time, theme, and context.
+**Purpose:** Thematic wrap-up statement
 
-### Structure
+**Format:**
+```
+"[8-15 word poetic statement capturing issue theme]"
+```
 
-**Format:** Two lines of italicized text
+**Delivery:** After editorial grid, before metadata footer
 
-**Placement:** Very end of each issue file, after Closing Sentence
+**Master reference:** `ascii-art-library/master/COMPONENT-4-CLOSING-SENTENCE.txt`
 
-**Standard Format:**
+---
+
+## Component 5: Metadata Footer (COMPONENT-5-METADATA-FOOTER)
+
+**Purpose:** Publication information
+
+**Format:**
 ```
 *Published: [DATE]*
-*Theme: [THEME NAME] — [THEME DESCRIPTION]*
+*Theme: [NAME] — [8-15 word description]*
 ```
 
-**Example from Issue 010:**
-```
-*Published: May 12, 2026*
-*Theme: Worn — Temporal depth and what time-in-contact reveals about care*
-```
+**Delivery:** Last element of issue
 
-### Components
-
-| Element | Purpose | Format |
-|---------|---------|--------|
-| **Published Date** | Issue publication date | `*Published: [Month Day, Year]*` |
-| **Theme Name** | Single-word or two-word theme | Plain text in quotes-free form |
-| **Theme Description** | One-sentence distillation of theme | Follows em dash; 8-15 words |
-
-### Examples Across Issues
-
-**Issue 001 (Presence):**
-```
-*Published: May 5, 2026*
-*Theme: Presence — Being situated and visibility in relationship to space*
-```
-
-**Issue 007 (Interval):**
-```
-*Published: May 8, 2026*
-*Theme: Interval — The rhythm, grammar, and structure created by gaps, rests, and what is not there*
-```
-
-**Issue 009 (Material):**
-```
-*Published: May 11, 2026*
-*Theme: Material — Substance as irreducible fact of creation and meaning*
-```
-
-### Metadata Function
-
-The footer serves multiple purposes:
-
-1. **Archival** — Establishes publication date for records and timeline
-2. **Thematic Summary** — One-sentence explanation for anyone encountering the issue outside its full context
-3. **SEO/Discoverability** — Keywords aid in finding issues by theme
-4. **Citation** — Provides essential metadata for references and sharing
-5. **Curation Trail** — Creates a historical record of editorial direction
-
-### Relationship to Archive-Log
-
-The Metadata Footer mirrors information in `/projects/bulletin-board/archive-log.md`, which maintains a complete publication history. The footer is the standalone version embedded in each issue file.
-
-### Current Inventory
-
-- ✅ **10 Metadata Footers** (one per issue, 001-010)
-- ✅ **Consistent formatting** across all issues
-- ✅ **Thematic descriptions complete** and accurate
-- ✅ **Publication dates verified** against archive-log.md
-
-### File Locations
-
-Metadata Footer appears in each issue file:
-- `/projects/bulletin-board/ISSUE-[#]-[theme]-complete.md`
-- Located at absolute end of file
-- Italicized format for visual distinction from body text
+**Master reference:** `ascii-art-library/master/COMPONENT-5-METADATA-FOOTER.txt`
 
 ---
 
-## Component Summary
+## ACT 1 Composition Approaches
 
-| Component | Type | Quantity | Status |
-|-----------|------|----------|--------|
-| **1. Hero Cover** | Visual/Branding | 10 fixed templates | ✅ Complete & consistent |
-| **2. Section ASCII Art** | Visual/Aesthetic | 330 files (3 variations × 11 × 10) | ✅ Complete with variations |
-| **3. Editorial Grid** | Content/Prose | 110 sections (11 × 10) | ✅ Complete & thematic |
-| **4. Closing Sentence** | Content/Poetic | 10 statements | ✅ Complete & memorable |
-| **5. Metadata Footer** | Administrative | 10 entries | ✅ Complete & archived |
+### ACT 1 v1: Grid Layout (Full-Width Visual Grid)
 
-**Component 2 Breakdown:**
-- Expanded: 110 files (14-line standalone pieces)
-- Compact-Left: 110 files (ASCII left, text right)
-- Compact-Right: 110 files (text left, ASCII right)
+**Components:** COMPONENT-1-ISSUE-COVER + COMPONENT-2-ISSUE-SECTIONS
 
-**Total Components:** 5  
-**Total Assets:** 570+ discrete elements  
-**Status:** All components fully documented with flexible variation system  
-**Date Created:** 2026-05-07  
-**Last Updated:** 2026-05-07
+**Codeblock structure:**
+- **Codeblock 1:** Issue cover (with HERO-TALL portrait)
+- **Codeblock 2:** All 11 sections in LABELED variation (ASCII art left, section name right at vertical midpoint), separated by 24-char dividers
+
+**Use case:** Unified visual grid showing all sections at once
+
+**Example:** `ascii-art-library/master/ACT-1-LAYOUT-TEMPLATE.txt`
+
+---
+
+### ACT 1 v2: Card-by-Card Layout (Individual Section Delivery)
+
+**Components:** COMPONENT-1-ISSUE-COVER + COMPONENT-SECTION-CARD-TEMPLATE (×11)
+
+**Codeblock structure:**
+- **Codeblock 1:** Issue cover
+- **Codeblocks 2–12:** Each section as standalone card
+  - ASCII art (SOURCE variation)
+  - Section name below (left-aligned, ALL CAPS)
+  - Article title + description + source
+  - Link outside codeblock (plain text) per section
+
+**Use case:** One section per message, scannable format
+
+**Pattern:**
+```
+[Codeblock 1: Cover]
+[Codeblock 2: Section 1 card]
+Link to section 1
+[Codeblock 3: Section 2 card]
+Link to section 2
+... (repeat for all 11 sections)
+```
+
+---
+
+### ACT 1 v3: Full Template (Complete Rendered Reference)
+
+**Components:** MOCK-ISSUE-005-ACT-1 (adapted for specific issue)
+
+**Use case:** Complete rendered example for implementing other issues
+
+**Example:** `ascii-art-library/master/MOCK-ISSUE-005-ACT-1.txt`
+
+---
+
+## ACT 2 Composition
+
+### ACT 2: Full Editorial Grid
+
+**Components:** COMPONENT-1-ISSUE-COVER + COMPONENT-ALL-SECTIONS (11 editorial sections)
+
+**Codeblock structure:**
+- **Codeblock 1:** Issue cover (with HERO-TALL portrait)
+- **Codeblocks 2–12:** Each editorial section in its own codeblock
+  - Section name (bold, descriptive subtitle)
+  - Prose (2-4 sentences, ~60-120 words)
+  - Source attribution (italicized)
+  - Link outside codeblock (plain text) per section
+
+**Delivery pattern:**
+```
+[Codeblock 1: Cover]
+[Codeblock 2: Section 1 editorial content]
+Link to section 1
+[Codeblock 3: Section 2 editorial content]
+Link to section 2
+... (repeat for all 11 sections)
+```
+
+**Each section contains:**
+```
+**[SECTION] — [SUBTITLE]**
+[First line of prose appears as entry preview in ACT 1]
+[Full 2-4 sentence prose with editorial voice]
+*[Source: Attribution]*
+```
+
+---
+
+## Visual Rules
+
+### Dividers
+
+Standard divider (24 characters, prevents Telegram line breaks):
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+Used between:
+- Sections in LABELED variation (ACT 1 v1)
+- Individual cards (ACT 1 v2)
+- Editorial sections (ACT 2)
+
+### Text Styling
+
+- **Section names:** ALL CAPS, bold (`**ART**`)
+- **Article titles:** Bold, descriptive (`**Art — Bold Geometric Work**`)
+- **Prose:** Regular text, narrative voice
+- **Source attribution:** Italicized brackets (`*[Source: MOMA]*`)
+
+### ASCII Art Characters
+
+Pure Unicode geometric characters only:
+- Diamonds: ◇ ◆ ◈
+- Arrows: → ← ↑ ↓
+- Boxes: ┌ ┐ └ ┘ ─ │ ┼
+- Fills: ░ ▒ ▓
+- Lines: ═ ║ ╔ ╗ ╚ ╝
+- Shapes: ▲ ▼ ◆ ● ○
+
+**No:** emoji, color codes, extended formatting
+
+---
+
+## Codeblock Structure
+
+### Rule: Each Component in Own Codeblock
+
+- Cover always: Codeblock 1
+- Sections/cards: Codeblocks 2+ (depending on composition)
+- Links: Plain text outside codeblocks (no backticks)
+
+### Telegram Rendering
+
+```
+[Codeblock 1: Content]
+```
+
+Always triple backticks (```) with monospace content. Telegram automatically preserves alignment.
+
+---
+
+## Creating New Issues
+
+### Step 1: Prepare Cover
+Update `COMPONENT-1-ISSUE-COVER.txt` template with:
+- Issue number
+- Theme name
+- Publication date
+
+### Step 2: Choose ACT 1 Approach
+Select one:
+- **v1 (Grid):** All sections in one codeblock using LABELED variation
+- **v2 (Cards):** Individual section cards in separate codeblocks
+- **v3 (Template):** Use mock issue as reference
+
+### Step 3: Prepare ACT 2
+Use `COMPONENT-3-EDITORIAL-GRID.txt` with 11 section prose
+
+### Step 4: Add Closing + Metadata
+- Closing sentence from `COMPONENT-4-CLOSING-SENTENCE.txt`
+- Metadata from `COMPONENT-5-METADATA-FOOTER.txt`
+
+### Step 5: Deliver
+Compose codeblocks according to chosen ACT 1 version, followed by ACT 2 editorial content
+
+---
+
+## Asset Locations
+
+### Master Component Files
+```
+ascii-art-library/master/
+├── COMPONENTS-MASTER-GUIDE.txt    (Complete system documentation)
+├── COMPONENT-1-ISSUE-COVER.txt
+├── COMPONENT-2-ISSUE-SECTIONS.txt (6 variations)
+├── COMPONENT-2-ISSUE-HERO-BELOW.txt
+├── COMPONENT-3-EDITORIAL-GRID.txt
+├── COMPONENT-4-CLOSING-SENTENCE.txt
+├── COMPONENT-5-METADATA-FOOTER.txt
+├── COMPONENT-ENTRY-PREVIEW.txt
+├── COMPONENT-SECTION-CARD-TEMPLATE.txt
+├── ACT-1-LAYOUT-TEMPLATE.txt
+├── MOCK-ISSUE-005-ACT-1.txt
+└── MOCK-ISSUE-005-ACT-1-WITH-COMPONENTS.txt
+```
+
+### ASCII Art Variations (550 files total)
+```
+ascii-art-library/
+├── source/        (110 original files)
+├── expanded/      (110 hero centered)
+├── labeled/       (110 with section names)
+├── compact/       (220 left/right variations)
+├── hero-tall/     (110 portrait format)
+├── master/        (Component reference files)
+└── README.md
+```
+
+### Individual Issues
+```
+projects/bulletin-board/
+├── ISSUE-001-presence-complete.md
+├── ISSUE-002-the-mark-complete.md
+├── ISSUE-003-handmade-complete.md
+├── ISSUE-004-traces-complete.md
+├── ISSUE-005-signal-complete.md
+├── ISSUE-006-momentum-complete.md
+├── ISSUE-007-interval-complete.md
+├── ISSUE-008-threshold-complete.md
+├── ISSUE-009-material-complete.md
+└── ISSUE-010-worn-complete.md
+```
+
+---
+
+## Summary: From Component to Delivery
+
+1. **Cover + Choice of ACT 1 approach** → Visual preview
+2. **Editorial sections** → ACT 2 content
+3. **Each component in own codeblock** → Telegram monospace formatting
+4. **Links as plain text** → Between codeblocks
+5. **24-character dividers** → Prevents line breaks
+
+For detailed system documentation, see: `ascii-art-library/master/COMPONENTS-MASTER-GUIDE.txt`

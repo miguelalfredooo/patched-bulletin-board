@@ -1,260 +1,234 @@
 # Design By Bulletin™ — Deployment Guide
 
-Quick reference for deploying new issues to the magazine and bot.
+Quick reference for composing and deploying new issues.
 
 ---
 
-## Quick Deployment Workflow
+## Component-Based Issue Composition
 
-### 1. Create New Issue (5 min)
-
-```bash
-# Create the issue markdown file
-cat > projects/bulletin-board/ISSUE-[#]-[theme]-complete.md << 'EOF'
-# Design By Bulletin™ — Issue [#]
-## Theme: [Theme Name]
-## Date: [Mon DD, YYYY]
+Every issue uses reusable components. Read **[BOT-COMPONENTS.md](BOT-COMPONENTS.md)** first for complete system reference.
 
 ---
 
-## ACT 1 — VISUAL PREVIEW
-[ASCII header + 11 section blocks]
+## Quick Workflow
+
+### 1. Choose ACT 1 Composition (1 min)
+
+Pick one of three approaches:
+
+**Option A: Grid Layout (v1)**
+- Use: COMPONENT-1-ISSUE-COVER + COMPONENT-2-ISSUE-SECTIONS
+- Result: All 11 sections in single codeblock (LABELED variation)
+- Best for: Showing complete visual grid at once
+- Reference: `ascii-art-library/master/ACT-1-LAYOUT-TEMPLATE.txt`
+
+**Option B: Card-by-Card (v2)**
+- Use: COMPONENT-1-ISSUE-COVER + COMPONENT-SECTION-CARD-TEMPLATE (×11)
+- Result: Cover + 11 individual section cards in separate codeblocks
+- Best for: One section per message, scannable format
+- Reference: `ascii-art-library/master/COMPONENT-SECTION-CARD-TEMPLATE.txt`
+
+**Option C: Full Template (v3)**
+- Use: MOCK-ISSUE-005-ACT-1 (adapted)
+- Result: Complete rendered example
+- Best for: Reference/implementation guide
+- Reference: `ascii-art-library/master/MOCK-ISSUE-005-ACT-1.txt`
 
 ---
 
-## ACT 2 — FULL EDITION
-[11 editorial sections with sources]
+### 2. Prepare Components (5 min)
 
-**CLOSING SENTENCE:**
-"[Your closing sentence]"
-EOF
+#### Cover Component
+Update `ascii-art-library/master/COMPONENT-1-ISSUE-COVER.txt`:
+- Issue number: `Issue [#]`
+- Theme: `[THEME NAME]`
+- Date: `[Month DD, Year]`
+
+**Key:** Logo + dividers are fixed, only update issue/theme/date
+
+#### Section Components (for chosen v1/v2/v3)
+
+**v1 (Grid):** Use `COMPONENT-2-ISSUE-SECTIONS.txt` 
+- LABELED variation ready
+- 11 sections separated by dividers (━━━━━━━━━━━━━━━━━━━━━━━━━)
+- ASCII art left, section name right at vertical midpoint
+
+**v2 (Cards):** Use `COMPONENT-SECTION-CARD-TEMPLATE.txt`
+- Each section gets: ASCII art + name below + article details
+- 11 copies for 11 sections
+
+**v3 (Template):** Use `MOCK-ISSUE-005-ACT-1.txt`
+- Adapt all variables (issue number, theme, dates, content)
+- Keep structure as-is
+
+---
+
+### 3. Prepare ACT 2 Editorial (5 min)
+
+For all versions, include ACT 2 with:
+
+**Structure (11 sections, each in own codeblock):**
+```
+[Codeblock 1: COMPONENT-1-ISSUE-COVER]
+
+[Codeblock 2: Editorial Section 1]
+**Art — [Subtitle]**
+[2-4 sentences of prose]
+*[Source: Attribution]*
+
+[Plain text link]
+
+[Codeblock 3: Editorial Section 2]
+[Section content]
+[Plain text link]
+
+... (repeat for all 11 sections)
 ```
 
-### 2. Generate ASCII Art (2 min)
-
-```bash
-# Create 11 ASCII art files in ascii-art-library/
-for i in {1..11}; do
-  cat > projects/bulletin-board/ascii-art-library/issue-[#]-[section-name]-neon.txt << 'EOF'
-[ASCII art content - 15+ lines]
-EOF
-done
+**Editorial section template** (from `COMPONENT-3-EDITORIAL-GRID.txt`):
+```
+**[SECTION NAME] — [SUBTITLE]**
+[2-4 sentences of narrative prose]
+*[Source: Publication Name]*
 ```
 
-### 3. Update Archive Log (2 min)
+**Reference:** `ascii-art-library/master/COMPONENT-3-EDITORIAL-GRID.txt`
 
-Edit `projects/bulletin-board/archive-log.md`:
-- Add entry at top (newest first)
-- Include all metadata fields
-- Match closing sentence exactly from issue file
+---
 
-### 4. Verify Files (2 min)
+### 4. Finalize & Deliver (3 min)
 
-```bash
-# Check issue file exists
-ls -l projects/bulletin-board/ISSUE-[#]-*.md
-
-# Check ASCII files exist (should be 11)
-ls projects/bulletin-board/ascii-art-library/issue-[#]-*.txt | wc -l
-
-# Check archive log entry
-grep "## Issue \[#\]" projects/bulletin-board/archive-log.md
+#### Add Closing Sentence
+After all 11 editorial sections, add:
+```
+"[8-15 word thematic statement]"
 ```
 
-### 5. Test Bot Access (2 min)
+Reference: `ascii-art-library/master/COMPONENT-4-CLOSING-SENTENCE.txt`
 
-```bash
-# Verify bot can read the file
-cat projects/bulletin-board/ISSUE-[#]-*.md | head -30
-
-# Verify ASCII art renders
-cat projects/bulletin-board/ascii-art-library/issue-[#]-art-neon.txt
+#### Add Metadata Footer
+At end:
+```
+*Published: [Date]*
+*Theme: [Name] — [8-15 word description]*
 ```
 
-### 6. Commit & Deploy (1 min)
+Reference: `ascii-art-library/master/COMPONENT-5-METADATA-FOOTER.txt`
 
-```bash
-# Stage all files
-git add projects/bulletin-board/ISSUE-[#]-*.md \
-         projects/bulletin-board/ascii-art-library/issue-[#]-*.txt \
-         projects/bulletin-board/archive-log.md
+#### Delivery Format
+- **Cover:** Codeblock 1 (always)
+- **Sections:** Own codeblocks (2+)
+- **Links:** Plain text outside codeblocks (no backticks)
+- **Dividers:** 24-character EM DASH (━━━━━━━━━━━━━━━━━━━━━━━━━) between sections
 
-# Commit with clear message
-git commit -m "Create Issue [#] — [Theme]"
+---
 
-# Verify on main branch
-git log --oneline -1
+## Asset Locations
+
+### Master Components (reference/templates)
+```
+ascii-art-library/master/
+├── COMPONENTS-MASTER-GUIDE.txt         (System documentation)
+├── COMPONENT-1-ISSUE-COVER.txt         (Cover template)
+├── COMPONENT-2-ISSUE-SECTIONS.txt      (6 ASCII variations)
+├── COMPONENT-3-EDITORIAL-GRID.txt      (Editorial examples)
+├── COMPONENT-4-CLOSING-SENTENCE.txt    (Closing examples)
+├── COMPONENT-5-METADATA-FOOTER.txt     (Footer examples)
+├── ACT-1-LAYOUT-TEMPLATE.txt           (Full layout reference)
+└── MOCK-ISSUE-005-ACT-1.txt            (Complete example)
 ```
 
----
-
-## Validation Checklist (Quick)
-
-Before deploying, run through these in 30 seconds:
-
-- [ ] Issue file exists: `ISSUE-[#]-[theme]-complete.md`
-- [ ] 11 ASCII files in `ascii-art-library/`: `issue-[#]-*.txt`
-- [ ] Archive log has entry for Issue [#]
-- [ ] Closing sentence matches between issue file and archive log
-- [ ] Git commit is on `main` branch
-- [ ] No syntax errors in markdown
-
----
-
-## Common Files Reference
-
-| File | Purpose | Example |
-|------|---------|---------|
-| `ISSUE-[#]-[theme]-complete.md` | Full issue (ACT 1 + ACT 2) | `ISSUE-007-interval-complete.md` |
-| `issue-[#]-[section]-neon.txt` | ASCII art for one section | `issue-007-art-neon.txt` |
-| `archive-log.md` | Issue metadata & history | Contains all issue summaries |
-| `README.md` | Project overview | Issue table, quick reference |
-| `ASCII-ART-CATALOG.md` | Visual asset inventory | Complete list of all ASCII files |
-
----
-
-## Issue File Template
-
-```markdown
-# Design By Bulletin™ — Issue [#]
-## Theme: [Theme Name]
-## Date: [Month Day, Year]
-
----
-
-## ACT 1 — VISUAL PREVIEW
-
-[Hero cover with logo]
-
-### Section 1 — Art
+### ASCII Art Files (550 total)
 ```
-[ASCII art content]
+ascii-art-library/
+├── source/        (110 originals — pure art)
+├── expanded/      (110 centered hero versions)
+├── labeled/       (110 with section names)
+├── compact/       (220 left/right variations)
+├── hero-tall/     (110 portrait format)
+└── master/        (Component reference files)
 ```
 
-### Section 2 — Painting
+**Usage:**
+- ACT 1 v1: Use `labeled/` directory
+- ACT 1 v2: Use `source/` directory
+- ACT 1 v3: Use `hero-tall/` in cover
+
+---
+
+## Codeblock Rules
+
+✅ **Always:**
+- Cover in Codeblock 1
+- Each section in own codeblock
+- Use triple backticks (```)
+- Monospace rendering for ASCII art
+
+✅ **Links are plain text:**
 ```
-[ASCII art content]
+https://example.com/article
 ```
+(No backticks, no formatting)
 
-[... continue for all 11 sections ...]
-
----
-
-## ACT 2 — FULL EDITION
-
-**Art — [Title]**
-[Description of art section and cultural context]
-*[Source: Citation]*
-
-**Painting — [Title]**
-[Description]
-*[Source: Citation]*
-
-[... continue for all 11 sections ...]
-
----
-
-**CLOSING SENTENCE:**
-"[Your one sentence that captures the theme]"
-
----
-
-*Published: [Month Day, Year]*
-*Theme: [Theme] — [One sentence summary]*
+✅ **Dividers between sections:**
 ```
-
----
-
-## Archive Log Template
-
-```markdown
-## Issue [#] — YYYY-MM-DD
-- **THEME:** [Theme Name]
-- **EDITORIAL MIX:** Music X%, Visual X%, Research X%, Process X%, Theme X%, AI Culture X%
-- **SONIC REFERENCE:** [Artist/Genre — Year]: [description]
-- **RENDERING:** Text-only markdown
-- **CLOSING SENTENCE:** "[exact closing sentence]"
-- **STATUS:** Published YYYY-MM-DD
-- **CURATOR NOTE:** [editorial observation about this issue]
+━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
+24 characters to prevent Telegram line breaks
 
 ---
 
-## Dependencies Checklist
+## Complete Example Structure
 
-Every issue **must have** these to work with the bot:
+```
+**ISSUE #005 — SIGNAL**
 
-1. **Issue File** (`ISSUE-[#]-*.md`)
-   - Located: `projects/bulletin-board/`
-   - Content: Full ACT 1 + ACT 2
-   - Bot reads: Yes
+[Codeblock 1]
+██████╗ ██████╗ ██████╗ ™
+...
+Design By Bulletin™
+━━━━━━━━━━━━━━━━━━━━━━━━━
+Issue 005
+Signal • May 8, 2026
+━━━━━━━━━━━━━━━━━━━━━━━━━
+[HERO-TALL portrait + **SIGNAL**]
+[/Codeblock 1]
 
-2. **ASCII Art Files** (11 total, `issue-[#]-*.txt`)
-   - Located: `projects/bulletin-board/ascii-art-library/`
-   - Naming: `issue-[#]-[section-name]-neon.txt`
-   - Bot reads: Yes (for ACT 1 preview)
+**ACT 1 v1 example (Grid Layout):**
+[Codeblock 2]
+[11 sections in LABELED variation with dividers]
+[/Codeblock 2]
 
-3. **Archive Log Entry** (in `archive-log.md`)
-   - Located: `projects/bulletin-board/archive-log.md`
-   - Info: Metadata, closing sentence, curator notes
-   - Bot reads: Yes (for metadata)
+**ACT 2:**
+[Codeblock 3]
+**Art — Bold Geometric Work**
+Minimalism cuts through...
+*[Source: MOMA]*
+[/Codeblock 3]
 
-4. **README Updates**
-   - Located: `README.md` (root) + `projects/bulletin-board/README.md`
-   - Updates: Issue table, issue count
-   - Bot reads: No (human reference)
+https://www.moma.org/
 
-Without ANY of these, the bot cannot fully serve the issue.
+[Codeblock 4]
+**Painting — Color as Communication**
+Restricted palettes...
+*[Source: WikiArt]*
+[/Codeblock 4]
 
----
+https://www.wikiart.org/
 
-## Debugging Checklist
+... (continue for all 11 sections)
 
-If the bot can't serve an issue:
+**CLOSING:**
+"Your presence changes the room."
 
-- [ ] File exists and is readable: `ls -l ISSUE-[#]-*.md`
-- [ ] Markdown syntax is valid: Open in editor, check for errors
-- [ ] Archive log entry exists: `grep "Issue \[#\]" archive-log.md`
-- [ ] ASCII files exist: `ls issue-[#]-*.txt | wc -l` (should be 11)
-- [ ] Closing sentence matches: Compare issue file ↔ archive log (exact match required)
-- [ ] File permissions: `chmod 644 ISSUE-[#]-*.md issue-[#]-*.txt`
-- [ ] Git committed: `git log --oneline | head -5`
-
----
-
-## Performance Notes
-
-- Avg time to create and deploy one issue: **15 minutes**
-  - Content creation: 7 min
-  - ASCII art generation: 3 min
-  - Archive + verification: 3 min
-  - Git commit + test: 2 min
-
-- Bot read time: < 1 second
-- ASCII rendering time: < 0.5 seconds
-- Total bot latency: < 2 seconds from user request to delivery
-
----
-
-## Rollback Procedure
-
-If something goes wrong:
-
-```bash
-# See recent commits
-git log --oneline -10
-
-# Revert the latest issue release
-git revert HEAD
-
-# Or reset to previous state
-git reset --hard HEAD~1
-
-# Verify old issues still work
-git log --oneline | grep "Issue"
+*Published: May 8, 2026*
+*Theme: Signal — Direct communication that cuts through visual noise*
 ```
 
 ---
 
-**Last Updated:** 2026-05-07
-**Version:** 1.0
+## For More Details
+
+- **Component system:** [BOT-COMPONENTS.md](BOT-COMPONENTS.md)
+- **Master guide:** `ascii-art-library/master/COMPONENTS-MASTER-GUIDE.txt`
+- **Published issues:** `ISSUE-001-*.md` through `ISSUE-010-*.md`

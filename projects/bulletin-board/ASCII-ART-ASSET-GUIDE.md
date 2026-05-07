@@ -1,186 +1,225 @@
-# ASCII Art Asset Guide — Quick Reference
+# ASCII Art Asset Guide
 
-**Master location:** `/Users/blackmachete/projects/patched-editorial/projects/bulletin-board/ascii-art-library/`
+Complete reference for all 550 ASCII art files and component templates.
+
+**Master location:** `ascii-art-library/`
 
 ---
 
 ## Directory Structure
 
+### Master Components (Reference & Templates)
 ```
-ascii-art-library/
-├── 001/ through 010/
-│   ├── source/     (11 original ASCII files per issue)
-│   ├── expanded/   (11 centered hero versions per issue)
-│   └── compact/    (22 left/right variations per issue)
-├── README.md
-└── VARIATION-EXAMPLES.md
+master/
+├── COMPONENTS-MASTER-GUIDE.txt              (System documentation)
+├── COMPONENT-1-ISSUE-COVER.txt              (Cover template)
+├── COMPONENT-2-ISSUE-SECTIONS.txt           (6 ASCII variations)
+├── COMPONENT-2-ISSUE-HERO-BELOW.txt         (HERO-TALL for cover)
+├── COMPONENT-3-EDITORIAL-GRID.txt           (Editorial examples)
+├── COMPONENT-4-CLOSING-SENTENCE.txt         (Closing examples)
+├── COMPONENT-5-METADATA-FOOTER.txt          (Footer examples)
+├── COMPONENT-ENTRY-PREVIEW.txt              (Text-only previews)
+├── COMPONENT-SECTION-CARD-TEMPLATE.txt      (Full section cards)
+├── ACT-1-LAYOUT-TEMPLATE.txt                (Complete layout)
+├── MOCK-ISSUE-005-ACT-1.txt                 (Rendered example)
+└── MOCK-ISSUE-005-ACT-1-WITH-COMPONENTS.txt (Example with components)
 ```
+
+### ASCII Art Variations (550 files total, 110 per variation)
+
+```
+source/              (110 originals — pure ASCII art, no labels)
+├── issue-001-art-neon.txt
+├── issue-001-painting-neon.txt
+├── issue-001-illustration-neon.txt
+├── ... (11 sections × 10 issues)
+└── issue-010-visual-brand-neon.txt
+
+expanded/            (110 hero centered — 5-line centered diamond)
+├── issue-001-art-expanded-neon.txt
+├── issue-001-painting-expanded-neon.txt
+├── ... (11 sections × 10 issues)
+└── issue-010-visual-brand-expanded-neon.txt
+
+labeled/             (110 with section names — ASCII left, name right at vertical midpoint)
+├── issue-001-art-labeled-neon.txt
+├── issue-001-painting-labeled-neon.txt
+├── ... (11 sections × 10 issues)
+└── issue-010-visual-brand-labeled-neon.txt
+
+compact/             (220 left & right variations)
+├── issue-001-art-compact-left-neon.txt
+├── issue-001-art-compact-right-neon.txt
+├── issue-001-painting-compact-left-neon.txt
+├── issue-001-painting-compact-right-neon.txt
+├── ... (11 sections × 10 issues × 2 alignments)
+└── issue-010-visual-brand-compact-right-neon.txt
+
+hero-tall/           (110 portrait format — 15-line centered diamond)
+├── issue-001-art-hero-tall-neon.txt
+├── issue-001-painting-hero-tall-neon.txt
+├── ... (11 sections × 10 issues)
+└── issue-010-visual-brand-hero-tall-neon.txt
+```
+
+---
+
+## 11 Section Names (Per Issue)
+
+1. **Art** — Visual design and composition
+2. **Painting** — Pigment and surface
+3. **Illustration** — Icon-like clarity
+4. **Sculpture** — Form as argument
+5. **Culture** — Direct address aesthetics
+6. **Photography** — High-contrast imagery
+7. **Art History** — Historical context and movements
+8. **Opinions** — Critical perspectives
+9. **Design & AI Tools** — Technology and process
+10. **Product & Process** — Creation and iteration
+11. **Visual & Brand** — Identity and velocity
 
 ---
 
 ## Finding Assets
 
+### By Composition Approach
+
+**ACT 1 v1 (Grid Layout):** Use LABELED variation
+```bash
+ls labeled/issue-001-*-labeled-neon.txt
+```
+All 11 sections from any issue in LABELED variation (ASCII left, name right)
+
+**ACT 1 v2 (Cards):** Use SOURCE variation
+```bash
+ls source/issue-001-*-neon.txt
+```
+Pure ASCII art without labels, used in individual section cards
+
+**ACT 1 v3 (Template):** Use HERO-TALL variation
+```bash
+ls hero-tall/issue-001-*-hero-tall-neon.txt
+```
+Portrait format for issue covers (included in COMPONENT-1-ISSUE-COVER)
+
+**Compact variations:** Use COMPACT-LEFT or COMPACT-RIGHT
+```bash
+ls compact/issue-001-*-compact-left-neon.txt
+ls compact/issue-001-*-compact-right-neon.txt
+```
+
 ### By Issue + Section
 
-**Original art (Issue 6, Art section):**
+**Issue 5, Art section, original:**
 ```bash
-cat ascii-art-library/006/source/issue-006-art-neon.txt
+cat source/issue-005-art-neon.txt
 ```
 
-**Hero display (Issue 10, Painting section):**
+**Issue 10, Painting, labeled (for v1 grid layout):**
 ```bash
-cat ascii-art-library/010/expanded/issue-010-painting-expanded-neon.txt
+cat labeled/issue-010-painting-labeled-neon.txt
 ```
 
-**Compact layout (Issue 7, Culture section, left-aligned):**
+**Issue 3, Culture, compact-right:**
 ```bash
-cat ascii-art-library/007/compact/issue-007-culture-compact-left-neon.txt
+cat compact/issue-003-culture-compact-right-neon.txt
 ```
 
-### All sections for an issue
-
-**All Issue 006 hero versions:**
+**All issues, Photography, hero-tall (for covers):**
 ```bash
-ls ascii-art-library/006/expanded/
+ls hero-tall/issue-*-photography-hero-tall-neon.txt
 ```
 
-**All Issue 009 original files:**
+### By Variation Type
+
+**All source variations (no labels):**
 ```bash
-ls ascii-art-library/009/source/
+ls source/
 ```
 
-### All sections with same name
-
-**All "Art" sections across issues:**
+**All hero-tall (portrait) variations:**
 ```bash
-find ascii-art-library -name "*-art-*.txt"
+ls hero-tall/
 ```
 
-**All compact versions:**
+**All compact variations (left only):**
 ```bash
-find ascii-art-library -path "*/compact/*" -name "*.txt"
+ls compact/*-compact-left-neon.txt
 ```
 
 ---
 
 ## File Naming Convention
 
-```
-issue-[NNN]-[SECTION]-[VARIATION]-neon.txt
-```
-
-**Components:**
-- `[NNN]` — Issue number (001-010, zero-padded)
-- `[SECTION]` — Section name (art, painting, culture, etc.)
-- `[VARIATION]` — Layout type:
-  - (none) — Original source file
-  - `-expanded` — Hero centered version
-  - `-compact-left` — Compact with text right
-  - `-compact-right` — Compact with text left
+**Pattern:** `issue-[NNN]-[section]-[variation]-neon.txt`
 
 **Examples:**
-- `issue-001-art-neon.txt` → Original, Issue 1, Art
-- `issue-006-painting-expanded-neon.txt` → Hero, Issue 6, Painting
-- `issue-010-culture-compact-left-neon.txt` → Compact-left, Issue 10, Culture
+- `issue-005-art-neon.txt` — Issue 5, Art, SOURCE variation
+- `issue-010-painting-labeled-neon.txt` — Issue 10, Painting, LABELED variation
+- `issue-003-culture-compact-right-neon.txt` — Issue 3, Culture, COMPACT-RIGHT variation
+- `issue-007-design-tools-hero-tall-neon.txt` — Issue 7, Design & AI Tools, HERO-TALL variation
+
+**Notes:**
+- Section names use hyphens: `design-tools` for "Design & AI Tools", `art-history` for "Art History", `visual-brand` for "Visual & Brand"
+- Variations: `neon` (original), `expanded-neon`, `labeled-neon`, `compact-left-neon`, `compact-right-neon`, `hero-tall-neon`
 
 ---
 
-## Sections (11 per issue)
+## Using Components in Issues
 
-1. art
-2. painting
-3. illustration
-4. sculpture
-5. culture
-6. photography
-7. art-history
-8. opinions
-9. design-tools
-10. product-process
-11. visual-brand
+### Component 1: Issue Cover
+- Location: `master/COMPONENT-1-ISSUE-COVER.txt`
+- Includes: HERO-TALL portrait
+- Update: Issue number, theme, date
+- Example HERO-TALL: `hero-tall/issue-005-signal-hero-tall-neon.txt`
 
----
+### Component 2: ASCII Variations
+- Location: `master/COMPONENT-2-ISSUE-SECTIONS.txt`
+- Contains: 6 variation examples
+- Use in composition:
+  - v1 (Grid): `labeled/` files
+  - v2 (Cards): `source/` files
+  - v3 (Template): `hero-tall/` in cover
 
-## Variation Types
+### Component 3: Editorial Grid
+- Location: `master/COMPONENT-3-EDITORIAL-GRID.txt`
+- Examples: 3 section templates
+- All 110 full sections: `ISSUE-[#]-*-complete.md` files
 
-### Source (Original)
-- **Lines:** Variable (5-13 lines)
-- **Width:** 40-50 characters
-- **Centered:** No (original alignment)
-- **Use:** Reference, minimal layouts, embedded text
+### Component 4: Closing Sentence
+- Location: `master/COMPONENT-4-CLOSING-SENTENCE.txt`
+- Examples: 5 thematic statements
 
-**Location:** `NNN/source/issue-NNN-[section]-neon.txt`
-
-### Expanded (Hero)
-- **Lines:** 14 (padded to fixed height)
-- **Width:** 80 characters
-- **Centered:** Yes (strong visual presence)
-- **Use:** Featured display, gallery, hero sections, Telegram code blocks
-
-**Location:** `NNN/expanded/issue-NNN-[section]-expanded-neon.txt`
-
-### Compact-Left
-- **Lines:** 9 (compact height)
-- **Format:** ASCII left | **Section Name** right
-- **Width:** 80+ characters
-- **Use:** Left-to-right flow, alternating layouts, mobile
-
-**Location:** `NNN/compact/issue-NNN-[section]-compact-left-neon.txt`
-
-### Compact-Right
-- **Lines:** 9 (compact height)
-- **Format:** **Section Name** left | ASCII right
-- **Width:** 80+ characters
-- **Use:** Right-balance, mirror layouts, sidebars
-
-**Location:** `NNN/compact/issue-NNN-[section]-compact-right-neon.txt`
+### Component 5: Metadata Footer
+- Location: `master/COMPONENT-5-METADATA-FOOTER.txt`
+- Examples: 3 footer templates
 
 ---
 
-## Usage in Bot Commands
+## Quick Reference: Which Files for Which Composition
 
-### `/preview` or `/act 1`
-**Fetch:** All 11 sections from `expanded/` for hero display
-```bash
-# Get all Issue 006 hero ASCII for preview
-ls ascii-art-library/006/expanded/issue-006-*.txt
-```
-
-### `/digest` or `/today`
-**Fetch:** All 11 sections from `expanded/` for visual preview
-**Plus:** ACT 2 prose sections from ISSUE-*.md files
-
-### Gallery feature (future)
-**Fetch:** Issue-based browsing from `compact/` or `expanded/`
-```bash
-# User selects Issue 7, gets all 11 cultural sections
-ls ascii-art-library/007/expanded/
-```
+| Approach | Components | Files |
+|----------|-----------|-------|
+| **ACT 1 v1 (Grid)** | Cover + all 11 sections | `master/COMPONENT-1-ISSUE-COVER.txt` + `labeled/*` (11 files) |
+| **ACT 1 v2 (Cards)** | Cover + 11 cards | `master/COMPONENT-1-ISSUE-COVER.txt` + `source/*` (11 files) |
+| **ACT 1 v3 (Template)** | Full rendered | `master/MOCK-ISSUE-005-ACT-1.txt` (reference) |
+| **ACT 2 (Editorial)** | Cover + 11 prose | `master/COMPONENT-1-ISSUE-COVER.txt` + `ISSUE-[#]-*-complete.md` |
 
 ---
 
-## Integration Points
+## Asset Summary
 
-- **Bot AGENTS.md:** References this location in file locations section
-- **BOT-COMPONENTS.md:** Complete specification of Component 2
-- **VARIATION-EXAMPLES.md:** Visual examples for design reference
-- **README.md:** Organization guide and quick lookup table
-
----
-
-## Asset Statistics
-
-| Category | Count |
-|----------|-------|
-| Issues | 10 |
-| Sections per issue | 11 |
-| Source files per issue | 11 |
-| Expanded files per issue | 11 |
-| Compact files per issue | 22 (11 left + 11 right) |
-| **Files per issue** | **44** |
-| **Total files** | **440** |
+- **Total files:** 550+ (110 per variation + master components)
+- **Naming:** `issue-[NNN]-[section]-[variation]-neon.txt`
+- **Variations:** source, expanded, labeled, compact-left, compact-right, hero-tall
+- **Sections:** 11 per issue (Art through Visual & Brand)
+- **Issues:** 10 complete (001-010)
+- **Master files:** All component templates in `master/`
 
 ---
 
-**Last updated:** 2026-05-07  
-**Status:** Complete and ready for integration
+## For More Details
+
+- **Component system:** [BOT-COMPONENTS.md](BOT-COMPONENTS.md)
+- **Deployment guide:** [DEPLOYMENT-GUIDE.md](DEPLOYMENT-GUIDE.md)
+- **Master guide:** `master/COMPONENTS-MASTER-GUIDE.txt`

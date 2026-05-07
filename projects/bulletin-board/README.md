@@ -20,7 +20,10 @@ Message **@DesignByBulletinBot** on Telegram:
 ```
 
 ### For Contributors
-**Read this first:** [PROJECT-GUIDE.md](PROJECT-GUIDE.md) — Complete reference for building new issues (architecture, process, examples, time estimates).
+**Read these first:**
+1. **[BOT-COMPONENTS.md](BOT-COMPONENTS.md)** — Component system reference (5 components, 3 ACT 1 approaches, delivery structure)
+2. **[DEPLOYMENT-GUIDE.md](DEPLOYMENT-GUIDE.md)** — Step-by-step workflow (compose, prepare, deliver)
+3. **[ASCII-ART-ASSET-GUIDE.md](ASCII-ART-ASSET-GUIDE.md)** — Asset locations (550 files, 6 variations)
 
 ---
 
@@ -55,25 +58,32 @@ A curated daily editorial about design, culture, and tools. Each issue:
 
 ---
 
-## Essential Documentation
+## Component-Based Issue Composition
 
-### 📖 To Create New Issues
-- **[PROJECT-GUIDE.md](PROJECT-GUIDE.md)** — Complete reference (only doc you need)
-- **[CONTENT-BRIEFS-003-010.md](CONTENT-BRIEFS-003-010.md)** — Editorial framework templates
-- **[PROSE-STRUCTURE-REFERENCE.md](PROSE-STRUCTURE-REFERENCE.md)** — How to structure 11 sections
+### Primary Documentation
 
-### 🎨 Design & Format
-- **[ASCII-ART-STANDARDS.md](ASCII-ART-STANDARDS.md)** — Alignment, width, consistency rules
-- **[ASCII-COMPOSITION-GUIDE.md](ASCII-COMPOSITION-GUIDE.md)** — Format types (A-E), sequence rules
-- **[STYLE-GUIDE.md](STYLE-GUIDE.md)** — Tone, voice, prose guidelines
+**Start here for building new issues:**
+- **[BOT-COMPONENTS.md](BOT-COMPONENTS.md)** — 5 reusable components, 3 ACT 1 composition approaches, codeblock structure
+- **[DEPLOYMENT-GUIDE.md](DEPLOYMENT-GUIDE.md)** — Step-by-step workflow (5 min cover, 5 min editorial, 3 min finalize)
+- **[ASCII-ART-ASSET-GUIDE.md](ASCII-ART-ASSET-GUIDE.md)** — 550 ASCII files across 6 variations, master templates
 
-### 🏗️ Architecture & Infrastructure
-- **[TELEGRAM-BOT-SETUP.md](TELEGRAM-BOT-SETUP.md)** — Bot config, commands, session isolation
-- **[OPENCLAW-GATEWAY-RESTART-FIX.md](OPENCLAW-GATEWAY-RESTART-FIX.md)** — System architecture notes
+### Architecture Documentation
 
-### 📚 Reference
+**Component system:**
+- `ascii-art-library/master/COMPONENTS-MASTER-GUIDE.txt` — Complete system reference for agents
+- `ascii-art-library/master/COMPONENT-*.txt` — Individual component templates
+- `ascii-art-library/master/MOCK-ISSUE-005-ACT-1.txt` — Complete rendered example
+
+**Asset locations:**
+- `ascii-art-library/source/` — 110 original ASCII art files (pure art)
+- `ascii-art-library/labeled/` — 110 LABELED variation (ACT 1 v1 grid layout)
+- `ascii-art-library/compact/` — 220 COMPACT variations (left/right)
+- `ascii-art-library/hero-tall/` — 110 portrait format (covers)
+
+### Reference
+
 - **[archive-log.md](archive-log.md)** — Publication history with metadata
-- **[ASCII-ARCHIVE.md](ASCII-ARCHIVE.md)** — Reference ASCII sections from published issues
+- **Published issues:** `ISSUE-001-*.md` through `ISSUE-010-*.md`
 
 ---
 
