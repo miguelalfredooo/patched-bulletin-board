@@ -245,25 +245,89 @@ These are editorial directions, not source assignments. When exploring any theme
 
 Music isn't a primary content source, but contextual input for:
 
-### For Editorial Director (Theme Setting)
-- "Today's vibe is [emerging ambient producer name]" — sets the editorial mood
-- Creates internal reference point for what the issue should feel like
-- Informs color palette, pacing, compositional choices
+### For Editorial Director (Daily Direction)
+
+**Morning Brief:** Pick 1–2 songs/producers as the day's sonic reference.
+
+- Sets the editorial mood and energy level for all sections
+- Creates unified aesthetic across diverse visual/narrative content
+- Acts as internal compass: "Does this piece feel like today's vibe?"
+
+**Example:**
+- Theme: "The Ritual in Tools" + Morning pick: Japanese city pop producer (sparse, meditative, precise)
+- This informs: Victor looks for minimal UI, clean geometry; Managing Editor writes with deliberate pacing; color palette leans toward muted/refined
+
+**Scout Bandcamp/Discogs for:**
+- Emerging producers working at genre boundaries (not mainstream)
+- Mood/tempo that matches editorial pace (slow/introspective vs. energetic/chaotic)
+- Production quality as design reference (clean/pristine vs. lo-fi/textured)
 
 ### For Maeve (Research Context)
-- What are designers/culture makers listening to?
-- Does music culture reveal design thinking? (e.g., hyperpop's maximalism → UI trends 6 months later)
-- Link songs/playlists in research briefs as cultural context
+
+**Cultural Signal Detection:** What does music culture reveal about design thinking?
+
+1. **Emerging sounds → Design trends (3–6 month lag)**
+   - Hyperpop's maximalism → UI trends toward saturation, density, visual noise
+   - Ambient/generative music → Design interest in systems, emergence, automation
+   - Vaporwave aesthetics → Nostalgia + irony in visual design
+
+2. **Genre boundaries reveal creative tensions**
+   - Producers mixing genres = designers mixing disciplines
+   - What's being combined sonically often precedes visual + digital combinations
+
+3. **Include in research briefs**
+   - "Designers are listening to [producer/genre]"
+   - Link Bandcamp/Spotify in findings: "Here's the sonic landscape of this moment"
+   - Cultural context for why certain visual/design patterns are emerging
 
 ### For Victor (Visual Aesthetic)
-- Music production aesthetic informs visual direction
-- Genre/producer style guides color, texture, compositional rhythm
-- "This section feels like [artist name] — how do we visualize that?"
 
-### For Managing Editor (Narrative Tone)
-- Audio landscape shapes written voice/pacing
-- Sonic quality (clean/noisy, sparse/dense) informs prose style
-- Links optional: "This section reads like [song title]" as internal note
+**Translating Sound into Visual Language:**
+
+1. **Production quality as design reference**
+   - Clean/pristine production → Minimal, refined visual palette
+   - Lo-fi/textured production → Grainy, saturated, imperfect aesthetics
+   - Heavily processed/synthetic → Geometric, digital-first visuals
+
+2. **Tempo + Density guide composition**
+   - Fast/dense music → Dense, layered visuals; tight composition
+   - Slow/sparse music → Negative space; breathing room; minimal elements
+   - Rhythmic music → Compositional rhythm; visual beats; pacing
+
+3. **Color + Frequency correspondence**
+   - High-frequency sounds (bright/piercing) → Warm colors, high saturation
+   - Low-frequency sounds (deep/rumbling) → Cool colors, desaturated tones
+   - Frequency balance → Color balance in visual palette
+
+**Scout approach:**
+- Bandcamp tag clouds: ambient, experimental, electronic, hyperpop, city pop, vaporwave, shoegaze, noise
+- Look for emerging sub-genres or producers breaking boundaries
+- Create visual mood board informed by sonic mood board
+
+### For Managing Editor (Narrative Tone + Pacing)
+
+**Audio Landscape shapes how stories are told:**
+
+1. **Sonic quality informs prose voice**
+   - Clean/precise sound → Declarative, measured prose; short sentences
+   - Lush/layered sound → Flowing, complex prose; longer cadences
+   - Minimal/sparse sound → Fragment-like writing; silence/whitespace
+   - Noisy/textured sound → Dense, overlapping ideas; rich vocabulary
+
+2. **Tempo guides narrative pacing**
+   - Fast-tempo music → Swift narrative progression; quick section handoffs
+   - Slow-tempo music → Deliberate pacing; lingering on ideas; time to breathe
+   - Rhythmic music → Pulse-like structure; recurring themes
+
+3. **Apply to each section's narrative**
+   - "This section reads like [song title]" — internal shorthand for tone
+   - Match narrative pacing to music's arc (builds, drops, returns)
+   - Use sonic references to check consistency across all 11 sections
+
+**Example:**
+- Theme: "Grain" + Music pick: Experimental noise producer (textured, layered, patience)
+- Writing becomes: fragmented, layered with ideas, requires slow reading, rewards attention
+- Contrasts with fast-paced sections via different music references in brief
 
 ### Optional: Ambient Editorial Experience
 Future enhancement: Spotify playlist URI in issue metadata so readers can listen while exploring design digest.
