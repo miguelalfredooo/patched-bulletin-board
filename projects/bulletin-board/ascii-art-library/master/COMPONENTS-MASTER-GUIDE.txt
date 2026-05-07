@@ -214,6 +214,33 @@ Used between sections in codeblocks and between cards in delivery flow.
 
 ---
 
+## DELIVERY FLOW (ACT 2 — EDITORIAL)
+
+### ACT 2: Full Editorial Grid
+**Components:** COMPONENT-1-ISSUE-COVER + COMPONENT-ALL-SECTIONS (11 editorial grid sections)
+
+**Structure:**
+- **Codeblock 1:** Issue cover (masthead + HERO-TALL hero portrait)
+- **Codeblocks 2–12:** Each editorial section (one per codeblock)
+  - **[Section] — [Subtitle]** (bold section name and descriptive subtitle)
+  - 2-4 sentences of prose (~60-120 words)
+  - *[Source: Attribution]* (italicized source in brackets)
+- **Plain text between codeblocks:** Direct link to full article/source (one per section)
+
+**Delivery Pattern:**
+```
+[Codeblock 1: Cover]
+[Codeblock 2: Section 1 editorial content]
+[Plain text: Link to article 1]
+[Codeblock 3: Section 2 editorial content]
+[Plain text: Link to article 2]
+... (repeat for all 11 sections)
+```
+
+Each editorial section lives in its own codeblock for clarity. Links appear as plain Telegram text outside codeblocks, one per section.
+
+---
+
 ## STATUS
 
 - ✅ All 5 components documented
