@@ -17,9 +17,8 @@
 Design By Bulletin™
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Issue 008
-Threshold
+Threshold • May 10, 2026
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-May 10, 2026
 ```
 
 ### Section 1 — Art

@@ -17,9 +17,8 @@
 Design By Bulletin™
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Issue 001
-Presence
+Presence • May 5, 2026
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-May 5, 2026
 ```
 
 ### Section 1 — Art

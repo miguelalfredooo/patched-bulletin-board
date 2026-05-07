@@ -17,9 +17,8 @@
 Design By Bulletin™
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Issue 007
-Interval
+Interval • May 8, 2026
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-May 8, 2026
 ```
 
 ### Section 1 — Art

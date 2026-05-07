@@ -17,9 +17,8 @@
 Design By Bulletin™
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Issue 009
-Material
+Material • May 11, 2026
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-May 11, 2026
 ```
 
 ### Section 1 — Art

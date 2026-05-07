@@ -17,9 +17,8 @@ The hero cover is the branded opening of every issue. It appears at the top of A
 Design By Bulletin™
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Issue [NUMBER]
-[THEME NAME]
+[THEME NAME] • [PUBLICATION DATE]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[PUBLICATION DATE]
 ```
 
 ### Component Breakdown
@@ -31,9 +30,8 @@ Issue [NUMBER]
 | **Masthead** | `Design By Bulletin™` | ✅ Fixed | — |
 | **Top Divider** | `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━` | ✅ Fixed | — |
 | **Issue Number** | `Issue 006` | ❌ Variable | Changes per issue |
-| **Theme Name** | `Momentum` | ❌ Variable | Changes per issue |
+| **Theme + Date** | `Momentum • May 9, 2026` | ❌ Variable | Changes per issue |
 | **Bottom Divider** | `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━` | ✅ Fixed | — |
-| **Publication Date** | `May 9, 2026` | ❌ Variable | Changes per issue |
 
 ### Usage Rules
 
@@ -57,9 +55,8 @@ Issue [NUMBER]
 Design By Bulletin™
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Issue 001
-Presence
+Presence • May 5, 2026
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-May 5, 2026
 ```
 
 **Issue 010 — Worn (May 12, 2026):**
@@ -74,9 +71,8 @@ May 5, 2026
 Design By Bulletin™
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Issue 010
-Worn
+Worn • May 12, 2026
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-May 12, 2026
 ```
 
 ### Font Requirements

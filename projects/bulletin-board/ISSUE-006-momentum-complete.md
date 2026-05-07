@@ -17,9 +17,8 @@
 Design By Bulletin™
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Issue 006
-Momentum
+Momentum • May 9, 2026
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-May 9, 2026
 ```
 
 ### Section 1 — Art
