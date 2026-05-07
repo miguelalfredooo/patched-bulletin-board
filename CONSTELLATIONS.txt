@@ -1,0 +1,370 @@
+
+═══════════════════════════════════════════════════════════════
+  CONSTELLATIONS — Star Maps in ASCII
+═══════════════════════════════════════════════════════════════
+
+A series of night sky patterns. Ancient stories written in light-years.
+
+─────────────────────────────────────────────────────────────
+
+CONSTELLATION 1 — Ursa Major (The Big Bear)
+```
+★               ★
+  ╲           ╱
+    .───────.
+    │   │   │
+    │   .   │
+    .       .
+      ╲   ╱
+        ★
+```
+
+CONSTELLATION 2 — Orion (The Hunter)
+```
+    ★         ★
+     ╲       ╱
+      .─────.
+       │ ◆ │
+       │ . │
+      .─────.
+     ╱       ╲
+    ★         ★
+```
+
+CONSTELLATION 3 — Cassiopeia (The Queen)
+```
+★
+ ╲
+  .───.───.───.
+       │ │ │
+       . . .
+         │
+         ★
+```
+
+CONSTELLATION 4 — Pegasus (Winged Horse)
+```
+    .───────.
+    │╲     ╱│
+    │ .───. │
+    │ │     │
+    .─.     .
+     ╲│    ╱
+      .───.
+```
+
+CONSTELLATION 5 — Cygnus (The Swan)
+```
+        ★
+        │
+    .───.───.
+   ╱│ ╲   ╱ │
+  . │  ..   │
+   ╲│       │
+    .───────.
+        │
+        ★
+```
+
+CONSTELLATION 6 — Draco (The Dragon)
+```
+.─────.     .
+│╲    │╲   ╱
+│ .   │ .─.
+│  ╲  │ │
+.───.─. │
+  │   ╲ │
+  .     .
+```
+
+CONSTELLATION 7 — Leo (The Lion)
+```
+    .────.────.
+    │╲  ╱│╲  ╱
+    │ .. │ ..
+    │ │  │ │
+    .─.  .─.
+     │    │
+     .────.
+```
+
+CONSTELLATION 8 — Scorpius (The Scorpion)
+```
+.───.     ★
+│╲ ╱     ╱
+│ .─────.
+│   │ │
+.   . .
+ ╲  │ │
+  .─. .
+    │╱
+    ★
+```
+
+CONSTELLATION 9 — Sagittarius (The Archer)
+```
+.─────.───.
+│╲   ╱│╲ ╱
+│ .─. │ .
+│ │ │ │ │
+. │ │ . │
+ ╲│ │╱  │
+  .─.───.
+    │
+    ★
+```
+
+CONSTELLATION 10 — Lyra (The Harp)
+```
+    ★
+    │
+.───.───.
+│    │    │
+│    .    │
+│   ╱ ╲   │
+.──.   .──.
+```
+
+CONSTELLATION 11 — Aquila (The Eagle)
+```
+  .       .
+   ╲     ╱
+    .───.───.
+    │ │ │ │ │
+    . │ . │ .
+     ╲│ │╱
+      .─.
+      │ │
+      . .
+```
+
+CONSTELLATION 12 — Capricornus (Sea Goat)
+```
+    .
+   ╱│╲
+  . │ .
+  │╲│╱│
+  │ .─.───.
+  │ │ │ │
+  . │ . │
+   ╲│ │╱
+    .─.
+```
+
+CONSTELLATION 13 — Andromeda (The Princess)
+```
+.       .
+│╲     ╱│
+│ .───. │
+│ │ . │ │
+. │ │ │ .
+ ╲│ │ │╱
+  .─.─.
+```
+
+CONSTELLATION 14 — Perseus (The Hero)
+```
+    ★
+    │
+.───.───.
+│╲  │  ╱│
+│ .─.─. │
+│   │   │
+.───.───.
+    │
+    .
+```
+
+CONSTELLATION 15 — Cygnus (Winter Swan)
+```
+  .       .
+   ╲     ╱
+    .───.
+     │ │
+     . .
+     │ │
+    .───.
+   ╱     ╲
+  .       .
+```
+
+CONSTELLATION 16 — Gemini (The Twins)
+```
+.───────.
+│       │
+.   .   .
+│   │   │
+.   .   .
+│   │   │
+.───────.
+```
+
+CONSTELLATION 17 — Taurus (The Bull)
+```
+    ★───★
+    │ ◆ │
+.───.───.───.
+│ ╱ │ │ ╲ │
+.   │ │   .
+ ╲  │ │  ╱
+  .─.─.─.
+```
+
+CONSTELLATION 18 — Aries (The Ram)
+```
+  .
+  │╲
+  │ .
+  │ │╲
+  . │ .───.
+   ╲│ │   │
+    .─.───.
+```
+
+CONSTELLATION 19 — Cancer (The Crab)
+```
+.     .     .
+│╲   ╱│╲   ╱
+│ .─. │ .─.
+│ │ │ │ │ │
+. │ │ . │ │
+ ╲│ │╱  │ │
+  .─.───.─.
+```
+
+CONSTELLATION 20 — Virgo (The Virgin)
+```
+    ★
+    │
+.───.───.
+│╲  │  ╱│
+│ .─.─. │
+│   │   │
+.───.───.
+    │
+    .───.
+```
+
+CONSTELLATION 21 — Libra (The Scales)
+```
+  .─────.
+  │  ◆  │
+  .─────.
+  │     │
+  .─.─.─.
+    │ │
+    . .
+```
+
+CONSTELLATION 22 — Aquarius (Water Bearer)
+```
+.───.───.
+│╲  │  ╱│
+│ .─.─. │
+│   │   │
+.   │   .
+ ╲  │  ╱
+  .─.─.
+    │
+    .
+```
+
+CONSTELLATION 23 — Pisces (The Fish)
+```
+.─────.
+│  ◆  │      .───.
+│  │  │      │   │
+.  │  .──.───.   │
+ ╲ │ ╱  │   │    │
+  .─.───.───.────.
+```
+
+─────────────────────────────────────────────────────────────
+
+THE SUMMER TRIANGLE
+
+```
+★ Vega              ★ Deneb
+ ╲                 ╱
+  ╲               ╱
+   ╲             ╱
+    ╲           ╱
+     ╲         ╱
+      ●───────●
+      │       │
+      │   ◆   │
+      │       │
+      ●───────●
+           ↓
+       ★ Altair
+```
+
+THE WINTER HEXAGON
+
+```
+    ★ Capella
+    ╱         ╲
+   ╱           ╲
+  ●             ●
+  │             │
+  │    empty    │
+  │    space    │
+  │             │
+  ●             ●
+   ╲           ╱
+★ Sirius      ★ Procyon
+ ╲           ╱
+  ╲         ╱
+   ●───────●
+   ★Pollux/Castor
+```
+
+THE ASTERISM: BIG DIPPER (Part of Ursa Major)
+
+```
+★           ★
+ ╲         ╱
+  .───────.
+  │       │
+  │   .   │
+  │       │
+  .───────.
+   ╲     ╱
+    .───.
+     ╲ ╱
+      ★
+```
+
+THE ASTERISM: LITTLE DIPPER (Part of Ursa Minor)
+
+```
+            ★ Polaris
+            │
+        .───.
+       ╱     ╲
+      .       .
+      │       │
+      .───────.
+```
+
+─────────────────────────────────────────────────────────────
+
+NOTES ON THE CONSTELLATIONS:
+
+These are not the true positions of stars, but patterns our
+ancestors drew in the night sky. . represents a bright star,
+★ represents the brightest star (magnitude 1 or brighter),
+◆ marks notable nebulae or star clusters.
+
+The lines connect the stars as traditionally drawn, forming
+recognizable silhouettes: a bear, a hunter, a dragon, a swan.
+
+Some constellations contain asterisms (sub-patterns within larger
+constellations). The Big Dipper is part of Ursa Major. The Little
+Dipper anchors the north celestial pole.
+
+The Summer Triangle and Winter Hexagon are bright star patterns
+visible in their respective seasons—useful for navigation and
+observation across the hemisphere.
+
+═══════════════════════════════════════════════════════════════

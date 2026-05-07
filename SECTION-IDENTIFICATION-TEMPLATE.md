@@ -209,14 +209,41 @@ SECTION 4 — WHERE MEANING CRYSTALLIZES
 
 ---
 
+## The Gallery/Catalog Pattern (Three-Part Module)
+
+Every section follows this repeating structure:
+
+```
+═══════════════════════════════════════════════════════════════
+  SECTION [#] — [Theme]
+═══════════════════════════════════════════════════════════════
+
+[ASCII ART BLOCK]
+[Variable scale: 3-50 lines, no two consecutive same size]
+
+[Breathing room — empty space before next section]
+```
+
+Why this works:
+- **Modular repetition** teaches reader the pattern
+- **Variable scale** (3 lines → 40 lines → 8 lines) prevents fatigue
+- **Breathing room** creates natural pause points for eye
+- **Asymmetric spacing** (not fixed intervals) feels organic
+- **Weight counterbalancing** (simple after complex) maintains interest
+
+---
+
 ## Final Checklist: Every Section Should Have
 
 - [ ] Section number clearly identified (SECTION 1, 2, 3, etc.)
 - [ ] Section name/theme visible (Art, Discovery, Emergence, etc.)
 - [ ] Header weight appropriate to content
 - [ ] Header text serves the approach (structural, paced, narrative)
-- [ ] Breathing room after header before ASCII art
-- [ ] Breathing room after ASCII art before next section
+- [ ] **Breathing room after header before ASCII art**
+- [ ] **Breathing room after ASCII art before next section**
 - [ ] No two consecutive sections have identical header weight
+- [ ] **No two consecutive sections have identical ASCII scale** (not 20 lines, then 20 lines, then 20 lines)
+- [ ] **Weight is counterbalanced** (simple follows complex; sparse follows dense)
+- [ ] **Three-part gallery pattern is visible** (header → art → void)
 
-Apply this template consistently across all 11 sections. The reader will learn the visual language and trust the structure.
+Apply this template consistently across all 11 sections. The reader will learn the visual language, trust the structure, and feel natural pause points guide them downward.

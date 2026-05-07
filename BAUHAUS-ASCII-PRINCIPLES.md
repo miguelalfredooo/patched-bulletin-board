@@ -270,11 +270,15 @@ Then apply consistently.
 - [ ] **Grid-aligned?** Elements align to consistent columns, not scattered
 - [ ] **Clear hierarchy?** Size and weight show what's primary/secondary/tertiary
 - [ ] **Reduced to essentials?** Every character serves structure or meaning
-- [ ] **Asymmetrically balanced?** Not centered; creates visual tension
+- [ ] **Asymmetrically balanced?** Not centered; creates visual tension (and not rigid grid-locked spacing)
 - [ ] **Typography-driven?** Consistent header/footer structure across sections
-- [ ] **Modular?** Reusable patterns (header, box, divider) applied consistently
+- [ ] **Modular?** Reusable patterns (header, art block, breathing room) applied consistently
 - [ ] **Function-focused?** Every element clarifies or guides; nothing decorative
-- [ ] **Vertical flow?** Bauhaus grid created clear path for eye down the page
+- [ ] **Vertical flow?** Clear path for eye down the page with natural pause points
+- [ ] **Gallery pattern applied?** Three-part structure (header → art → breathing room) repeats throughout
+- [ ] **Scale varied?** No two consecutive sections same dimensions (3-5 lines next to 40+ lines)
+- [ ] **Weight counterbalanced?** Simple pieces follow complex pieces; prevents fatigue
+- [ ] **Organic spacing?** Uses asymmetric, variable spacing (not rigid grid intervals)
 
 ---
 

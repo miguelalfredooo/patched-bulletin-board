@@ -208,12 +208,73 @@ Think of it like typography: leading (line height) and margins create readabilit
 
 ---
 
+## The Gallery/Catalog Pattern (From asciiart.eu Analysis)
+
+Professional ASCII collections use a repeating **three-part modular structure** that can be adapted for issues:
+
+### Part 1: Attribution/Context (Lightweight)
+```
+SECTION [#] — [Name]
+[Optional: one-sentence context]
+```
+Light metadata that introduces the piece. Sets expectation but doesn't compete with the visual.
+
+### Part 2: ASCII Art Block (Variable Weight)
+```
+[3–50 lines, depending on section]
+[Scale ranges from compact to elaborate]
+```
+The main visual. Can be minimal (3–5 lines) or dense (40+ lines). **No two consecutive pieces should be same weight.**
+
+### Part 3: Breathing Room (Intentional Void)
+```
+[Empty space]
+[Separator line or blank lines]
+[Empty space]
+```
+Critical pause point. Lets the eye rest before the next sequence.
+
+### Why This Works
+- **Modular repetition** creates familiarity (reader learns the pattern)
+- **Asymmetric spacing** (not rigid grid) feels organic and composed
+- **Variable scale** (3 lines next to 40 lines) prevents fatigue
+- **Weight counterbalancing** (simple after complex, dense after sparse) maintains visual interest
+- **Natural pause points** guide eye movement: credit → context → contemplation → rest → repeat
+
+---
+
 ## When Applying to Issues
 
 1. **Review the full 11-section sequence** before finalizing any one piece
 2. **Map visual weight** (light / medium / heavy) for sections 1–11
 3. **Adjust individual sections** to balance the overall rhythm
 4. **Use code block spacing** (empty lines, centered elements) to control breathing room
-5. **Test the flow** by reading top to bottom—does your eye know where to go?
+5. **Apply the three-part pattern** to each section (header → art → breathing room)
+6. **Vary scale organically** (don't repeat same dimensions back-to-back)
+7. **Test the flow** by reading top to bottom—does your eye know where to go?
+8. **Create natural pause points** with breathing room, never cramming consecutive heavy pieces
+
+### The Gallery Feeling vs. The Grid Feeling
+
+**Grid Feeling (rigid, predictable):**
+```
+[Section 1 — exactly 12 lines, fixed width]
+[Section 2 — exactly 12 lines, fixed width]
+[Section 3 — exactly 12 lines, fixed width]
+```
+→ Feels formulaic. Eye doesn't surprise.
+
+**Gallery Feeling (organic, composed):**
+```
+[Section 1 — 20 lines, dense]
+[breathing room]
+
+[Section 2 — 5 lines, sparse]
+[breathing room]
+
+[Section 3 — 15 lines, medium]
+[breathing room]
+```
+→ Feels intentional. Eye pauses naturally.
 
 This is the difference between a collection of ASCII pieces and a composed publication.
