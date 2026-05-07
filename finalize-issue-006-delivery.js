@@ -36,6 +36,7 @@ async function sendMessage(text) {
     const payload = JSON.stringify({
       chat_id: CHAT_ID,
       text: text,
+      parse_mode: 'Markdown',
     });
 
     const options = {
