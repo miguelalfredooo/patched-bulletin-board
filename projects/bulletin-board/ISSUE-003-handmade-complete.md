@@ -1,0 +1,79 @@
+# Design By Bulletin™ — Issue 003
+## Theme: Handmade
+## Date: May 6, 2026
+
+---
+
+## ACT 1 — VISUAL PREVIEW
+
+```
+██████╗ ██████╗ ██████╗ ™
+██╔══██╗██╔══██╗██╔══██╗
+██║  ██║██████╔╝██████╔╝
+██║  ██║██╔══██╗██╔══██╗
+██████╔╝██████╔╝██████╔╝
+╚═════╝ ╚═════╝ ╚═════╝
+
+Design By Bulletin™
+━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+[11 ASCII art sections for Handmade theme]
+
+---
+
+## ACT 2 — FULL EDITION
+
+**Art — The Handmade Object as Refusal**
+The split nib chosen, held, accepted. These works assert human imperfection not as apology but as argument — the hand's tremor is the point.
+*[Source: Artsy]*
+
+**Painting — Paint as Trace of Gesture**
+Brush strokes that no algorithm could replicate, not because they are clumsy but because they carry intention the machine cannot read. Medium specificity becomes medium resistance.
+*[Source: Booooooom]*
+
+**Illustration — Drawing Without Correction Tools**
+The line stays wrong because fixing it is the point. Pen and paper, no undo, no layers — the analog constraint becomes the work's argument.
+*[Source: It's Nice That]*
+
+**Sculpture — Clay and the Hand**
+Coil-built vessels hold the thumb ridge as signature. The seam is proud, visible, marked by the fingers that shaped it. Clay remembers.
+*[Source: Frieze]*
+
+**Culture — Lo-Fi as Movement, Not Aesthetic**
+Zines hand-bound, typography irregular, the small-run publication rejecting polish as editorial stance. The visible labor is the visible refusal.
+*[Source: The New Yorker]*
+
+**Photography — The Grain as Refusal**
+Film grain chosen, desired, shot for — the imperfection is the selection, not the accident. What looks like flaw is actually specificity.
+*[Source: Magnum Photos]*
+
+**Art History — Craft Tradition as Counter-Narrative**
+Medieval illumination, folk pottery lineages, Shaker precision through hand work — imperfection sits within continuum, not outside it. Tradition earns the gesture.
+*[Source: JSTOR Daily]*
+
+**Opinions — The Slowness Case**
+Friction as feature. Choosing slow methods means choosing presence over efficiency. The rejected optimization becomes the argument.
+*[Source: Dense Discovery]*
+
+**Design & AI Tools — Hand-Coded as Aesthetic Choice**
+Design systems built by hand, type foundries returning to manual lettering, tools deliberately slowed. The constraint is the goal.
+*[Source: Figma Blog]*
+
+**Product & Process — Making Visible**
+Studio visits documented, maker interviews archived, the process becomes the final product. Behind-the-scenes is not marketing — it is the work itself.
+*[Source: Nielsen Norman]*
+
+**Visual & Brand — Typography of Imperfection**
+Typefaces designed to show variation, fonts modeled on handwriting, letterforms that feel like human error because that is the only way to feel human at all.
+*[Source: Eye on Design]*
+
+---
+
+**CLOSING SENTENCE:**
+"The machine can't feel the thumb leave a ridge in the clay."
+
+---
+
+*Published: May 6, 2026*
+*Theme: Handmade — Lo-fi rebellion against machine-generated slickness*
