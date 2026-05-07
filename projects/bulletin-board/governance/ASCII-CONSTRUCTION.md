@@ -1,8 +1,9 @@
 # ASCII-CONSTRUCTION.md — Design by Bulletin
 ## Precision construction guide for ASCII art
 
-**Version:** 1.2.0
-**Read alongside:** ASCII-VISUAL-DNA.md
+**Version:** 1.3.0
+**Read alongside:** ASCII-VISUAL-DNA.md, STYLE-GUIDE.md, pipeline.md
+**Context:** Six-agent editorial system with Editorial Mix framework
 
 ---
 

@@ -1,5 +1,5 @@
 # pipeline.md — Design by Bulletin
-## Three-agent editorial pipeline
+## Six-agent editorial pipeline with parametric Editorial Mix
 
 This file is the single source of truth for running the
 Design by Bulletin pipeline. Read this first at the start
@@ -7,72 +7,121 @@ of every session.
 
 ---
 
-## The three agents
+## The six agents
 
-The Analyst — reconnaissance, cultural calendar, theme selection.
-The Editor — builds both acts: ASCII visual edition and written edition.
-The Curator — evaluates the full issue, READY or REDIRECT.
+**Visual Discovery (three agents)**
+- Maeve (Researcher) — Scouts 20+ sources, identifies signals and convergences
+- Victor (Visual Curator) — Selects 3–5 visual pieces daily, ensures source diversity
+- Coda (Research Synthesis) — Connects research to visuals, extracts patterns
 
-One session. One issue. One decision. Two acts.
+**Editorial Curation (three agents)**
+- Assignment Editor — Commissions narratives based on research + visuals
+- Managing Editor — Develops prose, integrates sonic layer, adjusts voice
+- Editorial Director — Sets Editorial Mix, makes final decisions, logs archive
+
+One session. One issue. One decision. Two acts. Parametric control via Editorial Mix.
 
 ---
 
 ## Sequence
 
-Step 1 — Run The Analyst
-  Reads: BRIEF.md, current publication coverage via web search
-  Produces: reconnaissance report with theme
+**Step 0 — Editorial Director Sets Editorial Mix (Morning)**
+  Sets: Six intensity faders (Music 0–100%, Visual, Research, Process, Theme, AI Culture)
+  Sets: Daily theme and sonic reference
+  Reads: BRIEF.md, archive-log.md
+  Produces: Morning brief with Editorial Mix
 
-Step 2 — Run The Editor
-  Reads: Analyst report, ASCII-VISUAL-DNA.md, ASCII-CONSTRUCTION.md,
-         BRIEF.md, STYLE-GUIDE.md, archive-log.md
-  Produces: Act 1 (ASCII visual edition) + Act 2 (written edition)
+**Step 1 — Visual Discovery**
+  Maeve scouts across all 20+ sources (scouting intensity = Research mix value)
+  Reads: SOURCES.md, Editorial Mix, morning brief
+  Produces: Research signals, convergences, findings
 
-Step 3 — Run The Curator
-  Reads: Analyst report, Editor full output, ASCII-VISUAL-DNA.md,
-         BRIEF.md, archive-log.md
-  Produces: READY or REDIRECT
+  Victor selects 3–5 visual pieces per section (selection intensity = Visual mix value)
+  Reads: Victor's selections, visual standards (ASCII-VISUAL-DNA.md)
+  Produces: 11 pieces with high quality, no repeat sources
 
-Step 4 — If READY
-  Curator passes full issue to Alfred
-  Alfred reviews and approves
-  Alfred queues Act 1 for 8:00am PT cron (39b83092)
-  Alfred queues Act 2 for 8:30am PT cron (f7eae541)
+  Coda synthesizes research + visuals
+  Reads: Maeve findings, Victor selections, theme
+  Produces: Pattern extraction, signal maps
 
-Step 5 — If REDIRECT
-  Curator passes specific notes back to The Editor
-  Editor rebuilds the issue from the same Analyst report
-  Return to Step 3
+**Step 2 — Editorial Commission**
+  Assignment Editor synthesizes all inputs
+  Reads: Maeve findings, Victor visuals, Coda patterns, Editorial Mix
+  Produces: Theme + 11-section narrative angles
+
+**Step 3 — Prose Development**
+  Managing Editor writes Act 2 narratives (one sentence per section)
+  Reads: STYLE-GUIDE.md, sonic reference, visual language, Editorial Mix
+  Adjusts tone based on:
+    - Music intensity → sonic texture influence on prose
+    - Theme intensity → explicit vs. implicit theming
+    - Process intensity → "making" narrative emphasis
+    - AI Culture intensity → AI/tool philosophy emphasis
+  Produces: Final prose, checked for Apartamento register
+
+**Step 4 — Visual + Link Generation**
+  Assignment Editor generates Act 1 ASCII pieces
+  Reads: ASCII-VISUAL-DNA.md, ASCII-CONSTRUCTION.md, Victor's visual language
+  Produces: 11 ASCII pieces (5 formats, no repeats, 42-char wide, 15-line tall)
+
+  Assignment Editor verifies links
+  Runs: verify-links.js
+  Produces: All 11 sources verified (no broken links, no repeats except music)
+
+**Step 5 — Album Cover Generation (Optional)**
+  Creative Director generates Midjourney prompts
+  Reads: Editorial Mix, theme, sonic reference, visual language, research signals
+  Runs: midjourney-prompt-generator.js
+  Produces: Two prompts (literal + abstract) + Creative Director guidance
+  Posts to Midjourney, archives cover when complete
+
+**Step 6 — Editorial Director Final Review**
+  Reviews: Act 1 (ASCII only), Act 2 (with text/links), cover (if generated)
+  Reads: BRIEF.md, archive-log.md, entire issue
+  Decision: READY or REDIRECT
+  
+  If READY: Logs to archive-log.md, queues Act 1 (8:00am) and Act 2 (8:30am)
+  If REDIRECT: Passes notes back to relevant agent(s), rebuilds issue
 
 ---
 
 ## Signal flow
 
-Analyst report → Editor session → Curator evaluation → Alfred review
+Morning brief (Editorial Mix + theme) 
+  → Maeve/Victor/Coda discovery 
+  → Assignment Editor commission 
+  → Managing Editor prose 
+  → Assignment Editor ASCII + verify links
+  → (Optional) Creative Director Midjourney
+  → Editorial Director review 
+  → READY or REDIRECT
 
-Governance intercepts at two points:
-- Editor self-checks every ASCII piece against ASCII-VISUAL-DNA.md
-  and ASCII-CONSTRUCTION.md before passing to Curator
-- Curator enforces tone and coherence before passing to Alfred
+Governance intercepts at three points:
+- Maeve/Victor enforce source diversity (one source per section, no repeats except music)
+- Managing Editor self-checks prose against STYLE-GUIDE.md (Apartamento register)
+- Assignment Editor verifies all ASCII pieces against ASCII-VISUAL-DNA.md before passing to Director
 
-CV inputs modulate all agents at session start:
-- Cultural calendar from Analyst reconnaissance
-- Archive state from archive-log.md
-- Alfred's standing direction from BRIEF.md
+Editorial Mix modulates all agents:
+- Research intensity controls Maeve's scouting depth
+- Visual intensity controls Victor's selection criteria and composition boldness
+- Music intensity controls Managing Editor's sonic integration
+- Theme intensity controls Managing Editor's explicit vs. implicit theming
+- Process intensity controls mention of "making" and workflows
+- AI Culture intensity controls tool/AI philosophy mentions
 
 ---
 
 ## Issue structure
 
-Act 1 — Visual Preview (8:00am PT)
-- Masthead in Format C via figlet
+**Act 1 — Visual Preview (8:00am PT)**
+- Locked masthead via figlet (Format C)
 - 11 ASCII pieces — one per section, no labels, no links
-- One closing sentence
-- "Full edition in 30 minutes."
+- No text except: one closing sentence + "Full edition in 30 minutes"
+- Format constraint: use all 5 formats across 11 pieces, no consecutive repeats
 
-Act 2 — Full Edition (8:30am PT)
+**Act 2 — Full Edition (8:30am PT)**
 - 11 sections in order:
-  1. Art
+  1. Art (source + one-sentence narrative)
   2. Painting
   3. Illustration
   4. Sculpture
@@ -82,8 +131,14 @@ Act 2 — Full Edition (8:30am PT)
   8. Opinions
   9. Design & AI Tools
   10. Product & Process
-  11. Visual & Brand
-- Each section: bold title, one sentence, one link
+  11. Visual & Brand (Music/Sound Culture sources in any section as needed)
+- Each section: source title, one sentence, one link
+- Closing sentence (same as Act 1)
+
+**Album Cover (Optional, ~10:30am PT)**
+- Midjourney-generated image reflecting theme + sonic reference + Editorial Mix
+- Posted to Midjourney by Creative Director, archived when complete
+- See MIDJOURNEY-INTEGRATION.md for prompt generation
 
 ---
 
@@ -92,56 +147,106 @@ Act 2 — Full Edition (8:30am PT)
 Each entry after a successful issue:
 
   ## [YYYY-MM-DD]
-  - THEME: [one word or short phrase]
-  - CULTURAL THREAD: [one sentence]
-  - ASCII FORMATS USED: [list of formats across 11 pieces]
-  - CURATOR NOTE: [one sentence on what the issue did well]
+  **Theme:** [one word or short phrase]
+  **Editorial Mix:** Music [%], Visual [%], Research [%], Process [%], Theme [%], AI Culture [%]
+  **Sonic Reference:** [genre/mood/producer]
+  **ASCII Formats:** [A, B, C, D, E distribution]
+  **Sources Used:** [11 sources, one per section]
+  **Cover Image:** [filename if generated]
+  **Notes:** [optional curator/editorial director observation]
 
 ---
 
-## File map
+## Documentation Map
 
-  agents/analyst/SOUL.md              — Analyst personality
-  agents/analyst/AGENTS.md            — Analyst operating spec
-  agents/editor/SOUL.md               — Editor personality
-  agents/editor/AGENTS.md             — Editor operating spec
-  agents/curator/SOUL.md              — Curator personality
-  agents/curator/AGENTS.md            — Curator operating spec
-  governance/ASCII-VISUAL-DNA.md      — ASCII format governance
-  governance/ASCII-CONSTRUCTION.md    — ASCII construction method
-  BRIEF.md                            — Project context, Alfred's taste
-  STYLE-GUIDE.md                      — Editorial voice and tone guide
-  archive-log.md                      — Daily issue log
-  utils/figlet.js                     — Format C programmatic generation
+**Editorial Governance:**
+- BRIEF.md — Project context, Editorial Mix framework, delivery info
+- STYLE-GUIDE.md — Voice (Apartamento), three-layer integration (visual/sonic/narrative)
+- governance/ASCII-VISUAL-DNA.md — ASCII format specs (5 formats, 42 chars, 15 lines)
+- governance/ASCII-CONSTRUCTION.md — ASCII construction methodology
 
----
+**Agent & Workflow:**
+- agents/pipeline.md — THIS FILE. Editorial workflow and agent sequence
+- docs/SOURCES.md — 20+ sources and scouting instructions for Maeve/Victor/Coda
+- docs/SHADER-SYSTEM.md — Image processing (sharp library, 6 presets, Editorial Mix integration)
+- docs/MIDJOURNEY-INTEGRATION.md — Album cover prompt generation system
 
-## Rules
+**Modules & Implementation:**
+- modules/*.md — 11 section specifications (Art, Painting, Illustration, etc.)
+- utils/figlet.js — ASCII typography (masthead + Format C pieces)
+- utils/verify-links.js — Link health checking before delivery
+- utils/midjourney-prompt-generator.js — Album cover prompt creation
+- archive-log.md — Published issue log (themes, sources, covers)
 
-- Analyst runs first. Editor never writes without a reconnaissance report.
-- Editor builds ASCII first, written edition second. Never reversed.
-- Curator reads the full issue before forming any opinion.
-- Curator never rewrites — redirects only.
-- Alfred reviews before anything sends. Curator approval is a
-  recommendation, not a send command.
-- What is not in archive-log.md does not exist for the pipeline.
+**Telegram Bot:**
+- BULLETIN-BOT.md — Bot configuration, cron jobs, commands, troubleshooting
+- USER.md — Quick reference for readers/subscribers
 
 ---
 
-## Starting a new session
+## Constraints & Rules
 
-Tell whichever agent you are running:
+**Source Diversity**
+- One source per link across 11 sections
+- No source repeats within single issue (except music platforms)
+- Music exception: Bandcamp/Discogs/Spotify/YouTube can repeat for different artists/playlists
 
-  "Read pipeline.md. Then proceed."
+**ASCII Visual**
+- All pieces 42 characters wide, 15 lines tall (Telegram safe width)
+- Five formats: A (Classic Object), B (Geometric Frame), C (Typographic), D (Two Column), E (Full Spread)
+- No two consecutive pieces use same format
+- All five formats must appear across 11 pieces
+- Quality threshold: High/strong only (never mediocre)
+- Format C always via utils/figlet.js with leftPad=2 parameter
+
+**Editorial Voice**
+- Apartamento register (intimate, unhurried, specific, not trend-chasing)
+- Three-layer integration: visual + sonic + narrative work in concert
+- Theme is felt across all 11 sections without being stated in any
+- No generic language (avoid: "explores," "groundbreaking," "must-see," "rising trend")
+
+**Editorial Mix Application**
+- Research intensity (0–100%): Controls Maeve's scouting depth
+- Visual intensity (0–100%): Controls Victor's selection boldness and Managing Editor's composition emphasis
+- Music intensity (0–100%): Controls Managing Editor's sonic texture integration
+- Theme intensity (0–100%): Controls whether theme is explicit (>75%) or subtle (<50%)
+- Process intensity (0–100%): Controls "making" and workflow narrative mentions
+- AI Culture intensity (0–100%): Controls tool/AI philosophy presence in selections
+
+**Agent Rules**
+- Editorial Director sets mix first. No agent starts without morning brief.
+- Maeve scouts first. Victor selects from Maeve's signals + independent scouting.
+- Coda synthesizes after both have reported findings.
+- Assignment Editor commissions after all three discovery agents report.
+- Managing Editor writes after receiving Commission.
+- Managing Editor never writes before Understanding the visual language + sonic mood.
+- Editorial Director reviews entire issue before marking READY.
+- If REDIRECT: specific notes go back to agent who made the error. Rebuild only that section.
+- What is not in archive-log.md does not exist for the system.
 
 ---
 
-## Cron jobs
+## Starting a New Session
 
-  39b83092 — Act 1 Visual Preview, 8:00am PT
-  f7eae541 — Act 2 Full Edition, 8:30am PT
+1. **Editorial Director sets the mix** (morning brief with Editorial Mix + theme + sonic reference)
+2. **Tell Maeve:** "Read docs/SOURCES.md and pipeline.md. Here is the Editorial Mix. Scout."
+3. **Tell Victor:** "Read governance/ASCII-VISUAL-DNA.md. Here are Maeve's findings. Select visuals."
+4. **Tell Coda:** "Read Maeve's and Victor's outputs. Synthesize patterns."
+5. **Tell Assignment Editor:** "Commission narrative angles for 11 sections."
+6. **Tell Managing Editor:** "Read STYLE-GUIDE.md. Write Act 2 prose based on commission + visual + sonic reference."
+7. **Tell Assignment Editor (again):** "Generate Act 1 ASCII pieces and verify all links."
+8. **Editorial Director:** Review, decide READY or REDIRECT.
+
+---
+
+## Cron Jobs
+
+39b83092 — Act 1 Visual Preview, 8:00am PT (daily)
+f7eae541 — Act 2 Full Edition, 8:30am PT (daily)
+
+See BULLETIN-BOT.md for complete bot reference.
 
 ---
 
 ## Version
-1.0.0 — Three-agent pipeline. Analyst → Editor → Curator → Alfred → Send.
+2.0.0 — Six-agent pipeline with parametric Editorial Mix framework. Discovery (Maeve/Victor/Coda) → Commission (Assignment Editor) → Write (Managing Editor) → Verify (Assignment Editor) → Review (Editorial Director) → Send or REDIRECT.

@@ -1,5 +1,12 @@
 # Module: Music & Sound Culture
 ## Design by Bulletin
+---
+
+**Context:** Part of the six-agent editorial system. Victor (Visual Curator) and Managing Editor work together. Victor selects the visual; Managing Editor writes the narrative based on visual language, sonic reference, and Editorial Mix values.
+
+**Editorial Mix Impact:** Visual intensity controls composition boldness and narrative weight. Theme intensity controls explicit vs. implicit theming. Other modules may be affected by Research, Process, Music, or AI Culture intensity.
+
+---
 
 **Purpose:** Surface emerging sound as a cultural signal — not a playlist,
 not a recommendation engine. One hero track and three picks that together
