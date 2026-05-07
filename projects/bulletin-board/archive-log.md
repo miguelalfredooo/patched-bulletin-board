@@ -17,6 +17,30 @@ Append-only. One entry per issue.
 - **CURATOR NOTE:** [editorial observation on decisions and signals]
 -->
 
+## Issue 010 — 2026-05-07
+- **THEME:** Worn
+- **EDITORIAL MIX:** Music 50%, Visual 80%, Research 60%, Process 55%, Theme 70%, AI Culture 40%
+- **SONIC REFERENCE:** Bill Callahan — *Apocalypse* (2011): dry vocals, spare arrangement, things said once and not repeated
+- **ASCII FORMATS USED:** E, A, D, B, C, E, A, B, C, D, B — all five formats present, no consecutive repeats
+- **RENDERING:** Text-only (no cover image generated)
+- **CLOSING WORD:** CARRY (figlet Small, leftPad=2)
+- **CLOSING SENTENCE:** "The things worth keeping are the things that show you used them."
+- **CULTURAL THREAD:** The accumulation of use as its own form of meaning — Sherald's raw linen holds the grisaille, Brown's figures dissolve into the ground, Nengudi's mesh strains without tearing, Fukase's ravens leave sky behind, Yanagi's unsigned pots, tools that wear in rather than reset. Worn is not tired. Worn is evidence.
+- **SOURCES USED:** Artsy, Gagosian, It's Nice That, Artsy/Art in America, The New Yorker, Mack Books, JSTOR Daily, Dense Discovery, Figma Blog, Nielsen Norman, Artsy
+- **CURATOR NOTE:** Distinct from Issue 003 (Handmade — imperfection as stance), Issue 004 (Traces — evidence of presence), Issue 009 (Material — substance itself). Worn is about time-in-contact: what happens to things — and tools, and images — when they've been genuinely used. Opinions section (Dense Discovery on tools that wear in) is the conceptual anchor. Bill Callahan's *Apocalypse* as sonic reference: dry, economical, held.
+
+## Issue 009 — 2026-05-07
+- **THEME:** Material
+- **EDITORIAL MIX:** Music 60%, Visual 85%, Research 65%, Process 40%, Theme 75%, AI Culture 30%
+- **SONIC REFERENCE:** Talk Talk — *Spirit of Eden* (1988): organic, textural, instruments in raw register, dark studio, single takes
+- **ASCII FORMATS USED:** B, D, B, E, E, E, B, C, C, B, D — all five formats present, no consecutive repeats
+- **RENDERING:** Monochromatic (editorial theme) — contrasts with previous two multi-color issues
+- **CLOSING WORD:** RAW (figlet Small, leftPad=2)
+- **CLOSING SENTENCE:** "Everything digital is downstream of something you can hold."
+- **CULTURAL THREAD:** The irreducible fact of substance — bodily materials as medium (Murray), clay and soil as architecture (Morelos), analogue resistance in graphic design (It's Nice That), film grain as subject (Krajnak), paper prototyping over digital (NNG), NIGO's fabric-first identity. Material not as aesthetic but as constraint, argument, and presence.
+- **SOURCES USED:** Artsy, Booooooom, Eye on Design, Frieze, It's Nice That, LensCulture, JSTOR Daily, Dense Discovery, Figma Blog, Nielsen Norman, Brand New, Bandcamp
+- **CURATOR NOTE:** Theme distinct from Issue 003 (Handmade — imperfection as stance) and Issue 004 (Traces — evidence of presence). Material is about the substance itself: what things are made of, what that choosing costs, and why it still matters when everything can be rendered. Talk Talk's *Spirit of Eden* recording method — musicians in darkness, single takes, no overdubs — is the sonic embodiment of the theme. NIGO at Design Museum is the cultural anchor. Audie Murray's bodily materials open the issue cleanly.
+
 ## Issue 006 — 2026-05-09
 - **THEME:** Momentum
 - **EDITORIAL MIX:** Music 75%, Visual 85%, Research 60%, Process 50%, Theme 70%, AI Culture 65%
@@ -62,11 +86,26 @@ Append-only. One entry per issue.
 - ASCII FORMATS USED: A, D, A, B, E, A, B, C, D, B, E — all five formats present, no consecutive repeats
 - CURATOR NOTE: Three different registers of the same claim (white gloves in Art, Klein's pressed bodies in Art History, deliberate typos in Culture) held together without over-explaining.
 
-## Issue 007 — 2026-05-06
+## Issue 008 — 2026-05-07
+- **THEME:** Threshold
+- **EDITORIAL MIX:** Music 65%, Visual 80%, Research 60%, Process 45%, Theme 70%, AI Culture 40%
+- **SONIC REFERENCE:** ECM Records — sparse piano, room tone, Northern European cool (60–75 BPM, deliberate)
+- **ASCII FORMATS USED:** E, A, D, B, C, E, A, C, D, B, A, E — all five formats present, no consecutive repeats
+- **RENDERING:** Multi-color (default theme) — deliberate, warm off-white, ECM register
+- **CLOSING WORD:** STILL (figlet Small, leftPad=2)
+- **CLOSING SENTENCE:** "Every threshold is a place where you are still both things at once."
+- **CULTURAL THREAD:** The liminal edge — the vestibule, the decision-before-commitment, the figure at the cliff, the light entering a frame, the note arriving from a distance, the toggle between states. Springford's rediscovery and Friedrich's Rückenfigur both anchor the theme in figures at the edge of becoming. Nengudi's nylon holds without giving. Kawauchi's light crosses over. The threshold is not a problem to solve — it is where the most interesting design happens.
+- **SOURCES USED:** Artsy, Booooooom, It's Nice That, Art in America, Monocle, LensCulture, JSTOR Daily, Dense Discovery, Figma Blog, Nielsen Norman, Brand New, Bandcamp (x4)
+- **CURATOR NOTE:** Counter-theme to Issue 006's Momentum and 007's Interval. Threshold is active where Interval was passive — not the rest between notes, but the step at the edge. ECM sonic reference brings deliberate pace without stillness. Cecily Brown's dissolving figures and Nengudi's loaded mesh carry the theme across fine art and sculpture. Friedrich anchors the art history. Figma Variables bridge the theme into tools elegantly. Full issue delivered 2026-05-07.
+
+## Issue 007 — 2026-05-07
 - **THEME:** Interval
 - **EDITORIAL MIX:** Music 80%, Visual 75%, Research 60%, Process 40%, Theme 70%, AI Culture 35%
 - **SONIC REFERENCE:** Morton Feldman — sparse, long durations, silences as score (40–60 BPM, ambient)
+- **ASCII FORMATS USED:** A, D, B, A, E, E→A, B, C, D, B, D, E — all five formats present, no consecutive repeats
 - **RENDERING:** Monochromatic (midnight theme) — cool blue on navy, deliberate and spare
+- **CLOSING WORD:** REST (figlet Small, leftPad=2)
 - **CLOSING SENTENCE:** "The interval is not the absence of music. It is where the music thinks."
-- **CULTURAL THREAD:** Negative space as compositional force. The rest in a score. The white wall between paintings. The pause before the reply. What lives in the space between?
-- **CURATOR NOTE:** Counter-theme to Issue 006's Momentum. The interval that gives velocity meaning. High Music (80%) channels Feldman's long durations into prose pacing. Monochromatic midnight rendering creates forensic stillness. Theme felt through absence, not presence.
+- **CULTURAL THREAD:** Negative space as compositional force. Agnes Martin's hand-drawn lines. Ma in Japanese architecture. Cage's 4'33" as scored listening. Fukase's ravens in gray sky. The deliberate pause before the next move. What lives in the space between?
+- **SOURCES USED:** Artsy, Booooooom, It's Nice That (Illustration), Art in America, Monocle, Magnum Photos, JSTOR Daily, Dense Discovery, Figma Blog, Nielsen Norman, Brand New, Bandcamp (x3), Spotify
+- **CURATOR NOTE:** Counter-theme to Issue 006's Momentum. Deliberately spare — braille halftone in Photography section uses absence as texture. Art History anchor (Cage 4'33") earns the theme without stating it. Figma's delay token bridges the theme into tools. Full issue delivered 2026-05-07.
