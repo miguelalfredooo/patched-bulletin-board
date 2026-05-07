@@ -1,17 +1,20 @@
 # pipeline.md — the-magazine
-## Two-agent editorial pipeline
+## Three-agent editorial pipeline
 
 This file is the single source of truth for running the-magazine pipeline.
 Read this first at the start of every session.
 
 ---
 
-## The two agents
+## The three agents
 
-The Editor-In-Chief-In-Chief — researches and generates a complete set of 12 prompts per session.
-The Creative Director — evaluates the full set as a coherent issue, approves or redirects.
+**The Editor-In-Chief** — researches and generates a complete set of 12 prompts per session.
 
-One session. One set. One decision. One issue.
+**The Creative Director** — evaluates the full set as a coherent issue, assesses grid logic and arc.
+
+**The Magazine** — synthesizes research and curation into the final editorial decision. The voice and taste of the publication.
+
+One session. One set. One vision. One issue.
 
 ---
 
@@ -29,54 +32,66 @@ Each prompt earns its position twice: in the reading order and in the layout.
 
 ## Sequence
 
-Step 1 — Run The Editor-In-Chief-In-Chief
+Step 1 — Run The Editor-In-Chief
   Reads: archive-log.md, governance/VISUAL-DNA.md, STYLE-GUIDE.md, BRIEF.md
   Produces: 12 prompt candidates as a complete set with arc and grid rationale
 
 Step 2 — Run The Creative Director
-  Reads: archive-log.md, governance/VISUAL-DNA.md, BRIEF.md, Editor's full set
+  Reads: archive-log.md, governance/VISUAL-DNA.md, BRIEF.md, Editor-In-Chief's full set
   Evaluates: the set as a coherent issue — arc, grid, variety, cultural specificity
-  Produces: APPROVED SET or REDIRECT with specific brief
+  Produces: evaluation with recommendation (READY or CONCERNS)
 
-Step 2b — Module proposals
-  If The Editor-In-Chief-In-Chief or Creative Director included a proposal,
+Step 3 — Run The Magazine
+  Reads: archive-log.md, governance/VISUAL-DNA.md, BRIEF.md, Editor-In-Chief's research, Creative Director's evaluation
+  Synthesizes: research depth, editorial curation, governance compliance, archive trajectory, publication voice
+  Produces: SHIP or REDIRECT with specific editorial rationale
+
+Step 3b — Module proposals
+  If The Editor-In-Chief or Creative Director included a proposal,
   Claude Code writes proposals/proposed_[name].md
-  Alfred reviews before the next session begins
-  Alfred approves or rejects via Claude Code
+  The Magazine reviews proposal alignment with editorial vision
+  Alfred makes final decision on new modules
 
-Step 3 — If APPROVED
+Step 4 — If SHIP
   The Creative Director writes prompts/prompt_set_[number].md with all 12 prompts
   Alfred generates each image in Midjourney in sequence
   Alfred saves each image to images/selects/ using the naming convention below
   Alfred appends all 12 log entries to archive-log.md
 
-Step 4 — If REDIRECT
-  Alfred runs The Editor-In-Chief-In-Chief again with the Creative Director's brief as context
+Step 5 — If REDIRECT
+  The Magazine communicates specific editorial direction
+  Alfred runs The Editor-In-Chief again with The Magazine's brief as context
   Return to Step 1
 
 ---
 
 ## Signal flow
 
-Editor-In-Chief output → Creative Director evaluation → Alfred decision
+Editor-In-Chief research → Creative Director curation → **The Magazine synthesis** → Decision
 
-If approved:
+**If SHIP:**
 prompt file written → Midjourney → image saved to selects/ →
 archive-log.md updated
 
-If redirected:
-brief returned to Editor-In-Chief → Editor-In-Chief reruns with brief as context →
+**If REDIRECT:**
+Magazine brief returned to Editor-In-Chief → Editor-In-Chief reruns with brief as context →
 loop restarts from Step 1
 
-Governance intercepts at two points:
-- Editor-In-Chief self-check against VISUAL-DNA.md before passing to
-  Creative Director
-- Creative Director enforcement check before approving any prompt
+Governance intercepts at three points:
+- Editor-In-Chief self-check against VISUAL-DNA.md before passing to Creative Director
+- Creative Director enforcement check on grid coherence and governance compliance
+- **The Magazine governance seal** — confirms all rules passed and set aligns with editorial vision
 
-CV inputs modulate both agents at the start of every session:
-- Archive state from archive-log.md
-- Cultural calendar awareness in The Creative Director
-- Alfred's standing direction from BRIEF.md
+Three layers of validation:
+1. **Research truth** — Editor-In-Chief confirms cultural ground is real and specific
+2. **Curation coherence** — Creative Director confirms 12 work as one complete set
+3. **Magazine voice** — The Magazine confirms set reflects publication values and advances archive
+
+CV inputs modulate all agents at the start of every session:
+- Archive state from archive-log.md (shared context)
+- Governance rules from VISUAL-DNA.md (shared enforcement)
+- Cultural values from BRIEF.md (shared mission)
+- The Magazine's long-term editorial strategy
 - Pending module proposals from proposals/
 
 ---
