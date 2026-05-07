@@ -75,104 +75,99 @@ Curated publication catalog for Victor (Visual Curator), Maeve (Researcher), and
 
 ---
 
-## Source Taxonomy by Design Section
+## Core Principle
 
-### Art & Visual Culture
-- **Primary:** It's Nice That, Creative Boom, Behance, Awwwards
-- **Secondary:** The Verge (design criticism), Wired (culture)
-- **Tertiary:** UX Collective (design thinking), Print Mag (visual systems)
+**All sources are available for all sections.**
 
-### Photography & Documentation
-- **Primary:** It's Nice That, Creative Boom, The Verge (hardware design)
-- **Secondary:** Wired, Fast Company
-- **Tertiary:** Behance, Print Mag
+Editorial direction (theme, signals, gaps) determines which sources matter on any given day — not categorical boundaries. A TechCrunch acquisition story could feed Opinions, Art/Culture, Tools, or Brand sections depending on the narrative angle Maeve and Victor identify.
 
-### Design & AI Tools
-- **Primary:** Product Hunt, GitHub, Figma Blog, Adobe Blog, Hacker News
-- **Secondary:** Google for Developers, TechCrunch, The Verge
-- **Tertiary:** Substack (indie voices)
-
-### Product & Process
-- **Primary:** Smashing Magazine, UX Collective, Nielsen Norman Group, Figma Blog
-- **Secondary:** A List Apart, Webflow Blog, Apple Developer News
-- **Tertiary:** Design blogs, Bootcamp
-
-### Opinions & Criticism
-- **Primary:** Wired, Fast Company (Co.Design), A List Apart
-- **Secondary:** UX Collective, Nielsen Norman Group, Independent blogs
-- **Tertiary:** The Verge (reviews), Smashing Magazine
-
-### Brand & Visual Systems
-- **Primary:** Print Mag, Behance, Awwwards
-- **Secondary:** Creative Boom, It's Nice That, Figma Blog
-- **Tertiary:** Adobe Blog (design system announcements)
+**Don't restrict scouting.** If today's theme is "ritual in tools," pull from everywhere: Wired (culture), Figma Blog (tool behavior), Behance (visual practice), Nielsen Norman Group (ritual in UX), Substack (philosophy).
 
 ---
 
 ## Scout Instructions for Curator & Researchers
 
-### Maeve (Researcher) — Weekly Routine
+### Maeve (Researcher) — Research Stance
 
-1. **Monday–Wednesday:** Check official blogs and news sites
-   - Figma Blog, Adobe Blog, Google for Developers, TechCrunch, The Verge
-   - Note: New tools, feature launches, acquisition announcements
-   
-2. **Wednesday–Thursday:** Visual inspiration sites
-   - It's Nice That, Creative Boom, Awwwards (daily new work)
-   - Behance (weekly featured projects)
-   - Identify: emerging trends, visual directions, aesthetic signals
-   
-3. **Thursday–Friday:** Deep-dive publications
-   - Smashing Magazine, UX Collective, Nielsen Norman Group
-   - A List Apart, Webflow Blog
-   - Note: Case studies, methodology, research findings
+Given today's theme or editorial direction:
 
-4. **Ongoing:** Independent scouts
-   - Product Hunt (new tools daily)
-   - GitHub (new design system releases)
-   - Substack (design philosophy, contrarian takes)
+1. **Scan across all sources** — Don't visit "research" publications only. Check everything.
+   - Can a TechCrunch acquisition story reveal something about design culture?
+   - Does a Hacker News discussion unearth a philosophical signal?
+   - Is there a contrarian take on Substack that reframes the theme?
 
-### Victor (Curator) — Visual Direction
+2. **Identify signals & gaps** — For each section, ask:
+   - What's being said about this topic across sources?
+   - What perspectives are missing?
+   - Where's the tension or contrarian view?
+   - What's emerging that isn't mainstream yet?
 
-**For each section, Victor scouts:**
+3. **Report findings to Victor:**
+   - "Here's what I found on [theme] across Figma Blog, Wired, and three Substack writers"
+   - "Gaps: no one's addressing [X], but three sources are converging on [Y]"
+   - "Hacker News discussion suggests designers think [contrarian perspective]"
 
-1. What visual/aesthetic direction is emerging in the publications?
-2. Are there color, typography, or compositional trends?
-3. What quality threshold? (High/strong only — never mediocre)
-4. Does this represent a distinct angle or category?
+### Victor (Curator) — Visual Selection Stance
 
-**Feeds to prioritize:** Awwwards, Behance, It's Nice That, Creative Boom (daily visual updates)
+Given today's theme and Maeve's research direction:
 
-### Assignment Editor — Signal Finding
+1. **Pull from everywhere** — Don't just visit design sites. Check:
+   - Hardware design leaks (9to5Mac, MacRumors) for form language
+   - Wired essays for conceptual imagery
+   - Hacker News project links for emerging aesthetics
+   - Behance + Awwwards for visual confirmation of trends
 
-**After Victor's visual selections, Assignment Editor asks:**
+2. **Evaluate each piece:**
+   - Does this fit today's conversation?
+   - High/strong quality only (no mediocre work)
+   - Distinct angle? (Not generic, not repetitive)
+   - Does it visually prove or challenge the theme?
 
-1. What patterns emerge across the visuals?
-2. What design thinking or philosophy is emerging?
-3. What gaps exist in the coverage?
-4. What stories could develop from these signals?
+3. **Brief Assignment Editor:**
+   - "I found these 3–5 pieces from [diverse sources]"
+   - "Visual pattern I'm seeing: [aesthetic/compositional thread]"
+   - "Gaps I identified: [what visuals are missing]"
 
-**Examples of signals from sources:**
-- Figma Blog announces new AI features → Signal: "AI-assisted design becoming default expectation"
-- It's Nice That features 5 typography-heavy projects → Signal: "Type as primary visual language"
-- Nielsen Norman Group publishes accessibility research → Signal: "Accessibility as core design principle"
+### Assignment Editor — Signal Finding Stance
+
+Given Victor's visual selections:
+
+1. **Extract patterns across the visuals**
+   - What emerges from this mix of imagery?
+   - What's the underlying design thinking?
+   - What's being said *without words*?
+
+2. **Connect to research**
+   - How do Maeve's findings validate or complicate the visuals?
+   - Where's the convergence? Where's the contradiction?
+   - What story emerges from combining research + visuals?
+
+3. **Commission narratives**
+   - For each section: "Develop the angle of [signal]"
+   - "Synthesize findings on [pattern]"
+   - "Explore the tension between [visual contradiction]"
+
+**Examples of cross-source signals:**
+- Figma Blog (AI features) + Hacker News (skepticism) + Substack (philosophy) → Signal: "AI tools as amplifiers, not replacements"
+- It's Nice That (typography trend) + Wired (culture essay) + Smashing Magazine (technique) → Signal: "Type as cultural voice"
+- Product Hunt (new tools) + GitHub (open-source alternatives) + Independent blogs (critique) → Signal: "Fragmentation in tool ecosystem"
 
 ---
 
-## Content Calendar Suggestions
+## Theme Examples (Pull Sources Freely)
 
-### Weekly Theme Ideas (by source)
+These are editorial directions, not source assignments. When exploring any theme, scout everywhere.
 
-| Week | Source | Possible Theme |
-|------|--------|---------------|
-| 1 | Product Hunt + GitHub | Emerging tools & open-source innovation |
-| 2 | Apple Developer News + Figma Blog | Platform capabilities shifting (iOS/design tools) |
-| 3 | UX Collective + Nielsen Norman Group | Research findings & methodology |
-| 4 | Behance + Awwwards | Visual culture & aesthetic trends |
-| 5 | TechCrunch + The Verge | Industry consolidation, hardware design |
-| 6 | Substack + Independent blogs | Philosophy & practitioner perspectives |
-| 7 | Print Mag + Creative Boom | Branding, identity, print culture |
-| 8 | Smashing Magazine + A List Apart | Craft, standards, technique |
+| Theme | Explore Across |
+|-------|---|
+| Emerging tools & innovation | Product Hunt, GitHub, Hacker News discussions, Figma Blog, Substack makers |
+| Platform shifts | Apple Developer News, Figma Blog, TechCrunch, The Verge, designer reactions on Hacker News |
+| Research & methodology | Nielsen Norman Group, UX Collective, A List Apart, but also: Wired long-form, Substack research essays |
+| Visual culture & trends | Behance, Awwwards, It's Nice That, but also: The Verge design criticism, Wired culture pieces, Photography essays |
+| Industry consolidation | TechCrunch, The Verge, Fast Company, but also: Hacker News discussion, indie blog reactions |
+| Philosophy & practice | Substack, independent blogs, but also: UX Collective, A List Apart, Nielsen Norman Group research |
+| Identity & branding | Print Mag, Creative Boom, Behance, but also: Figma Blog (design system case studies), Fast Company |
+| Craft & standards | Smashing Magazine, A List Apart, but also: GitHub design system repos, Webflow case studies |
 
 ---
 
