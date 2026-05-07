@@ -1,3 +1,9 @@
+<style>
+body, code, pre, p, h1, h2, h3, h4, h5, h6, li, table {
+  font-family: 'Courier New', Courier, monospace;
+}
+</style>
+
 # Patched Framework
 
 The Patched framework is a modular philosophy for designing AI-driven experience systems. It's a shared vocabulary for designers, engineers, and product managers.

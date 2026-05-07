@@ -1,3 +1,9 @@
+<style>
+body, code, pre, p, h1, h2, h3, h4, h5, h6, li, table {
+  font-family: 'Courier New', Courier, monospace;
+}
+</style>
+
 # Design By Bulletin™
 
 A daily automated editorial digest delivered via Telegram that orchestrates both the visual agents and the Bulletin Board editorial system.

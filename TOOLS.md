@@ -1,3 +1,9 @@
+<style>
+body, code, pre, p, h1, h2, h3, h4, h5, h6, li, table {
+  font-family: 'Courier New', Courier, monospace;
+}
+</style>
+
 # Tools — Design By Bulletin™
 
 Production scripts and utilities for creating and delivering issues.

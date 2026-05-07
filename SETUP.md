@@ -1,3 +1,9 @@
+<style>
+body, code, pre, p, h1, h2, h3, h4, h5, h6, li, table {
+  font-family: 'Courier New', Courier, monospace;
+}
+</style>
+
 # Bulletin Board — Setup & Troubleshooting
 
 This guide covers the complete setup for the Bulletin Board multi-agent editorial system and common issues encountered during initialization.
