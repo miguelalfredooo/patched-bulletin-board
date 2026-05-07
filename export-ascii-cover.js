@@ -91,7 +91,7 @@ async function exportAsciiCover(inputPath, outputFilename = null, fontSize = 12)
 <svg xmlns="http://www.w3.org/2000/svg" width="${svgWidth + padding * 2}" height="${svgHeight + padding * 2}" viewBox="0 0 ${svgWidth + padding * 2} ${svgHeight + padding * 2}">
   <defs>
     <style>
-      text { font-family: 'Unifont', 'Courier New', monospace; font-size: ${fontSize}px; line-height: ${lineHeight}; }
+      text { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: ${fontSize}px; line-height: ${lineHeight}; }
     </style>
   </defs>
   <rect width="${svgWidth + padding * 2}" height="${svgHeight + padding * 2}" fill="#0a0a0a"/>
