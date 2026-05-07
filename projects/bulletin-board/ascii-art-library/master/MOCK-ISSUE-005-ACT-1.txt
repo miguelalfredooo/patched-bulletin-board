@@ -1,0 +1,123 @@
+# MOCK ISSUE 005 — ACT 1: VISUAL PREVIEW
+## Based on ACT-1-LAYOUT-TEMPLATE
+## Theme: Signal | Date: May 8, 2026
+
+---
+
+## CODEBLOCK 1: ISSUE COVER + ISSUE HERO
+
+```
+██████╗ ██████╗ ██████╗ ™
+██╔══██╗██╔══██╗██╔══██╗
+██║  ██║██████╔╝██████╔╝
+██║  ██║██╔══██╗██╔══██╗
+██████╔╝██████╔╝██████╔╝
+╚═════╝ ╚═════╝ ╚═════╝
+
+Design By Bulletin™
+━━━━━━━━━━━━━━━━━━━━━━━━━
+Issue 005
+Signal • May 8, 2026
+━━━━━━━━━━━━━━━━━━━━━━━━━
+
+                    ◇
+                   ◇ ◇
+                  ◇ ◇ ◇
+                 ◇ ◇ ◇ ◇
+                ◇ ◇ ◇ ◇ ◇
+               ◇ ◇ ◇ ◇ ◇ ◇
+              ◇ ◇ ◇ ◇ ◇ ◇ ◇
+             ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+            ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+           ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+          ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+         ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+        ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+       ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+      ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+
+                        **SIGNAL**
+```
+
+---
+
+## CODEBLOCK 2: 11 EDITORIAL SECTIONS (LABELED VARIATION ONLY)
+
+```
+    ◇
+   ◇ ◇
+**Art**               ◇ ◇ ◇
+ ◇ ◇ ◇ ◇
+◇ ◇ ◇ ◇ ◇
+
+┌─────────┐
+│ ░░░░░░░ │
+│ ░░▓▓░░░ │
+**Painting**        │ ░░▓▓░░░ │
+│ ░░░░░░░ │
+└─────────┘
+
+  ╱╲
+ ╱  ╲
+╱    ╲
+**Illustration**    ╲    ╱
+ ╲  ╱
+  ╲╱
+
+    ▲
+   ╱ ╲
+**Sculpture**         ╱   ╲
+ ╱     ╲
+═════════
+
+░▒▓█ █▓▒░
+▓█  ●  █▓
+**Culture**         █  ░█░  █
+▓█  ●  █▓
+░▒▓█ █▓▒░
+
+┏━━━━━━━━┓
+┃ ◯ ◯ ◯ ┃
+**Photography**     ┃ ◯ ★ ◯ ┃
+┃ ◯ ◯ ◯ ┃
+┗━━━━━━━━┛
+
+◆───────◆
+│ ░░░░░ │
+**Art History**     │ ░░░░░ │
+│ ░░░░░ │
+◆───────◆
+
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
+**Opinions**        ❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
+
+⊡─────⊡
+│ ⊕ ⊕ │
+**Design & AI Tools**│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+⊡─────⊡
+
+①→②→③→④
+│ │ │ │
+**Product & Process**⑤→⑥→⑦→⑧
+│ │ │ │
+⑨→⑩
+
+╔═══════╗
+║ ▀▄▀▄▀ ║
+**Visual & Brand**  ║ ▄▀▄▀▄ ║
+║ ▀▄▀▄▀ ║
+╚═══════╝
+```
+
+---
+
+## NOTES
+
+- **Codeblock 1:** Issue cover (fixed masthead) + Issue hero (HERO-TALL portrait with centered **SIGNAL** name)
+- **Codeblock 2:** 11 sections, all using LABELED variation (ASCII left, name right at vertical midpoint)
+- **Spacing preserved:** Names positioned in empty space without overlaying ASCII art
+- **Clean flow:** No dividers, no redundant headers—pure visual rhythm
+

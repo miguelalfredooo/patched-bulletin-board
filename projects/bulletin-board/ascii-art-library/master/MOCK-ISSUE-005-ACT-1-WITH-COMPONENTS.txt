@@ -1,0 +1,278 @@
+# MOCK ISSUE 005 — ACT 1: VISUAL PREVIEW (WITH COMPONENTS)
+## Including Entry Previews + Section Cards
+## Theme: Signal | Date: May 8, 2026
+
+---
+
+## CODEBLOCK 1: ISSUE COVER + ISSUE HERO
+
+```
+██████╗ ██████╗ ██████╗ ™
+██╔══██╗██╔══██╗██╔══██╗
+██║  ██║██████╔╝██████╔╝
+██║  ██║██╔══██╗██╔══██╗
+██████╔╝██████╔╝██████╔╝
+╚═════╝ ╚═════╝ ╚═════╝
+
+Design By Bulletin™
+━━━━━━━━━━━━━━━━━━━━━━━━━
+Issue 005
+Signal • May 8, 2026
+━━━━━━━━━━━━━━━━━━━━━━━━━
+
+                    ◇
+                   ◇ ◇
+                  ◇ ◇ ◇
+                 ◇ ◇ ◇ ◇
+                ◇ ◇ ◇ ◇ ◇
+               ◇ ◇ ◇ ◇ ◇ ◇
+              ◇ ◇ ◇ ◇ ◇ ◇ ◇
+             ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+            ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+           ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+          ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+         ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+        ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+       ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+      ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
+
+                        **SIGNAL**
+```
+
+---
+
+## CODEBLOCK 2: 11 SECTIONS (ENTRY + SECTION CARD FORMAT)
+
+```
+    ◇
+   ◇ ◇
+  ◇ ◇ ◇
+ ◇ ◇ ◇ ◇
+◇ ◇ ◇ ◇ ◇
+
+**ART**
+
+Art — Bold Geometric Work
+
+Minimalism cuts through visual chaos. Primary colors make claims without decoration. The canvas becomes declaration, not decoration.
+
+**Art — Bold Geometric Work**
+
+Minimalism cuts through visual chaos. Primary colors make claims without decoration. The canvas becomes declaration, not decoration.
+
+*[Source: MOMA]*
+
+---
+
+┌─────────┐
+│ ░░░░░░░ │
+│ ░░▓▓░░░ │
+│ ░░▓▓░░░ │
+│ ░░░░░░░ │
+└─────────┘
+
+**PAINTING**
+
+Painting — Color as Communication
+
+Restricted palettes constrain what meaning can emerge. When painters eliminate choice, every color carries argument. No decoration survives.
+
+**Painting — Color as Communication**
+
+Restricted palettes constrain what meaning can emerge. When painters eliminate choice, every color carries argument. No decoration survives.
+
+*[Source: WikiArt]*
+
+---
+
+  ╱╲
+ ╱  ╲
+╱    ╲
+╲    ╱
+ ╲  ╱
+  ╲╱
+
+**ILLUSTRATION**
+
+Illustration — Icon-Like Clarity
+
+Illustration reduced to essential form. Every line necessary, no gesture decorative. The simplified shape becomes unmistakable signal.
+
+**Illustration — Icon-Like Clarity**
+
+Illustration reduced to essential form. Every line necessary, no gesture decorative. The simplified shape becomes unmistakable signal.
+
+*[Source: Eye on Design]*
+
+---
+
+    ▲
+   ╱ ╲
+  ╱   ╲
+ ╱     ╲
+═════════
+
+**SCULPTURE**
+
+Sculpture — Form as Argument
+
+Sculptural gesture arrives unmistakable. Metal, concrete, stone shaped with absolute clarity. The material declares its presence without apology.
+
+**Sculpture — Form as Argument**
+
+Sculptural gesture arrives unmistakable. Metal, concrete, stone shaped with absolute clarity. The material declares its presence without apology.
+
+*[Source: Frieze]*
+
+---
+
+░▒▓█ █▓▒░
+▓█  ●  █▓
+█  ░█░  █
+▓█  ●  █▓
+░▒▓█ █▓▒░
+
+**CULTURE**
+
+Culture — Direct Address Aesthetics
+
+Culture rejecting irony and ambiguity. Manifestos replace suggestion. Direct claims cut through the noise of polite insinuation.
+
+**Culture — Direct Address Aesthetics**
+
+Culture rejecting irony and ambiguity. Manifestos replace suggestion. Direct claims cut through the noise of polite insinuation.
+
+*[Source: The New Yorker]*
+
+---
+
+┏━━━━━━━━┓
+┃ ◯ ◯ ◯ ┃
+┃ ◯ ★ ◯ ┃
+┃ ◯ ◯ ◯ ┃
+┗━━━━━━━━┛
+
+**PHOTOGRAPHY**
+
+Photography — High-Contrast Photography
+
+Black and white extremes eliminate gray area. Stark, readable, undeniable. The photograph makes claims through absolute clarity.
+
+**Photography — High-Contrast Photography**
+
+Black and white extremes eliminate gray area. Stark, readable, undeniable. The photograph makes claims through absolute clarity.
+
+*[Source: Magnum Photos]*
+
+---
+
+◆───────◆
+│ ░░░░░ │
+│ ░░░░░ │
+│ ░░░░░ │
+◆───────◆
+
+**ART HISTORY**
+
+Art History — Constructivism
+
+Design as political statement. Legibility becomes power. Russian avant-garde precision treated visual language as tool for collective understanding.
+
+**Art History — Constructivism**
+
+Design as political statement. Legibility becomes power. Russian avant-garde precision treated visual language as tool for collective understanding.
+
+*[Source: The Art Newspaper]*
+
+---
+
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
+
+**OPINIONS**
+
+Opinions — Against Ambient
+
+Focus and clarity demand active attention. Background music and invisible design are refusals to engage. Attention is the work.
+
+**Opinions — Against Ambient**
+
+Focus and clarity demand active attention. Background music and invisible design are refusals to engage. Attention is the work.
+
+*[Source: Aeon]*
+
+---
+
+⊡─────⊡
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+⊡─────⊡
+
+**DESIGN & AI TOOLS**
+
+Design & AI Tools — Tools for Clear Thinking
+
+Technology serving clarity, not distraction. Design tools that amplify intention. Systems designed for signal, not noise.
+
+**Design & AI Tools — Tools for Clear Thinking**
+
+Technology serving clarity, not distraction. Design tools that amplify intention. Systems designed for signal, not noise.
+
+*[Source: Design Observer]*
+
+---
+
+①→②→③→④
+│ │ │ │
+⑤→⑥→⑦→⑧
+│ │ │ │
+⑨→⑩
+
+**PRODUCT & PROCESS**
+
+Product & Process — Iteration with Purpose
+
+Every refinement deliberate. Process visible in the final form. The product declares its making through clarity of execution.
+
+**Product & Process — Iteration with Purpose**
+
+Every refinement deliberate. Process visible in the final form. The product declares its making through clarity of execution.
+
+*[Source: AIGA Eye on Design]*
+
+---
+
+╔═══════╗
+║ ▀▄▀▄▀ ║
+║ ▄▀▄▀▄ ║
+║ ▀▄▀▄▀ ║
+╚═══════╝
+
+**VISUAL & BRAND**
+
+Visual & Brand — Brand Velocity
+
+Brands responding to culture in hours, not seasons. Visual identity evolving in real-time. The logo becomes fluid, modular, permission to shift.
+
+**Visual & Brand — Brand Velocity**
+
+Brands responding to culture in hours, not seasons. Visual identity evolving in real-time. The logo becomes fluid, modular, permission to shift.
+
+*[Source: Brand New]*
+```
+
+---
+
+## FLOW NOTES
+
+- **Codeblock 1:** Issue identity (cover + hero)
+- **Codeblock 2:** All 11 sections, each as:
+  1. Entry preview (metadata teaser)
+  2. Divider (---)
+  3. Section card (ASCII + full details)
+  4. Divider before next entry
+- **Links:** Appear separately in Telegram (outside codeblock) per section
+

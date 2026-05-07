@@ -1,0 +1,227 @@
+# DESIGN BY BULLETIN™ — COMPONENTS MASTER GUIDE
+## High-Level Reference for Agents & Developers
+
+---
+
+## OVERVIEW
+
+The Design By Bulletin™ bot delivers visual issues using a component-based architecture. Each issue consists of:
+- **ACT 1 (Visual):** ASCII art preview with metadata
+- **ACT 2 (Prose):** Editorial grid with full articles
+
+All components are pure text, UTF-8 compatible, monospace-friendly.
+
+---
+
+## COMPONENT STRUCTURE (5 Components + Variations)
+
+### COMPONENT 1: ISSUE COVER
+**File:** COMPONENT-1-ISSUE-COVER.txt
+**Content:** Masthead + Issue Hero combined
+**Structure:**
+  - Logo (fixed DBB branding)
+  - Title/date (variable per issue)
+  - HERO-TALL portrait (issue theme, centered, ALL CAPS)
+**Rules:**
+  - Always opens ACT 1
+  - Single codeblock delivery
+  - Logo/dividers never change
+  - Only update: Issue number, theme, date
+
+### COMPONENT 2: SECTION CARDS (3 Sub-Variations)
+
+**Variation A: ISSUE-SECTIONS** (LABELED — Text overlaid on ASCII)
+**File:** COMPONENT-2-ISSUE-SECTIONS.txt
+**Content:** ASCII art with section names positioned at vertical midpoint on right
+**Rules:**
+  - 11 sections per issue
+  - Section name: ALL CAPS, bold (**ART**)
+  - Name positioned right of ASCII at vertical midpoint
+  - Used in ACT 1 visual grid for full-width display
+
+**Variation B: ISSUE-HERO-BELOW** (HERO-TALL — Portrait format)
+**File:** COMPONENT-2-ISSUE-HERO-BELOW.txt
+**Content:** Tall portrait ASCII art (3:4 ratio), theme name centered below
+**Rules:**
+  - Used only for issue hero in COMPONENT-1
+  - Centered horizontally and vertically
+  - Section name below: ALL CAPS, bold
+  - Creates dramatic visual opening
+
+**Variation C: ENTRY-PREVIEW** (Text-only metadata)
+**File:** COMPONENT-ENTRY-PREVIEW.txt
+**Content:** Section metadata teaser (name — concept + description)
+**Rules:**
+  - Plain text, no ASCII art
+  - Appears before section card in delivery
+  - Left/center/right aligned options
+  - Builds curiosity before full card
+
+### COMPONENT 3: EDITORIAL GRID
+**File:** COMPONENT-3-EDITORIAL-GRID.txt
+**Content:** 11 editorial sections with full prose articles
+**Structure:**
+  - **[Section] — [Subtitle]** (bold section name and descriptive subtitle)
+  - 2-4 sentences of prose (~60-120 words)
+  - *[Source: Attribution]* (italicized source in brackets)
+**Rules:**
+  - Exactly 11 sections per issue (matching visual section names)
+  - Narrative, critical, contextual voice
+  - Each section relates to issue theme
+  - Always includes source attribution
+  - Appears in ACT 2 (plain text, no code block)
+  - First line of prose is used in Component 2 compact variations
+  - All 110 sections (11 × 10 issues) complete
+
+### COMPONENT 4: CLOSING SENTENCE
+**File:** COMPONENT-4-CLOSING-SENTENCE.txt
+**Content:** Issue-level closing statement (one per issue)
+**Format:** Quoted poetic statement (8-15 words)
+**Rules:**
+  - Distilled, universal voice
+  - Encapsulates entire issue theme
+  - Appears after editorial grid, before metadata
+  - Self-contained — can be used independently
+  - One per issue (10 total)
+  - All 10 sentences complete
+
+### COMPONENT 5: METADATA FOOTER
+**File:** COMPONENT-5-METADATA-FOOTER.txt
+**Content:** Publication information footer (one per issue)
+**Format:**
+  - Line 1: *Published: [DATE]*
+  - Line 2: *Theme: [NAME] — [8-15 word description]*
+**Rules:**
+  - Always italicized for visual distinction
+  - Appears at end of every issue file
+  - Theme name matches issue theme
+  - Theme description reflects issue concept
+  - One per issue (10 total)
+  - All 10 footers complete
+
+---
+
+## SECTION CARD FLOW (For Delivery)
+
+Each section in ACT 1 is a complete card:
+
+1. **Entry Preview** (plain text): "Section Name — Concept + Description"
+2. **Divider** (---)
+3. **ASCII Art** (SOURCE variation): Pure art, no labels
+4. **Section Name** (below art): **LEFT-ALIGNED ALL CAPS**
+5. **Entry Preview** (repeat): Metadata teaser
+6. **Article Details** (bold title + description + source)
+7. **Link** (outside codeblock): Plain text URL
+
+---
+
+## NAMING CONVENTIONS
+
+### File Naming
+**Pattern:** `issue-[NNN]-[section]-[variation]-neon.txt`
+
+Examples:
+- `source/issue-010-art-neon.txt` — Original ASCII art
+- `labeled/issue-005-painting-labeled-neon.txt` — Section name at vertical midpoint
+- `hero-tall/issue-003-culture-hero-tall-neon.txt` — Portrait format (when generated)
+
+### Section Names (11 per issue)
+1. Art
+2. Painting
+3. Illustration
+4. Sculpture
+5. Culture
+6. Photography
+7. Art History
+8. Opinions
+9. Design & AI Tools
+10. Product & Process
+11. Visual & Brand
+
+### Directory Structure
+```
+ascii-art-library/
+├── source/          (110 originals)
+├── expanded/        (110 centered heroes)
+├── labeled/         (110 with vertical midpoint names)
+├── compact/         (220 left/right variations)
+├── hero-tall/       (110 portrait format — generation pending)
+├── master/          (Component reference files — ASCII only)
+└── README.md
+```
+
+---
+
+## VISUAL RULES
+
+### Vertical Centering
+Text elements must position at ASCII art's vertical midpoint:
+- **LABELED variation:** Section name at vertical center, right side
+- **COMPACT-LEFT:** Name at vertical center on right
+- **COMPACT-RIGHT:** Name at vertical center on left
+- **HERO-TALL:** Theme name centered below (no inline positioning)
+
+### Text Styling
+- **Section names:** ALL CAPS, bold (`**ART**`)
+- **Article titles:** Bold, descriptive (`**Art — Bold Geometric Work**`)
+- **Source attribution:** Italicized brackets (`*[Source: MOMA]*`)
+- **Entry preview:** Plain text, no bold/italics
+
+### ASCII Art Characters
+Pure Unicode geometric characters only:
+- Diamonds: ◇ ◆ ◈
+- Arrows: → ← ↑ ↓
+- Boxes: ┌ ┐ └ ┘ ─ │ ┼
+- Fills: ░ ▒ ▓
+- Lines: ═ ║ ╔ ╗ ╚ ╝
+- Shapes: ▲ ▼ ◆ ● ○
+
+**No:** emoji, color codes, extended formatting
+
+### Standard Divider
+All section dividers use 24-character EM DASH format to prevent Telegram line breaks:
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+Used between sections in codeblocks and between cards in delivery flow.
+
+---
+
+## DELIVERY FLOW (ACT 1 — VISUAL)
+
+**Codeblock 1:** Issue Cover
+- Masthead + HERO-TALL portrait
+
+**Codeblock 2:** 11 Sections (each)
+- Entry preview (text)
+- ASCII art (SOURCE)
+- Section name (left-aligned, ALL CAPS)
+- Entry preview (text)
+- Article details (title + description + source)
+
+**Outside Codeblock:** Links
+- One link per section (plain text)
+
+---
+
+## STATUS
+
+- ✅ All 5 components documented
+- ✅ Naming conventions standardized
+- ✅ 550 ASCII art files generated (110 × 5 variations)
+- ✅ Master templates created
+- ⏳ HERO-TALL generation pending (110 files)
+- ✅ ACT 1 layout template finalized
+- ⏳ ACT 2 integration pending
+
+---
+
+## FOR AGENTS
+
+When referencing components:
+1. Check this guide first for naming/structure rules
+2. Use master/COMPONENT-*.txt for ASCII art examples
+3. Follow exact section names and styling (ALL CAPS for visual components)
+4. Maintain vertical centering rule across all variations
+5. Always deliver in code blocks for monospace rendering
+

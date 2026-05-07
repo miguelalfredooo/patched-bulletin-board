@@ -1,38 +1,15 @@
-# COMPONENT 3: EDITORIAL GRID (ACT 2 Prose Sections)
-# Test and staging area for editorial content
-
-## Current Standard Format
-
 **Art — Sherald's Raw Linen**
 Paintings that age on the canvas. Sherald's practice treats material and time as collaborators. The painting wears in rather than deteriorates.
 *[Source: Artsy]*
+
+---
 
 **Painting — Dissolution Through Use**
 Cecily Brown's figures dissolving into ground. Work that loses definition through handling and repeated viewing. The image becomes palimpsest through engagement.
 *[Source: Booooooom]*
 
-## Current Rules
-1. 11 sections per issue (matches visual sections)
-2. Format: **[Section] — [Subtitle]** + prose + source
-3. 2-4 sentences per section (~60-120 words)
-4. Narrative, critical, contextual voice
-5. Each section relates to issue theme
-6. Always includes source attribution: *[Source: ...]*
-7. Appears in ACT 2 (plain text, no code block)
+---
 
-## Integration with Component 2
-- First line of each Editorial Grid section is now used in:
-  - Compact-Left variations (line appears below ASCII)
-  - Compact-Right variations (line appears below ASCII)
-- Creates contextual pairing between visual and prose
-
-## Proposed New Rules (TEST HERE)
-- [Add any new rules or modifications here]
-- [Test prose length/style changes]
-- [Adjust source attribution format]
-- [Verify thematic consistency]
-
-## Status
-- ✅ All 110 sections (11 sections × 10 issues) complete
-- ✅ First lines extracted for use in Component 2 compact variations
-- Ready for: Testing prose quality and editorial voice consistency
+**Illustration — Icon-Like Clarity**
+Illustration reduced to essential form. Every line necessary, no gesture decorative. The simplified shape becomes unmistakable signal.
+*[Source: Eye on Design]*
