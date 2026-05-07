@@ -1,7 +1,7 @@
 # ASCII-VISUAL-DNA.md — Design by Bulletin
 ## ASCII art governance specification
 
-**Version:** 1.1.0
+**Version:** 1.2.0
 **Status:** Active
 **Last updated:** 2026-05
 
@@ -110,28 +110,42 @@ When to use:
 - Theme declaration pieces — the issue's single-word theme rendered large
 - Any story where concept over image is the right register
 
-FIGlet font selection by register:
+**Always use `utils/figlet.js` — never hand-draw letterforms.**
+**Always call `renderText(text, register, 2)` with leftPad=2.**
+**Never call renderText without leftPad — alignment will break in Telegram.**
 
-  Editorial / considered:
-  Big, Banner, Block, Lean
+FIGlet font selection by register (locked in `utils/figlet.js`):
 
-  Technical / precise:
-  Computer, Cyberlarge, Digital
+  Editorial / considered (opinions):
+  Shadow — use renderText(text, 'opinions', 2)
 
-  Warm / intimate (Apartamento register):
-  Small, Mini, Thin
+  Technical / tools:
+  Small — use renderText(text, 'tools', 2)
+  Previously Lean — changed to Small for uniform vertical alignment
 
-  Bold / declarative:
-  Banner3, Big, Shadow
+  Theme declaration:
+  Block — use renderText(text, 'theme', 2)
+
+  Bold / masthead:
+  Banner — use renderText(text, 'masthead', 2)
+
+  Closing:
+  Small — use renderText(text, 'closing', 2)
 
 Character density for typographic pieces should feel intentional —
-the letterforms should read clearly at the 42-character width without
+the letterforms should read clearly at the 36-character width without
 feeling compressed or stretched.
+
+**Alignment rule:** FIGlet fonts produce ragged per-row indentation.
+The leftPad=2 parameter in renderText normalizes all rows to a consistent
+left margin. Without it, the first or last row will drift left in Telegram
+monospace rendering. This is a hard requirement, not optional.
 
 Never:
 - Random FIGlet font selection — the font is an editorial decision
 - Typographic pieces for subjects that need illustration
 - Mixing FIGlet letterforms with dense illustration in the same piece
+- Calling renderText without leftPad=2
 
 ---
 
@@ -300,3 +314,4 @@ Before delivering any piece, check:
 |---------|-------|
 | 1.0.0 | Initial specification. Approach A — reference-based guardrails without scraping. Five formats, density guide, section mapping, asciiart.eu aesthetic standard. |
 | 1.1.0 | Width reduced from 45 to 42 — safe render at 375px Telegram viewport. |
+| 1.2.0 | Format C alignment fix. tools register changed from Lean to Small font for uniform vertical edges. leftPad=2 rule locked in for all renderText calls. |

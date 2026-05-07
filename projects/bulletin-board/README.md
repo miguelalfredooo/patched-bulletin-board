@@ -39,7 +39,7 @@ Bulletin Board operates as a three-agent editorial collective running on [OpenCl
 
 **Design By Bulletin™** is a daily automated editorial digest delivered via Telegram that uses the Bulletin Board three-agent system. It demonstrates how the editorial collective can be extended with delivery and automation layers.
 
-See [DESIGN-BY-BULLETIN.md](DESIGN-BY-BULLETIN.md) for the full implementation, including:
+See [BULLETIN-BOT.md](BULLETIN-BOT.md) for the complete Telegram bot reference (agent config, credentials, cron jobs, commands, troubleshooting). See [DESIGN-BY-BULLETIN.md](DESIGN-BY-BULLETIN.md) for the full implementation, including:
 - Six-agent workflow (visual discovery + editorial curation)
 - ASCII visual system (5 formats, 11 sections)
 - Daily cron job triggers
