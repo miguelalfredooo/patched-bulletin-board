@@ -2,6 +2,8 @@
 ## Theme: Presence
 ## Date: May 5, 2026
 
+**📖 See [BOT-COMPONENTS.md](BOT-COMPONENTS.md) for component system reference**
+
 ---
 
 ## ACT 1 — VISUAL PREVIEW
@@ -15,10 +17,10 @@
 ╚═════╝ ╚═════╝ ╚═════╝
 
 Design By Bulletin™
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━
 Issue 001
 Presence • May 5, 2026
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
 ### Section 1 — Art

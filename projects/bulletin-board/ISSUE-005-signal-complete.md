@@ -2,6 +2,8 @@
 ## Theme: Signal
 ## Date: May 8, 2026
 
+**📖 See [BOT-COMPONENTS.md](BOT-COMPONENTS.md) for component system reference**
+
 ---
 
 ## ACT 1 — VISUAL PREVIEW
@@ -15,10 +17,10 @@
 ╚═════╝ ╚═════╝ ╚═════╝
 
 Design By Bulletin™
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━
 Issue 005
 Signal • May 8, 2026
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
 ### Section 1 — Art
