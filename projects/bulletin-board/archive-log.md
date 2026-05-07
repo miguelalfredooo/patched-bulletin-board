@@ -44,6 +44,15 @@ Append-only. One entry per issue.
 - **STATUS:** Published May 7, 2026
 - **CURATOR NOTE:** The liminal edge where one thing becomes another.
 
+## Issue 007 — 2026-05-08
+- **THEME:** Interval
+- **EDITORIAL MIX:** Music 40%, Visual 70%, Research 65%, Process 60%, Theme 85%, AI Culture 35%
+- **SONIC REFERENCE:** John Cage — *4'33"* (1952): silence, rest, the space between
+- **RENDERING:** Text-only markdown
+- **CLOSING SENTENCE:** "The space between is where meaning lives."
+- **STATUS:** Published May 8, 2026
+- **CURATOR NOTE:** Rhythm, grammar, and structure created by gaps. What is not there defines what is.
+
 ## Issue 006 — 2026-05-09
 - **THEME:** Momentum
 - **EDITORIAL MIX:** Music 75%, Visual 85%, Research 60%, Process 50%, Theme 70%, AI Culture 65%

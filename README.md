@@ -4,7 +4,7 @@ A curated daily magazine about design, culture, and tools, delivered via Telegra
 
 ## Status
 
-✅ **9 Issues Published** (001-010)  
+✅ **10 Issues Published** (001-010, complete set)  
 ✅ **Live on Telegram** (@DesignByBulletinBot)  
 ✅ **Production Ready**
 
@@ -12,7 +12,7 @@ A curated daily magazine about design, culture, and tools, delivered via Telegra
 
 Design By Bulletin™ is a thematic editorial publication featuring:
 
-- **9 Complete Issues** (001-010) with distinct themes
+- **10 Complete Issues** (001-010) with distinct themes
 - **Two-Act Structure** per issue:
   - **ACT 1** — Visual preview with ASCII art sections
   - **ACT 2** — 11 curated editorial sections with sources
@@ -37,7 +37,7 @@ Message **@DesignByBulletinBot** on Telegram:
 New issues are stored in `projects/bulletin-board/`:
 - **Issue Files:** `ISSUE-[#]-[theme]-complete.md`
 - **Archive Log:** `archive-log.md` (bot dependency)
-- **Content:** 9 complete, publication-ready issues
+- **Content:** 10 complete, publication-ready issues
 
 ## File Structure
 
@@ -49,12 +49,16 @@ patched-editorial/
 ├── README.md                     [This file]
 │
 └── projects/
-    └── bulletin-board/           [Published magazine]
-        ├── ISSUE-001-presence-complete.md
-        ├── ISSUE-002-the-mark-complete.md
-        ├── ... (9 complete issues)
-        ├── archive-log.md        [Publication history]
-        └── README.md             [Magazine overview]
+    ├── bulletin-board/           [Published magazine]
+    │   ├── ISSUE-001-presence-complete.md
+    │   ├── ISSUE-002-the-mark-complete.md
+    │   ├── ... (10 complete issues)
+    │   ├── ISSUE-010-worn-complete.md
+    │   ├── archive-log.md        [Publication history]
+    │   ├── ascii-art-library/    [Visual assets]
+    │   └── README.md             [Magazine overview]
+    └── the-magazine/             [Editorial agents & system]
+        └── agents/               [Agent configurations]
 ```
 
 ## Published Issues
@@ -67,6 +71,7 @@ patched-editorial/
 | 004 | Traces | May 7, 2026 |
 | 005 | Signal | May 8, 2026 |
 | 006 | Momentum | May 9, 2026 |
+| 007 | Interval | May 8, 2026 |
 | 008 | Threshold | May 10, 2026 |
 | 009 | Material | May 11, 2026 |
 | 010 | Worn | May 12, 2026 |
