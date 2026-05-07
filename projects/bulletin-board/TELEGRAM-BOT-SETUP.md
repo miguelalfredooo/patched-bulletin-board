@@ -114,14 +114,14 @@ Contains bot instructions with complete production implementation:
 - Critical output rules (forbid thinking/reasoning/debug output)
 - Editorial voice guidelines
 
-**Critical file paths:**
+**Critical file paths (consolidated):**
 ```
 Issue archive log: /Users/blackmachete/projects/patched-editorial/projects/bulletin-board/archive-log.md
-Issue files: /Users/blackmachete/projects/patched-editorial/ISSUE-*.txt (PARENT directory, not bulletin-board subdir)
+Issue files: /Users/blackmachete/projects/patched-editorial/projects/bulletin-board/ISSUE-*.txt (13 files, all in one place)
 Today's date: 2026-05-07
 ```
 
-**Common mistake:** Issue files are in `/patched-editorial/ISSUE-*.txt` (13 files), not in `/patched-editorial/projects/bulletin-board/` (2 files only). Both commands must specify the parent directory path.
+**File consolidation:** All issue files (003-010) are now stored alongside archive-log.md in `bulletin-board/`, making them always discoverable and publicly accessible through the bot.
 
 #### auth-profiles.json
 ```json
