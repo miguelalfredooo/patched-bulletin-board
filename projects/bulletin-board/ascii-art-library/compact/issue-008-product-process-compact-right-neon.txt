@@ -1,8 +1,8 @@
-**Product & Process**                                       ①→②→③→④
-                                                            │ │ │ │
-                                                            ⑤→⑥→⑦→⑧
-                                                            │ │ │ │
-                                                            ⑨→⑩
+                                        ①→②→③→④
+                                        │ │ │ │
+**Product & Process**                   ⑤→⑥→⑦→⑧
+                                        │ │ │ │
+                                        ⑨→⑩
 
 The minimum viable product: good enough to ship but not finished. Living in the between-state, product at the edge before maturation.
 

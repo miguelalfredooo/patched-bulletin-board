@@ -1,8 +1,8 @@
-**Product & Process**                                       ①→②→③→④
-                                                            │ │ │ │
-                                                            ⑤→⑥→⑦→⑧
-                                                            │ │ │ │
-                                                            ⑨→⑩
+                                        ①→②→③→④
+                                        │ │ │ │
+**Product & Process**                   ⑤→⑥→⑦→⑧
+                                        │ │ │ │
+                                        ⑨→⑩
 
 Legibility prioritized over cleverness. Accessibility as aesthetic. Products that announce what they do without tricks or deception.
 

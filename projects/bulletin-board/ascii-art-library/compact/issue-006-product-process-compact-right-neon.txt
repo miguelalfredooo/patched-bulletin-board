@@ -1,8 +1,8 @@
-**Product & Process**                                                   ╔═══════════╗
-                                                                        ║ 1 2 3 4 5 ║
-                                                                        ║ ▓▓▓▓▓▓▓▓► ║
-                                                                        ║ 1 2 3 4 5 ║
-                                                                        ╚═══════════╝
+                                                    ╔═══════════╗
+                                                    ║ 1 2 3 4 5 ║
+**Product & Process**                               ║ ▓▓▓▓▓▓▓▓► ║
+                                                    ║ 1 2 3 4 5 ║
+                                                    ╚═══════════╝
 
 Agile, sprints, rapid prototyping. How product teams move at velocity while maintaining coherence. Two-week cycles shape aesthetic language.
 

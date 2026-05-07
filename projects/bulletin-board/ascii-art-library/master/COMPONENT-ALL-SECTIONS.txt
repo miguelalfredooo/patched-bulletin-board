@@ -1,49 +1,4 @@
-# MOCK ISSUE 005 — ACT 1: VISUAL PREVIEW (WITH COMPONENTS)
-## Including Entry Previews + Section Cards
-## Theme: Signal | Date: May 8, 2026
 
----
-
-## CODEBLOCK 1: ISSUE COVER + ISSUE HERO
-
-```
-██████╗ ██████╗ ██████╗ ™
-██╔══██╗██╔══██╗██╔══██╗
-██║  ██║██████╔╝██████╔╝
-██║  ██║██╔══██╗██╔══██╗
-██████╔╝██████╔╝██████╔╝
-╚═════╝ ╚═════╝ ╚═════╝
-
-Design By Bulletin™
-━━━━━━━━━━━━━━━━━━━━━━━━━
-Issue 005
-Signal • May 8, 2026
-━━━━━━━━━━━━━━━━━━━━━━━━━
-
-                    ◇
-                   ◇ ◇
-                  ◇ ◇ ◇
-                 ◇ ◇ ◇ ◇
-                ◇ ◇ ◇ ◇ ◇
-               ◇ ◇ ◇ ◇ ◇ ◇
-              ◇ ◇ ◇ ◇ ◇ ◇ ◇
-             ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
-            ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
-           ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
-          ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
-         ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
-        ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
-       ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
-      ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇ ◇
-
-                        **SIGNAL**
-```
-
----
-
-## CODEBLOCK 2: 11 SECTIONS (ENTRY + SECTION CARD FORMAT)
-
-```
     ◇
    ◇ ◇
   ◇ ◇ ◇

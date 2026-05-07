@@ -1,8 +1,8 @@
-**Product & Process**                                       ①→②→③→④
-                                                            │ │ │ │
-                                                            ⑤→⑥→⑦→⑧
-                                                            │ │ │ │
-                                                            ⑨→⑩
+                                        ①→②→③→④
+                                        │ │ │ │
+**Product & Process**                   ⑤→⑥→⑦→⑧
+                                        │ │ │ │
+                                        ⑨→⑩
 
 The best products announce their makers. Clear authorship. Visible craft. Process made part of the final work.
 

@@ -1,8 +1,8 @@
-**Product & Process**                                       ①→②→③→④
-                                                            │ │ │ │
-                                                            ⑤→⑥→⑦→⑧
-                                                            │ │ │ │
-                                                            ⑨→⑩
+                                        ①→②→③→④
+                                        │ │ │ │
+**Product & Process**                   ⑤→⑥→⑦→⑧
+                                        │ │ │ │
+                                        ⑨→⑩
 
 Paper sketches outpace high-fidelity mockups. Materiality speeds thinking. The rough physicality unlocks understanding digital polish prevents.
 

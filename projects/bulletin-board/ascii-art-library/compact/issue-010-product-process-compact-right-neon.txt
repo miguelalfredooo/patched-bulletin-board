@@ -1,8 +1,8 @@
-**Product & Process**                                       ①→②→③→④
-                                                            │ │ │ │
-                                                            ⑤→⑥→⑦→⑧
-                                                            │ │ │ │
-                                                            ⑨→⑩
+                                        ①→②→③→④
+                                        │ │ │ │
+**Product & Process**                   ⑤→⑥→⑦→⑧
+                                        │ │ │ │
+                                        ⑨→⑩
 
 Products designed for longevity and repair, not obsolescence. Making things that earn their keep. Use as design criteria.
 

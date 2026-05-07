@@ -1,9 +1,9 @@
-**Painting**                                                ┌─────────┐
-                                                            │ ░░░░░░░ │
-                                                            │ ░░▓▓░░░ │
-                                                            │ ░░▓▓░░░ │
-                                                            │ ░░░░░░░ │
-                                                            └─────────┘
+                                        ┌─────────┐
+                                        │ ░░░░░░░ │
+                                        │ ░░▓▓░░░ │
+**Painting**                            │ ░░▓▓░░░ │
+                                        │ ░░░░░░░ │
+                                        └─────────┘
 
 Lucas Arruda's seascapes have no horizon to fix on. The blurred mark of the brush is the only evidence anyone was there. The painting is made of presence.
 

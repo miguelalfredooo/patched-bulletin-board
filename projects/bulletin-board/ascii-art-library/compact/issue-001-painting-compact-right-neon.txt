@@ -1,9 +1,9 @@
-**Painting**                                                ┌─────────┐
-                                                            │ ░░░░░░░ │
-                                                            │ ░░▓▓░░░ │
-                                                            │ ░░▓▓░░░ │
-                                                            │ ░░░░░░░ │
-                                                            └─────────┘
+                                        ┌─────────┐
+                                        │ ░░░░░░░ │
+                                        │ ░░▓▓░░░ │
+**Painting**                            │ ░░▓▓░░░ │
+                                        │ ░░░░░░░ │
+                                        └─────────┘
 
 Painters choosing pigment not for representation but for pure declaration. The canvas becomes presence itself, not window to elsewhere.
 
