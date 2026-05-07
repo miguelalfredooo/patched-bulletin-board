@@ -1,92 +1,74 @@
-# patched-bulletin-board
+# Design By Bulletin™
 
-A multi-project workspace structured with the Patched framework
-for designing AI-driven experience systems.
+A curated editorial publication for designers covering art, design, AI culture, photography, and illustration.
 
----
+## What This Is
 
-## Projects
+Design By Bulletin is a thematic publication system that combines:
+- **ASCII art covers** — Generated from source images via image-to-ASCII conversion
+- **Curated editorial** — 11 sections (Art, Painting, Illustration, Sculpture, Culture, Photography, Art History, Opinions, Design & AI Tools, Product & Process, Visual & Brand)
+- **Parametric control** — Editorial Mix (six intensity faders for theme composition)
+- **Multi-format delivery** — Telegram integration with cover image + pure text content + theme metadata
 
-### the-magazine
-An AI-generated visual publication built around graphic culture —
-the designed surface of everyday commercial life from 1955–2005.
-Screen prints, stickers, magazine covers, price tags, packaging,
-ephemera. 12-image issues generated in Midjourney.
+## Getting Started
 
-Two agents run the publication:
-- The Editor — researches and generates 12 prompts per session
-- The Creative Director — evaluates the full set as a magazine
-  issue, approves or redirects
+### Create a New Issue
 
-Location: `projects/the-magazine/`
+1. **Define the theme** — Choose a concept and establish editorial direction
+2. **Generate ASCII cover** — Use the interactive converter or CLI script
+3. **Curate 11 sections** — Select source + write one-sentence narrative per section
+4. **Deliver** — One command sends everything to Telegram
 
-### bulletin-board — Design by Bulletin™
-A curated editorial publication for designers covering art, design, AI culture,
-photography, and illustration. Combines Midjourney generative imagery with pure
-ASCII art and parametric editorial controls.
+See **[SETUP.md](SETUP.md)** for detailed workflow.
 
-**System:** Six-agent editorial collective (Maeve, Victor, Coda for research/visual discovery;
-Assignment Editor, Managing Editor, Editorial Director for editorial curation). Parametric
-control via Editorial Mix (six intensity faders: Music, Visual, Research, Process, Theme, AI Culture).
+### Explore the System
 
-**Delivery:** Telegram with multi-format issues:
-- ASCII Cover: HTML-based image-to-ASCII converter generates styled PNG covers
-- Pure Text Issue: 11 editorial sections with ASCII art and linked sources
-- Theme & Editorial Mix: Metadata about issue tone, sonic references, cultural threads
+- **[DESIGN-BY-BULLETIN.md](DESIGN-BY-BULLETIN.md)** — Complete system documentation
+- **[TOOLS.md](TOOLS.md)** — All production scripts and commands
+- **[SETUP.md](SETUP.md)** — Setup, configuration, issue creation
 
-**Tech Stack:**
-- Core: Node.js, sharp (image processing)
-- ASCII Generation: Browser-based p5.js converter + automated export scripts
-- Color Sampling: ANSI 24-bit color codes for image-informed ASCII
-- Font Rendering: SVG-to-PNG conversion for high-quality cover generation
-- Telegram Bot: HTTPS multipart form-data for photo/document delivery
+## Tech Stack
 
-**Workflow:**
-1. Generate ASCII cover from source image (Midjourney/p5.js) via HTML converter
-2. Create pure text issue with 11 sections and editorial content
-3. Define theme metadata (Editorial Mix, sonic reference, cultural thread)
-4. Export and deliver to Telegram via automated scripts
+- **ASCII Generation:** HTML5 canvas + p5.js (browser) / Node.js + sharp (CLI)
+- **Image Processing:** sharp library for SVG-to-PNG rendering
+- **Color Sampling:** ANSI 24-bit codes for image-informed ASCII
+- **Delivery:** Telegram Bot API via HTTPS multipart form-data
 
-Location: `projects/bulletin-board/`
-Full documentation: See DESIGN-BY-BULLETIN.md, SETUP.md, TOOLS.md
+## Current Issues
 
----
+- **Issue 006: MOMENTUM** (2026-05-09) — Velocity as cultural acceleration
 
-## Framework
-
-This repo implements the Patched framework — a modular approach
-to designing AI-driven experience systems. A shared language for
-designers, engineers, and product managers.
-
-Framework document: `PATCHED.md`
-Worked example: `PATCHED-EXAMPLE.md`
-Universal template: `templates/two-agent/`
-
----
-
-## How the framework maps to files
+## Project Structure
 
 ```
-Module layer        → projects/[name]/modules/
-Behavior layer      → projects/[name]/agents/
-Governance layer    → projects/[name]/governance/
-Signal flow         → projects/[name]/agents/pipeline.md
-CV inputs           → projects/[name]/BRIEF.md
-Patch map           → projects/[name]/agents/pipeline.md
-Module proposals    → projects/[name]/proposals/
-Archive             → projects/[name]/archive-log.md
-Prompt files        → projects/[name]/prompts/
+bulletin-board/
+├── README.md                           [This file]
+├── DESIGN-BY-BULLETIN.md               [System documentation]
+├── SETUP.md                            [Setup & issue creation]
+├── TOOLS.md                            [Production scripts]
+│
+├── covers/
+│   ├── ascii-cover-generator.html      [Interactive converter]
+│   └── momentum-006-cover.png          [Latest cover]
+│
+├── ISSUE-006-*.txt                     [Pure text issues]
+│
+├── export-ascii-cover.js               [CLI cover generator]
+├── finalize-issue-006-delivery.js      [Telegram delivery]
+│
+└── framework/                          [Patched framework docs]
+    ├── PATCHED.md                      [Framework philosophy]
+    └── PATCHED-EXAMPLE.md              [Framework example]
 ```
-
----
 
 ## Operator
 
-Alfred — art editor, designer, and creative director.
-All agents work for Alfred. Alfred directs, approves, publishes.
+Alfred — art editor, designer, creative director.
 
 ---
 
-## Related
+## Framework & Philosophy
 
-Patched framework repo: github.com/miguelalfredooo/patched (private)
+This project is built using the **Patched framework** — a modular approach to designing AI-driven experience systems. See **[framework/PATCHED.md](framework/PATCHED.md)** for the philosophy and vocabulary.
+
+Patched repo: github.com/miguelalfredooo/patched (private)
