@@ -65,6 +65,20 @@ never send directly.
 
 ---
 
+## Source Diversity Constraint
+
+**One source per link. No repeats within a single issue (except music).**
+
+Each of the 11 sections links to exactly one source. No source can appear twice across the issue.
+
+Music is the exception — different artists/playlists can use the same music platform (Bandcamp, Discogs, Spotify, YouTube) multiple times.
+
+**Why:** Forces breadth of perspective. Prevents editorial reliance on a single publication's viewpoint. Ensures readers encounter visual culture + tech news + philosophy + indie voices in a single issue.
+
+**Curator responsibility:** Track source usage across all 11 sections. No repeats until all sections are filled.
+
+---
+
 ## What a successful issue looks like
 
 - The theme is felt across all 11 sections without being stated

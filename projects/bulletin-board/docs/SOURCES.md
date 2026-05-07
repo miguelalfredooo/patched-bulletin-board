@@ -100,6 +100,49 @@ Curated publication catalog for Victor (Visual Curator), Maeve (Researcher), and
 
 ---
 
+## Source Diversity Rule
+
+**One source per link. No repeats in a single issue (except music).**
+
+### The Rule:
+
+Each of the 11 sections links to exactly one source. Across all 11 sections, no source can appear twice.
+
+**Exception:** Music sources (Bandcamp, Discogs, Spotify, YouTube) can be used multiple times — different artists/playlists can come from the same platform.
+
+### Why:
+
+- Prevents editorial reliance on a single publication's perspective
+- Forces discovery across the full source landscape
+- Ensures breadth of cultural signals (visual culture + tech news + indie voices + philosophy)
+- Guarantees readers encounter diverse viewpoints in a single issue
+
+### In practice:
+
+If Victor pulls from Behance for the Art section, no other section can use Behance. If Maeve cites Nielsen Norman Group for Product & Process, that source is spent for the day.
+
+Curator (Maeve) responsibility: Track which sources are used and ensure no repeats until all 11 sections are filled.
+
+**Tracking template:**
+```
+Art — [source used]
+Painting — [source used]
+Illustration — [source used]
+Sculpture — [source used]
+Culture — [source used]
+Photography — [source used]
+Art History — [source used]
+Opinions — [source used]
+Design & AI Tools — [source used]
+Product & Process — [source used]
+Visual & Brand — [source used]
+
+Music curation (unlimited):
+- [song/artist/playlist] via Bandcamp/Discogs/Spotify/YouTube
+```
+
+---
+
 ## Core Principle
 
 **All sources are available for all sections.**
