@@ -267,44 +267,62 @@ Full 14-line standalone piece, centered, no text
 
 ### File Organization
 
+**Location:** `/Users/blackmachete/projects/patched-editorial/projects/bulletin-board/ascii-art-library/`
+
+**Structure:** Organized by issue number for efficient cataloging:
+
 ```
 ascii-art-library/
-├── expanded/
-│   ├── issue-001-art-expanded-neon.txt
-│   ├── issue-001-painting-expanded-neon.txt
-│   └── [110 total expanded versions]
-├── compact/
-│   ├── issue-001-art-compact-left-neon.txt
-│   ├── issue-001-art-compact-right-neon.txt
-│   ├── issue-001-painting-compact-left-neon.txt
-│   ├── issue-001-painting-compact-right-neon.txt
-│   └── [220 total compact versions]
-├── [110 original source files]
-├── VARIATION-EXAMPLES.md
-└── README (file structure reference)
+├── 001/
+│   ├── source/     [11 files] issue-001-[section]-neon.txt
+│   ├── expanded/   [11 files] issue-001-[section]-expanded-neon.txt
+│   └── compact/    [22 files] issue-001-[section]-compact-left/right-neon.txt
+├── 002/ — 010/
+│   └── [same structure: 11 source + 11 expanded + 22 compact]
+├── README.md       (complete organization guide)
+└── VARIATION-EXAMPLES.md (visual examples)
+```
+
+**Per-issue breakdown (44 files each):**
+- `source/` — 11 original ASCII files
+- `expanded/` — 11 centered hero versions (14 lines)
+- `compact/` — 22 left/right layout variations (9 lines)
+
+### Access Patterns
+
+**By specific issue:**
+```
+ascii-art-library/006/expanded/issue-006-art-expanded-neon.txt
+ascii-art-library/010/compact/issue-010-culture-compact-left-neon.txt
+```
+
+**All 11 sections for an issue:**
+```
+ls ascii-art-library/007/expanded/issue-007-*-expanded-neon.txt
+```
+
+**Specific section across all issues:**
+```
+ls ascii-art-library/*/source/issue-*-art-neon.txt
 ```
 
 ### Current Inventory
 
+- ✅ **440 total files** (110 source + 330 variations)
 - ✅ **330 variation files** (110 × 3 layout options)
-- ✅ **110 expanded** (14-line standalone pieces)
+- ✅ **110 expanded** (14-line centered hero pieces)
 - ✅ **220 compact** (110 left-aligned + 110 right-aligned)
 - ✅ **All 10 issues complete** (001-010)
 - ✅ **All 11 sections per issue**
 - ✅ **Ready for flexible extraction and layout integration**
 
-### Extraction & Organization
+### Quick Reference
 
-Files are organized by:
-1. **Issue number** (001-010)
-2. **Section name** (art, painting, illustration, etc.)
-3. **Style suffix** (neon = standard monospace style)
-
-This naming allows:
-- Quick lookup by issue and section
-- Batch operations on specific issues
-- Filtering by section across all issues
-- Gallery views organized by theme
+| Need | Location | Filename Pattern |
+|------|----------|------------------|
+| Original Art #6 | `006/source/` | `issue-006-art-neon.txt` |
+| Hero Painting #10 | `010/expanded/` | `issue-010-painting-expanded-neon.txt` |
+| Compact layout | `NNN/compact/` | `issue-NNN-[section]-compact-{left\|right}-neon.txt` |
 
 ---
 
