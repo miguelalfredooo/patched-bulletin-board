@@ -2,7 +2,7 @@
 ## the-magazine
 
 **Version:** 1.0.0
-**Connected to:** The Editor, The Creative Director
+**Connected to:** The Editor-In-Chief, The Creative Director
 **Belongs to:** projects/the-magazine
 
 ---
@@ -15,9 +15,9 @@ The printed surfaces and visual patterns produced by specific print technologies
 
 ## Input contract
 
-The Editor receives: archive state from archive-log.md, governance rules from VISUAL-DNA.md, style translation guidance from STYLE-GUIDE.md.
+The Editor-In-Chief receives: archive state from archive-log.md, governance rules from VISUAL-DNA.md, style translation guidance from STYLE-GUIDE.md.
 
-The Editor identifies a specific print technology and era — halftone field, screen print coverage, moiré pattern, ink bleed — and generates one prompt grounded in that process.
+The Editor-In-Chief identifies a specific print technology and era — halftone field, screen print coverage, moiré pattern, ink bleed — and generates one prompt grounded in that process.
 
 ---
 

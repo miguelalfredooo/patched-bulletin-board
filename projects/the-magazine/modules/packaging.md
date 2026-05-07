@@ -2,7 +2,7 @@
 ## the-magazine
 
 **Version:** 1.0.0
-**Connected to:** The Editor, The Creative Director
+**Connected to:** The Editor-In-Chief, The Creative Director
 **Belongs to:** projects/the-magazine
 
 ---
@@ -15,9 +15,9 @@ Commercial product packaging from the mass-market retail register, 1955–1995 �
 
 ## Input contract
 
-The Editor receives: archive state from archive-log.md, governance rules from VISUAL-DNA.md, style translation guidance from STYLE-GUIDE.md.
+The Editor-In-Chief receives: archive state from archive-log.md, governance rules from VISUAL-DNA.md, style translation guidance from STYLE-GUIDE.md.
 
-The Editor identifies a specific product category, brand era, and production context — the visual logic of a 1967 cereal box is different from a 1982 detergent box — and generates one prompt grounded in the packaging design conventions of that moment.
+The Editor-In-Chief identifies a specific product category, brand era, and production context — the visual logic of a 1967 cereal box is different from a 1982 detergent box — and generates one prompt grounded in the packaging design conventions of that moment.
 
 ---
 

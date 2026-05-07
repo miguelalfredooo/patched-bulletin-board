@@ -8,7 +8,7 @@ Agents propose. Alfred decides. The module layer is always human-authored.
 
 ## Why this exists
 
-The Editor and Creative Director develop awareness of the collection over time.
+The Editor-In-Chief and Creative Director develop awareness of the collection over time.
 They notice patterns — cultural references that recur, visual registers that
 don't fit existing modules cleanly. The proposal system gives them a formal
 way to surface that awareness without granting them direct write access to
@@ -22,7 +22,7 @@ A module proposal is not a module. It becomes one only after Alfred approves it.
 
 Both agents can propose new modules.
 
-The Editor proposes based on research — a cultural territory that keeps
+The Editor-In-Chief proposes based on research — a cultural territory that keeps
 appearing but has no formal home in the module layer.
 
 The Creative Director proposes based on arc evaluation — a visual register
@@ -36,7 +36,7 @@ exposing.
 Proposals are written to proposals/proposed_[name].md
 
   # Module Proposal: [proposed module name]
-  ## Proposed by: [The Editor / The Creative Director]
+  ## Proposed by: [The Editor-In-Chief / The Creative Director]
   ## Date: [YYYY-MM-DD]
   ## Session: [issue number that prompted this proposal]
 

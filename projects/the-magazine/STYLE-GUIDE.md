@@ -1,7 +1,7 @@
 # STYLE-GUIDE.md — the-magazine
 ## How to translate visual DNA into Midjourney prompts
 
-This document is for The Editor. Read it alongside VISUAL-DNA.md before
+This document is for The Editor-In-Chief. Read it alongside VISUAL-DNA.md before
 generating any prompts. VISUAL-DNA.md defines the rules. This document
 shows you how to execute them.
 

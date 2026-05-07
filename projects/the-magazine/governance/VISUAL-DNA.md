@@ -152,7 +152,7 @@ The collection does not reference digital-native aesthetics (no pixel art, no we
 
 ## Enforcement notes
 
-**For The Editor:** Research the specific cultural and production context before generating. "Screen print aesthetic" is not specific enough. Name the era, the format, the production context, and the cultural origin. The prompt should contain enough specificity that a reader could identify the reference without seeing the image.
+**For The Editor-In-Chief:** Research the specific cultural and production context before generating. "Screen print aesthetic" is not specific enough. Name the era, the format, the production context, and the cultural origin. The prompt should contain enough specificity that a reader could identify the reference without seeing the image.
 
 **For The Creative Director:** Reject any prompt that uses "vintage," "retro," or "nostalgic" without a specific reference. Reject any prompt that describes color atmospherically rather than graphically. The question at approval is not "does this look good" but "does this belong to a specific moment in graphic culture history — and is that moment one the collection hasn't covered yet."
 
@@ -160,7 +160,7 @@ The collection does not reference digital-native aesthetics (no pixel art, no we
 
 ## Prompt Rules
 
-These are hard technical requirements. The Editor self-checks against every rule before passing to the Creative Director. The Creative Director catches any violation before approving. No exceptions.
+These are hard technical requirements. The Editor-In-Chief self-checks against every rule before passing to the Creative Director. The Creative Director catches any violation before approving. No exceptions.
 
 **1. Aspect ratio — always vary**
 No two consecutive prompts use the same ratio. Choose based on what the composition demands.
@@ -184,7 +184,7 @@ The number matches the archive-log entry. The Creative Director writes this file
 ---
 
 **Self-check format for prompt rules:**
-Before passing to the Creative Director, The Editor confirms:
+Before passing to the Creative Director, The Editor-In-Chief confirms:
 - [ ] Aspect ratio specified and different from the previous prompt
 - [ ] Prompt is one sentence or fewer (unless Alfred requested more)
 - [ ] Prompt ends with `--chaos 20 --p m7446277342072143883`

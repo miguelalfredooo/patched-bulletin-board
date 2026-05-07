@@ -16,7 +16,7 @@ Skills are capabilities agents draw on to fulfill their roles. They are not the 
 
 ## Skill: Print History Research
 
-**Assigned to:** The Editor
+**Assigned to:** The Editor-In-Chief
 
 **What it is:**
 The ability to identify a specific cultural artifact or print object, ground it in a precise era, technology, and production context, and surface the detail that makes it worth looking at — the texture, the process, the cultural moment it belongs to.
@@ -37,7 +37,7 @@ Generic era references. "Vintage," "retro," "nostalgic" without specifics. Cultu
 
 ## Skill: Midjourney Prompt Generation
 
-**Assigned to:** The Editor
+**Assigned to:** The Editor-In-Chief
 
 **What it is:**
 The ability to translate a specific cultural ground into a single Midjourney prompt that foregrounds print surface texture as co-equal subject with the graphic culture object. One sentence. Process language. No atmospheric or emotional language.
@@ -61,7 +61,7 @@ Multiple sentences. Comma-separated attribute lists. Atmospheric language: "mood
 
 ## Skill: Visual DNA Self-Check
 
-**Assigned to:** The Editor
+**Assigned to:** The Editor-In-Chief
 
 **What it is:**
 The ability to evaluate a generated prompt against the Always and Never lists in VISUAL-DNA.md and flag any violation before passing to The Creative Director.
@@ -81,7 +81,7 @@ Self-check passed when a Never rule is violated. Vague flag without naming the s
 
 ## Skill: Set Arc Construction
 
-**Assigned to:** The Editor
+**Assigned to:** The Editor-In-Chief
 
 **What it is:**
 The ability to plan and construct 12 prompts as a coherent editorial arc — opening piece, middle movements, closing piece — that also works as a 3x4 Instagram grid with distributed color weight and varied aspect ratios.
@@ -165,7 +165,7 @@ Approving a set where prompts use "textured," "grainy," or "rough" without namin
 
 ## Skill: Module Proposal Pattern Recognition
 
-**Assigned to:** The Editor, The Creative Director
+**Assigned to:** The Editor-In-Chief, The Creative Director
 
 **What it is:**
 The ability to notice when a cultural territory or visual register keeps appearing across prompts but has no formal home in the current module layer — and to articulate why it deserves its own module specification.

@@ -2,7 +2,7 @@
 ## the-magazine
 
 **Version:** 1.0.0
-**Connected to:** The Editor, The Creative Director
+**Connected to:** The Editor-In-Chief, The Creative Director
 **Belongs to:** projects/the-magazine
 
 ---
@@ -15,9 +15,9 @@ The designed editorial page at composition scale — magazine spreads, newspaper
 
 ## Input contract
 
-The Editor receives: archive state from archive-log.md, governance rules from VISUAL-DNA.md, style translation guidance from STYLE-GUIDE.md.
+The Editor-In-Chief receives: archive state from archive-log.md, governance rules from VISUAL-DNA.md, style translation guidance from STYLE-GUIDE.md.
 
-The Editor identifies a specific editorial publication, issue era, and design system — the column grid, headline treatment, halftone quality, and paper stock of a specific publication at a specific moment — and generates one prompt that examines the page composition as subject, not any single object within it.
+The Editor-In-Chief identifies a specific editorial publication, issue era, and design system — the column grid, headline treatment, halftone quality, and paper stock of a specific publication at a specific moment — and generates one prompt that examines the page composition as subject, not any single object within it.
 
 ---
 

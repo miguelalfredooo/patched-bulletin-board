@@ -2,7 +2,7 @@
 ## the-magazine
 
 **Version:** 1.0.0
-**Connected to:** The Editor, The Creative Director
+**Connected to:** The Editor-In-Chief, The Creative Director
 **Belongs to:** projects/the-magazine
 
 ---
@@ -15,9 +15,9 @@ Designed objects from the graphic culture of the 20th and 21st century. Screen p
 
 ## Input contract
 
-The Editor receives: archive state from archive-log.md, governance rules from VISUAL-DNA.md, style translation guidance from STYLE-GUIDE.md.
+The Editor-In-Chief receives: archive state from archive-log.md, governance rules from VISUAL-DNA.md, style translation guidance from STYLE-GUIDE.md.
 
-The Editor identifies a specific cultural and production context — an era, a format, a technology — and generates one prompt grounded in that context.
+The Editor-In-Chief identifies a specific cultural and production context — an era, a format, a technology — and generates one prompt grounded in that context.
 
 ---
 

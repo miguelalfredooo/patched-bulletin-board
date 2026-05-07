@@ -1,5 +1,5 @@
 # Module Proposal: Spreads
-## Proposed by: The Editor
+## Proposed by: The Editor-In-Chief
 ## Date: 2026-05-06
 ## Session: Module development session (post-Issue 001)
 

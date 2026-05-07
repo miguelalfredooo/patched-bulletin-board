@@ -8,7 +8,7 @@ Read this first at the start of every session.
 
 ## The two agents
 
-The Editor — researches and generates a complete set of 12 prompts per session.
+The Editor-In-Chief-In-Chief — researches and generates a complete set of 12 prompts per session.
 The Creative Director — evaluates the full set as a coherent issue, approves or redirects.
 
 One session. One set. One decision. One issue.
@@ -29,7 +29,7 @@ Each prompt earns its position twice: in the reading order and in the layout.
 
 ## Sequence
 
-Step 1 — Run The Editor
+Step 1 — Run The Editor-In-Chief-In-Chief
   Reads: archive-log.md, governance/VISUAL-DNA.md, STYLE-GUIDE.md, BRIEF.md
   Produces: 12 prompt candidates as a complete set with arc and grid rationale
 
@@ -39,7 +39,7 @@ Step 2 — Run The Creative Director
   Produces: APPROVED SET or REDIRECT with specific brief
 
 Step 2b — Module proposals
-  If The Editor or Creative Director included a proposal,
+  If The Editor-In-Chief-In-Chief or Creative Director included a proposal,
   Claude Code writes proposals/proposed_[name].md
   Alfred reviews before the next session begins
   Alfred approves or rejects via Claude Code
@@ -51,25 +51,25 @@ Step 3 — If APPROVED
   Alfred appends all 12 log entries to archive-log.md
 
 Step 4 — If REDIRECT
-  Alfred runs The Editor again with the Creative Director's brief as context
+  Alfred runs The Editor-In-Chief-In-Chief again with the Creative Director's brief as context
   Return to Step 1
 
 ---
 
 ## Signal flow
 
-Editor output → Creative Director evaluation → Alfred decision
+Editor-In-Chief output → Creative Director evaluation → Alfred decision
 
 If approved:
 prompt file written → Midjourney → image saved to selects/ →
 archive-log.md updated
 
 If redirected:
-brief returned to Editor → Editor reruns with brief as context →
+brief returned to Editor-In-Chief → Editor-In-Chief reruns with brief as context →
 loop restarts from Step 1
 
 Governance intercepts at two points:
-- Editor self-check against VISUAL-DNA.md before passing to
+- Editor-In-Chief self-check against VISUAL-DNA.md before passing to
   Creative Director
 - Creative Director enforcement check before approving any prompt
 
@@ -134,7 +134,7 @@ File structure:
 
 ## Handoff format
 
-The Editor passes the full set to The Creative Director:
+The Editor-In-Chief passes the full set to The Creative Director:
 
   SET SUMMARY:
   CULTURAL THREAD: [one sentence]
@@ -178,8 +178,8 @@ Each entry:
   STYLE-GUIDE.md                            — Visual DNA to prompt translation. Editor reads this.
   BRIEF.md                                  — Project context and goals. Both agents read this.
   archive-log.md                            — Living record of every approved output. Both agents read this.
-  agents/editor/SOUL.md                     — The Editor's personality.
-  agents/editor/AGENTS.md                   — The Editor's operating spec.
+  agents/editor-in-chief/SOUL.md                     — The Editor-In-Chief's personality.
+  agents/editor-in-chief/AGENTS.md                   — The Editor-In-Chief's operating spec.
   agents/creative-director/SOUL.md          — The Creative Director's personality.
   agents/creative-director/AGENTS.md        — The Creative Director's operating spec.
   modules/objects.md                        — Module specification for objects category.

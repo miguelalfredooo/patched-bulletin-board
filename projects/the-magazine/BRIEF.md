@@ -24,7 +24,7 @@ and a visual grid simultaneously.
 
 Alfred is the operator and creative vision behind the-magazine. He makes the
 final decisions: which issues ship, which module proposals are approved, which
-redirects are accepted. The Editor and Creative Director work for him, not
+redirects are accepted. The Editor-In-Chief and Creative Director work for him, not
 around him.
 
 Alfred does not generate. He directs, approves, and publishes.

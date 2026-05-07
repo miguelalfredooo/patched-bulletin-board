@@ -2,7 +2,7 @@
 ## the-magazine
 
 **Version:** 1.0.0
-**Connected to:** The Editor, The Creative Director
+**Connected to:** The Editor-In-Chief, The Creative Director
 **Belongs to:** projects/the-magazine
 
 ---
@@ -15,9 +15,9 @@ Small-format commercial print designed for brief functional life — postage sta
 
 ## Input contract
 
-The Editor receives: archive state from archive-log.md, governance rules from VISUAL-DNA.md, style translation guidance from STYLE-GUIDE.md.
+The Editor-In-Chief receives: archive state from archive-log.md, governance rules from VISUAL-DNA.md, style translation guidance from STYLE-GUIDE.md.
 
-The Editor identifies a specific ephemeral artifact — a stamp, a ticket, a matchbook cover, a trading card — grounded in a specific print era, production technology, and cultural context. The piece is always one artifact examined alone.
+The Editor-In-Chief identifies a specific ephemeral artifact — a stamp, a ticket, a matchbook cover, a trading card — grounded in a specific print era, production technology, and cultural context. The piece is always one artifact examined alone.
 
 ---
 
