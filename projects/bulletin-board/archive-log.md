@@ -17,6 +17,17 @@ CLOSING SENTENCE: [the closing line]
 NOTES: [anything worth flagging for future issues]
 -->
 
+## Issue 005 — 2026-05-08
+- **THEME:** Signal
+- **EDITORIAL MIX:** Music 65%, Visual 90%, Research 55%, Process 70%, Theme 75%, AI Culture 65%
+- **SONIC REFERENCE:** Minimal electronic, industrial production (sharp attacks, 110–140 BPM, percussive)
+- **ASCII FORMATS USED:** A, B, A, C, D, E, B, A, D, B, C — all five formats present, no consecutive repeats
+- **RENDERING:** Multi-color (default theme) — visual weight and color density dominate
+- **COVER IMAGE:** 2026-05-08-cover.png (Midjourney, pending generation)
+- **CLOSING SENTENCE:** "In a world of noise, clarity is rebellion."
+- **CULTURAL THREAD:** Visual authority as declaration. Typography + color + geometry cutting through noise. Industrial honesty. Design systems as enablers. AI tools accelerating the cycle. The process visible and celebrated. Bold, undeniable, forward-moving.
+- **CURATOR NOTE:** Multi-color rendering celebrates Visual intensity at 90%. Victor's selections drive everything; composition is primary. Bold geometric pieces contrast with sharp typography. Industrial aesthetic throughout. Cover image (pending) emphasizes color as meaning, not decoration. Theme earned from convergence of typography revival (Helvetica), AI tool velocity (Figma), high-contrast design ethics, and industrial design resurgence signals.
+
 ## Issue 004 — 2026-05-07
 - **THEME:** Traces
 - **EDITORIAL MIX:** Music 75%, Visual 70%, Research 60%, Process 50%, Theme 80%, AI Culture 40%
