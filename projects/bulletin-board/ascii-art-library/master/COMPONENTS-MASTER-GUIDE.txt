@@ -187,20 +187,30 @@ Used between sections in codeblocks and between cards in delivery flow.
 
 ---
 
-## DELIVERY FLOW (ACT 1 — VISUAL)
+## ALLOWED ACT 1 COMPOSITION APPROACHES
 
-**Codeblock 1:** Issue Cover
-- Masthead + HERO-TALL portrait
+### ACT 1 v1: Grid Layout (Full-Width Visual Grid)
+**Components:** COMPONENT-1-ISSUE-COVER + COMPONENT-2-ISSUE-SECTIONS
+- Codeblock 1: Issue cover (masthead + HERO-TALL hero portrait)
+- Codeblock 2: All 11 sections in single block using LABELED variation
+  - ASCII art left, section name right at vertical midpoint
+  - Sections separated by 24-char dividers
+  - Creates unified visual grid for issue
 
-**Codeblock 2:** 11 Sections (each)
-- Entry preview (text)
-- ASCII art (SOURCE)
-- Section name (left-aligned, ALL CAPS)
-- Entry preview (text)
-- Article details (title + description + source)
+### ACT 1 v2: Card-by-Card Layout (Individual Section Delivery)
+**Components:** COMPONENT-1-ISSUE-COVER + COMPONENT-SECTION-CARD-TEMPLATE (×11)
+- Codeblock 1: Issue cover (masthead + HERO-TALL hero portrait)
+- Codeblocks 2–12: Each section as standalone card
+  - ASCII art (SOURCE variation)
+  - Section name below (left-aligned, ALL CAPS)
+  - Article title + description + source
+  - Link outside codeblock per section
 
-**Outside Codeblock:** Links
-- One link per section (plain text)
+### ACT 1 v3: Full Template (Complete Rendered Reference)
+**Components:** MOCK-ISSUE-005-ACT-1 (adapted for specific issue)
+- Single fully-rendered example showing exact layout for a specific issue
+- Includes all cover, hero, and 11 sections with metadata
+- Use as template/reference for implementing other issues
 
 ---
 
