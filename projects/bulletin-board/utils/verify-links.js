@@ -48,6 +48,11 @@ const SOURCE_FALLBACKS = {
   'tarynsimon.com':             'https://tarynsimon.com',
   'between-bridges.net':        'https://between-bridges.net',
   'aaro.mil':                   'https://www.aaro.mil',
+  'bandcamp.com':               'https://bandcamp.com',
+  'discogs.com':                'https://www.discogs.com',
+  'open.spotify.com':           'https://open.spotify.com',
+  'music.youtube.com':          'https://music.youtube.com',
+  'youtube.com':                'https://www.youtube.com',
 };
 
 /**

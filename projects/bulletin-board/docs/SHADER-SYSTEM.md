@@ -2,13 +2,15 @@
 
 A real-time pixel art effect processor ported from alfredo-studio. Allows editorial agents to apply shader effects to images before they're used in Design By Bulletin issues.
 
+**Note:** Uses sharp library (prebuilt binaries, zero system dependencies). No C++ compilation required.
+
 ## Installation
 
 ```bash
-npm install canvas
+npm install sharp figlet
 ```
 
-**System requirements:** See [Automattic/node-canvas](https://github.com/Automattic/node-canvas#installation) for OS-specific dependencies (build-essential on Linux, Xcode on macOS).
+Installed via `package.json`. No additional system dependencies required.
 
 ## Usage
 
@@ -156,6 +158,26 @@ Color saturation multiplier.
 
 **How it works:** Mixed between grayscale and original color based on value.
 
+## Editorial Mix & Shader Selection
+
+The Editorial Mix framework controls how aggressively images are processed:
+
+- **Visual module 100%** — Shader intensity high; images are heavily processed to create distinct visual texture
+- **Visual module 50%** — Editorial preset (default); subtle shader, preserves image recognition
+- **Visual module 25%** — `subtle` or `hires` preset; nearly original images with minimal effect
+- **Visual module 0%** — Original images, no shader applied
+
+Example morning brief with shader implications:
+```json
+{
+  "theme": "Grain",
+  "visual": 80,
+  "directive": "Use 'editorial' or 'nes' preset—visual should feel textured and deliberate"
+}
+```
+
+Victor (Visual Curator) adjusts preset selection based on Visual module intensity and theme direction.
+
 ## Integration with Editorial Pipeline
 
 ### For Curator/Assignment Editor
@@ -207,11 +229,12 @@ const imageMetadata = { pixelSize: 3, colorLevels: 20, ditherAmount: 0.25 };
 
 ## Technical Notes
 
-- **Canvas dependency:** Uses Automattic/node-canvas for image I/O. Requires system libraries (cairo, libpng, etc.).
-- **Performance:** Processing a 2000×1500 image takes ~100–200ms depending on shader complexity.
-- **Output format:** Always PNG. Input formats: PNG, JPG, GIF, WebP (supported by node-canvas).
+- **Sharp dependency:** Uses Lovell Fuller's sharp library for image I/O. Prebuilt binaries, zero system dependencies.
+- **Performance:** Processing a 2000×1500 image takes ~30–50ms with editorial preset.
+- **Output format:** Always PNG. Input formats: PNG, JPG, GIF, WebP (sharp-supported).
 - **Color space:** RGB. Alpha channel preserved unchanged.
-- **Dithering:** Bayer 4×4 matrix applied periodically (not per-pixel, for performance).
+- **Dithering:** Bayer 4×4 matrix applied per-pixel for maximum quality.
+- **Parallel processing:** Sharp uses libvips under the hood; scales to multiple cores.
 
 ## See Also
 

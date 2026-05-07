@@ -258,5 +258,4 @@ Newsletter register: "we've rounded up," "here's what you need to know"
 ---
 
 ## Version
-1.0.0 — Initial style guide. Written for Design by Bulletin
-Apartamento register.
+1.2.0 — Updated for Editorial Mix framework. Visual + Sonic + Narrative integration confirmed current.

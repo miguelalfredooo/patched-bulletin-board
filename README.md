@@ -20,13 +20,23 @@ Two agents run the publication:
 
 Location: `projects/the-magazine/`
 
-### bulletin-board — Design by Bulletin
+### bulletin-board — Design by Bulletin™
 A daily automated editorial digest for designers covering art,
-design, AI culture, photography, and illustration. Two-act
-structure: ASCII visual preview at 8am, full edition at 8:30am.
-Tone reference: Apartamento.
+design, AI culture, photography, and illustration.
+
+**System:** Six-agent editorial collective (Maeve, Victor, Coda for research/visual discovery;
+Assignment Editor, Managing Editor, Editorial Director for editorial curation). Parametric
+control via Editorial Mix (six intensity faders: Music, Visual, Research, Process, Theme, AI Culture).
+
+**Delivery:** Telegram bot (@DesignByBulletin_bot) with two-act structure:
+- Act 1 (8:00am PT): Visual preview only (11 ASCII pieces, no text)
+- Act 2 (8:30am PT): Full edition (each piece with title, sentence, link)
+
+**Tech:** Node.js with sharp (image processing), figlet (ASCII typography), sharp (image shader).
+Tone reference: Apartamento (intimate, unhurried, specific without being academic).
 
 Location: `projects/bulletin-board/`
+Full documentation: `projects/bulletin-board/README.md`
 
 ---
 
