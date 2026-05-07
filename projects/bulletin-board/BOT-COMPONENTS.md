@@ -234,28 +234,10 @@ Each section ASCII art can be used independently:
 
 ### Variations System
 
-Each section ASCII art now exists in **three layout options**, totaling 330 files:
+Each section ASCII art now exists in **five layout options**, totaling 550 files:
 
-#### Variation 1: Compact-Left
-ASCII positioned left, section name on right side
-```
-                ►                       **Art**
-               ►►
-              ►►►
-```
-**Use case:** Left-to-right flow, visual anchor on left
-
-#### Variation 2: Compact-Right  
-Section name on left, ASCII positioned right
-```
-**Art**                                    ►
-                                          ►►
-                                         ►►►
-```
-**Use case:** Right-to-left balance, text label on left
-
-#### Variation 3: Expanded
-Full 14-line standalone piece, centered, no text
+#### Variation 1: Source
+Original ASCII art (reference)
 ```
     ◇
    ◇ ◇
@@ -263,62 +245,119 @@ Full 14-line standalone piece, centered, no text
  ◇ ◇ ◇ ◇
 ◇ ◇ ◇ ◇ ◇
 ```
-**Use case:** Hero display, gallery view, full-page visual
+**Use case:** Reference, embedded layouts, minimal width
+
+#### Variation 2: Expanded
+Full 14-line centered hero piece with section name below
+```
+                                         ◇
+                                        ◇ ◇
+                                      ◇ ◇ ◇
+                                     ◇ ◇ ◇ ◇
+                                   ◇ ◇ ◇ ◇ ◇
+                                
+                                      **Art**
+```
+**Use case:** Hero display, gallery view, featured sections
+
+#### Variation 3: Labeled (NEW)
+Center-aligned ASCII + section name (no editorial line)
+```
+                                         ◇
+                                        ◇ ◇
+                                      ◇ ◇ ◇
+                                     ◇ ◇ ◇ ◇
+                                   ◇ ◇ ◇ ◇ ◇
+                                
+                                      **Art**
+```
+**Use case:** Standalone section cards, visual identity
+
+#### Variation 4: Compact-Left (ENHANCED)
+ASCII left | **Name** right + Editorial Grid first line
+```
+    ◇                                 **Art**
+   ◇ ◇
+  ◇ ◇ ◇
+ ◇ ◇ ◇ ◇
+◇ ◇ ◇ ◇ ◇
+
+Paintings that age on the canvas...
+```
+**Use case:** Left-to-right flow, contextual layouts, mobile
+
+#### Variation 5: Compact-Right (ENHANCED)
+**Name** left | ASCII right + Editorial Grid first line
+```
+**Art**                                    ◇
+                                          ◇ ◇
+                                        ◇ ◇ ◇
+                                       ◇ ◇ ◇ ◇
+                                      ◇ ◇ ◇ ◇ ◇
+
+Paintings that age on the canvas...
+```
+**Use case:** Right-to-left balance, sidebar layouts
 
 ### File Organization
 
 **Location:** `/Users/blackmachete/projects/patched-editorial/projects/bulletin-board/ascii-art-library/`
 
-**Structure:** Organized by variation type for efficient gallery browsing:
+**Structure:** Organized by variation type for efficient gallery browsing and contextual reuse:
 
 ```
 ascii-art-library/
 ├── source/       [110 files] issue-[#]-[section]-neon.txt
 ├── expanded/     [110 files] issue-[#]-[section]-expanded-neon.txt
+├── labeled/      [110 files] issue-[#]-[section]-labeled-neon.txt (NEW)
 ├── compact/      [220 files] issue-[#]-[section]-compact-{left|right}-neon.txt
 ├── README.md     (complete organization guide)
 └── VARIATION-EXAMPLES.md (visual examples)
 ```
 
-**Breakdown by variation:**
-- `source/` — 110 original ASCII files (all issues, all sections)
-- `expanded/` — 110 centered hero versions (14 lines each)
-- `compact/` — 220 left/right layout variations (110 left + 110 right)
+**Breakdown by variation type:**
+- `source/` — 110 original ASCII files (reference, embedded)
+- `expanded/` — 110 centered hero versions (14 lines, featured display)
+- `labeled/` — 110 centered ASCII + section name (standalone cards)
+- `compact/` — 220 left/right variations (110 left + 110 right, with editorial lines)
 
 ### Gallery Query Patterns
 
-**Get all Art sections (all variations):**
+**Get all Art sections (by variation):**
 ```bash
-ls source/issue-*-art-neon.txt
-ls expanded/issue-*-art-expanded-neon.txt
-ls compact/issue-*-art-compact-*.txt
+ls source/issue-*-art-neon.txt        # originals
+ls expanded/issue-*-art-expanded-neon.txt  # heroes
+ls labeled/issue-*-art-labeled-neon.txt    # labeled cards
+ls compact/issue-*-art-compact-*.txt  # with context
 ```
 
 **Get all Issue 006 sections (all variations):**
 ```bash
-ls *006* | grep -E "(source|expanded|compact)"
+ls *006* | grep -E "(source|expanded|labeled|compact)"
 ```
 
-**Get all hero/expanded versions:**
+**Get all standalone section cards:**
 ```bash
-ls expanded/issue-*-expanded-neon.txt
+ls labeled/
 ```
 
-**Get all Culture sections across all issues:**
+**Get all contextual layouts (with editorial lines):**
 ```bash
-ls *culture*.txt
+ls compact/
 ```
 
 ### Current Inventory
 
-- ✅ **440 total files** (110 source + 330 variations)
-- ✅ **110 source** (original files)
+- ✅ **550 total files** (110 source + 440 variations)
+- ✅ **110 source** (original files, reference)
 - ✅ **110 expanded** (14-line centered hero pieces)
-- ✅ **110 compact-left** (left-aligned with text right)
-- ✅ **110 compact-right** (right-aligned with text left)
+- ✅ **110 labeled** (centered ASCII + section name, standalone)
+- ✅ **110 compact-left** (left-aligned + editorial line)
+- ✅ **110 compact-right** (right-aligned + editorial line)
 - ✅ **All 10 issues complete** (001-010)
 - ✅ **All 11 sections per issue**
-- ✅ **Optimized for gallery features and batch queries**
+- ✅ **All compact versions enhanced with Editorial Grid first lines**
+- ✅ **Optimized for gallery, contextual, and standalone use**
 
 ### Quick Reference
 

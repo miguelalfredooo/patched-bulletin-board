@@ -4,5 +4,7 @@
 │ │ │ │
 ⑨→⑩
 
+The most durable design decisions are ones with a visible author who can say "I made this choice because." Anonymizing process is how bad defaults survive.
+
 
 
