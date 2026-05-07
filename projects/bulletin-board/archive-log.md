@@ -8,10 +8,25 @@ Append-only. One entry per issue.
 <!-- Format:
 ## Issue [N] — [date]
 THEME: [theme]
+EDITORIAL MIX: Music [%], Visual [%], Research [%], Process [%], Theme [%], AI Culture [%]
+SONIC REFERENCE: [genre/mood/tempo]
 ASCII FORMATS USED: [A, B, C, D, E — list which appeared]
-SECTIONS: [any non-standard section choices]
+RENDERING: [multi-color or monochromatic + theme]
+COVER IMAGE: [filename if generated]
+CLOSING SENTENCE: [the closing line]
 NOTES: [anything worth flagging for future issues]
 -->
+
+## Issue 004 — 2026-05-07
+- **THEME:** Traces
+- **EDITORIAL MIX:** Music 75%, Visual 70%, Research 60%, Process 50%, Theme 80%, AI Culture 40%
+- **SONIC REFERENCE:** Post-rock instrumental (sparse guitar, field recordings, 60–90 BPM, meditative production)
+- **ASCII FORMATS USED:** A, B, A, C, D, E, B, A, D, B, C — all five formats present, no consecutive repeats
+- **RENDERING:** Monochromatic (midnight theme) — cool blue on navy for editorial identity
+- **COVER IMAGE:** 2026-05-07-cover.png (Midjourney, pending generation)
+- **CLOSING SENTENCE:** "We are always leaving traces. The question is whether anyone reads them."
+- **CULTURAL THREAD:** Invisible architecture of presence — fingerprints in design decisions, metadata as style, forensic precision in craft. Post-rock aesthetic mirrored in visual sparsity: each element deliberate, every mark evidence of intention. Field recordings made visible.
+- **CURATOR NOTE:** Monochromatic rendering showcases editorial identity through theme selection. Act 1 midnight palette creates cool, forensic atmosphere. Cover image (pending) will extend metaphor into photographic/archival space. Theme earned from convergence of AI visibility (attention maps), archival resurgence (digital archaeology), and craft-as-resistance (printmaking, typography) signals.
 
 ## Issue 003 — 2026-05-06
 - THEME: Handmade
