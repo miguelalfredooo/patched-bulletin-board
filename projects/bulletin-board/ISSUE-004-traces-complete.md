@@ -15,7 +15,11 @@
 ╚═════╝ ╚═════╝ ╚═════╝
 
 Design By Bulletin™
-━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Issue 004
+Traces
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+May 7, 2026
 ```
 
 [11 ASCII art sections for Traces theme - monochromatic midnight palette]

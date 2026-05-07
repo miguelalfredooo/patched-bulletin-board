@@ -15,7 +15,11 @@
 ╚═════╝ ╚═════╝ ╚═════╝
 
 Design By Bulletin™
-━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Issue 009
+Material
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+May 11, 2026
 ```
 
 [11 ASCII art sections for Material theme - substance, tactile palette]

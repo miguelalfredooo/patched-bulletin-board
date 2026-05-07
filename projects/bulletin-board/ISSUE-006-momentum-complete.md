@@ -15,7 +15,11 @@
 ╚═════╝ ╚═════╝ ╚═════╝
 
 Design By Bulletin™
-━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Issue 006
+Momentum
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+May 9, 2026
 ```
 
 [11 ASCII art sections for Momentum theme - kinetic high-energy palette]

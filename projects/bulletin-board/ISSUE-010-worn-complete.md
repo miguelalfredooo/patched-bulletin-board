@@ -15,7 +15,11 @@
 ╚═════╝ ╚═════╝ ╚═════╝
 
 Design By Bulletin™
-━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Issue 010
+Worn
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+May 12, 2026
 ```
 
 [11 ASCII art sections for Worn theme - patina, time-worn palette]

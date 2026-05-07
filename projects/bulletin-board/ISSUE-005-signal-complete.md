@@ -15,7 +15,11 @@
 ╚═════╝ ╚═════╝ ╚═════╝
 
 Design By Bulletin™
-━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Issue 005
+Signal
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+May 8, 2026
 ```
 
 [11 ASCII art sections for Signal theme - high-contrast industrial palette]

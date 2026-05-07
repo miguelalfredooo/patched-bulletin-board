@@ -15,7 +15,11 @@
 ╚═════╝ ╚═════╝ ╚═════╝
 
 Design By Bulletin™
-━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Issue 002
+The Mark
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+May 6, 2026
 ```
 
 [11 ASCII art sections for The Mark theme - evidence, presence, trace]

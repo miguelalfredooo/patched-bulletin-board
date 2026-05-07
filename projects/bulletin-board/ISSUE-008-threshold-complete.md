@@ -15,7 +15,11 @@
 ╚═════╝ ╚═════╝ ╚═════╝
 
 Design By Bulletin™
-━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Issue 008
+Threshold
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+May 10, 2026
 ```
 
 [11 ASCII art sections for Threshold theme - liminal, transitional palette]

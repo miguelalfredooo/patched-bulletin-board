@@ -15,7 +15,11 @@
 ╚═════╝ ╚═════╝ ╚═════╝
 
 Design By Bulletin™
-━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Issue 001
+Presence
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+May 5, 2026
 ```
 
 [11 ASCII art sections for Presence theme - foundational, opening]
