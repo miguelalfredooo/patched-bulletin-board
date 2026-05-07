@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "figlet": "^1.11.0",
-    "sharp": "^0.34.5"
-  }
-}
