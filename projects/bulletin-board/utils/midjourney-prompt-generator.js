@@ -224,7 +224,7 @@ function generateLiteralPrompt(params) {
     `thematic element: ${themeExt}`,
     `conceptual anchor: ${signal}`,
     'photography aesthetic, refined, editorial quality',
-    '--ar 1:1 --q 2',
+    '--ar 9:40 --q 2',  // Matches Telegram image display (4.54:1 tall vertical)
   ];
 
   return parts.join(', ');
@@ -258,7 +258,7 @@ function generateAbstractPrompt(params) {
     `temporal quality: ${sonicVisuals.tempo}`,
     `dominant colors: ${colorPalette}`,
     'macro photography, studio lighting, fine art register',
-    '--ar 1:1 --q 2 --stylize 750',
+    '--ar 9:40 --q 2 --stylize 750',  // Matches Telegram image display (4.54:1 tall vertical)
   ];
 
   return parts.join(', ');
