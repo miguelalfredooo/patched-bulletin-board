@@ -1,24 +1,23 @@
 #!/usr/bin/env node
 /**
  * send-issue-007-palimpsest.js
- * Send Issue 007 Palimpsest to Telegram with code block formatting
+ * Issue 007 — Palimpsest — all ASCII at 38 chars wide, MarkdownV2
  */
 
-const fs = require('fs');
 const https = require('https');
 
 const BOT_TOKEN = '8662552111:AAHpfxCGoM6PGbEg4msbSm3bEE6Ucf5o1O0';
 const CHAT_ID = '7774590281';
-const PROJECT_DIR = '/Users/blackmachete/projects/patched-editorial';
 
-async function sendMessage(text) {
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function sendMessage(text, parseMode = null) {
   return new Promise((resolve, reject) => {
-    const payload = JSON.stringify({
-      chat_id: CHAT_ID,
-      text: text,
-      parse_mode: 'Markdown',
-    });
-
+    const body = { chat_id: CHAT_ID, text };
+    if (parseMode) body.parse_mode = parseMode;
+    const payload = JSON.stringify(body);
     const options = {
       hostname: 'api.telegram.org',
       port: 443,
@@ -26,96 +25,219 @@ async function sendMessage(text) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Content-Length': payload.length,
+        'Content-Length': Buffer.byteLength(payload),
       },
     };
-
     const req = https.request(options, (res) => {
       let data = '';
-      res.on('data', (chunk) => { data += chunk; });
+      res.on('data', chunk => data += chunk);
       res.on('end', () => {
-        try {
-          const parsed = JSON.parse(data);
-          resolve(parsed);
-        } catch (e) {
-          reject(e);
-        }
+        const parsed = JSON.parse(data);
+        if (!parsed.ok) console.error('Telegram error:', parsed.description);
+        resolve(parsed);
       });
     });
-
     req.on('error', reject);
     req.write(payload);
     req.end();
   });
 }
 
-function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+async function cb(art) {
+  return sendMessage('```\n' + art + '\n```', 'MarkdownV2');
 }
 
-async function sendPalimpsestIssue() {
-  try {
-    console.log('📨 Sending Issue 007 Palimpsest with code block formatting...\n');
+async function main() {
+  console.log('📨 Sending Issue 007 — Palimpsest (38-char width)\n');
 
-    // Message 1 — Opening
-    console.log('[1] Opening banner...');
-    await sendMessage(`═══════════════════════════════════════════════════════════
-Design By Bulletin™ — Issue 007: PALIMPSEST
-2026-05-10
-═══════════════════════════════════════════════════════════
+  // ── MASTHEAD ──
+  await cb(
+`██████╗ ██████╗ ██████╗ ™
+██╔══██╗██╔══██╗██╔══██╗
+██║  ██║██████╔╝██████╔╝
+██║  ██║██╔══██╗██╔══██╗
+██████╔╝██████╔╝██████╔╝
+╚═════╝ ╚═════╝ ╚═════╝
 
-Every surface is a palimpsest. We write because we know we're writing over.
+Design By Bulletin™
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Saturday, May 10, 2026
+Theme: Palimpsest`
+  );
+  await delay(600);
 
-Full issue: Visual preview + Editorial + Theme`);
-    await delay(800);
+  // ── 1. ART — Format A: Canvas on easel ──
+  await cb(
+`        ╭───────────────────────╮
+        │  ▓▓▒▒░░░░░░░░▒▒▓▓▓▓  │
+        │  ▓▒░               ░▒▓│
+        │  ▓▒░  ┌───────────┐░▒▓│
+        │  ▓▒░  │░▒▒▓▓▓▒▒░ │░▒▓│
+        │  ▓▒░  │▒░  ▄▄▄  ░▒│░▒▓│
+        │  ▓▒░  │▒░  █▄█  ░▒│░▒▓│
+        │  ▓▒░  │░▒▒▓▓▓▒▒░ │░▒▓│
+        │  ▓▒░  └───────────┘░▒▓│
+        │  ▓▓▒▒░░░░░░░░▒▒▓▓▓▓  │
+        ╰──────────┬────────────╯
+                   │
+              ──────┴──────`
+  );
+  await delay(500);
 
-    // Message 2 — Pure text issue with code blocks
-    console.log('[2] Pure text issue with ASCII art in code blocks...');
-    const issueContent = fs.readFileSync(`${PROJECT_DIR}/ISSUE-007-palimpsest.txt`, 'utf8');
-    await sendMessage(issueContent);
-    await delay(800);
+  // ── 2. PAINTING — Format B: Geometric Frame ──
+  await cb(
+`╔══════════════════════════════════════╗
+║  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  ║
+║  ▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒  ║
+║  ▒░  ▄▄▄▄  ▄▄▄▄  ▄▄▄▄  ▄▄▄▄  ░▒  ║
+║  ▒░  █  █  █  █  █  █  █  █  ░▒  ║
+║  ▒░  █▄▄█  █▄▄█  █▄▄█  █▄▄█  ░▒  ║
+║  ▒░  ░░░░  ░░░░  ░░░░  ░░░░  ░▒  ║
+║  ▒░  ▄▄▄▄  ▄▄▄▄  ▄▄▄▄  ▄▄▄▄  ░▒  ║
+║  ▒░  █  █  █  █  █  █  █  █  ░▒  ║
+║  ▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒  ║
+║  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  ║
+╚══════════════════════════════════════╝`
+  );
+  await delay(500);
 
-    // Message 3 — Theme
-    console.log('[3] Theme & closing...');
-    await sendMessage(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // ── 3. ILLUSTRATION — Format D: Two Column ──
+  await cb(
+`╭────────────────────╮ ╭─────────────╮
+│  ⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿  │ │ ◇━━━━━━━━━◇ │
+│  ⠿  ╔════════╗ ⠿  │ │ ▒  ░░░░░  ▒ │
+│  ⠿  ║ · · ·  ║ ⠿  │ │ ▒  ░▒▓▒░  ▒ │
+│  ⠿  ║ · · ·  ║ ⠿  │ │ ▒  ░▒▓▒░  ▒ │
+│  ⠿  ║ · · ·  ║ ⠿  │ │ ▒  ░░░░░  ▒ │
+│  ⠿  ╚════════╝ ⠿  │ │ ▒  ░▒▓▒░  ▒ │
+│  ✏  ──────────────  │ │ ◇━━━━━━━━━◇ │
+╰────────────────────╯ ╰─────────────╯`
+  );
+  await delay(500);
 
-PALIMPSEST — Issue 007
+  // ── 4. SCULPTURE — Format C: Typographic ──
+  await cb(
+`███████╗ ██████╗ ██████╗ ██╗
+██╔════╝██╔═══██╗██╔══██╗██║
+█████╗  ██║   ██║██████╔╝██║
+██╔══╝  ██║   ██║██╔══██╗██║
+██║     ╚██████╔╝██║  ██║██║
+╚═╝      ╚═════╝ ╚═╝  ╚═╝╚═╝`
+  );
+  await delay(500);
 
-Theme: Palimpsest
+  // ── 5. CULTURE — Format E: Full Spread ──
+  await cb(
+`░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░  ▄▄▄  ▄▄▄  ▄▄▄  ▄▄▄  ▄▄▄  ▄▄▄  ░░
+░  █▀█  █▀█  █▀█  █▀█  █▀█  █▀█  ░░
+░  █▄█  █▄█  █▄█  █▄█  █▄█  █▄█  ░░
+░  ───────────────────────────── ░░
+░  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ ░░
+░  ▒░░░░░░░░░░░░░░░░░░░░░░░░░░░▒ ░░
+░  ▒░  layer upon layer upon   ░▒ ░░
+░  ▒░  every surface recalls   ░▒ ░░
+░  ▒░░░░░░░░░░░░░░░░░░░░░░░░░░░▒ ░░
+░  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ ░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
+  );
+  await delay(500);
 
-Editorial Mix:
-  Music: 55%
-  Visual: 75%
-  Research: 70%
-  Process: 80%
-  Theme: 85%
-  AI Culture: 45%
+  // ── 6. PHOTOGRAPHY — Format E: Braille halftone ──
+  await cb(
+`⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿
+⠿  ░░▒▒▓▓██████████▓▓▒▒░░  ⠿  ░▒▓  ⠿
+⠿  ▒░░░░░░░░░░░░░░░░░░░▒  ⠿  ░▒▓  ⠿
+⠿  ▒░  ╔═════════════╗ ░▒  ⠿  ░▒  ⠿
+⠿  ▒░  ║  ◉          ║ ░▒  ⠿  ░▒  ⠿
+⠿  ▒░  ║      ◉      ║ ░▒  ⠿  ░▒  ⠿
+⠿  ▒░  ║          ◉  ║ ░▒  ⠿  ░▒  ⠿
+⠿  ▒░  ╚═════════════╝ ░▒  ⠿  ░▒  ⠿
+⠿  ▒░░░░░░░░░░░░░░░░░░░▒  ⠿  ░▒▓  ⠿
+⠿  ░░▒▒▓▓██████████▓▓▒▒░░  ⠿  ░▒▓  ⠿
+⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿`
+  );
+  await delay(500);
 
-Sonic Reference:
-  Ambient with metallic textures
-  Field recordings of decay and restoration
-  Sparse, contemplative, 80–100 BPM
+  // ── 7. ART HISTORY — Format B: Geometric Frame ──
+  await cb(
+`┌──────────────────────────────────────┐
+│  ╭──╮  ╔══╗  ╭──╮  ┌──┐  ╔══╗  ╭╮  │
+│  │  │  ║  ║  │  │  │▒▒│  ║  ║  ││  │
+│  ╰──╯  ╚══╝  ╰──╯  └──┘  ╚══╝  ╰╯  │
+│  ────────────────────────────────── │
+│  ╔══════════════════════════════╗   │
+│  ║  ▓▓▒░  p a l i m p s e s t  ░▒▓ ║│
+│  ╚══════════════════════════════╝   │
+└──────────────────────────────────────┘`
+  );
+  await delay(500);
 
-Cultural Thread:
-  Erasure as visibility.
-  Material memory and historical layering.
-  Design as conversation with what came before.
-  The old always showing through the new.
+  // ── 8. OPINIONS — Format A: Typewriter ──
+  await cb(
+`┌────────────────────────────────────┐
+│ ┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐ │
+│ │Q ││W ││E ││R ││T ││Y ││U ││I │ │
+│ └──┘└──┘└──┘└──┘└──┘└──┘└──┘└──┘ │
+│ ┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐┌──┐     │
+│ │A ││S ││D ││F ││G ││H ││J │     │
+│ └──┘└──┘└──┘└──┘└──┘└──┘└──┘     │
+│ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ │
+└─────────────────┬──────────────────┘
+         ══════════╧══════════`
+  );
+  await delay(500);
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
-    await delay(500);
+  // ── 9. DESIGN & AI TOOLS — Format D: Two Column ──
+  await cb(
+`╭───────────────────╮ ╭──────────────╮
+│ ┏━━━━━━━━━━━━━━━┓ │ │  [ agent ]   │
+│ ┃ canvas        ┃ │ │      ↕       │
+│ ┃  → → → → →   ┃ │ │  [ skill ]   │
+│ ┃       ↓       ┃ │ │      ↕       │
+│ ┃  ← ← MCP     ┃ │ │  [ write ]   │
+│ ┗━━━━━━━━━━━━━━━┛ │ │      ↕       │
+│ Figma · May 2026  │ │ Claude Dsgn  │
+╰───────────────────╯ ╰──────────────╯`
+  );
+  await delay(500);
 
-    console.log('\n✅ Issue 007 Palimpsest sent with code block formatting!\n');
-    console.log('📊 SUMMARY');
-    console.log('   - 1 opening banner');
-    console.log('   - 1 pure text issue (ASCII art in code blocks + 11 sections)');
-    console.log('   - 1 theme & closing');
-    console.log('\n✨ ASCII art displays in Telegram with default monospace font');
+  // ── 10. PRODUCT & PROCESS — Format B: Geometric Frame ──
+  await cb(
+`╔══════════════════════════════════════╗
+║  ┌────────────────────────────────┐  ║
+║  │  v1 ──→ v2 ──→ v3 ──→ v4 →   │  ║
+║  │   ↑                       ↓   │  ║
+║  │  old          constraints      │  ║
+║  │   └─────────────────────────┘  │  ║
+║  └────────────────────────────────┘  ║
+║                                      ║
+║  ▒░  every decision leaves a mark ░▒ ║
+╚══════════════════════════════════════╝`
+  );
+  await delay(500);
 
-  } catch (err) {
-    console.error('❌ Error:', err.message);
-    process.exit(1);
-  }
+  // ── 11. VISUAL & BRAND — Format D: Two Column ──
+  await cb(
+`╭────────────────────╮ ╭─────────────╮
+│  ██╗  ██╗ ██████╗  │ │  ▄▄  ▄▄  ▄▄ │
+│  ██║  ██║ ██╔══██╗ │ │  ▀▀  ▀▀  ▀▀ │
+│  ███████║ ██████╔╝ │ │  ──  ──  ── │
+│  ██╔══██║ ██╔══██╗ │ │  ▄▄  ▄▄  ▄▄ │
+│  ██║  ██║ ██║  ██║ │ │  ▀▀  ▀▀  ▀▀ │
+│  ╚═╝  ╚═╝ ╚═╝  ╚═╝ │ │  mark·sys   │
+╰────────────────────╯ ╰─────────────╯`
+  );
+  await delay(500);
+
+  // ── CLOSING ──
+  await sendMessage(
+    'Every surface is a palimpsest\\. We write because we know we\'re writing over\\.\n\n⤵ Full edition arrives in 30 minutes\\.',
+    'MarkdownV2'
+  );
+
+  console.log('\n✅ Done — 13 messages sent at 38-char width');
+  process.exit(0);
 }
 
-sendPalimpsestIssue();
+main().catch(err => { console.error(err); process.exit(1); });

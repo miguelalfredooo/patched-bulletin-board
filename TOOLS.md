@@ -135,7 +135,7 @@ node momentum-image-to-ascii-color.js
 **Output:**
 - `.txt` files with ANSI color codes (one per PNG)
 - Colors sampled from source image (each character gets RGB from corresponding pixel)
-- Resolution: 42×15 characters (Telegram-safe width)
+- Resolution: 38×15 characters (Telegram-safe width — tested and confirmed)
 - Charset: BOLD
 
 **Location:** `/covers/ascii-color/`
@@ -156,7 +156,10 @@ node momentum-image-to-ascii-color.js
 **Constraints:**
 - Max message length: 4096 characters
 - Auto-split handled by scripts for text > 3500 chars
-- Code block formatting required for ASCII preservation
+- Code block formatting required for ASCII preservation (`parse_mode: MarkdownV2`)
+- Each ASCII piece sent as its own isolated message (code block only — no surrounding text in the same message)
+- Max ASCII width: 38 characters (safe mobile render, tested at 375px viewport)
+- Max ASCII height: 15 lines per piece
 
 ---
 

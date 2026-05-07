@@ -42,6 +42,7 @@ See **[SETUP.md](SETUP.md)** for detailed workflow.
 
 ## Current Issues
 
+- **Issue 007: PALIMPSEST** (2026-05-10) — Erasure as visibility. The overwritten text.
 - **Issue 006: MOMENTUM** (2026-05-09) — Velocity as cultural acceleration
 
 ## Project Structure
@@ -57,7 +58,8 @@ bulletin-board/
 │   ├── ascii-cover-generator.html      [Interactive converter]
 │   └── momentum-006-cover.png          [Latest cover]
 │
-├── ISSUE-006-*.txt                     [Pure text issues]
+├── ISSUE-007-palimpsest.txt             [Latest issue — Palimpsest]
+├── ISSUE-006-*.txt                     [Pure text issues — Momentum variants]
 │
 ├── export-ascii-cover.js               [CLI cover generator]
 ├── finalize-issue-006-delivery.js      [Telegram delivery]

@@ -91,7 +91,7 @@ async function exportAsciiCover(inputPath, outputFilename = null, fontSize = 12)
 <svg xmlns="http://www.w3.org/2000/svg" width="${svgWidth + padding * 2}" height="${svgHeight + padding * 2}" viewBox="0 0 ${svgWidth + padding * 2} ${svgHeight + padding * 2}">
   <defs>
     <style>
-      text { font-family: 'Courier New', monospace; font-size: ${fontSize}px; line-height: ${lineHeight}; }
+      text { font-family: 'Unifont', 'Courier New', monospace; font-size: ${fontSize}px; line-height: ${lineHeight}; }
     </style>
   </defs>
   <rect width="${svgWidth + padding * 2}" height="${svgHeight + padding * 2}" fill="#0a0a0a"/>
@@ -156,7 +156,7 @@ async function exportAsciiCover(inputPath, outputFilename = null, fontSize = 12)
     console.log(`   File: ${outputPath}`);
     console.log(`   ASCII Resolution: ${width}×${height} characters (auto-scaled for ${fontSize}px)`);
     console.log(`   Charset: MEDIUM`);
-    console.log(`   Font: ${fontSize}px Courier New`);
+    console.log(`   Font: ${fontSize}px Unifont`);
     console.log(`   Color Saturation: 1.3x (brightened)`);
     console.log(`   Output Size: ${svgWidth + padding * 2}×${svgHeight + padding * 2}px`);
 

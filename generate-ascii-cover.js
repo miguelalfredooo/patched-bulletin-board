@@ -94,7 +94,7 @@ async function convertImageToAsciiPng(inputPath, outputFilename = null) {
 <svg xmlns="http://www.w3.org/2000/svg" width="${svgWidth + padding * 2}" height="${svgHeight + padding * 2}" viewBox="0 0 ${svgWidth + padding * 2} ${svgHeight + padding * 2}">
   <defs>
     <style>
-      text { font-family: 'Courier New', monospace; font-size: ${fontSize}px; line-height: ${lineHeight}; fill: #e8e8e0; }
+      text { font-family: 'Unifont', 'Courier New', monospace; font-size: ${fontSize}px; line-height: ${lineHeight}; fill: #e8e8e0; }
     </style>
   </defs>
   <rect width="${svgWidth + padding * 2}" height="${svgHeight + padding * 2}" fill="#0a0a0a"/>

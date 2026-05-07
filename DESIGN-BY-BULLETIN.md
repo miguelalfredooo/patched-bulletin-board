@@ -124,7 +124,7 @@ See `governance/ASCII-VISUAL-DNA.md` for complete format specifications. Each fo
 - Best for: Paired concepts, before/after, dialogue
 
 **Format E: Full Spread**
-- Full 42-character width, all 15 lines utilized
+- Full 38-character width, all 15 lines utilized
 - Three density zones, eye travels across
 - Complex nesting, multiple visual weights
 - Best for: Expansive subjects, dense information, panoramic views
@@ -161,7 +161,7 @@ Top: ▀  Bottom: ▄  Left: ▌  Right: ▐
 
 ## Telegram Constraints
 
-- **Max width:** 42 characters (Telegram safe render at 375px viewport)
+- **Max width:** 38 characters (Telegram safe render at 375px viewport — tested and confirmed)
 - **Max height per piece:** 15 lines
 - **Total message limit:** 3000–4096 characters (splitting handled automatically)
 - **Code block required:** All ASCII art wrapped in ``` for proper monospace rendering

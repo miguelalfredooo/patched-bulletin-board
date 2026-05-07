@@ -61,3 +61,12 @@ Append-only. One entry per issue.
 - CULTURAL THREAD: The evidence of human presence — the white-gloved touch, the deliberate typo, the pressed body on canvas — as both resistance to frictionless digital optimization and political claim of authorship.
 - ASCII FORMATS USED: A, D, A, B, E, A, B, C, D, B, E — all five formats present, no consecutive repeats
 - CURATOR NOTE: Three different registers of the same claim (white gloves in Art, Klein's pressed bodies in Art History, deliberate typos in Culture) held together without over-explaining.
+
+## Issue 007 — 2026-05-06
+- **THEME:** Interval
+- **EDITORIAL MIX:** Music 80%, Visual 75%, Research 60%, Process 40%, Theme 70%, AI Culture 35%
+- **SONIC REFERENCE:** Morton Feldman — sparse, long durations, silences as score (40–60 BPM, ambient)
+- **RENDERING:** Monochromatic (midnight theme) — cool blue on navy, deliberate and spare
+- **CLOSING SENTENCE:** "The interval is not the absence of music. It is where the music thinks."
+- **CULTURAL THREAD:** Negative space as compositional force. The rest in a score. The white wall between paintings. The pause before the reply. What lives in the space between?
+- **CURATOR NOTE:** Counter-theme to Issue 006's Momentum. The interval that gives velocity meaning. High Music (80%) channels Feldman's long durations into prose pacing. Monochromatic midnight rendering creates forensic stillness. Theme felt through absence, not presence.
