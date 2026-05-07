@@ -13,23 +13,27 @@ Each variation serves different layout and presentation contexts.
 
 ## Directory Structure
 
+Organized by issue number, with all variations co-located:
+
 ```
 ascii-art-library/
-├── source/
-│   └── [110 files] issue-[#]-[section]-neon.txt
-├── expanded/
-│   └── [110 files] issue-[#]-[section]-expanded-neon.txt
-├── compact/
-│   └── [220 files] issue-[#]-[section]-compact-left-neon.txt
-│                   issue-[#]-[section]-compact-right-neon.txt
+├── 001/
+│   ├── source/     [11 files] original ASCII art
+│   ├── expanded/   [11 files] 14-line centered hero versions
+│   └── compact/    [22 files] 9-line left/right variations
+├── 002/
+│   └── [same structure]
+├── ...
+├── 010/
+│   └── [same structure]
 ├── README.md (this file)
 └── VARIATION-EXAMPLES.md
 ```
 
-**Directory breakdown:**
-- `source/` — Original ASCII art files, unmodified
-- `expanded/` — 14-line centered hero versions for featured display
-- `compact/` — 9-line variations with integrated section names (left or right aligned)
+**Per-issue breakdown (each issue contains 44 files):**
+- `NNN/source/` — 11 original ASCII art files
+- `NNN/expanded/` — 11 centered hero versions (14 lines)
+- `NNN/compact/` — 22 left/right layout variations (9 lines each)
 
 ## File Naming Convention
 
