@@ -1,7 +1,7 @@
 # VISUAL-DNA.md — the-magazine
 ## Visual governance specification
 
-**Version:** 1.4.0
+**Version:** 2.0.0
 **Status:** Active
 **Last updated:** 2026-05
 
@@ -9,13 +9,13 @@
 
 ## Voice Statement
 
-The collection is about graphic culture — the designed surface of everyday commercial life. Screen prints, stickers, magazine covers, price tags, logos, commercial illustration. Objects made to be seen. Made to sell. Made to signal belonging.
+The collection is about visual culture broadly — anything humans have made and designed with intention. Graphic objects, photographs, textiles, archives, documents, typography, ephemera, cultural artifacts across all eras and mediums. The collection observes the surfaces of culture: how people signal meaning, mark moments, build identity, document time.
 
-The visual language is flat, typographic, and vernacular. It draws from specific print eras and production technologies: screen printing, offset lithography, halftone reproduction, hand-stamped labels, photostat type. The reference is always specific — not "vintage" in a general aesthetic sense, but a particular print run, a particular format, a particular decade's production logic.
+The reference is always **specific**. Not "vintage aesthetic" but *this particular object from this particular moment*. A 1968 concert poster. A 2004 fashion magazine spread. A Japanese matchbox from 1985. A 1920s theater program. A 2019 food package. The specificity matters more than the era or medium.
 
-It is knowing without being ironic. Playful without being cute. Referential without being nostalgic.
+It is knowing without being ironic. Playful without being cute. Curious without being precious. The collection looks at what cultures produce and asks: what does this object reveal about the moment, the values, the visual logic of its time?
 
-When type appears, it is not decoration. In this collection, type is often the primary visual element — the thing the eye goes to first, the thing the piece is built around. The choice of typeface, weight, color, and placement is a design decision as significant as the object itself.
+The surface quality matters. How something was made — the texture, the material, the production mark, the wear, the craft — tells its own story. A photograph of a handmade poster is as valid as a printed object. The collection reads surfaces closely.
 
 ---
 
@@ -25,75 +25,39 @@ When type appears, it is not decoration. In this collection, type is often the p
 
 ### Objects
 
-Designed objects from the graphic culture of the 20th and 21st century. Screen prints, stickers, magazine covers, price tags, logo marks, commercial illustration, numbered editions. The object is always identifiable as a product of a specific print technology and cultural moment.
+Designed, made, or produced things captured with specificity. A concert poster from 1978. A 1950s cereal box. A Japanese business card. A 1990s CD cover. A handwritten menu. A vintage toy. A street sign. A fashion spread. A page from an old phone book. The object carries its era and culture in its surface.
 
-**Graphic language**
-- Flat vector or print-reproduction quality — no dimensional rendering, no drop shadows, no gradients unless the gradient IS the reference
-- Layout follows print production logic: columns, banners, grids, bleeds
-- Objects present as finished printed matter, not as sketches or concepts
-- When type is present, it is structural — it defines the composition, not decorates it
+**What matters**
+- Specificity of reference — not "retro poster" but "1974 silkscreen concert poster from Berkeley" or "1987 nightclub flyer printed on day-glo stock"
+- Surface and materiality — how it was made, what it's made of, how it shows its age or use
+- Cultural signal — what does it tell us about values, taste, production capability, or moment of its time
+- Composition and design choices — what's emphasized, what's hidden, how elements relate
+- Legibility and impact — it reads at a glance and rewards closer looking
 
-**Color**
-- High contrast color relationships — black on white, color on black, single-color on neutral
-- Colors are graphic decisions, not atmospheric ones
-- Full spectrum is allowed when it serves the reference (rainbow, CMYK register, spectrum prints)
-- Avoid color for mood or emotion — color here signals category, era, or brand logic
-- Muted or flat color is correct when that is the production reference
-
-**Typography**
-- Present when the reference demands it — type is a primary visual element in many pieces, not present in all
-- When type appears: specific references apply — bold condensed sans-serif, vintage display faces, outline type, handstamped letterforms, grotesque block type
-- Type can be in any language — Japanese, English, invented — if it fits the visual register
-- Numbers, codes, and labels are valid typographic elements (edition numbers, product codes, dates)
-- When type is present, weight and placement define visual hierarchy — no ornamental type
-
-**Print production texture**
-- Grain, halftone dots, registration marks, paper stock texture, screen print coverage irregularity
-- Texture references the production process — it is evidence of how the thing was made
-- Texture should be period-appropriate: offset grain is different from screen print coverage is different from photostat contrast
-- No photographic grain or digital noise that doesn't reference a specific print process
-
-**Format and composition**
-- Compositions follow print format logic: portrait, landscape, square — each with specific cultural associations
-- Bleeds, borders, and frames are compositional choices with cultural meaning
-- Asymmetry and symmetry both valid — determined by the referenced format
-- White or black grounds are staging decisions, not neutral defaults
-
-**Cultural register**
-- Record store culture, independent publishing, small-run commercial print
-- Vintage retail signage and price tags
-- Zine and independent magazine aesthetics
-- Commercial illustration from the 1960s–2000s
-- Graphic design as practiced outside fine art institutions
+**Never constrain to:**
+- One era or decade
+- One production method
+- Flatness or dimensional rendering — use what serves the reference
+- Specific color palettes — color follows the reference, not a style rule
+- One visual register — high-end design, vernacular packaging, folk art, advertising, documents all belong
 
 ---
 
 ### Textures
 
-The printed surfaces and visual patterns produced by specific print technologies and eras. Not background textures — subject textures. The texture is the piece.
+Visual surfaces, patterns, and details examined closely. A photograph of woven fabric. A close-up of newspaper halftone. Rust and wear on painted metal. A wall of stickers layered and peeling. Embroidery detail. A printed wood grain. Weathered paper. Neon light reflection. The texture is the subject.
 
-**What a texture piece is**
-- The visual surface of a specific printing process examined as subject
-- Halftone fields, screen print coverage, moiré patterns, paper stock character, ink bleed
-- Color field relationships that only exist because of how the ink was applied
-- Pattern work from a specific graphic design era or production system
+**What matters**
+- Surface quality — how the thing was made, how time or use marks it
+- Pattern logic — repeating, irregular, accidental, intentional
+- Detail and scale — zoomed in enough to reveal the surface, not so close it becomes abstract
+- Cultural or material specificity — this texture from *this* time/place/process, not generic texture
 
-**Color in textures**
-- Color relationships defined by the process: CMYK separation, spot color combinations, overprint
-- Unexpected color combinations are correct when they emerge from the production logic
-- Gradient only when referencing riso, screen print overlap, or offset registration
-- Monochrome is valid — some of the most specific textures are single-color
-
-**Surface quality**
-- Always reads as a product of a specific process — not generic "texture"
-- Grain, tooth, coverage, and bleed should be identifiable as belonging to a particular technology
-- Scale matters: a halftone dot at 85lpi reads differently than at 20lpi — be specific
-- Wear, aging, and registration drift are valid — they locate the piece in time
-
-**Composition**
-- Textures can be full-bleed or contained — the edge relationship is a design decision
-- Patterns may be symmetrical, repeating, or irregular — determined by the process logic
-- No atmospheric composition — no horizon, no depth cues, no spatial illusion unless that IS the reference
+**Never constrain to:**
+- Print processes only — photography, textiles, materials, light all valid
+- Monochrome — color follows the surface, not a rule
+- Specific eras — contemporary texture is as valid as historical
+- Abstraction without reference — the texture should feel like it came from *something*
 
 ---
 
@@ -101,60 +65,37 @@ The printed surfaces and visual patterns produced by specific print technologies
 
 ### Always
 
-- **Flat graphic execution** — no atmospheric depth, no dimensional rendering, no volumetric lighting
-- **Specific print reference** — the piece belongs to an identifiable era, technology, and cultural context
-- **High contrast legibility** — the composition reads at a glance and rewards closer attention
-- **Economy** — every element earns its place; nothing present without function
-- **Designed object register** — the piece reads as printed matter, not as fine art
-- **Wit or directness** — the tone is either economical and clear, or knowing and playful; never earnest or heavy
+- **Specificity over aesthetics** — every piece has a particular reference, era, culture, moment. Not "looks vintage" but "is from 1987" or "reflects 2000s design thinking"
+- **Surface matters** — the material, texture, production mark, wear, craft tells the story. How it was made is as important as what it depicts
+- **High legibility at first glance** — reads clearly, reveals more with closer attention
+- **Cultural observation** — the piece reveals something about the moment it came from or the culture that made it. It observes, not judges
+- **Tone** — knowing, curious, playful. Not earnest, not heavy, not precious
 
 ### Never
 
-- Photographic realism or atmospheric rendering
-- Dimensional depth, drop shadows, or volumetric lighting
-- Decorative elements without a specific design function
-- Muted, soft, or ambient color used for mood (color here signals, not evokes)
-- Fine art register — no painterly marks, no expressive brushwork, no gallery aesthetics
-- Solemn, heavy, or contemplative tone
-- Generic "vintage" — every reference must be specific to a process, era, or format
-- Abstract marks without a graphic design lineage
-- Anything that could be described as "organic," "natural," or "handmade" in feel — unless the reference is specifically hand-produced commercial print (hand-stamped labels, hand-lettered signage)
+- Generic references without specificity ("retro," "vintage," "old-school" without context)
+- Pieces that feel created-for-aesthetic-reasons rather than *being* something from somewhere
+- Solemn, heavy, or contemplative tone — the collection is curious and alive
+- Decoration without function or reference
+- Empty style without cultural ground
 
 ---
 
-## The Register
+## The Scope
 
-The collection draws from a specific band of graphic culture history: roughly 1955–2005, with particular attention to:
+The collection draws from **all eras, cultures, and visual mediums**. 
 
-**Screen print and offset lithography era**
-- Bold color separation, limited palette, flat coverage
-- Independent publishing and poster culture
-- Record sleeves, concert posters, zine covers
+What unifies the collection is not the era or medium, but the curatorial eye: **specificity, surface quality, and cultural observation**. A 1920s theater program is as valid as a 2019 food package. Japanese commercial design from 1970 next to American street signage from 2005. A photograph of textile work. A close-up of aging paper. A magazine spread from any decade. A handmade poster. What matters is that each piece reveals something about its moment and the culture that made it.
 
-**Commercial illustration and retail graphics**
-- Small business signage and packaging
-- Price tags, stickers, and product labels
-- Regional commercial illustration before digital production
-
-**Magazine and newsprint reproduction**
-- Halftone reproduction at various line screens
-- Bold banner headlines and column typography
-- Cover design as cultural statement
-
-**Early graphic design profession**
-- Logo marks and brand identities
-- Numbered editions and print collectibles
-- The designed object as cultural artifact
-
-The collection does not reference digital-native aesthetics (no pixel art, no web design, no app UI) unless those are specifically in quotation — framed as a cultural reference, not as the natural graphic language.
+The only filter is Alfred's taste: graphic culture broadly, the surfaces of everyday life, the visual languages communities use to signal meaning, belong, mark time.
 
 ---
 
 ## Enforcement notes
 
-**For The Editor-In-Chief:** Research the specific cultural and production context before generating. "Screen print aesthetic" is not specific enough. Name the era, the format, the production context, and the cultural origin. The prompt should contain enough specificity that a reader could identify the reference without seeing the image.
+**For The Editor-In-Chief:** Ground every prompt in a specific reference. Not "80s aesthetic poster" but "1984 punk venue poster, three-color screen print on newsprint." Not "Japanese packaging" but "1970 Japanese candy wrapper, metallic foil stock." The specificity is the prompt. A reader should be able to identify the cultural ground without seeing the image.
 
-**For The Creative Director:** Reject any prompt that uses "vintage," "retro," or "nostalgic" without a specific reference. Reject any prompt that describes color atmospherically rather than graphically. The question at approval is not "does this look good" but "does this belong to a specific moment in graphic culture history — and is that moment one the collection hasn't covered yet."
+**For The Creative Director:** Reject generic references and vague language. Reject anything that feels created-for-aesthetic-reasons rather than *being* something from somewhere. The question at approval: Does this belong to a specific moment and culture? Is the collection already showing this? What does adding this piece bring to the range?
 
 ---
 
