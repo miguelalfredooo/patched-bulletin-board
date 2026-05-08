@@ -59,10 +59,6 @@ Momentum • May 9, 2026
           ►►►►►►►
          ►►►►►►►►
         ►►►►►►►►►
-
-
-
-
 ```
 
 ### Section 2 — Painting
@@ -75,10 +71,6 @@ Momentum • May 9, 2026
             ║ ║ ▒▒▒▒▒ ║    ║
             ║ ═══════════════║
             ╚════════════════╝
-
-
-
-
 ```
 
 ### Section 3 — Illustration
@@ -92,7 +84,6 @@ Momentum • May 9, 2026
                     ║
                     ║
                     ║
-
 ```
 
 ### Section 4 — Sculpture
@@ -108,7 +99,6 @@ Momentum • May 9, 2026
               ║███████║
               ║███████║
               ╚═══════╝
-
 ```
 
 ### Section 5 — Culture
@@ -121,10 +111,6 @@ Momentum • May 9, 2026
             █  ║ ║ ║  █
             ▓█       █▓
             ░▒▓█████▓▒░
-
-
-
-
 ```
 
 ### Section 6 — Photography
@@ -135,10 +121,6 @@ Momentum • May 9, 2026
             ┃ ▲ ★ ▲ ┃
             ┃ ► ► ► ┃
             ┗━━━━━━━━━┛
-
-
-
-
 ```
 
 ### Section 7 — Art History
@@ -153,7 +135,6 @@ Momentum • May 9, 2026
             │ ═════ │
             │ ◄ ◄ ◄ │
             ◆───────◆
-
 ```
 
 ### Section 8 — Opinions
@@ -164,8 +145,6 @@ Momentum • May 9, 2026
                │ ► ▲ ► │
                │ ▲▲▲▲▲ │
                └─────────┘
-
-
 ```
 
 ### Section 9 — Design & AI Tools
@@ -176,8 +155,6 @@ Momentum • May 9, 2026
         ║ ▲ ░ ▒ ▓ █ ║
         ║ ► ► ► ► ► ► ║
         ═══════════════════
-
-
 ```
 
 ### Section 10 — Product & Process
@@ -188,10 +165,6 @@ Momentum • May 9, 2026
             ║ ▓▓▓▓▓▓▓▓► ║
             ║ 1 2 3 4 5 ║
             ╚═══════════╝
-
-
-
-
 ```
 
 ### Section 11 — Visual & Brand
@@ -204,7 +177,6 @@ Momentum • May 9, 2026
                   ◆████◆
                    ◆▲◆
                     ◆
-
 ```
 
 ---
