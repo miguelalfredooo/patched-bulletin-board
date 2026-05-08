@@ -140,7 +140,7 @@ Issue [NUMBER]
 
 **Codeblock structure:**
 - **Codeblock 1:** Issue cover (with HERO-TALL portrait)
-- **Codeblock 2:** All 11 sections in LABELED variation (ASCII art left, section name right at vertical midpoint), separated by 24-char dividers
+- **Codeblock 2:** All 11 sections in LABELED variation (ASCII art left, section name right at vertical midpoint), separated by 25-char dividers
 
 **Use case:** Unified visual grid showing all sections at once
 
@@ -220,9 +220,16 @@ Link to section 2
 
 ## Visual Rules
 
+### Line Width
+
+- **Max line width: 36 characters** per line in any codeblock
+- **ASCII art canvas:** max 36 chars wide (art object itself typically 11 chars, padded to fit)
+- **HERO-TALL cover:** max 36 chars wide
+- Divider (25 chars) always fits within this limit
+
 ### Dividers
 
-Standard divider (24 characters, prevents Telegram line breaks):
+Standard divider (25 characters, fixed — never change):
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
@@ -263,11 +270,27 @@ Pure Unicode geometric characters only:
 
 ### Telegram Rendering
 
+⚠️ **CRITICAL: Always use `parse_mode: "MarkdownV2"` — NEVER use HTML**
+
 ```
 [Codeblock 1: Content]
 ```
 
-Always triple backticks (```) with monospace content. Telegram automatically preserves alignment.
+**Requirements:**
+- **ALWAYS** use triple backticks (```) to denote code blocks
+- **ALWAYS** set `parse_mode: "MarkdownV2"` when sending to Telegram Bot API
+- **NEVER** use `parse_mode: "HTML"` — it breaks codeblock rendering
+- Telegram automatically preserves monospace alignment within backticks
+- Without MarkdownV2, backticks render as literal text instead of code blocks
+
+**Bot API call template:**
+```json
+{
+  "chat_id": <CHAT_ID>,
+  "text": "<message with triple backticks>",
+  "parse_mode": "MarkdownV2"
+}
+```
 
 ---
 
@@ -351,6 +374,6 @@ projects/bulletin-board/
 2. **Editorial sections** → ACT 2 content
 3. **Each component in own codeblock** → Telegram monospace formatting
 4. **Links as plain text** → Between codeblocks
-5. **24-character dividers** → Prevents line breaks
+5. **25-character dividers** → Fixed width, fits within 36-char line limit
 
 For detailed system documentation, see: `ascii-art-library/master/COMPONENTS-MASTER-GUIDE.txt`

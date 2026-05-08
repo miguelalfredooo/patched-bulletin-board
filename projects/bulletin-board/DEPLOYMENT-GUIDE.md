@@ -96,7 +96,35 @@ For all versions, include ACT 2 with:
 
 ---
 
-### 4. Finalize & Deliver (3 min)
+### 4. Save Session File (required before delivery)
+
+Session files are the canonical record of what was generated — before any edits, before Telegram. They are append-only audit logs, not scratch files.
+
+**Save to:** `projects/bulletin-board/sessions/ISSUE-[###]-[theme]-session.md`
+
+**Contains:**
+- Full ACT 1 art as originally generated
+- Full ACT 2 prose as originally generated
+- Format plan, editorial mix notes, closing sentence
+- Any pipeline notes (Analyst → Editor → Curator decisions)
+
+**Commit before proceeding:**
+```bash
+git add projects/bulletin-board/sessions/ISSUE-[###]-[theme]-session.md
+git commit -m "session: Issue [#] [Theme] — pre-send record"
+```
+
+Then commit any edits to the main issue file separately:
+```bash
+git add projects/bulletin-board/ISSUE-[###]-[theme]-complete.md
+git commit -m "issue: Issue [#] [Theme] — final edits"
+```
+
+Only after both commits: proceed to delivery.
+
+---
+
+### 5. Finalize & Deliver (3 min)
 
 #### Add Closing Sentence
 After all 11 editorial sections, add:
@@ -156,6 +184,35 @@ ascii-art-library/
 
 ---
 
+## Telegram Bot API Requirements
+
+⚠️ **CRITICAL: Always use `parse_mode: "MarkdownV2"` — NEVER HTML**
+
+When sending to Telegram Bot API, the JSON payload must include:
+```json
+{
+  "chat_id": 7774590281,
+  "text": "[message with triple backticks for code blocks]",
+  "parse_mode": "MarkdownV2"
+}
+```
+
+**Why this matters:**
+- `parse_mode: "MarkdownV2"` → Backticks render as code blocks (monospace, ASCII art intact) ✅
+- `parse_mode: "HTML"` → Backticks render as literal text, breaks ASCII art formatting ❌
+- No parse_mode specified → Falls back to plain text ❌
+
+**Usage in scripts:**
+```python
+payload = {
+    "chat_id": CHAT_ID,
+    "text": "```\n[codeblock content]\n```",
+    "parse_mode": "MarkdownV2"
+}
+```
+
+---
+
 ## Codeblock Rules
 
 ✅ **Always:**
@@ -163,6 +220,7 @@ ascii-art-library/
 - Each section in own codeblock
 - Use triple backticks (```)
 - Monospace rendering for ASCII art
+- Set `parse_mode: "MarkdownV2"` in Bot API calls
 
 ✅ **Links are plain text:**
 ```
@@ -224,6 +282,48 @@ https://www.wikiart.org/
 *Published: May 8, 2026*
 *Theme: Signal — Direct communication that cuts through visual noise*
 ```
+
+---
+
+## Session Management
+
+Sessions are append-only. They are evidence, not drafts.
+
+### Rules
+
+- **Never delete** a session file — if you need to clean up, move it to `sessions/archive/`
+- **Never edit** a session file after it's committed — it's a record of what was generated, not what was sent
+- Sessions live in `projects/bulletin-board/sessions/` and are tracked in git
+
+### Canonical Workflow
+
+```
+generate issue
+    ↓
+save session to sessions/ISSUE-[###]-[theme]-session.md
+    ↓
+commit session file
+    ↓
+edit issue file (ISSUE-[###]-[theme]-complete.md)
+    ↓
+commit edits
+    ↓
+Editorial Director approves
+    ↓
+Alfredo sends to Telegram
+```
+
+### Pre-Send Validation
+
+Before any Telegram delivery, verify:
+```bash
+git ls-files projects/bulletin-board/sessions/ISSUE-[#]-*
+```
+If that returns nothing, the session was not committed. Do not send until it is.
+
+### Why This Matters
+
+The sessions folder is the recovery path when content is lost. Issues 003, 004, and partially 001 have no recoverable original art because their sessions were never saved. The Telegram message history is not a backup — it is not searchable, not versioned, and not always accessible. The session file is.
 
 ---
 

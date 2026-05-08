@@ -241,15 +241,44 @@ Each editorial section lives in its own codeblock for clarity. Links appear as p
 
 ---
 
+## TELEGRAM BOT API REQUIREMENTS
+
+⚠️ **CRITICAL: Always use `parse_mode: "MarkdownV2"` — NEVER use HTML**
+
+When sending messages to Telegram Bot API:
+
+```json
+{
+  "chat_id": 7774590281,
+  "text": "```\n[codeblock content]\n```",
+  "parse_mode": "MarkdownV2"
+}
+```
+
+**Why this is critical:**
+- **MarkdownV2**: Backticks (```) render as code blocks → monospace font → ASCII art displays correctly ✅
+- **HTML**: Backticks render as literal text → breaks ASCII alignment and layout ❌
+- **No parse_mode**: Falls back to plain text → completely breaks ASCII art ❌
+
+**Every time you send:**
+- Always include `"parse_mode": "MarkdownV2"`
+- Never use `"parse_mode": "HTML"`
+- Never omit parse_mode
+
+This applies to all delivery methods (curl, requests, Telegram CLI, bot agents).
+
+---
+
 ## STATUS
 
 - ✅ All 5 components documented
 - ✅ Naming conventions standardized
 - ✅ 550 ASCII art files generated (110 × 5 variations)
 - ✅ Master templates created
-- ⏳ HERO-TALL generation pending (110 files)
+- ✅ HERO-TALL generation complete (110 files)
 - ✅ ACT 1 layout template finalized
-- ⏳ ACT 2 integration pending
+- ✅ ACT 2 integration complete
+- ✅ Telegram Bot API parse_mode requirements documented
 
 ---
 
@@ -261,4 +290,5 @@ When referencing components:
 3. Follow exact section names and styling (ALL CAPS for visual components)
 4. Maintain vertical centering rule across all variations
 5. Always deliver in code blocks for monospace rendering
+6. **ALWAYS use `parse_mode: "MarkdownV2"` when sending to Telegram**
 
