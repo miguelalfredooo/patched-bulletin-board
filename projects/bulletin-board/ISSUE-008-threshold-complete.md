@@ -208,6 +208,7 @@ Paintings about the moment light transforms. Dawn and dusk captured mid-transiti
 Illustration of doorways, windows, gates as visual anchor. Thresholds becoming the subject itself. The between-space where one thing becomes another.
 
 *[Source: Eye on Design]*
+https://www.eyeondesign.aiga.org
 
 ---
 
@@ -224,6 +225,7 @@ Illustration of doorways, windows, gates as visual anchor. Thresholds becoming t
 Nylon holding without tearing, material at breaking point. Tension made visible through suspension. The threshold becomes the place where opposite forces balance.
 
 *[Source: Frieze]*
+https://frieze.com
 
 ---
 
@@ -240,6 +242,7 @@ Nylon holding without tearing, material at breaking point. Tension made visible 
 Threshold moments in culture: initiation, transition, coming-of-age. Anthropological perspective on the between-state. The liminal becomes sacred space.
 
 *[Source: The New Yorker]*
+https://www.newyorker.com
 
 ---
 
@@ -272,6 +275,7 @@ Photography about light crossing surfaces, illumination entering. Where brightne
 The back-turned figure in art history, Caspar David Friedrich's gesture. Contemplation at the edge, standing alone at the threshold between known and unknown.
 
 *[Source: The Art Newspaper]*
+https://www.theartnewspaper.com
 
 ---
 
@@ -287,6 +291,7 @@ The back-turned figure in art history, Caspar David Friedrich's gesture. Contemp
 The moment before commitment, living in the question. The threshold as design space where multiple futures hold equal weight before one choice collapses them.
 
 *[Source: Aeon]*
+https://aeon.co
 
 ---
 

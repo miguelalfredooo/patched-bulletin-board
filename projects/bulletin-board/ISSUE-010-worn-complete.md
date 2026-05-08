@@ -204,6 +204,7 @@ Cecily Brown's figures dissolving into ground. Work that loses definition throug
 Illustrations showing creasing, foxing, aging. The object's history becomes visible. Time becomes medium, wear becomes evidence of care.
 
 *[Source: Eye on Design]*
+https://www.eyeondesign.aiga.org
 
 ---
 
@@ -220,6 +221,7 @@ Illustrations showing creasing, foxing, aging. The object's history becomes visi
 Material at breaking point, nylon showing strain. Tension made visible through use. What holds under pressure becomes beautiful through visibility of stress.
 
 *[Source: Frieze]*
+https://frieze.com
 
 ---
 
@@ -236,6 +238,7 @@ Material at breaking point, nylon showing strain. Tension made visible through u
 Japanese pottery tradition: unsigned work valued for how it wears. The user's hand completes the work. Objects improve through use.
 
 *[Source: The New Yorker]*
+https://www.newyorker.com
 
 ---
 
@@ -268,6 +271,7 @@ Bird photography about sky worn by presence. Light changing through repeated vie
 Historical perspective: how makers designed for use, not museum. Wear patterns reveal intent. The object's life determines its form.
 
 *[Source: The Art Newspaper]*
+https://www.theartnewspaper.com
 
 ---
 
@@ -331,6 +335,7 @@ Products designed for longevity and repair, not obsolescence. Making things that
 Brands and marks that look better with age. Distressing by design. Earning your history through time. The mark proven through use.
 
 *[Source: Brand New]*
+https://www.underconsideration.com/brandnew
 
 ---
 

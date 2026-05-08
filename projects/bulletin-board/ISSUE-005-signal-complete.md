@@ -195,6 +195,7 @@ Minimalism cuts through visual chaos. Primary colors make claims without decorat
 Restricted palettes constrain what meaning can emerge. When painters eliminate choice, every color carries argument. No decoration survives.
 
 *[Source: WikiArt]*
+https://www.wikiart.org
 
 ---
 
@@ -212,6 +213,7 @@ Restricted palettes constrain what meaning can emerge. When painters eliminate c
 Illustration reduced to essential form. Every line necessary, no gesture decorative. The simplified shape becomes unmistakable signal.
 
 *[Source: Eye on Design]*
+https://www.eyeondesign.aiga.org
 
 ---
 
@@ -228,6 +230,7 @@ Illustration reduced to essential form. Every line necessary, no gesture decorat
 Sculptural gesture arrives unmistakable. Metal, concrete, stone shaped with absolute clarity. The material declares its presence without apology.
 
 *[Source: Frieze]*
+https://frieze.com
 
 ---
 
@@ -244,6 +247,7 @@ Sculptural gesture arrives unmistakable. Metal, concrete, stone shaped with abso
 Culture rejecting irony and ambiguity. Manifestos replace suggestion. Direct claims cut through the noise of polite insinuation.
 
 *[Source: The New Yorker]*
+https://www.newyorker.com
 
 ---
 
@@ -260,6 +264,7 @@ Culture rejecting irony and ambiguity. Manifestos replace suggestion. Direct cla
 Black and white extremes eliminate gray area. Stark, readable, undeniable. The photograph makes claims through absolute clarity.
 
 *[Source: Magnum Photos]*
+https://www.magnumphotos.com
 
 ---
 
@@ -276,6 +281,7 @@ Black and white extremes eliminate gray area. Stark, readable, undeniable. The p
 Design as political statement. Legibility becomes power. Russian avant-garde precision treated visual language as tool for collective understanding.
 
 *[Source: The Art Newspaper]*
+https://www.theartnewspaper.com
 
 ---
 
@@ -291,6 +297,7 @@ Design as political statement. Legibility becomes power. Russian avant-garde pre
 Focus and clarity demand active attention. Background music and invisible design are refusals to engage. Attention is the work.
 
 *[Source: Aeon]*
+https://aeon.co
 
 ---
 
@@ -339,6 +346,7 @@ Legibility prioritized over cleverness. Accessibility as aesthetic. Products tha
 Brands that announce themselves without apology. Clear at any size, unmistakable in any context. The mark proves presence.
 
 *[Source: Brand New]*
+https://www.underconsideration.com/brandnew
 
 ---
 

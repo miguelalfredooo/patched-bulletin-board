@@ -218,6 +218,7 @@ Artists working at scale and speed, studio systems enabling rapid production. Qu
 Painters working in short bursts, immediate mark-making. The canvas completed in one session before thought interrupts action. Gesture becomes evidence of velocity.
 
 *[Source: Frieze]*
+https://frieze.com
 
 ---
 
@@ -276,6 +277,7 @@ Sculptures suggesting motion in stillness. Spirals, angles, asymmetry frozen in 
 Cultural FOMO accelerating trend cycles. Crypto, NFTs, TikTok pacing compress meaning-making into real-time response. The rush becomes aesthetic in itself.
 
 *[Source: The New Yorker]*
+https://www.newyorker.com
 
 ---
 
@@ -292,6 +294,7 @@ Cultural FOMO accelerating trend cycles. Crypto, NFTs, TikTok pacing compress me
 Blurred movement, fast shutter, high ISO capturing velocity. The photograph as proof of speed. Motion blur becomes legible mark.
 
 *[Source: Magnum Photos]*
+https://www.magnumphotos.com
 
 ---
 
@@ -312,6 +315,7 @@ Blurred movement, fast shutter, high ISO capturing velocity. The photograph as p
 Speed as ideology, F.T. Marinetti's cult of velocity. The early 20th-century obsession with motion returns with contemporary hunger for acceleration.
 
 *[Source: The Art Newspaper]*
+https://www.theartnewspaper.com
 
 ---
 
@@ -378,6 +382,7 @@ Agile, sprints, rapid prototyping. How product teams move at velocity while main
 Brands responding to culture in hours, not seasons. Visual identity evolving in real-time. The logo becomes fluid, modular, permission to shift.
 
 *[Source: Brand New]*
+https://www.underconsideration.com/brandnew
 
 ---
 

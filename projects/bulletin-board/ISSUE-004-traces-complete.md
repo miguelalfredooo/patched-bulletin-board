@@ -206,6 +206,7 @@ The compositions below show the thinking. Earlier versions surface, marks remain
 Final work keeps construction lines visible, preliminary marks intact. The finished piece broadcasts its own making — transparency as transparency.
 
 *[Source: Eye on Design]*
+https://www.eyeondesign.aiga.org
 
 ---
 
@@ -270,6 +271,7 @@ Film grain, dust on lens, light leaks — indexical proof that something existed
 X-ray fluorescence reveals artist choices hidden from sight. Technical analysis reads what centuries of looking could not say. Traces speak when you listen at the molecular level.
 
 *[Source: The Art Newspaper]*
+https://www.theartnewspaper.com
 
 ---
 
@@ -333,6 +335,7 @@ Passing work forward, leaving notes, clear trails for the next person. Documenta
 Visible authorship claims, brands that announce presence subtly, marks that prove someone was here thinking. The signature as substance.
 
 *[Source: Brand New]*
+https://www.underconsideration.com/brandnew
 
 ---
 

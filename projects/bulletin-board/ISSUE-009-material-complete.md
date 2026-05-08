@@ -210,6 +210,7 @@ The paint itself: texture, finish, thickness, behavior. Painters obsessed with h
 Illustrators choosing specific papers: grain, weight, tooth. Paper is not substrate—it is the work itself. Surface becomes primary decision.
 
 *[Source: Eye on Design]*
+https://www.eyeondesign.aiga.org
 
 ---
 
@@ -226,6 +227,7 @@ Illustrators choosing specific papers: grain, weight, tooth. Paper is not substr
 Sculpture emerging from earth. Architecture from clay. Material specificity drives the form. Morelos' work with earth becomes the irreducible fact of creation.
 
 *[Source: Frieze]*
+https://frieze.com
 
 ---
 
@@ -242,6 +244,7 @@ Sculpture emerging from earth. Architecture from clay. Material specificity driv
 Fashion and identity rooted in fabric choice. NIGO at Design Museum. Material becomes statement. What things are made of matters more than what they mean.
 
 *[Source: The New Yorker]*
+https://www.newyorker.com
 
 ---
 
@@ -258,6 +261,7 @@ Fashion and identity rooted in fabric choice. NIGO at Design Museum. Material be
 Film stock as conscious choice, grain as aesthetic decision not compromise. Materiality of the medium determines the visual language.
 
 *[Source: Magnum Photos]*
+https://www.magnumphotos.com
 
 ---
 
@@ -337,6 +341,7 @@ Paper sketches outpace high-fidelity mockups. Materiality speeds thinking. The r
 Brands obsessed with the object: unboxing experience, paper stock, tactile detail. Material becomes marketing because substance communicates.
 
 *[Source: Brand New]*
+https://www.underconsideration.com/brandnew
 
 ---
 

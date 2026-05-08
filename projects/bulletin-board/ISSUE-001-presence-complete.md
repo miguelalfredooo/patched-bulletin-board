@@ -210,6 +210,7 @@ Painters choosing pigment not for representation but for pure declaration. The c
 Illustration that shows its making. Lines that cannot hide their origin. The mark of the hand unmistakable and intentional.
 
 *[Source: Eye on Design]*
+https://www.eyeondesign.aiga.org
 
 ---
 
@@ -226,6 +227,7 @@ Illustration that shows its making. Lines that cannot hide their origin. The mar
 Sculpture that asserts its presence through weight, through scale, through refusal to disappear. Material as announcement.
 
 *[Source: Frieze]*
+https://frieze.com
 
 ---
 
@@ -242,6 +244,7 @@ Sculpture that asserts its presence through weight, through scale, through refus
 Design and culture that make claims on attention. That ask to be noticed. Presence as resistance to background, to ambient, to invisible.
 
 *[Source: The New Yorker]*
+https://www.newyorker.com
 
 ---
 
@@ -258,6 +261,7 @@ Design and culture that make claims on attention. That ask to be noticed. Presen
 Photography that announces the moment of capture. Light, grain, framing — evidence that someone decided to look exactly here, exactly then.
 
 *[Source: Magnum Photos]*
+https://www.magnumphotos.com
 
 ---
 
@@ -274,6 +278,7 @@ Photography that announces the moment of capture. Light, grain, framing — evid
 From ancient marks to contemporary installation, the impulse to make presence permanent. To say: I was here. This mattered.
 
 *[Source: The Art Newspaper]*
+https://www.theartnewspaper.com
 
 ---
 
@@ -289,6 +294,7 @@ From ancient marks to contemporary installation, the impulse to make presence pe
 In an age of distraction, presence means focus. It means choosing to look at one thing completely. Attention as ethical act.
 
 *[Source: Aeon]*
+https://aeon.co
 
 ---
 
@@ -337,6 +343,7 @@ The best products announce their makers. Clear authorship. Visible craft. Proces
 A brand mark that says: we are here. We were deliberate. We made this choice. The logo as claim and promise.
 
 *[Source: Brand New]*
+https://www.underconsideration.com/brandnew
 
 ---
 

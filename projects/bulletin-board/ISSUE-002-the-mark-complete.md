@@ -172,6 +172,7 @@ The Mark • May 6, 2026
 At Frieze New York, handlers transfer work so delicately the precaution becomes gesture. The white glove announces: something precious was touched here. Touch becomes ritual.
 
 *[Source: Frieze]*
+https://frieze.com
 
 ---
 
@@ -222,6 +223,7 @@ Marzena Szumlas hand-draws lettering so slowly the ink bleeds at each stop. The 
 Isa Genzken's Venice assemblages hold broken umbrellas and foil sheeting inside steel frames like evidence from a scene. The material is the statement.
 
 *[Source: Frieze]*
+https://frieze.com
 
 ---
 
@@ -238,6 +240,7 @@ Isa Genzken's Venice assemblages hold broken umbrellas and foil sheeting inside 
 Designers leaving intentional typos, handwritten credits, prison-tattoo covers. Every mark claims authorship in a year when smoothness reads as machine-made.
 
 *[Source: The New Yorker]*
+https://www.newyorker.com
 
 ---
 
@@ -285,6 +288,7 @@ In 1960, Yves Klein pressed gold-painted models into canvas while silence played
 When AI-generated content becomes indistinguishable from curation, the deliberate typo and rough edge become signals of authenticity. The mark proves humanity.
 
 *[Source: The New Yorker]*
+https://www.newyorker.com
 
 ---
 

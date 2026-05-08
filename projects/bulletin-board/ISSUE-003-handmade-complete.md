@@ -222,6 +222,7 @@ The line stays wrong because fixing it is the point. Pen and paper, no undo, no 
 Coil-built vessels hold the thumb ridge as signature. The seam is proud, visible, marked by the fingers that shaped it. Clay remembers.
 
 *[Source: Frieze]*
+https://frieze.com
 
 ---
 
@@ -238,6 +239,7 @@ Coil-built vessels hold the thumb ridge as signature. The seam is proud, visible
 Zines hand-bound, typography irregular, the small-run publication rejecting polish as editorial stance. The visible labor is the visible refusal.
 
 *[Source: The New Yorker]*
+https://www.newyorker.com
 
 ---
 
@@ -254,6 +256,7 @@ Zines hand-bound, typography irregular, the small-run publication rejecting poli
 Film grain chosen, desired, shot for — the imperfection is the selection, not the accident. What looks like flaw is actually specificity.
 
 *[Source: Magnum Photos]*
+https://www.magnumphotos.com
 
 ---
 
@@ -333,6 +336,7 @@ Studio visits documented, maker interviews archived, the process becomes the fin
 Typefaces designed to show variation, fonts modeled on handwriting, letterforms that feel like human error because that is the only way to feel human at all.
 
 *[Source: Eye on Design]*
+https://www.eyeondesign.aiga.org
 
 ---
 
