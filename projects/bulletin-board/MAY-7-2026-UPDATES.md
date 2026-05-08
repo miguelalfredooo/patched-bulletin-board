@@ -59,6 +59,7 @@ Complete normalization and integration updates across the bulletin-board editori
 - Aeon → aeon.co
 - Brand New → underconsideration.com/brandnew
 - AIGA Eye on Design → eyeondesign.aiga.org
+- Horses → horses.land
 
 **Total links added:**
 - ISSUE-001: 7 links
