@@ -270,28 +270,26 @@ Pure Unicode geometric characters only:
 
 ### Telegram Rendering
 
-⚠️ **CRITICAL: DO NOT use parse_mode — Send as plain text only**
+⚠️ **CRITICAL: ASCII art ALWAYS in codeblocks (```). Metadata OUTSIDE codeblocks.**
 
-**UPDATE (May 7, 2026):** Sending without `parse_mode` parameter renders content correctly:
-- ASCII art displays as plain text (not mangled by backtick processing)
-- Markdown formatting (bold, italics) renders naturally
-- Links display as Telegram preview cards (metadata attached)
-
-**Format when sending to Telegram Bot API:**
+**Format:**
 ```json
 {
   "chat_id": 7774590281,
-  "text": "[message with plain text ASCII art, markdown formatting, and links]"
+  "text": "```\n[ASCII art]\n```\n\n**Section — Title**\n\n[Prose]\n\n*[Source: ...]*\n\nhttps://link.com"
 }
 ```
 
-**DO NOT include:** `"parse_mode": "MarkdownV2"` or `"parse_mode": "HTML"`
+**Delivery method:**
+- Send WITHOUT `parse_mode` parameter (plain text mode)
+- This renders correctly on Telegram despite how it appears in source
 
 **Result:**
-- ✅ ASCII art displays cleanly as regular text
+- ✅ ASCII art in codeblocks (mandatory, no exceptions)
+- ✅ Section metadata as plain markdown outside codeblocks
 - ✅ **Bold**, *italic* markdown formats work
 - ✅ URLs render as Telegram link preview cards with metadata
-- ✅ Sections stay readable without code block formatting
+- ✅ ASCII art displays cleanly in monospace
 
 ---
 

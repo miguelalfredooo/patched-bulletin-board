@@ -8,20 +8,24 @@ Complete normalization and integration updates across the bulletin-board editori
 
 ## 1. ACT 2 Format Normalization ✅
 
-**What changed:** All 11 issues now use consistent plain text format for ACT 2 delivery to Telegram.
+**What changed:** All 11 issues now use consistent format: ASCII art IN codeblock, metadata OUTSIDE codeblock.
 
 **Format per section:**
 ```
-[ASCII art as plain text — no backticks]
-
-**Section — Title** (bold markdown)
-
-[Prose text, 2-4 sentences]
-
-*[Source: Attribution]* (italic markdown)
-
-[URL on separate line — renders as Telegram preview card]
 ```
+[ASCII art — MANDATORY codeblock]
+```
+
+**Section — Title** (bold markdown — OUTSIDE codeblock)
+
+[Prose text, 2-4 sentences — OUTSIDE codeblock]
+
+*[Source: Attribution]* (italic markdown — OUTSIDE codeblock)
+
+[URL on separate line — OUTSIDE codeblock, renders as Telegram preview card]
+```
+
+**Critical rule:** ASCII art ALWAYS in codeblocks (```). No exceptions. Section metadata outside.
 
 **Files updated:**
 - ISSUE-001-presence-complete.md

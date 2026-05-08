@@ -186,29 +186,30 @@ ascii-art-library/
 
 ## Telegram Bot API Requirements
 
-⚠️ **CRITICAL: DO NOT use parse_mode — Send plain text only**
+⚠️ **CRITICAL: ASCII art MANDATORY in codeblocks (```) — NO EXCEPTIONS**
 
-**UPDATE (May 7, 2026):** Plain text delivery (no parse_mode) renders correctly:
+**Correct format:**
 
 ```json
 {
   "chat_id": 7774590281,
-  "text": "[plain text with markdown formatting and links]"
+  "text": "```\n[ASCII ART HERE]\n```\n\n**Section — Title**\n\n[Prose]\n\n*[Source: Attribution]*\n\nhttps://example.com"
 }
 ```
 
-**DO NOT include parse_mode parameter** — it causes formatting conflicts.
+**Delivery method:** Send WITHOUT `parse_mode` parameter (plain text mode).
 
-**Why this works:**
-- No `parse_mode` → Plain text rendering (ASCII art displays cleanly) ✅
-- Plain text + links → Telegram auto-renders links as preview cards ✅
-- Markdown formatting (bold `**text**`, italic `*text*`) works naturally ✅
+**Rules:**
+- ✅ ASCII art ALWAYS in codeblocks (```) — mandatory, no exceptions
+- ✅ Section title, prose, source, links — OUTSIDE codeblocks
+- ✅ DO NOT include parse_mode parameter
+- ✅ Telegram will render codeblocks and links correctly
 
 **Usage in scripts:**
 ```python
 payload = {
     "chat_id": 7774590281,
-    "text": "[ASCII art as plain text]\n\n**Section — Title**\n\n[prose]\n\n*[Source: ...]*\n\nhttps://example.com"
+    "text": "```\n◇\n   ◇ ◇\n  ◇ ◇ ◇\n```\n\n**Art — The Visible Gesture**\n\nArtists making work that announces itself...\n\n*[Source: Artsy]*\n\nhttps://artsy.net"
 }
 # Send WITHOUT parse_mode parameter
 requests.post(f"{BASE_URL}/sendMessage", json=payload)
