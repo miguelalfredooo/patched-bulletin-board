@@ -1,264 +1,374 @@
-# Documentation Map — How Everything Connects
+# DOCUMENTATION-MAP.md
+## Design By Bulletin™ — The Complete System
 
-**Purpose:** Show how the 7 core documents relate to each other and when to use each one.
+Everything connected. One entry point. Fast answers.
 
 ---
 
-## THE SYSTEM IN ONE DIAGRAM
+## THE 3 MASTER DOCUMENTS
+
+You have three documents. They work together.
+
+| Document | Purpose | Read When | Time |
+|----------|---------|-----------|------|
+| **AGENT-ROLE-INSTRUCTIONS.md** | What each agent does, step-by-step | You're about to invoke an agent | 10 min (per agent) |
+| **OPENCLAW-INTEGRATION.md** | How to deploy agents, pre-made prompts | You're setting up the workflow | 20 min |
+| **DOCUMENTATION-MAP.md** | This file. Navigation + decision tree | You're confused about which doc | 5 min |
+
+---
+
+## QUICK DECISION TREE
+
+**I'm new to this project. Where do I start?**
+→ Read: DOCUMENTATION-MAP.md (you are here) → AGENT-ROLE-INSTRUCTIONS.md (read Curator section) → OPENCLAW-INTEGRATION.md (understand the pipeline)
+→ Time: 40 min
+
+**I'm about to spin up agents for Issue NNN.**
+→ Open: OPENCLAW-INTEGRATION.md
+→ Copy the pre-made prompt for Curator Agent
+→ Invoke the agent
+→ Hand off to Editorial Agent (copy-paste prompt)
+→ Time: 5 min setup, 60 min execution
+
+**An agent is running. What should it do next?**
+→ Open: AGENT-ROLE-INSTRUCTIONS.md
+→ Find the agent's section
+→ Read the "Steps to Execute" checklist
+→ Time: 10 min to clarify
+
+**I'm the Editorial Agent. What exactly am I writing?**
+→ Open: AGENT-ROLE-INSTRUCTIONS.md, Editorial Agent section
+→ Read: "Write the 11 Sections"
+→ See: Output Format template
+→ Read: Tone Rules (SOUL.md + Apartamento register)
+→ Time: 15 min to understand, then 60 min to execute
+
+**A deliverable failed. What do I do?**
+→ Open: OPENCLAW-INTEGRATION.md
+→ Jump to: "Error Handling"
+→ Follow: corrective action
+→ Time: 10 min to triage
+
+**I want to change the workflow.**
+→ This is a design decision. Let me (Alfredo) know.
+→ I can update AGENT-ROLE-INSTRUCTIONS.md and OPENCLAW-INTEGRATION.md
+→ Time: varies (consult me first)
+
+---
+
+## HOW THE 3 DOCUMENTS CONNECT
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│           VISUAL DIFFERENTIATION STANDARDS                  │
-│  (Design constraints: HERO-TALL characters, section boxes)  │
-└─────────────────────────────────────────────────────────────┘
-                            ↓
-┌─────────────────────────────────────────────────────────────┐
-│        WORKFLOW ORDER OF OPERATIONS (8 Phases)              │
-│  (Process overview: curator → editorial → design → delivery)│
-└─────────────────────────────────────────────────────────────┘
-                            ↓
-        ┌───────────────────┴───────────────────┐
-        ↓                                       ↓
-┌──────────────────────┐          ┌──────────────────────┐
-│  AGENT ONBOARDING    │          │  AGENT ROLE INSTR.   │
-│  (Reading order)     │          │  (Checkpoint lists)  │
-└──────────────────────┘          └──────────────────────┘
-        ↓                                       ↓
-        └───────────────────┬───────────────────┘
-                            ↓
-        ┌────────┬──────────┼──────────┬────────┐
-        ↓        ↓          ↓          ↓        ↓
-      Curator  Editorial  Design    Delivery  [Ref]
-        ↓        ↓          ↓          ↓        ↓
-       [–]   [Template] [Template] [QA-C.]  [Comp.]
-                [ASCII]             [Escape]
+You want to publish Issue NNN
+            ↓
+         Decide theme
+            ↓
+   Open OPENCLAW-INTEGRATION.md
+            ↓
+    Copy Curator Agent prompt
+            ↓
+Invoke agent in OpenClaw
+            ↓
+Agent reads AGENT-ROLE-INSTRUCTIONS.md (Curator section)
+            ↓
+    Agent executes steps
+            ↓
+   Agent reports back
+            ↓
+  You review report
+            ↓
+    Approve or iterate
+            ↓
+   Copy Editorial Agent prompt from OPENCLAW-INTEGRATION.md
+            ↓
+       Invoke agent
+            ↓
+Agent reads AGENT-ROLE-INSTRUCTIONS.md (Editorial section)
+            ↓
+   Agent executes steps
+            ↓
+   And so on...
+            ↓
+      Issue published
+            ↓
+   Update archive-log.md
 ```
 
 ---
 
-## THE 7 CORE DOCUMENTS
+## DOCUMENT DEPENDENCIES
 
-### Layer 1: Foundation (Everyone Reads These)
+### AGENT-ROLE-INSTRUCTIONS.md
+- **Required by:** All 4 agent prompts (Curator, Editorial, Design, Delivery)
+- **Files it reads:** archive-log.md, SOUL.md, Jina Reader
+- **Files it writes to:** [ISSUE-NNN-theme]-[phase].md files
+- **Critical sections:**
+  - Curator Agent: Scoring Rubric, No Recycling Rule
+  - Editorial Agent: 11 Sections, Tone Rules
+  - Design Agent: ASCII constraints, file assembly
+  - Delivery Agent: Telegram constraints, verification
 
-#### **1. VISUAL-DIFFERENTIATION-STANDARDS.md**
-- **Purpose:** Understand what makes each issue visually unique
-- **Covers:** HERO-TALL character system, canonical section boxes, design constraints
-- **When to read:** First. Before anything else. Sets the foundation for all downstream decisions.
-- **Read by:** All 4 agents (curator, editorial, design, delivery)
-- **Time:** 8 minutes
+### OPENCLAW-INTEGRATION.md
+- **Used by:** You (the human), when setting up agent workflows
+- **Contains:** 4 pre-made agent prompts (copy-paste ready)
+- **References:** AGENT-ROLE-INSTRUCTIONS.md (agents read it)
+- **Includes:** 3 deployment options, environment setup, timeline
+- **Critical sections:**
+  - Agent Prompts (copy-paste into OpenClaw)
+  - Error Handling
+  - Environment Setup
 
-#### **2. WORKFLOW-ORDER-OF-OPERATIONS.md**
-- **Purpose:** Understand the end-to-end process from project open to Telegram delivery
-- **Covers:** 8 phases, what happens before/during/after each, dependency order
-- **When to read:** Right after visual standards. Establishes the process so specific steps make sense.
-- **Read by:** All 4 agents
-- **Time:** 10 minutes
-
----
-
-### Layer 2: Navigation (How to Start)
-
-#### **3. AGENT-ONBOARDING-ORDER.md**
-- **Purpose:** Tell you what to read in what order and when
-- **Covers:** Foundational reading vs. just-in-time reading, checkpoints per phase
-- **When to read:** First time on the project. Answers "what do I read?"
-- **Read by:** Humans onboarding to the project, or reference by agent orchestrators
-- **Time:** 5 minutes (skimmable)
-
-#### **4. AGENT-ROLE-INSTRUCTIONS.md**
-- **Purpose:** Define each agent's specific task, reading list, and checkpoint
-- **Covers:** Curator, Editorial, Design, Delivery roles with step-by-step instructions
-- **When to read:** Before assigning an agent to a role. Tells you what to tell them.
-- **Read by:** You (when configuring agents), or directly embedded in agent prompts
-- **Time:** 5 minutes per role
+### DOCUMENTATION-MAP.md
+- **This file**
+- **Purpose:** Quick reference, decision tree, connection map
+- **For:** Anyone who's confused or new
+- **Time:** 5–10 min to find answer
 
 ---
 
-### Layer 3: Execution (During Work)
+## FILE STRUCTURE
 
-#### **5. ISSUE-CREATION-TEMPLATE.md**
-- **Purpose:** Reference for exact file format, naming, structure
-- **Covers:** File naming convention, header format, ACT 1/ACT 2 structure, HERO-TALL formula, validation checklist
-- **When to read:** As you're creating the issue file. Just-in-time reference.
-- **Read by:** Editorial Agent (focuses on section order, prose rules) and Design Agent (full reference)
-- **Time:** 10 minutes (can be skimmed for specific sections)
+```
+/Users/blackmachete/projects/patched-editorial/projects/bulletin-board/
 
-#### **6. QA-DELIVERY-CHECKLIST.md**
-- **Purpose:** Verification and Telegram delivery standards
-- **Covers:** MarkdownV2 escaping function, Telegram API payload, post-send verification, known issues
-- **When to read:** Right before sending to Telegram. Just-in-time reference.
-- **Read by:** Delivery Agent only
-- **Time:** 5 minutes
+├── AGENT-ROLE-INSTRUCTIONS.md ← Agent read this
+├── OPENCLAW-INTEGRATION.md ← You read this
+├── DOCUMENTATION-MAP.md ← You're reading this
+├── archive-log.md ← All agents reference this
+├── ISSUE-011-invisible.md ← Template/reference
+├── ISSUE-012-legible.md ← Current issue (already done)
+├── [future issues will go here]
 
----
-
-### Layer 4: Integration (How to Automate)
-
-#### **7. OPENCLAW-INTEGRATION.md**
-- **Purpose:** How to configure OpenClaw agents with documentation reading and checkpoints
-- **Covers:** Agent prompt templates (Curator, Editorial, Design, Delivery), workflow orchestration, deployment options
-- **When to read:** When setting up the multi-agent system. Reference for prompt engineering.
-- **Read by:** You (when configuring OpenClaw), or as a guide for agent system design
-- **Time:** 15 minutes
+/Users/blackmachete/.openclaw/workspace-general/
+├── SOUL.md ← Voice/tone reference
+├── AGENTS.md ← Agent operating instructions
+└── TOOLS.md ← Local infrastructure notes
+```
 
 ---
 
 ## READING PATHS BY USER TYPE
 
-### Path 1: New Human Agent (40 min total)
+### Path 1: You (Human, Project Lead)
+**Time: 40 min total**
 
-1. **VISUAL-DIFFERENTIATION-STANDARDS.md** (8 min) — Understand the system
-2. **WORKFLOW-ORDER-OF-OPERATIONS.md** (10 min) — Understand the process
-3. **AGENT-ONBOARDING-ORDER.md** (5 min) — Where to go next
-4. **ISSUE-CREATION-TEMPLATE.md** (10 min) — Format reference
-5. **QA-DELIVERY-CHECKLIST.md** (5 min) — Delivery standards
-6. **Then:** Ask "what's my role?" and read the relevant agent role instructions
+1. Read: This file (DOCUMENTATION-MAP.md) — 5 min
+2. Skim: OPENCLAW-INTEGRATION.md — 15 min
+   - Focus: "Quick Start" + pre-made prompts
+   - Skip: agent instructions (agents read those)
+3. Bookmark: AGENT-ROLE-INSTRUCTIONS.md
+   - You'll reference it if an agent asks a question
+   - Each section is ~10 min to understand
+4. Result: You can invoke agents, review their work, approve handoffs
 
-### Path 2: Configuring OpenClaw (20 min total)
+### Path 2: Curator Agent (First Time)
+**Time: 20 min setup, 60 min execution**
 
-1. **AGENT-ROLE-INSTRUCTIONS.md** (10 min) — Understand each role
-2. **OPENCLAW-INTEGRATION.md** (10 min) — Implementation
+1. Read: AGENT-ROLE-INSTRUCTIONS.md (Curator Agent section) — 10 min
+   - Focus: Steps to Execute + Scoring Rubric + Output Format
+2. Read: Brief (from human) — 2 min
+3. Execute: Source discovery + scoring — 45 min
+4. Write: Curation report — 15 min
+5. Checkpoint: Validate before handing off — 3 min
+6. Result: Curation report ready for Editorial Agent
 
-Then copy-paste the agent prompts from OPENCLAW-INTEGRATION.md into your OpenClaw config.
+### Path 3: Editorial Agent (First Time)
+**Time: 20 min setup, 60 min execution**
 
-### Path 3: Just Sending an Issue (5 min)
+1. Read: AGENT-ROLE-INSTRUCTIONS.md (Editorial Agent section) — 10 min
+   - Focus: 11 Sections + Tone Rules + Output Format
+2. Read: SOUL.md (voice) — 5 min
+3. Read: archive-log.md (past tone) — 5 min
+4. Read: Curator report + Editorial brief — 5 min
+5. Execute: Write 11 sections — 50 min
+6. Checkpoint: Validate before handing off — 3 min
+7. Result: Editorial prose ready for Design Agent
 
-You have an issue file ready. You just need to:
-1. **QA-DELIVERY-CHECKLIST.md** (5 min) — Copy the escape function and send
+### Path 4: Design Agent (First Time)
+**Time: 15 min setup, 30 min execution**
 
-### Path 4: Stuck / Confused
+1. Read: AGENT-ROLE-INSTRUCTIONS.md (Design Agent section) — 10 min
+   - Focus: Act 1 Visual + Assembly + Validation
+2. Review: ISSUE-011-invisible.md (visual template) — 5 min
+3. Execute: Create Act 1 + assemble file — 20 min
+4. Validate: Links + formatting — 10 min
+5. Checkpoint: Before handoff — 3 min
+6. Result: Final locked file ready for human approval
 
-Refer back to:
-- **VISUAL-DIFFERENTIATION-STANDARDS.md** — If you need to understand design constraints
-- **WORKFLOW-ORDER-OF-OPERATIONS.md** — If you need to understand the process
-- **AGENT-ROLE-INSTRUCTIONS.md** — If you need to remember what an agent should do
+### Path 5: Delivery Agent (First Time)
+**Time: 10 min setup, 20 min execution**
+
+1. Read: AGENT-ROLE-INSTRUCTIONS.md (Delivery Agent section) — 10 min
+   - Focus: Pre-Delivery Validation + Execution
+2. Wait: For human approval signal — [variable]
+3. Execute: Send Act 1 (8:00am PT) + Act 2 (8:30am PT) — 10 min
+4. Verify: Messages landed, rendered correctly — 10 min
+5. Archive: Update archive-log.md — 5 min
+6. Result: Issue published, archive updated
+
+### Path 6: You want to change the workflow
+**Time: Consult first**
+
+Don't edit AGENT-ROLE-INSTRUCTIONS.md or OPENCLAW-INTEGRATION.md on your own.
+
+Ask me (Alfredo) first. I'll:
+1. Understand the change you want
+2. Update the affected document(s)
+3. Brief all agents on the change
+4. Confirm it works
+
+This keeps everyone on the same page.
 
 ---
 
-## HOW DOCUMENTS REFERENCE EACH OTHER
+## CRITICAL CHECKPOINTS
 
+Every agent has a "Checkpoint Before Handoff" checklist. **Don't skip it.**
+
+**Curator Agent must validate:**
+- [ ] 7–10 articles scored ≥7.0
+- [ ] All within 2 weeks of brief date
+- [ ] No recycling violations
+- [ ] Thematic coherence written
+- [ ] URLs live (no 404s)
+
+**Editorial Agent must validate:**
+- [ ] All 11 sections written
+- [ ] Tone consistent with archive-log
+- [ ] No corporate language
+- [ ] Closing lands
+- [ ] Thematic thread visible
+
+**Design Agent must validate:**
+- [ ] Act 1 fits 38-char width
+- [ ] All URLs validated (live)
+- [ ] Archive-log entry formatted
+- [ ] File saved to correct path
+- [ ] Editorial prose intact
+
+**Delivery Agent must validate:**
+- [ ] Both Acts in Telegram
+- [ ] Visual rendered correctly
+- [ ] No markdown errors
+- [ ] Archive-log updated
+- [ ] Status: Published
+
+---
+
+## ENVIRONMENT & FILES
+
+**Before invoking any agent, ensure:**
+
+```bash
+# Feedly integration
+export FEEDLY_API_TOKEN="[your-token]"
+
+# Telegram integration
+export TELEGRAM_BOT_TOKEN="[bot-token]"
+export TELEGRAM_CHAT_ID="7774590281"
+
+# Files exist
+ls -la /Users/blackmachete/projects/patched-editorial/projects/bulletin-board/
+  # Should see: archive-log.md, AGENT-ROLE-INSTRUCTIONS.md, OPENCLAW-INTEGRATION.md, DOCUMENTATION-MAP.md, ISSUE-*.md files
 ```
-VISUAL-DIFFERENTIATON-STANDARDS.md
-  ↓ defines the design system
-  ↓ informs everything below
-  
-WORKFLOW-ORDER-OF-OPERATIONS.md
-  ↓ describes the 8-phase process
-  ↓ Phase 0A: agents read documentation
-  
-AGENT-ONBOARDING-ORDER.md
-  ↓ says "read these in this order"
-  ↓ points to each document below
-  
-AGENT-ROLE-INSTRUCTIONS.md
-  ↓ says "Curator reads VISUAL + WORKFLOW"
-  ↓ says "Editorial reads VISUAL + WORKFLOW + TEMPLATE"
-  ↓ says "Design reads VISUAL + WORKFLOW + TEMPLATE + ASCII"
-  ↓ says "Delivery reads QA"
-  
-ISSUE-CREATION-TEMPLATE.md
-  ↓ says "follow this exact format"
-  ↓ contains copy-paste empty template
-  ↓ contains validation checklist
-  
-QA-DELIVERY-CHECKLIST.md
-  ↓ says "use this escape function"
-  ↓ says "use this API payload format"
-  ↓ says "verify these checks"
-  
-OPENCLAW-INTEGRATION.md
-  ↓ embeds all agent prompts above
-  ↓ references VISUAL-DIFFERENTIATON-STANDARDS.md, etc.
-```
 
 ---
 
-## DECISION TREE: "Which Document Do I Need?"
+## ISSUE CADENCE
 
-**I'm starting work on the project**
-→ Read AGENT-ONBOARDING-ORDER.md (it tells you what to read)
+**Recommended:** 1 issue per week
 
-**I'm configuring OpenClaw agents**
-→ Read AGENT-ROLE-INSTRUCTIONS.md, then OPENCLAW-INTEGRATION.md
+**Timeline per issue:**
+- **Day 1 (Thursday):** You decide theme → Curator runs (60 min) → Editorial runs (60 min)
+- **Day 2 (Friday):** Design runs (30 min) → You approve → Delivery preps
+- **Day 3 (Tuesday):** Delivery executes (8am + 8:30am PT sends) → Issue lives
 
-**I'm writing editorial prose**
-→ Have ISSUE-CREATION-TEMPLATE.md open (format reference)
-
-**I'm creating the issue file**
-→ Have ISSUE-CREATION-TEMPLATE.md open (exact format + validation)
-
-**I'm finalizing ASCII art**
-→ Reference VISUAL-DIFFERENTIATION-STANDARDS.md (canonical section boxes)
-
-**I'm sending to Telegram**
-→ Have QA-DELIVERY-CHECKLIST.md open (escape function + verification)
-
-**I don't understand a constraint**
-→ VISUAL-DIFFERENTIATION-STANDARDS.md (explains the why)
-
-**I don't understand the workflow**
-→ WORKFLOW-ORDER-OF-OPERATIONS.md (explains each phase)
-
-**I'm lost**
-→ AGENT-ONBOARDING-ORDER.md (re-orient yourself)
+**Lead time:** Concepting 7 days before publish is ideal (gives buffer)
 
 ---
 
-## The Chain of Causality
+## TROUBLESHOOTING QUICK ANSWERS
 
-```
-Visual Differentiation Standards
-  ↓ establishes what's fixed vs. what varies
-  ↓
-Workflow Order of Operations
-  ↓ defines how work flows through the system
-  ↓
-Agent Onboarding Order
-  ↓ tells you what to read in what sequence
-  ↓
-Agent Role Instructions
-  ↓ tells each agent what they specifically need to do
-  ↓
-Issue Creation Template
-  ↓ provides the exact format to build
-  ↓
-QA Delivery Checklist
-  ↓ verifies the output and sends it
-  ↓
-OpenClaw Integration
-  ↓ automates the whole thing with agents
-```
+**Q: An agent finished early. What do I do?**
+A: They wait. Don't invoke the next agent until you've reviewed and approved their work. This is intentional—gates catch errors early.
 
-Each document depends on understanding the ones above it.
+**Q: What if the theme doesn't work?**
+A: Curator Agent will return <7 passed articles. Request a re-run with guidance (broader interpretation, different sources, or suggest a new theme). No editorial proceeds until you have ≥7 articles.
+
+**Q: What if Act 1 visual doesn't fit the theme?**
+A: That's the Design Agent's job. They iterate until it lands. You can ask for rewrites ("Make it more minimalist" or "Add more motion").
+
+**Q: How do I know when an agent is done?**
+A: They post a handoff message (e.g., "Curation complete. [X] articles ready for Editorial Agent."). Read it, approve or request changes, then invoke the next agent.
+
+**Q: Can I edit the agent prompts?**
+A: No. The prompts are locked in OPENCLAW-INTEGRATION.md and reference AGENT-ROLE-INSTRUCTIONS.md. If you need to change how an agent works, ask me (Alfredo) first.
+
+**Q: Can I skip a phase (e.g., go straight from Curator to Delivery)?**
+A: No. The pipeline is: Curator → Editorial → Design → Delivery. Each phase has different requirements and outputs. All are necessary.
+
+**Q: What if I want to publish outside the normal cadence?**
+A: You can invoke agents anytime. Just set the brief (theme, pub date, etc.) and go. Delivery Agent will schedule for your specified times.
 
 ---
 
-## File Sizes & Reading Times
+## CONTACTS & ESCALATION
 
-| Document | Size | Read Time | Skim Time |
-|----------|------|-----------|-----------|
-| VISUAL-DIFFERENTIATION-STANDARDS.md | 10 KB | 8 min | 3 min |
-| WORKFLOW-ORDER-OF-OPERATIONS.md | 12 KB | 10 min | 4 min |
-| AGENT-ONBOARDING-ORDER.md | 6 KB | 5 min | 2 min |
-| AGENT-ROLE-INSTRUCTIONS.md | 10 KB | 15 min | 5 min |
-| ISSUE-CREATION-TEMPLATE.md | 16 KB | 15 min | 8 min |
-| QA-DELIVERY-CHECKLIST.md | 7 KB | 5 min | 2 min |
-| OPENCLAW-INTEGRATION.md | 14 KB | 15 min | 6 min |
-| **TOTAL** | **75 KB** | **73 min** | **30 min** |
+**Normal operation:** The 4-agent pipeline handles everything.
 
-**For new humans:** Budget 40 min (skip some reference sections)  
-**For OpenClaw setup:** Budget 20 min  
-**For recurring tasks:** Budget 5 min (just QA checklist)
+**If something breaks:**
+1. Check OPENCLAW-INTEGRATION.md → Error Handling
+2. Follow the corrective action
+3. Re-invoke the agent that failed
+
+**If you want to change the workflow:**
+- Ask me (Alfredo) first
+- I'll update the docs
+- Agents will read the changes
+
+**If you want to add a new agent role:**
+- This is a design decision
+- Consult with me (Alfredo)
+- We'll update all three docs and test the new workflow
 
 ---
 
-## Key Insight
+## QUICK REFERENCE: WHAT EACH FILE IS
 
-This documentation system is **workflow-aware**, not linear. You don't read everything upfront. Instead:
+**AGENT-ROLE-INSTRUCTIONS.md**
+- "What should I do?" → Read this
+- For: Agents (and you, if you're curious)
+- Contains: Step-by-step instructions per phase
 
-1. **Foundation (once):** VISUAL-DIFFERENTIATION-STANDARDS + WORKFLOW-ORDER-OF-OPERATIONS
-2. **Just-in-time (as needed):** ISSUE-CREATION-TEMPLATE when creating, QA-DELIVERY-CHECKLIST when sending
-3. **ASCII rules:** Read when prose is locked, not before
+**OPENCLAW-INTEGRATION.md**
+- "How do I invoke agents?" → Read this
+- For: You (the human)
+- Contains: Ready-to-copy prompts, deployment options, environment setup
 
-This prevents context-switching and keeps documentation where it's actually useful in the workflow.
+**DOCUMENTATION-MAP.md**
+- "Which doc do I need?" → You're reading this
+- For: Anyone confused or new
+- Contains: Decision tree, reading paths, connection map
 
+---
+
+## ONE MORE THING
+
+This system is designed to be **human-in-the-loop but agent-executed**.
+
+You don't write the editorial. The Editorial Agent does.
+You don't design the visual. The Design Agent does.
+You don't send to Telegram. The Delivery Agent does.
+
+**Your job:** Decide the theme, review each phase, approve handoffs.
+
+Everything else is automated.
+
+This is intentional. Let the agents work.
+
+---
+
+**END OF DOCUMENTATION-MAP**
+
+Last updated: May 7, 2026  
+Next review: When first issue ships (May 14, 2026)
