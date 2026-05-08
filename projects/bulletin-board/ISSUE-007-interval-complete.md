@@ -138,56 +138,137 @@ Interval • May 8, 2026
 
 ## ACT 2 — FULL EDITION
 
+```
+[ASCII art: Art]
+```
+
 **Art — Negative Space as Subject**
+
 Artists treating emptiness as material. Agnes Martin's grids, Roman Opalka's incremental counting, Hiroshi Sugimoto's architectural voids. The space between marks is the work itself.
+
 *[Source: Artsy]*
 
+---
+
+```
+[ASCII art: Painting]
+```
+
 **Painting — Pause in the Gesture**
+
 Painters working with silence between strokes. The canvas breathes. Space between marks carries as much weight as the marks themselves. Rest as compositional element.
+
 *[Source: Frieze]*
 
+---
+
+```
+[ASCII art: Illustration]
+```
+
 **Illustration — White Space as Line**
+
 Illustrators using the blank page as active element. What is not drawn carries meaning. The interval between forms defines the forms.
+
 *[Source: Eye on Design]*
 
+---
+
+```
+[ASCII art: Sculpture]
+```
+
 **Sculpture — Distance and Scale**
+
 Sculptures measured by what surrounds them. The gap between object and viewer, between elements within a work. Richard Serra's intervals, James Turrell's voids.
+
 *[Source: Artforum]*
 
+---
+
+```
+[ASCII art: Culture]
+```
+
 **Culture — The Comma and Colon**
+
 Punctuation as cultural rhythm. How pauses structure meaning. The interval as grammar. Typography and breathing. Where the culture rests.
+
 *[Source: The New Yorker]*
 
+---
+
+```
+[ASCII art: Photography]
+```
+
 **Photography — Depth of Field**
+
 Photography about what's in focus and what's not. The interval creates depth. What falls away is as important as what remains sharp.
+
 *[Source: Magnum Photos]*
 
+---
+
+```
+[ASCII art: Art History]
+```
+
 **Art History — Modernist Reduction**
+
 The elimination of the decorative. Artists searching for essential form through subtraction. The interval as evidence of what matters.
+
 *[Source: The Art Newspaper]*
 
+---
+
+```
+[ASCII art: Opinions]
+```
+
 **Opinions — The Power of the Pause**
+
 Rhythm in design requires rest. The interval creates comprehension. Without space, there is only noise.
+
 *[Source: Wired]*
 
+---
+
+```
+[ASCII art: Design & AI Tools]
+```
+
 **Design & AI Tools — Whitespace in Interface Design**
+
 Breathing room in UI. The interval between elements determines usability and clarity. Negative space as design decision.
+
 *[Source: Figma Blog]*
 
+---
+
+```
+[ASCII art: Product & Process]
+```
+
 **Product & Process — The Spacing Grid**
+
 Design systems built on intervals. Baseline grids, spacing scales, modular systems. The space between is the glue.
+
 *[Source: Designer Hangout]*
 
+---
+
+```
+[ASCII art: Visual & Brand]
+```
+
 **Visual & Brand — Kerning and Tracking**
+
 Typography's hidden intervals. The space between letters determines readability and personality. Micro-gaps that shift meaning.
+
 *[Source: Brand New]*
 
 ---
 
-**CLOSING SENTENCE:**
-"The space between is where meaning lives."
 
----
 
-*Published: May 8, 2026*
-*Theme: Interval — The rhythm, grammar, and structure created by gaps, rests, and what is not there*

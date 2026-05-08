@@ -163,56 +163,137 @@ Material • May 11, 2026
 
 ## ACT 2 — FULL EDITION
 
+```
+[ASCII art: Art]
+```
+
 **Art — Bodily Materials**
+
 Artists using body, flesh, blood, organic matter as medium. Materiality becomes politics. Audie Murray's practice makes irreducible substance the artwork's foundation.
+
 *[Source: Artsy]*
 
+---
+
+```
+[ASCII art: Painting]
+```
+
 **Painting — Paint as Substance**
+
 The paint itself: texture, finish, thickness, behavior. Painters obsessed with how pigment moves and settles. Materiality becomes more important than image.
+
 *[Source: It's Nice That]*
+
+---
+
+```
+[ASCII art: Illustration]
+```
 
 **Illustration — Paper as Protagonist**
+
 Illustrators choosing specific papers: grain, weight, tooth. Paper is not substrate—it is the work itself. Surface becomes primary decision.
+
 *[Source: Eye on Design]*
 
+---
+
+```
+[ASCII art: Sculpture]
+```
+
 **Sculpture — Clay and Soil**
+
 Sculpture emerging from earth. Architecture from clay. Material specificity drives the form. Morelos' work with earth becomes the irreducible fact of creation.
+
 *[Source: Frieze]*
 
+---
+
+```
+[ASCII art: Culture]
+```
+
 **Culture — Fabric First**
+
 Fashion and identity rooted in fabric choice. NIGO at Design Museum. Material becomes statement. What things are made of matters more than what they mean.
+
 *[Source: The New Yorker]*
 
+---
+
+```
+[ASCII art: Photography]
+```
+
 **Photography — Film Grain**
+
 Film stock as conscious choice, grain as aesthetic decision not compromise. Materiality of the medium determines the visual language.
+
 *[Source: Magnum Photos]*
 
+---
+
+```
+[ASCII art: Art History]
+```
+
 **Art History — Craft Traditions**
+
 Lineages of material knowledge. Pottery traditions, textile traditions. Time embedded in technique. The maker's hand survives in the work.
+
 *[Source: JSTOR Daily]*
 
+---
+
+```
+[ASCII art: Opinions]
+```
+
 **Opinions — Analogue Resistance**
+
 Graphic designers choosing film, paper, manual process. Pushing back against digital default. Material specificity as political stance.
+
 *[Source: It's Nice That]*
 
+---
+
+```
+[ASCII art: Design & AI Tools]
+```
+
 **Design & AI Tools — Figma Prototyping Limits**
+
 When digital prototyping fails and you need paper, cardboard, foam. The limits of screens reveal what material thinking offers that pixels cannot.
+
 *[Source: Nielsen Norman]*
+
+---
+
+```
+[ASCII art: Product & Process]
+```
 
 **Product & Process — Paper Prototyping**
+
 Paper sketches outpace high-fidelity mockups. Materiality speeds thinking. The rough physicality unlocks understanding digital polish prevents.
+
 *[Source: Nielsen Norman]*
 
+---
+
+```
+[ASCII art: Visual & Brand]
+```
+
 **Visual & Brand — Packaging Materiality**
+
 Brands obsessed with the object: unboxing experience, paper stock, tactile detail. Material becomes marketing because substance communicates.
+
 *[Source: Brand New]*
 
 ---
 
-**CLOSING SENTENCE:**
-"Everything digital is downstream of something you can hold."
 
----
 
-*Published: May 11, 2026*
-*Theme: Material — Substance as irreducible fact of creation and meaning*
