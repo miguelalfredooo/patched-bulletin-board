@@ -141,97 +141,13 @@ Invisible • May 13, 2026
 
 ## ACT 2 — FULL EDITION
 
-### Visual Grid
-
 ```
 ┌───────┐
 │ · · · │
-│ · · · │                       ART
+│ · · · │
 │ · · · │
 └───────┘
-
-━━━━━━━━━━━━━━━━━━━━━━━━━
-
-┌───────┐
-│░░░░░░░│
-│░░   ░░│                  PAINTING
-│░░░░░░░│
-└───────┘
-
-━━━━━━━━━━━━━━━━━━━━━━━━━
-
-    ▲    
-   ╱ ╲   
-  ╱   ╲                ILLUSTRATION
- ╱─────╲ 
-─────────
-
-━━━━━━━━━━━━━━━━━━━━━━━━━
-
-     ▀   
-    ─│─  
-   ╱ │ ╲                  SCULPTURE
-  ╱  │  ╲
-─────────
-
-━━━━━━━━━━━━━━━━━━━━━━━━━
-
-─────────
- : : : : 
-─:─:─:─:─                   CULTURE
- : : : : 
-─────────
-
-━━━━━━━━━━━━━━━━━━━━━━━━━
-
-┌───────┐
-│       │
-│─ ─ ─ ─│               PHOTOGRAPHY
-│       │
-└───────┘
-
-━━━━━━━━━━━━━━━━━━━━━━━━━
-
-┌───────┐
-│┌─────┐│
-││     ││               ART HISTORY
-│└─────┘│
-└───────┘
-
-━━━━━━━━━━━━━━━━━━━━━━━━━
-
-─────────
-█████████
-─────────                  OPINIONS
-█████████
-─────────
-
-━━━━━━━━━━━━━━━━━━━━━━━━━
-
-◯───────◯
-│ ▓▓▓▓▓ │
-│ ▓▓▓▓▓ │         DESIGN & AI TOOLS
-│ ▓▓▓▓▓ │
-◯───────◯
-
-━━━━━━━━━━━━━━━━━━━━━━━━━
-
-╌╌╌╌╌╌╌╌╌
-╌ ┌─────╌
-╌ │     ╌         PRODUCT & PROCESS
-╌ └─────╌
-╌╌╌╌╌╌╌╌╌
-
-━━━━━━━━━━━━━━━━━━━━━━━━━
-
-╌╌╌╌╌╌╌╌╌
-╌       ╌
-╌  ◆ ◆  ╌            VISUAL & BRAND
-╌       ╌
-╌╌╌╌╌╌╌╌╌
 ```
-
-### Editorial Sections
 
 **Art — What the Eye Skips**
 
@@ -242,6 +158,14 @@ https://designobserver.com
 
 ---
 
+```
+┌───────┐
+│░░░░░░░│
+│░░   ░░│
+│░░░░░░░│
+└───────┘
+```
+
 **Painting — Color Behind Color**
 
 Beneath every visible hue lies an underpainting. The artist commits to invisible choices that will never be seen, but that change everything the viewer receives.
@@ -250,6 +174,14 @@ Beneath every visible hue lies an underpainting. The artist commits to invisible
 https://www.wikiart.org
 
 ---
+
+```
+    ▲    
+   ╱ ╲   
+  ╱   ╲  
+ ╱─────╲ 
+─────────
+```
 
 **Illustration — The White Space**
 
@@ -260,6 +192,14 @@ https://www.eyeondesign.aiga.org
 
 ---
 
+```
+     ▀   
+    ─│─  
+   ╱ │ ╲ 
+  ╱  │  ╲
+─────────
+```
+
 **Sculpture — The Weight We Don't Feel**
 
 Engineering invisibility is the sculptor's secret. The steel hidden inside, the tension that holds the form, the mathematics that makes stone seem to float.
@@ -268,6 +208,14 @@ Engineering invisibility is the sculptor's secret. The steel hidden inside, the 
 https://frieze.com
 
 ---
+
+```
+─────────
+ : : : : 
+─:─:─:─:─
+ : : : : 
+─────────
+```
 
 **Culture — The Rules We Follow Without Knowing**
 
@@ -278,6 +226,14 @@ https://www.newyorker.com
 
 ---
 
+```
+┌───────┐
+│       │
+│─ ─ ─ ─│
+│       │
+└───────┘
+```
+
 **Photography — The Light We Don't Measure**
 
 Photography is about capturing what the eye receives but the mind doesn't register. The photographer sees absence—the shadow that defines form, the negative space that creates composition.
@@ -286,6 +242,14 @@ Photography is about capturing what the eye receives but the mind doesn't regist
 https://www.magnumphotos.com
 
 ---
+
+```
+┌───────┐
+│┌─────┐│
+││     ││
+│└─────┘│
+└───────┘
+```
 
 **Art History — The Technique That Disappears**
 
@@ -296,6 +260,14 @@ https://www.theartnewspaper.com
 
 ---
 
+```
+─────────
+█████████
+─────────
+█████████
+─────────
+```
+
 **Opinions — What We're Not Allowed to Say**
 
 Invisible censorship is more effective than visible control. The boundaries we police ourselves about, the questions we don't ask, the criticism we swallow—are the most complete.
@@ -304,6 +276,14 @@ Invisible censorship is more effective than visible control. The boundaries we p
 https://aeon.co
 
 ---
+
+```
+◯───────◯
+│ ▓▓▓▓▓ │
+│ ▓▓▓▓▓ │
+│ ▓▓▓▓▓ │
+◯───────◯
+```
 
 **Design & AI Tools — The Algorithms We Trust**
 
@@ -314,6 +294,14 @@ https://designobserver.com
 
 ---
 
+```
+╌╌╌╌╌╌╌╌╌
+╌ ┌─────╌
+╌ │     ╌
+╌ └─────╌
+╌╌╌╌╌╌╌╌╌
+```
+
 **Product & Process — The Decisions Behind**
 
 Every finished product reflects hundreds of invisible choices. The constraints that shaped it, the alternatives rejected, the compromises made—all invisible in the final form.
@@ -322,6 +310,14 @@ Every finished product reflects hundreds of invisible choices. The constraints t
 https://www.eyeondesign.aiga.org
 
 ---
+
+```
+╌╌╌╌╌╌╌╌╌
+╌       ╌
+╌  ◆ ◆  ╌
+╌       ╌
+╌╌╌╌╌╌╌╌╌
+```
 
 **Visual & Brand — The Brand You Don't See**
 
