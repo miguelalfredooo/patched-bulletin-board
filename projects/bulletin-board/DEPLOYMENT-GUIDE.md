@@ -186,29 +186,32 @@ ascii-art-library/
 
 ## Telegram Bot API Requirements
 
-⚠️ **CRITICAL: Always use `parse_mode: "MarkdownV2"` — NEVER HTML**
+⚠️ **CRITICAL: DO NOT use parse_mode — Send plain text only**
 
-When sending to Telegram Bot API, the JSON payload must include:
+**UPDATE (May 7, 2026):** Plain text delivery (no parse_mode) renders correctly:
+
 ```json
 {
   "chat_id": 7774590281,
-  "text": "[message with triple backticks for code blocks]",
-  "parse_mode": "MarkdownV2"
+  "text": "[plain text with markdown formatting and links]"
 }
 ```
 
-**Why this matters:**
-- `parse_mode: "MarkdownV2"` → Backticks render as code blocks (monospace, ASCII art intact) ✅
-- `parse_mode: "HTML"` → Backticks render as literal text, breaks ASCII art formatting ❌
-- No parse_mode specified → Falls back to plain text ❌
+**DO NOT include parse_mode parameter** — it causes formatting conflicts.
+
+**Why this works:**
+- No `parse_mode` → Plain text rendering (ASCII art displays cleanly) ✅
+- Plain text + links → Telegram auto-renders links as preview cards ✅
+- Markdown formatting (bold `**text**`, italic `*text*`) works naturally ✅
 
 **Usage in scripts:**
 ```python
 payload = {
-    "chat_id": CHAT_ID,
-    "text": "```\n[codeblock content]\n```",
-    "parse_mode": "MarkdownV2"
+    "chat_id": 7774590281,
+    "text": "[ASCII art as plain text]\n\n**Section — Title**\n\n[prose]\n\n*[Source: ...]*\n\nhttps://example.com"
 }
+# Send WITHOUT parse_mode parameter
+requests.post(f"{BASE_URL}/sendMessage", json=payload)
 ```
 
 ---

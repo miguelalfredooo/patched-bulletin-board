@@ -243,27 +243,33 @@ Each editorial section lives in its own codeblock for clarity. Links appear as p
 
 ## TELEGRAM BOT API REQUIREMENTS
 
-⚠️ **CRITICAL: Always use `parse_mode: "MarkdownV2"` — NEVER use HTML**
+⚠️ **CRITICAL: DO NOT use parse_mode — Send plain text only**
 
-When sending messages to Telegram Bot API:
+**UPDATE (May 7, 2026):** Plain text delivery renders correctly without parse_mode:
 
 ```json
 {
   "chat_id": 7774590281,
-  "text": "```\n[codeblock content]\n```",
-  "parse_mode": "MarkdownV2"
+  "text": "[plain text with ASCII art, markdown formatting, and links]"
 }
 ```
 
-**Why this is critical:**
-- **MarkdownV2**: Backticks (```) render as code blocks → monospace font → ASCII art displays correctly ✅
-- **HTML**: Backticks render as literal text → breaks ASCII alignment and layout ❌
-- **No parse_mode**: Falls back to plain text → completely breaks ASCII art ❌
+**Why this works:**
+- **No parse_mode**: Plain text rendering → ASCII art displays cleanly ✅
+- **Markdown formatting**: `**bold**` and `*italic*` work naturally ✅
+- **Links as cards**: URLs render as Telegram preview cards with metadata ✅
 
-**Every time you send:**
-- Always include `"parse_mode": "MarkdownV2"`
-- Never use `"parse_mode": "HTML"`
-- Never omit parse_mode
+**DO NOT include:**
+- `"parse_mode": "MarkdownV2"` → causes formatting conflicts ❌
+- `"parse_mode": "HTML"` → breaks rendering ❌
+
+**Format for delivery:**
+Plain text sections with:
+- ASCII art as plain text characters
+- **Section — Title** (bold markdown)
+- Prose text
+- *[Source: Attribution]* (italic markdown)
+- Links on separate lines (render as preview cards)
 
 This applies to all delivery methods (curl, requests, Telegram CLI, bot agents).
 
@@ -275,10 +281,12 @@ This applies to all delivery methods (curl, requests, Telegram CLI, bot agents).
 - ✅ Naming conventions standardized
 - ✅ 550 ASCII art files generated (110 × 5 variations)
 - ✅ Master templates created
-- ✅ HERO-TALL generation complete (110 files)
+- ✅ HERO-TALL unique covers on all 11 issues (per-issue Unicode characters)
 - ✅ ACT 1 layout template finalized
-- ✅ ACT 2 integration complete
-- ✅ Telegram Bot API parse_mode requirements documented
+- ✅ ACT 2 normalized to plain text format (no codeblocks, markdown + links)
+- ✅ All 11 issues have links added to editorial sections
+- ✅ Telegram Bot API delivery format updated (plain text, no parse_mode)
+- ✅ Curator agent integrated for daily content discovery (v1 live)
 
 ---
 
@@ -287,8 +295,8 @@ This applies to all delivery methods (curl, requests, Telegram CLI, bot agents).
 When referencing components:
 1. Check this guide first for naming/structure rules
 2. Use master/COMPONENT-*.txt for ASCII art examples
-3. Follow exact section names and styling (ALL CAPS for visual components)
-4. Maintain vertical centering rule across all variations
-5. Always deliver in code blocks for monospace rendering
-6. **ALWAYS use `parse_mode: "MarkdownV2"` when sending to Telegram**
+3. Follow exact section names and styling (bold `**SECTION — Title**` for content)
+4. Format: ASCII art (plain text) → **Title** (bold markdown) → Prose → *[Source]* (italic) → Link (separate line)
+5. Deliver as plain text (no parse_mode parameter)
+6. **NEVER use parse_mode** — send as plain text only for correct Telegram rendering
 

@@ -1,29 +1,19 @@
 # Design By Bulletin™
 ## A Daily Magazine About Design, Culture, and Tools
 
-**Status:** 📚 **9 Issues Published (001-010) & LIVE**  
-**Distribution:** Telegram Bot (@DesignByBulletinBot)  
-**Latest Update:** May 7, 2026
+**Status:** 📚 **11 Issues Published (001–011) — LIVE**
+**Distribution:** Telegram — Alfred (`telegram:7774590281`)
+**Latest Issue:** 011 — Invisible (May 13, 2026)
 
 ---
 
 ## Quick Start
 
-### For Readers
-Message **@DesignByBulletinBot** on Telegram:
-```
-/start    → Set up preferences (3 questions)
-/digest   → Full issue (visual + prose)
-/preview  → Visual preview only (Act 1)
-/help     → Command reference
-/change   → Update preferences
-```
-
 ### For Contributors
-**Read these first:**
-1. **[BOT-COMPONENTS.md](BOT-COMPONENTS.md)** — Component system reference (5 components, 3 ACT 1 approaches, delivery structure)
-2. **[DEPLOYMENT-GUIDE.md](DEPLOYMENT-GUIDE.md)** — Step-by-step workflow (compose, prepare, deliver)
-3. **[ASCII-ART-ASSET-GUIDE.md](ASCII-ART-ASSET-GUIDE.md)** — Asset locations (550 files, 6 variations)
+Read these first:
+1. **[BOT-COMPONENTS.md](BOT-COMPONENTS.md)** — 5 components, 3 ACT 1 approaches, codeblock rules
+2. **[DEPLOYMENT-GUIDE.md](DEPLOYMENT-GUIDE.md)** — Step-by-step workflow including required session archiving
+3. **[ASCII-ART-ASSET-GUIDE.md](ASCII-ART-ASSET-GUIDE.md)** — Asset locations across 6 variations
 
 ---
 
@@ -31,193 +21,180 @@ Message **@DesignByBulletinBot** on Telegram:
 
 A curated daily editorial about design, culture, and tools. Each issue:
 
-- **ACT 1:** Visual preview with ASCII art sections (11 pieces, themed)
-- **ACT 2:** Editorial content — 11 curated sections with prose and sources
+- **ACT 1:** Visual preview — ASCII art cover + 11 labeled section pieces
+- **ACT 2:** Editorial content — 11 sections with prose and sources (plain text, not codeblocks)
 - **Closing:** Thematic sentence capturing the issue's essence
 
-**Delivered via Telegram** to readers who want specific, warm editorial writing about design culture.
+Delivered via Telegram to Alfred, who distributes to the channel.
 
 ---
 
-## Published Issues (9 Complete)
+## Published Issues (11 Complete)
 
-| # | Theme | Date | Link |
-|---|-------|------|------|
-| 001 | Presence | May 5 | [ISSUE-001-presence-complete.md](ISSUE-001-presence-complete.md) |
-| 002 | The Mark | May 6 | [ISSUE-002-the-mark-complete.md](ISSUE-002-the-mark-complete.md) |
-| 003 | Handmade | May 6 | [ISSUE-003-handmade-complete.md](ISSUE-003-handmade-complete.md) |
-| 004 | Traces | May 7 | [ISSUE-004-traces-complete.md](ISSUE-004-traces-complete.md) |
-| 005 | Signal | May 8 | [ISSUE-005-signal-complete.md](ISSUE-005-signal-complete.md) |
-| 006 | Momentum | May 9 | [ISSUE-006-momentum-complete.md](ISSUE-006-momentum-complete.md) |
-| 007 | Interval | May 7 | (separate track) |
-| 008 | Threshold | May 10 | [ISSUE-008-threshold-complete.md](ISSUE-008-threshold-complete.md) |
-| 009 | Material | May 11 | [ISSUE-009-material-complete.md](ISSUE-009-material-complete.md) |
-| 010 | Worn | May 12 | [ISSUE-010-worn-complete.md](ISSUE-010-worn-complete.md) |
+| # | Theme | Date | Issue File | Session |
+|---|-------|------|------------|---------|
+| 001 | Presence | May 5 | [ISSUE-001](ISSUE-001-presence-complete.md) | — |
+| 002 | The Mark | May 6 | [ISSUE-002](ISSUE-002-the-mark-complete.md) | [session](sessions/issue-002-the-mark.md) |
+| 003 | Handmade | May 6 | [ISSUE-003](ISSUE-003-handmade-complete.md) | — |
+| 004 | Traces | May 7 | [ISSUE-004](ISSUE-004-traces-complete.md) | — |
+| 005 | Signal | May 8 | [ISSUE-005](ISSUE-005-signal-complete.md) | [session](sessions/issue-005-signal.txt) |
+| 006 | Momentum | May 9 | [ISSUE-006](ISSUE-006-momentum-complete.md) | [session](sessions/issue-006-momentum.txt) |
+| 007 | Interval | May 8 | [ISSUE-007](ISSUE-007-interval-complete.md) | [session](sessions/issue-007-palimpsest.txt) |
+| 008 | Threshold | May 10 | [ISSUE-008](ISSUE-008-threshold-complete.md) | [session](sessions/issue-008-emergence.txt) |
+| 009 | Material | May 11 | [ISSUE-009](ISSUE-009-material-complete.md) | [session](sessions/issue-009-fold.txt) |
+| 010 | Worn | May 12 | [ISSUE-010](ISSUE-010-worn-complete.md) | [session](sessions/issue-010-aperture.txt) |
+| 011 | Invisible | May 13 | [ISSUE-011](ISSUE-011-invisible-complete.md) | — |
 
-**All issues ready for public distribution.**
+**Note:** Issues 001, 003, 004 have no session file — art was generated live and not saved at the time.
 
 ---
 
 ## Component-Based Issue Composition
 
-### Primary Documentation
+Every issue uses 5 reusable components built into two acts:
 
-**Start here for building new issues:**
-- **[BOT-COMPONENTS.md](BOT-COMPONENTS.md)** — 5 reusable components, 3 ACT 1 composition approaches, codeblock structure
-- **[DEPLOYMENT-GUIDE.md](DEPLOYMENT-GUIDE.md)** — Step-by-step workflow (5 min cover, 5 min editorial, 3 min finalize)
-- **[ASCII-ART-ASSET-GUIDE.md](ASCII-ART-ASSET-GUIDE.md)** — 550 ASCII files across 6 variations, master templates
+| Component | Purpose | Location |
+|-----------|---------|---------|
+| COMPONENT-1-ISSUE-COVER | Branded cover with HERO-TALL portrait | `ascii-art-library/master/` |
+| COMPONENT-2-ISSUE-SECTIONS | 11 section ASCII art (6 variations) | `ascii-art-library/[variation]/` |
+| COMPONENT-3-EDITORIAL-GRID | 11 prose sections | In issue file |
+| COMPONENT-4-CLOSING-SENTENCE | Thematic wrap-up | In issue file |
+| COMPONENT-5-METADATA-FOOTER | Published date + theme description | In issue file |
 
-### Architecture Documentation
-
-**Component system:**
-- `ascii-art-library/master/COMPONENTS-MASTER-GUIDE.txt` — Complete system reference for agents
-- `ascii-art-library/master/COMPONENT-*.txt` — Individual component templates
-- `ascii-art-library/master/MOCK-ISSUE-005-ACT-1.txt` — Complete rendered example
-
-**Asset locations:**
-- `ascii-art-library/source/` — 110 original ASCII art files (pure art)
-- `ascii-art-library/labeled/` — 110 LABELED variation (ACT 1 v1 grid layout)
-- `ascii-art-library/compact/` — 220 COMPACT variations (left/right)
-- `ascii-art-library/hero-tall/` — 110 portrait format (covers)
-
-### Reference
-
-- **[archive-log.md](archive-log.md)** — Publication history with metadata
-- **Published issues:** `ISSUE-001-*.md` through `ISSUE-010-*.md`
+**Full reference:** [BOT-COMPONENTS.md](BOT-COMPONENTS.md)
 
 ---
 
-## How to Build a New Issue (5 Steps)
+## Pipeline: Curator → Assignment Editor → Editorial Director → Bot
 
-1. **Research & Brief** (1-2h) — Identify cultural moment, create editorial outline
-2. **Write & Curate** (1-2h) — Draft 11 sections, find 11 sources, create/reference ASCII
-3. **Review** (30min) — Verify quality, theme clarity, source diversity
-4. **Compile** (30min) — Combine: header + ACT 1 + ACT 2 + metadata into markdown
-5. **Publish** (15min) — Commit to git, update bot config, merge to main
+**New (May 7, 2026):** Automated Curator agent integrated for daily content discovery and validation.
 
-**Total time: 4-6 hours per issue**
-
-See [PROJECT-GUIDE.md](PROJECT-GUIDE.md) for detailed walkthrough.
-
----
-
-## Issue Structure (Standard Format)
-
-Every issue contains:
-
-### ACT 1 — Visual Preview
 ```
-Design By Bulletin™ logo + header
-[11 ASCII art sections, themed]
+Curator (discovers + validates URLs daily, 7:30am report)
+    ↓
+Assignment Editor (editorial judgment: which URLs fit today's theme?)
+    ↓
+Managing Editor (develops narratives)
+    ↓
+Editorial Director (final approval)
+    ↓
+Bot (Telegram delivery — plain text, no parse_mode)
 ```
 
-### ACT 2 — Full Edition
-```
-Art — [Subtitle]
-[2-3 sentences about specific work/artist]
-*[Source: Publication Name]*
+**Curator responsibilities:**
+- Scan publications, Bluesky, Reddit, Substack, Medium daily
+- Validate URLs (accessibility, metadata, real articles vs. paywalls)
+- Score on 4 dimensions (relevance, credibility, freshness, title integrity)
+- Report PASSED (7.0+) and FLAGGED (5.0-6.9) URLs to Assignment Editor
 
-[Repeat for 10 more sections]
-
----
-
-**CLOSING SENTENCE:**
-"[Thematic sentence capturing issue essence]"
+**Curator workspace:** `/Users/blackmachete/.openclaw/workspace-bulletin-curator/`
+**Integration docs:** [CURATOR-INTEGRATION.md](CURATOR-INTEGRATION.md)
 
 ---
 
-*Published: [Date]*
-*Theme: [Theme] — [Description]*
-```
+## How to Build a New Issue
+
+1. **Save session file first** → `sessions/ISSUE-[###]-[theme]-session.md` and commit
+2. Choose ACT 1 approach (v1 Grid / v2 Cards / v3 Template)
+3. Prepare cover — update issue number, theme, date (HERO-TALL portrait auto-generated)
+4. Write 11 editorial sections for ACT 2 (prose as plain text markdown with links)
+5. Add closing sentence + metadata footer
+6. Commit issue file
+7. Editorial Director approves → Bot sends to Telegram (plain text, no parse_mode)
+
+**Full workflow:** [DEPLOYMENT-GUIDE.md](DEPLOYMENT-GUIDE.md)
 
 ---
 
-## Editorial Standards
+## Format Rules (Critical)
 
-### Voice & Tone
-- Thoughtful, not clever
-- Specific, not abstract (mention actual artists, works, publications)
-- Warm, not cold
-- Authoritative without condescension
-- Brief and precise (2-3 sentences per section max)
-
-### ASCII Art
-- All sections in an issue: **same character width**
-- Width = maximum width of any section
-- Ensures clean alignment in Telegram monospace
-- No two consecutive sections use same format weight (A, B, C, D, E variety)
-
-### Source Diversity
-- 11 different sources per issue
-- No repeats within single issue (music can repeat)
-- Mix: art publications, design platforms, cultural magazines, community spaces
-
-### Theme Integration
-- Theme is **felt**, never **stated**
-- Emerges from convergence of curated examples
-- Each section contributes to thematic whole
+- **Max line width:** 35 characters per line inside any codeblock
+- **Divider:** `━━━━━━━━━━━━━━━━━━━━━━━━━` (25 chars — fixed, never change)
+- **ACT 2 prose:** Plain Telegram text — NOT inside codeblocks
+- **Section names in codeblocks:** Plain ALL CAPS — no `**bold**` markers
+- **Section art canvas:** 9 chars wide × 5 lines tall (standardized)
+- **Cover HERO-TALL:** 15-row centered pyramid portrait
 
 ---
 
 ## File Organization
 
 ```
-/projects/bulletin-board/
-├── README.md (you are here)
+projects/bulletin-board/
 │
-├── PUBLISHED ISSUES (9 complete, ready to serve)
-│   ├── ISSUE-001-presence-complete.md
-│   ├── ISSUE-002-the-mark-complete.md
-│   ├── ISSUE-003-handmade-complete.md
-│   └── ... (all 9, in markdown format)
+├── ISSUE-001 through ISSUE-011 -complete.md   (11 published issues)
 │
-├── DOCUMENTATION (organized by purpose)
-│   ├── PROJECT-GUIDE.md ⭐ (start here)
-│   ├── CONTENT-BRIEFS-003-010.md
-│   ├── PROSE-STRUCTURE-REFERENCE.md
-│   ├── ASCII-ART-STANDARDS.md
-│   ├── ASCII-COMPOSITION-GUIDE.md
-│   ├── STYLE-GUIDE.md
-│   ├── TELEGRAM-BOT-SETUP.md
-│   ├── OPENCLAW-GATEWAY-RESTART-FIX.md
-│   ├── archive-log.md
-│   ├── ASCII-ARCHIVE.md
-│   └── COVER-TEMPLATE-GUIDE.md
+├── sessions/                                   (generation records — append-only)
+│   ├── issue-002-the-mark.md
+│   ├── issue-005-signal.txt
+│   ├── issue-006-momentum.txt
+│   ├── issue-007-palimpsest.txt
+│   ├── issue-008-emergence.txt
+│   ├── issue-009-fold.txt
+│   ├── issue-010-aperture.txt
+│   └── issue-002-session-pipeline.md
 │
-└── SESSIONS (working notes from past builds)
-    └── sessions/
-        ├── 2026-05-06.md
-        └── 2026-05-06-issue-002.md
+├── triangle-cover/                             (archived pyramid cover series, issues 001–011)
+│
+├── ascii-art-library/
+│   ├── source/         (110 files — 11 sections × 10 issues, standardized)
+│   ├── labeled/        (110 files — with section names right-aligned)
+│   ├── expanded/       (110 files — centered hero)
+│   ├── compact/        (220 files — left/right)
+│   ├── hero-tall/      (portrait format)
+│   ├── original/       (art extracted verbatim from sessions — pre-edit originals)
+│   └── master/         (component templates)
+│
+├── BOT-COMPONENTS.md                           (component system reference)
+├── DEPLOYMENT-GUIDE.md                         (workflow + session management)
+├── ASCII-ART-ASSET-GUIDE.md                    (asset library reference)
+├── RELEASE-CHECKLIST.md                        (pre-publish checklist)
+└── archive-log.md                              (publication history — append-only)
 ```
 
 ---
 
-## Questions?
+## Editorial Standards
 
-| Question | Answer |
-|----------|--------|
-| "How do I create a new issue?" | → [PROJECT-GUIDE.md](PROJECT-GUIDE.md) |
-| "What are the ASCII rules?" | → [ASCII-ART-STANDARDS.md](ASCII-ART-STANDARDS.md) |
-| "How do I write editorial prose?" | → [STYLE-GUIDE.md](STYLE-GUIDE.md) |
-| "What's the 11-section framework?" | → [PROSE-STRUCTURE-REFERENCE.md](PROSE-STRUCTURE-REFERENCE.md) |
-| "How is the bot configured?" | → [TELEGRAM-BOT-SETUP.md](TELEGRAM-BOT-SETUP.md) |
-| "What's been published?" | → [archive-log.md](archive-log.md) |
+### Voice
+- Specific over abstract — name actual artists, works, publications
+- Warm and authoritative, never condescending
+- 2–4 sentences per section maximum
+
+### ASCII Art
+- All art inside codeblocks for monospace rendering
+- Prose always outside codeblocks as plain Telegram text
+- No two consecutive sections use the same format weight
+
+### Source Diversity
+- 11 different sources per issue — no repeats within an issue
+- Mix: art publications, design platforms, cultural magazines
+
+### Theme Integration
+- Theme is felt, never stated
+- Each of the 11 sections contributes without naming the theme explicitly
+
+---
+
+## Session Management
+
+Sessions are the source of truth — protect them like database backups.
+
+- **Never delete** a session file. Move to `sessions/archive/` if cleanup needed.
+- **Save before sending** — session committed to git before Alfredo sends anything
+- **Pre-send check:** `git ls-files projects/bulletin-board/sessions/ISSUE-[#]-*`
+
+**Why this matters:** Issues 001, 003, 004 have no recoverable original art because their sessions were never saved to git.
 
 ---
 
 ## Project Status
 
-✅ **9 Issues Published** (001-010, complete, approved)  
-✅ **Editorial Pipeline Documented** (comprehensive framework)  
-✅ **Bot Live & Serving** (@DesignByBulletinBot, all 9 issues accessible)  
-✅ **All Standards Defined** (ASCII, prose, sourcing, voice)  
-✅ **Ready for Scaling** (system is documented and repeatable)
+✅ 11 Issues Published (001–011, complete, approved)
+✅ Component system documented and standardized
+✅ Session management rules in place
+✅ Original art recovered to `sessions/` and `ascii-art-library/original/`
+✅ Triangle cover series archived in `triangle-cover/`
+✅ All format rules defined (35-char width, 25-char divider, prose outside codeblocks)
 
-**Status: PRODUCTION READY**
-
----
-
-**Design By Bulletin™** is a complete, documented, published editorial project ready for ongoing development and distribution.
-
-*Last updated: May 7, 2026*  
-*All 9 issues live: May 5-12, 2026*
+*Last updated: May 7, 2026*
