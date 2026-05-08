@@ -342,5 +342,10 @@ Brands that announce themselves without apology. Clear at any size, unmistakable
 
 ---
 
+**CLOSING SENTENCE:**
+"In a world of noise, clarity is rebellion."
 
+---
 
+*Published: May 8, 2026*
+*Theme: Signal — Visual authority cutting through complexity with intentional form*

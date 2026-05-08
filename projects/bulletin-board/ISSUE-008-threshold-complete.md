@@ -338,5 +338,10 @@ Design focused on the between-state, animations at thresholds. What happens duri
 
 ---
 
+**CLOSING SENTENCE:**
+"Every threshold is a place where you are still both things at once."
 
+---
 
+*Published: May 10, 2026*
+*Theme: Threshold — The liminal edge where one thing becomes another*

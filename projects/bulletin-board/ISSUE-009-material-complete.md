@@ -340,5 +340,10 @@ Brands obsessed with the object: unboxing experience, paper stock, tactile detai
 
 ---
 
+**CLOSING SENTENCE:**
+"Everything digital is downstream of something you can hold."
 
+---
 
+*Published: May 11, 2026*
+*Theme: Material — Substance as irreducible fact of creation and meaning*

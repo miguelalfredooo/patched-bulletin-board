@@ -334,5 +334,10 @@ Brands and marks that look better with age. Distressing by design. Earning your 
 
 ---
 
+**CLOSING SENTENCE:**
+"The things worth keeping are the things that show you used them."
 
+---
 
+*Published: May 12, 2026*
+*Theme: Worn — Temporal depth and what time-in-contact reveals about care*

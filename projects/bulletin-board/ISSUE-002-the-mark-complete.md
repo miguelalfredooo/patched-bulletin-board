@@ -336,5 +336,10 @@ Apartamento's Milan installation asked visitors to wear white gloves to handle b
 
 ---
 
+**CLOSING SENTENCE:**
+"The mark is not just aesthetic. It is a claim of authorship in an age when smoothness reads as erasure."
 
+---
 
+*Published: May 6, 2026*
+*Theme: The Mark — Evidence of human presence as political act and aesthetic claim*

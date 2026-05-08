@@ -336,5 +336,10 @@ Visible authorship claims, brands that announce presence subtly, marks that prov
 
 ---
 
+**CLOSING SENTENCE:**
+"We are always leaving traces. The question is whether anyone reads them."
 
+---
 
+*Published: May 7, 2026*
+*Theme: Traces — Invisible architecture of presence and forensic precision in craft*

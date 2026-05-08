@@ -336,5 +336,10 @@ Typefaces designed to show variation, fonts modeled on handwriting, letterforms 
 
 ---
 
+**CLOSING SENTENCE:**
+"The machine can't feel the thumb leave a ridge in the clay."
 
+---
 
+*Published: May 6, 2026*
+*Theme: Handmade — Lo-fi rebellion against machine-generated slickness*
