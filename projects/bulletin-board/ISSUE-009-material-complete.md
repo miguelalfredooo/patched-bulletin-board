@@ -175,7 +175,6 @@ Material • May 11, 2026
 
 Artists using body, flesh, blood, organic matter as medium. Materiality becomes politics. Audie Murray's practice makes irreducible substance the artwork's foundation.
 
-*[Source: Artsy]*
 
 ---
 
@@ -192,7 +191,6 @@ Artists using body, flesh, blood, organic matter as medium. Materiality becomes 
 
 The paint itself: texture, finish, thickness, behavior. Painters obsessed with how pigment moves and settles. Materiality becomes more important than image.
 
-*[Source: It's Nice That]*
 
 ---
 
@@ -209,7 +207,6 @@ The paint itself: texture, finish, thickness, behavior. Painters obsessed with h
 
 Illustrators choosing specific papers: grain, weight, tooth. Paper is not substrate—it is the work itself. Surface becomes primary decision.
 
-*[Source: Eye on Design]*
 https://www.eyeondesign.aiga.org
 
 ---
@@ -226,7 +223,6 @@ https://www.eyeondesign.aiga.org
 
 Sculpture emerging from earth. Architecture from clay. Material specificity drives the form. Morelos' work with earth becomes the irreducible fact of creation.
 
-*[Source: Frieze]*
 https://frieze.com
 
 ---
@@ -243,7 +239,6 @@ https://frieze.com
 
 Fashion and identity rooted in fabric choice. NIGO at Design Museum. Material becomes statement. What things are made of matters more than what they mean.
 
-*[Source: The New Yorker]*
 https://www.newyorker.com
 
 ---
@@ -260,7 +255,6 @@ https://www.newyorker.com
 
 Film stock as conscious choice, grain as aesthetic decision not compromise. Materiality of the medium determines the visual language.
 
-*[Source: Magnum Photos]*
 https://www.magnumphotos.com
 
 ---
@@ -277,7 +271,6 @@ https://www.magnumphotos.com
 
 Lineages of material knowledge. Pottery traditions, textile traditions. Time embedded in technique. The maker's hand survives in the work.
 
-*[Source: JSTOR Daily]*
 
 ---
 
@@ -292,7 +285,6 @@ Lineages of material knowledge. Pottery traditions, textile traditions. Time emb
 
 Graphic designers choosing film, paper, manual process. Pushing back against digital default. Material specificity as political stance.
 
-*[Source: It's Nice That]*
 
 ---
 
@@ -308,7 +300,6 @@ Graphic designers choosing film, paper, manual process. Pushing back against dig
 
 When digital prototyping fails and you need paper, cardboard, foam. The limits of screens reveal what material thinking offers that pixels cannot.
 
-*[Source: Nielsen Norman]*
 
 ---
 
@@ -324,7 +315,6 @@ When digital prototyping fails and you need paper, cardboard, foam. The limits o
 
 Paper sketches outpace high-fidelity mockups. Materiality speeds thinking. The rough physicality unlocks understanding digital polish prevents.
 
-*[Source: Nielsen Norman]*
 
 ---
 
@@ -340,7 +330,6 @@ Paper sketches outpace high-fidelity mockups. Materiality speeds thinking. The r
 
 Brands obsessed with the object: unboxing experience, paper stock, tactile detail. Material becomes marketing because substance communicates.
 
-*[Source: Brand New]*
 https://www.underconsideration.com/brandnew
 
 ---

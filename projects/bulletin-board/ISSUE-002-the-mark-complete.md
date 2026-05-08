@@ -171,7 +171,6 @@ The Mark • May 6, 2026
 
 At Frieze New York, handlers transfer work so delicately the precaution becomes gesture. The white glove announces: something precious was touched here. Touch becomes ritual.
 
-*[Source: Frieze]*
 https://frieze.com
 
 ---
@@ -189,7 +188,6 @@ https://frieze.com
 
 Lucas Arruda's seascapes have no horizon to fix on. The blurred mark of the brush is the only evidence anyone was there. The painting is made of presence.
 
-*[Source: Artsy]*
 
 ---
 
@@ -206,7 +204,6 @@ Lucas Arruda's seascapes have no horizon to fix on. The blurred mark of the brus
 
 Marzena Szumlas hand-draws lettering so slowly the ink bleeds at each stop. The slight imprecision is precisely the point. The mark proves the hand.
 
-*[Source: It's Nice That]*
 
 ---
 
@@ -222,7 +219,6 @@ Marzena Szumlas hand-draws lettering so slowly the ink bleeds at each stop. The 
 
 Isa Genzken's Venice assemblages hold broken umbrellas and foil sheeting inside steel frames like evidence from a scene. The material is the statement.
 
-*[Source: Frieze]*
 https://frieze.com
 
 ---
@@ -239,7 +235,6 @@ https://frieze.com
 
 Designers leaving intentional typos, handwritten credits, prison-tattoo covers. Every mark claims authorship in a year when smoothness reads as machine-made.
 
-*[Source: The New Yorker]*
 https://www.newyorker.com
 
 ---
@@ -256,7 +251,6 @@ https://www.newyorker.com
 
 Tarrah Krajnak's expired film self-portraits use the chemistry's failures — fog, bloom, dissolution — as registers of time passing. The mark is age.
 
-*[Source: LensCulture]*
 
 ---
 
@@ -272,7 +266,6 @@ Tarrah Krajnak's expired film self-portraits use the chemistry's failures — fo
 
 In 1960, Yves Klein pressed gold-painted models into canvas while silence played. The marks remained. The body leaves permanent evidence of its having been there.
 
-*[Source: JSTOR Daily]*
 
 ---
 
@@ -287,7 +280,6 @@ In 1960, Yves Klein pressed gold-painted models into canvas while silence played
 
 When AI-generated content becomes indistinguishable from curation, the deliberate typo and rough edge become signals of authenticity. The mark proves humanity.
 
-*[Source: The New Yorker]*
 https://www.newyorker.com
 
 ---
@@ -304,7 +296,6 @@ https://www.newyorker.com
 
 Anthropic's citation feature traces which part of a source each sentence came from. Making the model's evidence legible rather than implied. The mark of origin.
 
-*[Source: Anthropic]*
 
 ---
 
@@ -320,7 +311,6 @@ Anthropic's citation feature traces which part of a source each sentence came fr
 
 The most durable design decisions are ones with a visible author who can say "I made this choice because." Anonymizing process is how bad defaults survive.
 
-*[Source: Lenny's Newsletter]*
 
 ---
 
@@ -336,7 +326,6 @@ The most durable design decisions are ones with a visible author who can say "I 
 
 Apartamento's Milan installation asked visitors to wear white gloves to handle books. Reading became ceremony, and the glove became the brand's visible mark.
 
-*[Source: Apartamento]*
 
 ---
 

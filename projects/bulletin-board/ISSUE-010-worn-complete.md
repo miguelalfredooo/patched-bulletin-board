@@ -169,7 +169,6 @@ Worn • May 12, 2026
 
 Paintings that age on the canvas. Sherald's practice treats material and time as collaborators. The painting wears in rather than deteriorates.
 
-*[Source: Artsy]*
 
 ---
 
@@ -186,7 +185,6 @@ Paintings that age on the canvas. Sherald's practice treats material and time as
 
 Cecily Brown's figures dissolving into ground. Work that loses definition through handling and repeated viewing. The image becomes palimpsest through engagement.
 
-*[Source: Booooooom]*
 
 ---
 
@@ -203,7 +201,6 @@ Cecily Brown's figures dissolving into ground. Work that loses definition throug
 
 Illustrations showing creasing, foxing, aging. The object's history becomes visible. Time becomes medium, wear becomes evidence of care.
 
-*[Source: Eye on Design]*
 https://www.eyeondesign.aiga.org
 
 ---
@@ -220,7 +217,6 @@ https://www.eyeondesign.aiga.org
 
 Material at breaking point, nylon showing strain. Tension made visible through use. What holds under pressure becomes beautiful through visibility of stress.
 
-*[Source: Frieze]*
 https://frieze.com
 
 ---
@@ -237,7 +233,6 @@ https://frieze.com
 
 Japanese pottery tradition: unsigned work valued for how it wears. The user's hand completes the work. Objects improve through use.
 
-*[Source: The New Yorker]*
 https://www.newyorker.com
 
 ---
@@ -254,7 +249,6 @@ https://www.newyorker.com
 
 Bird photography about sky worn by presence. Light changing through repeated viewings and use of the negative. The image accumulates meaning.
 
-*[Source: LensCulture]*
 
 ---
 
@@ -270,7 +264,6 @@ Bird photography about sky worn by presence. Light changing through repeated vie
 
 Historical perspective: how makers designed for use, not museum. Wear patterns reveal intent. The object's life determines its form.
 
-*[Source: The Art Newspaper]*
 https://www.theartnewspaper.com
 
 ---
@@ -286,7 +279,6 @@ https://www.theartnewspaper.com
 
 Design tools improving through use. Patina as sign of care. Friction as feature. The best objects get better as you know them.
 
-*[Source: Dense Discovery]*
 
 ---
 
@@ -302,7 +294,6 @@ Design tools improving through use. Patina as sign of care. Friction as feature.
 
 Systems maturing through use, patterns becoming clearer with application. Tools that learn your practice. Constraint systems hardening through implementation.
 
-*[Source: Figma Blog]*
 
 ---
 
@@ -318,7 +309,6 @@ Systems maturing through use, patterns becoming clearer with application. Tools 
 
 Products designed for longevity and repair, not obsolescence. Making things that earn their keep. Use as design criteria.
 
-*[Source: Patagonia]*
 
 ---
 
@@ -334,7 +324,6 @@ Products designed for longevity and repair, not obsolescence. Making things that
 
 Brands and marks that look better with age. Distressing by design. Earning your history through time. The mark proven through use.
 
-*[Source: Brand New]*
 https://www.underconsideration.com/brandnew
 
 ---

@@ -148,7 +148,6 @@ Interval • May 8, 2026
 
 Artists treating emptiness as material. Agnes Martin's grids, Roman Opalka's incremental counting, Hiroshi Sugimoto's architectural voids. The space between marks is the work itself.
 
-*[Source: Artsy]*
 
 ---
 
@@ -162,7 +161,6 @@ Artists treating emptiness as material. Agnes Martin's grids, Roman Opalka's inc
 
 Painters working with silence between strokes. The canvas breathes. Space between marks carries as much weight as the marks themselves. Rest as compositional element.
 
-*[Source: Frieze]*
 https://frieze.com
 
 ---
@@ -177,7 +175,6 @@ https://frieze.com
 
 Illustrators using the blank page as active element. What is not drawn carries meaning. The interval between forms defines the forms.
 
-*[Source: Eye on Design]*
 https://www.eyeondesign.aiga.org
 
 ---
@@ -192,7 +189,6 @@ https://www.eyeondesign.aiga.org
 
 Sculptures measured by what surrounds them. The gap between object and viewer, between elements within a work. Richard Serra's intervals, James Turrell's voids.
 
-*[Source: Artforum]*
 
 ---
 
@@ -206,7 +202,6 @@ Sculptures measured by what surrounds them. The gap between object and viewer, b
 
 Punctuation as cultural rhythm. How pauses structure meaning. The interval as grammar. Typography and breathing. Where the culture rests.
 
-*[Source: The New Yorker]*
 https://www.newyorker.com
 
 ---
@@ -221,7 +216,6 @@ https://www.newyorker.com
 
 Photography about what's in focus and what's not. The interval creates depth. What falls away is as important as what remains sharp.
 
-*[Source: Magnum Photos]*
 https://www.magnumphotos.com
 
 ---
@@ -236,7 +230,6 @@ https://www.magnumphotos.com
 
 The elimination of the decorative. Artists searching for essential form through subtraction. The interval as evidence of what matters.
 
-*[Source: The Art Newspaper]*
 https://www.theartnewspaper.com
 
 ---
@@ -251,7 +244,6 @@ https://www.theartnewspaper.com
 
 Rhythm in design requires rest. The interval creates comprehension. Without space, there is only noise.
 
-*[Source: Wired]*
 
 ---
 
@@ -265,7 +257,6 @@ Rhythm in design requires rest. The interval creates comprehension. Without spac
 
 Breathing room in UI. The interval between elements determines usability and clarity. Negative space as design decision.
 
-*[Source: Figma Blog]*
 
 ---
 
@@ -279,7 +270,6 @@ Breathing room in UI. The interval between elements determines usability and cla
 
 Design systems built on intervals. Baseline grids, spacing scales, modular systems. The space between is the glue.
 
-*[Source: Designer Hangout]*
 
 ---
 
@@ -293,7 +283,6 @@ Design systems built on intervals. Baseline grids, spacing scales, modular syste
 
 Typography's hidden intervals. The space between letters determines readability and personality. Micro-gaps that shift meaning.
 
-*[Source: Brand New]*
 https://www.underconsideration.com/brandnew
 
 ---

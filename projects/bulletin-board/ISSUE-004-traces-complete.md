@@ -171,7 +171,6 @@ Traces • May 7, 2026
 
 Palimpsests and pentimenti reveal how the artist thought before committing. Overpainting made visible, layers exposed — the work becomes archaeological.
 
-*[Source: Artsy]*
 
 ---
 
@@ -188,7 +187,6 @@ Palimpsests and pentimenti reveal how the artist thought before committing. Over
 
 The compositions below show the thinking. Earlier versions surface, marks remain. A painting is not a finished state but a record of arrivals.
 
-*[Source: It's Nice That]*
 
 ---
 
@@ -205,7 +203,6 @@ The compositions below show the thinking. Earlier versions surface, marks remain
 
 Final work keeps construction lines visible, preliminary marks intact. The finished piece broadcasts its own making — transparency as transparency.
 
-*[Source: Eye on Design]*
 https://www.eyeondesign.aiga.org
 
 ---
@@ -222,7 +219,6 @@ https://www.eyeondesign.aiga.org
 
 Carved, worn, marked surfaces where each scratch records time. Stone holds memory without trying.
 
-*[Source: Art in America]*
 
 ---
 
@@ -238,7 +234,6 @@ Carved, worn, marked surfaces where each scratch records time. Stone holds memor
 
 What traces we leave online without knowing. Metadata, behavioral recording, the read without the reader knowing they were read. The archive that remembers everything.
 
-*[Source: Monocle]*
 
 ---
 
@@ -254,7 +249,6 @@ What traces we leave online without knowing. Metadata, behavioral recording, the
 
 Film grain, dust on lens, light leaks — indexical proof that something existed in front of the camera. The photograph as forensic document.
 
-*[Source: LensCulture]*
 
 ---
 
@@ -270,7 +264,6 @@ Film grain, dust on lens, light leaks — indexical proof that something existed
 
 X-ray fluorescence reveals artist choices hidden from sight. Technical analysis reads what centuries of looking could not say. Traces speak when you listen at the molecular level.
 
-*[Source: The Art Newspaper]*
 https://www.theartnewspaper.com
 
 ---
@@ -286,7 +279,6 @@ https://www.theartnewspaper.com
 
 Heatmaps show where algorithms look. The invisible made visible through color, the machine's gaze rendered as image. What was hidden becomes undeniable.
 
-*[Source: The Beautiful Mess]*
 
 ---
 
@@ -302,7 +294,6 @@ Heatmaps show where algorithms look. The invisible made visible through color, t
 
 Git as archaeology. Every commit a breadcrumb. Design systems track intent through changes, the why embedded in the diff.
 
-*[Source: Figma Blog]*
 
 ---
 
@@ -318,7 +309,6 @@ Git as archaeology. Every commit a breadcrumb. Design systems track intent throu
 
 Passing work forward, leaving notes, clear trails for the next person. Documentation is not bureaucracy — it is generosity.
 
-*[Source: Lenny's Newsletter]*
 
 ---
 
@@ -334,7 +324,6 @@ Passing work forward, leaving notes, clear trails for the next person. Documenta
 
 Visible authorship claims, brands that announce presence subtly, marks that prove someone was here thinking. The signature as substance.
 
-*[Source: Brand New]*
 https://www.underconsideration.com/brandnew
 
 ---

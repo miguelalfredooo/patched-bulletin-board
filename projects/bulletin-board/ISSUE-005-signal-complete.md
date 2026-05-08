@@ -177,7 +177,6 @@ Signal • May 8, 2026
 
 Minimalism cuts through visual chaos. Primary colors make claims without decoration. The canvas becomes declaration, not decoration.
 
-*[Source: MOMA]*
 
 ---
 
@@ -194,7 +193,6 @@ Minimalism cuts through visual chaos. Primary colors make claims without decorat
 
 Restricted palettes constrain what meaning can emerge. When painters eliminate choice, every color carries argument. No decoration survives.
 
-*[Source: WikiArt]*
 https://www.wikiart.org
 
 ---
@@ -212,7 +210,6 @@ https://www.wikiart.org
 
 Illustration reduced to essential form. Every line necessary, no gesture decorative. The simplified shape becomes unmistakable signal.
 
-*[Source: Eye on Design]*
 https://www.eyeondesign.aiga.org
 
 ---
@@ -229,7 +226,6 @@ https://www.eyeondesign.aiga.org
 
 Sculptural gesture arrives unmistakable. Metal, concrete, stone shaped with absolute clarity. The material declares its presence without apology.
 
-*[Source: Frieze]*
 https://frieze.com
 
 ---
@@ -246,7 +242,6 @@ https://frieze.com
 
 Culture rejecting irony and ambiguity. Manifestos replace suggestion. Direct claims cut through the noise of polite insinuation.
 
-*[Source: The New Yorker]*
 https://www.newyorker.com
 
 ---
@@ -263,7 +258,6 @@ https://www.newyorker.com
 
 Black and white extremes eliminate gray area. Stark, readable, undeniable. The photograph makes claims through absolute clarity.
 
-*[Source: Magnum Photos]*
 https://www.magnumphotos.com
 
 ---
@@ -280,7 +274,6 @@ https://www.magnumphotos.com
 
 Design as political statement. Legibility becomes power. Russian avant-garde precision treated visual language as tool for collective understanding.
 
-*[Source: The Art Newspaper]*
 https://www.theartnewspaper.com
 
 ---
@@ -296,7 +289,6 @@ https://www.theartnewspaper.com
 
 Focus and clarity demand active attention. Background music and invisible design are refusals to engage. Attention is the work.
 
-*[Source: Aeon]*
 https://aeon.co
 
 ---
@@ -313,7 +305,6 @@ https://aeon.co
 
 Variables and constraints make decisions visible and repeatable. Design tokens force coherence. What was hidden in inconsistency becomes undeniable.
 
-*[Source: Figma Blog]*
 
 ---
 
@@ -329,7 +320,6 @@ Variables and constraints make decisions visible and repeatable. Design tokens f
 
 Legibility prioritized over cleverness. Accessibility as aesthetic. Products that announce what they do without tricks or deception.
 
-*[Source: Nielsen Norman]*
 
 ---
 
@@ -345,7 +335,6 @@ Legibility prioritized over cleverness. Accessibility as aesthetic. Products tha
 
 Brands that announce themselves without apology. Clear at any size, unmistakable in any context. The mark proves presence.
 
-*[Source: Brand New]*
 https://www.underconsideration.com/brandnew
 
 ---

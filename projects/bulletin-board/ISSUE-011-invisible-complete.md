@@ -153,7 +153,6 @@ Invisible • May 13, 2026
 
 The most powerful compositions hide their architecture. Negative space, weight distribution, the invisible grid underneath—all work because we don't see them working.
 
-*[Source: Design Observer]*
 https://designobserver.com
 https://designobserver.com
 
@@ -171,7 +170,6 @@ https://designobserver.com
 
 Beneath every visible hue lies an underpainting. The artist commits to invisible choices that will never be seen, but that change everything the viewer receives.
 
-*[Source: WikiArt]*
 https://www.wikiart.org
 https://www.wikiart.org
 
@@ -189,7 +187,6 @@ https://www.wikiart.org
 
 Icon design teaches us: what you remove matters more than what you keep. The empty space becomes form. Simplification reveals the invisible structure that was always there.
 
-*[Source: Eye on Design]*
 https://www.eyeondesign.aiga.org
 https://www.eyeondesign.aiga.org
 
@@ -207,7 +204,6 @@ https://www.eyeondesign.aiga.org
 
 Engineering invisibility is the sculptor's secret. The steel hidden inside, the tension that holds the form, the mathematics that makes stone seem to float.
 
-*[Source: Frieze]*
 https://frieze.com
 https://frieze.com
 
@@ -225,7 +221,6 @@ https://frieze.com
 
 Culture is the sum of invisible agreements. We move through the world following codes we never consciously learned. The deepest influence is the one we never question.
 
-*[Source: The New Yorker]*
 https://www.newyorker.com
 https://www.newyorker.com
 
@@ -243,7 +238,6 @@ https://www.newyorker.com
 
 Photography is about capturing what the eye receives but the mind doesn't register. The photographer sees absence—the shadow that defines form, the negative space that creates composition.
 
-*[Source: Magnum Photos]*
 https://www.magnumphotos.com
 https://www.magnumphotos.com
 
@@ -261,7 +255,6 @@ https://www.magnumphotos.com
 
 The most sophisticated technique is the one no one notices. Old master painters spent lifetimes perfecting methods that would never be detected. The invisible skill is the highest skill.
 
-*[Source: The Art Newspaper]*
 https://www.theartnewspaper.com
 https://www.theartnewspaper.com
 
@@ -279,7 +272,6 @@ https://www.theartnewspaper.com
 
 Invisible censorship is more effective than visible control. The boundaries we police ourselves about, the questions we don't ask, the criticism we swallow—are the most complete.
 
-*[Source: Aeon]*
 https://aeon.co
 https://aeon.co
 
@@ -297,7 +289,6 @@ https://aeon.co
 
 AI systems work on invisible logic. We interact with outputs but never see the decision-making. The opacity is by design. Understanding what we can't see is the first step toward safety.
 
-*[Source: Design Observer]*
 https://designobserver.com
 https://designobserver.com
 
@@ -315,7 +306,6 @@ https://designobserver.com
 
 Every finished product reflects hundreds of invisible choices. The constraints that shaped it, the alternatives rejected, the compromises made—all invisible in the final form.
 
-*[Source: AIGA Eye on Design]*
 https://www.eyeondesign.aiga.org
 https://www.eyeondesign.aiga.org
 
@@ -333,7 +323,6 @@ https://www.eyeondesign.aiga.org
 
 A brand's true identity lives in what it doesn't show. The brand guidelines no one reads, the colors in the loading states, the error messages—define the whole experience.
 
-*[Source: Brand New]*
 https://www.underconsideration.com/brandnew
 https://www.underconsideration.com/brandnew
 

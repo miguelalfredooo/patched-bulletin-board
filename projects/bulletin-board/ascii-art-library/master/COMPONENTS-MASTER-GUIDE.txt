@@ -63,14 +63,13 @@ All components are pure text, UTF-8 compatible, monospace-friendly.
 **Structure:**
   - **[Section] — [Subtitle]** (bold section name and descriptive subtitle)
   - 2-4 sentences of prose (~60-120 words)
-  - *[Source: Attribution]* (italicized source in brackets)
+  - URL link to article/source
 **Rules:**
   - Exactly 11 sections per issue (matching visual section names)
   - Narrative, critical, contextual voice
   - Each section relates to issue theme
-  - Always includes source attribution
+  - Links only (no source attribution line)
   - Appears in ACT 2 (plain text, no code block)
-  - First line of prose is used in Component 2 compact variations
   - All 110 sections (11 × 10 issues) complete
 
 ### COMPONENT 4: CLOSING SENTENCE
@@ -224,8 +223,7 @@ Used between sections in codeblocks and between cards in delivery flow.
 - **Codeblocks 2–12:** Each editorial section (one per codeblock)
   - **[Section] — [Subtitle]** (bold section name and descriptive subtitle)
   - 2-4 sentences of prose (~60-120 words)
-  - *[Source: Attribution]* (italicized source in brackets)
-- **Plain text between codeblocks:** Direct link to full article/source (one per section)
+- **Plain text between codeblocks:** Direct link to full article/source (one per section, no source attribution)
 
 **Delivery Pattern:**
 ```
@@ -250,13 +248,14 @@ Each editorial section lives in its own codeblock for clarity. Links appear as p
 ```json
 {
   "chat_id": 7774590281,
-  "text": "```\n[ASCII ART IN CODEBLOCK]\n```\n\n**Section — Title**\n\n[Prose]\n\n*[Source: Attribution]*\n\nhttps://link.com"
+  "text": "```\n[ASCII ART IN CODEBLOCK]\n```\n\n**Section — Title**\n\n[Prose]\n\nhttps://link.com"
 }
 ```
 
 **Mandatory rules:**
 - **ASCII art**: ALWAYS in codeblocks (```) — zero exceptions ✅
-- **Metadata**: Section title, prose, source, links — OUTSIDE codeblocks ✅
+- **Section title & prose**: OUTSIDE codeblocks ✅
+- **Link only**: No source attribution line — just the URL ✅
 - **parse_mode**: DO NOT include (send plain text mode) ✅
 
 **Why this works:**
@@ -290,7 +289,7 @@ When referencing components:
 1. Check this guide first for naming/structure rules
 2. Use master/COMPONENT-*.txt for ASCII art examples
 3. Follow exact section names and styling (bold `**SECTION — Title**` for content)
-4. Format: ASCII art (plain text) → **Title** (bold markdown) → Prose → *[Source]* (italic) → Link (separate line)
+4. Format: ASCII art in codeblock → **Title** (bold markdown) → Prose → Link (separate line, no source attribution)
 5. Deliver as plain text (no parse_mode parameter)
 6. **NEVER use parse_mode** — send as plain text only for correct Telegram rendering
 

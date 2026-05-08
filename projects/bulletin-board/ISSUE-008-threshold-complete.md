@@ -173,7 +173,6 @@ Threshold • May 10, 2026
 
 Paintings and sculptures depicting the moment before crossing. The back-turned figure contemplating horizon. Springford and Friedrich anchor this visual tradition of standing at the threshold.
 
-*[Source: Artsy]*
 
 ---
 
@@ -190,7 +189,6 @@ Paintings and sculptures depicting the moment before crossing. The back-turned f
 
 Paintings about the moment light transforms. Dawn and dusk captured mid-transition. The canvas holds the sun at horizon, neither day nor night.
 
-*[Source: Booooooom]*
 
 ---
 
@@ -207,7 +205,6 @@ Paintings about the moment light transforms. Dawn and dusk captured mid-transiti
 
 Illustration of doorways, windows, gates as visual anchor. Thresholds becoming the subject itself. The between-space where one thing becomes another.
 
-*[Source: Eye on Design]*
 https://www.eyeondesign.aiga.org
 
 ---
@@ -224,7 +221,6 @@ https://www.eyeondesign.aiga.org
 
 Nylon holding without tearing, material at breaking point. Tension made visible through suspension. The threshold becomes the place where opposite forces balance.
 
-*[Source: Frieze]*
 https://frieze.com
 
 ---
@@ -241,7 +237,6 @@ https://frieze.com
 
 Threshold moments in culture: initiation, transition, coming-of-age. Anthropological perspective on the between-state. The liminal becomes sacred space.
 
-*[Source: The New Yorker]*
 https://www.newyorker.com
 
 ---
@@ -258,7 +253,6 @@ https://www.newyorker.com
 
 Photography about light crossing surfaces, illumination entering. Where brightness meets darkness, transition becomes visible. The negative space carries weight.
 
-*[Source: LensCulture]*
 
 ---
 
@@ -274,7 +268,6 @@ Photography about light crossing surfaces, illumination entering. Where brightne
 
 The back-turned figure in art history, Caspar David Friedrich's gesture. Contemplation at the edge, standing alone at the threshold between known and unknown.
 
-*[Source: The Art Newspaper]*
 https://www.theartnewspaper.com
 
 ---
@@ -290,7 +283,6 @@ https://www.theartnewspaper.com
 
 The moment before commitment, living in the question. The threshold as design space where multiple futures hold equal weight before one choice collapses them.
 
-*[Source: Aeon]*
 https://aeon.co
 
 ---
@@ -307,7 +299,6 @@ https://aeon.co
 
 Variables as decision points, theming systems as toggle between states. The design tool makes the threshold visible: the between-state where one value becomes another.
 
-*[Source: Figma Blog]*
 
 ---
 
@@ -323,7 +314,6 @@ Variables as decision points, theming systems as toggle between states. The desi
 
 The minimum viable product: good enough to ship but not finished. Living in the between-state, product at the edge before maturation.
 
-*[Source: Nielsen Norman]*
 
 ---
 
@@ -339,7 +329,6 @@ The minimum viable product: good enough to ship but not finished. Living in the 
 
 Design focused on the between-state, animations at thresholds. What happens during change, the moment of transformation made visible and felt.
 
-*[Source: AIGA Eye]*
 
 ---
 

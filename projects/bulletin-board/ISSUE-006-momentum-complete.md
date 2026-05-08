@@ -199,7 +199,6 @@ Momentum • May 9, 2026
 
 Artists working at scale and speed, studio systems enabling rapid production. Quantity strategies replace perfectionism. Volume becomes its own form of ambition.
 
-*[Source: MOMA]*
 
 ---
 
@@ -217,7 +216,6 @@ Artists working at scale and speed, studio systems enabling rapid production. Qu
 
 Painters working in short bursts, immediate mark-making. The canvas completed in one session before thought interrupts action. Gesture becomes evidence of velocity.
 
-*[Source: Frieze]*
 https://frieze.com
 
 ---
@@ -237,7 +235,6 @@ https://frieze.com
 
 Illustration as quick ideation, fast iteration. Multiple versions testing speed of thought. Fast sketching outpaces the hesitation of refinement.
 
-*[Source: It's Nice That]*
 
 ---
 
@@ -258,7 +255,6 @@ Illustration as quick ideation, fast iteration. Multiple versions testing speed 
 
 Sculptures suggesting motion in stillness. Spirals, angles, asymmetry frozen in material. The static object contains velocity through form alone.
 
-*[Source: Artforum]*
 
 ---
 
@@ -276,7 +272,6 @@ Sculptures suggesting motion in stillness. Spirals, angles, asymmetry frozen in 
 
 Cultural FOMO accelerating trend cycles. Crypto, NFTs, TikTok pacing compress meaning-making into real-time response. The rush becomes aesthetic in itself.
 
-*[Source: The New Yorker]*
 https://www.newyorker.com
 
 ---
@@ -293,7 +288,6 @@ https://www.newyorker.com
 
 Blurred movement, fast shutter, high ISO capturing velocity. The photograph as proof of speed. Motion blur becomes legible mark.
 
-*[Source: Magnum Photos]*
 https://www.magnumphotos.com
 
 ---
@@ -314,7 +308,6 @@ https://www.magnumphotos.com
 
 Speed as ideology, F.T. Marinetti's cult of velocity. The early 20th-century obsession with motion returns with contemporary hunger for acceleration.
 
-*[Source: The Art Newspaper]*
 https://www.theartnewspaper.com
 
 ---
@@ -331,7 +324,6 @@ https://www.theartnewspaper.com
 
 Faster tools create new constraints. Speed as liberation and prison simultaneously. Do faster tools produce better work, or only more work?
 
-*[Source: Wired]*
 
 ---
 
@@ -347,7 +339,6 @@ Faster tools create new constraints. Speed as liberation and prison simultaneous
 
 Latest tool versions accelerating iteration. Rendering speed, faster design cycles. Speed becomes competitive advantage for design systems themselves.
 
-*[Source: Figma Blog]*
 
 ---
 
@@ -363,7 +354,6 @@ Latest tool versions accelerating iteration. Rendering speed, faster design cycl
 
 Agile, sprints, rapid prototyping. How product teams move at velocity while maintaining coherence. Two-week cycles shape aesthetic language.
 
-*[Source: Designer Hangout]*
 
 ---
 
@@ -381,7 +371,6 @@ Agile, sprints, rapid prototyping. How product teams move at velocity while main
 
 Brands responding to culture in hours, not seasons. Visual identity evolving in real-time. The logo becomes fluid, modular, permission to shift.
 
-*[Source: Brand New]*
 https://www.underconsideration.com/brandnew
 
 ---

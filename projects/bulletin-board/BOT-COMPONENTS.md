@@ -211,9 +211,8 @@ Link to section 2
 **Each section contains:**
 ```
 **[SECTION] — [SUBTITLE]**
-[First line of prose appears as entry preview in ACT 1]
 [Full 2-4 sentence prose with editorial voice]
-*[Source: Attribution]*
+[Link to article/source]
 ```
 
 ---
@@ -276,7 +275,7 @@ Pure Unicode geometric characters only:
 ```json
 {
   "chat_id": 7774590281,
-  "text": "```\n[ASCII art]\n```\n\n**Section — Title**\n\n[Prose]\n\n*[Source: ...]*\n\nhttps://link.com"
+  "text": "```\n[ASCII art]\n```\n\n**Section — Title**\n\n[Prose]\n\nhttps://link.com"
 }
 ```
 

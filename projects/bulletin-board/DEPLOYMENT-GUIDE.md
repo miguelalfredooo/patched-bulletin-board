@@ -74,7 +74,6 @@ For all versions, include ACT 2 with:
 [Codeblock 2: Editorial Section 1]
 **Art — [Subtitle]**
 [2-4 sentences of prose]
-*[Source: Attribution]*
 
 [Plain text link]
 
@@ -89,7 +88,7 @@ For all versions, include ACT 2 with:
 ```
 **[SECTION NAME] — [SUBTITLE]**
 [2-4 sentences of narrative prose]
-*[Source: Publication Name]*
+[Link to article/source]
 ```
 
 **Reference:** `ascii-art-library/master/COMPONENT-3-EDITORIAL-GRID.txt`
@@ -193,7 +192,7 @@ ascii-art-library/
 ```json
 {
   "chat_id": 7774590281,
-  "text": "```\n[ASCII ART HERE]\n```\n\n**Section — Title**\n\n[Prose]\n\n*[Source: Attribution]*\n\nhttps://example.com"
+  "text": "```\n[ASCII ART HERE]\n```\n\n**Section — Title**\n\n[Prose]\n\nhttps://example.com"
 }
 ```
 
@@ -201,15 +200,16 @@ ascii-art-library/
 
 **Rules:**
 - ✅ ASCII art ALWAYS in codeblocks (```) — mandatory, no exceptions
-- ✅ Section title, prose, source, links — OUTSIDE codeblocks
+- ✅ Section title and prose — OUTSIDE codeblocks
+- ✅ Link only (no source attribution) — OUTSIDE codeblocks
 - ✅ DO NOT include parse_mode parameter
-- ✅ Telegram will render codeblocks and links correctly
+- ✅ Telegram will render codeblocks and links as preview cards
 
 **Usage in scripts:**
 ```python
 payload = {
     "chat_id": 7774590281,
-    "text": "```\n◇\n   ◇ ◇\n  ◇ ◇ ◇\n```\n\n**Art — The Visible Gesture**\n\nArtists making work that announces itself...\n\n*[Source: Artsy]*\n\nhttps://artsy.net"
+    "text": "```\n◇\n   ◇ ◇\n  ◇ ◇ ◇\n```\n\n**Art — The Visible Gesture**\n\nArtists making work that announces itself...\n\nhttps://artsy.net"
 }
 # Send WITHOUT parse_mode parameter
 requests.post(f"{BASE_URL}/sendMessage", json=payload)
@@ -265,7 +265,6 @@ Signal • May 8, 2026
 [Codeblock 3]
 **Art — Bold Geometric Work**
 Minimalism cuts through...
-*[Source: MOMA]*
 [/Codeblock 3]
 
 https://www.moma.org/
@@ -273,7 +272,6 @@ https://www.moma.org/
 [Codeblock 4]
 **Painting — Color as Communication**
 Restricted palettes...
-*[Source: WikiArt]*
 [/Codeblock 4]
 
 https://www.wikiart.org/
