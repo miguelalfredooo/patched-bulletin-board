@@ -1,0 +1,182 @@
+
+═══════════════════════════════════
+  Design By Bulletin™ — Issue 010
+  APERTURE — Opening, Revealing, Closing
+═══════════════════════════════════
+
+🎨 THEME: Aperture
+📊 EDITORIAL MIX: Music 75% | Visual 90% | Research 55% | Process 85% | Theme 88% | AI Culture 60%
+
+───────────────────────────────────
+
+SECTION 1 — Sealed (Format E: Full Spread, Heavy Opening)
+
+```
+╔══════════════════════════════════
+║  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+║  ▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+║  ▓░  ╔═══════════════════════════
+║  ▓░  ║  Closed. Impenetrable.    
+║  ▓░  ║  No light. No passage.    
+║  ▓░  ║  Everything contained.    
+║  ▓░  ║  Waiting to open.         
+║  ▓░  ╚═══════════════════════════
+║  ▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+║  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+╚══════════════════════════════════
+```
+
+
+SECTION 2 — First Crack (Format A: Sparse Object, Light)
+
+```
+  ◇
+  │
+  │
+```
+
+
+SECTION 3 — Threshold (Format D: Two Column, Medium)
+
+```
+╔──────────────┬──────────────╗
+║  Sealed      │ Opening      ║
+║              │              ║
+║  ▓▓▓▓▓▓▓▓    │ ░░░░░░░░    ║
+║              │              ║
+╚──────────────┴──────────────╝
+```
+
+
+SECTION 4 — Iris Opens (Format B: Geometric Frame, Heavy)
+
+```
+        ╭─────────────╮
+       ╱               ╲
+      ╱   ░░░░░░░░░░   ╲
+     ╱    ░░░░░░░░░░░░   ╲
+    ╱     ░░  opening  ░░   ╲
+     ╲    ░░░░░░░░░░░░   ╱
+      ╲   ░░░░░░░░░░   ╱
+       ╲               ╱
+        ╰─────────────╯
+```
+
+
+SECTION 5 — Breath (Format A: Minimal, Light Reset)
+
+```
+  ◆
+```
+
+
+SECTION 6 — Light Pours In (Format C: Typographic, Medium)
+
+```
+───────────────────────────────────
+
+    THE INTERIOR BECOMES VISIBLE
+
+───────────────────────────────────
+```
+
+
+SECTION 7 — Expanding View (Format E: Dense Radiating, Heavy Mid-Climax)
+
+```
+        ╱╲
+       ╱  ╲
+      ╱▓▓▓▓▓╲
+     ╱▓░░░░░▓╲
+    ╱▓░░░░░░░▓╲
+   ╱▓░ revealed░▓╲
+  ╱▓░░░░░░░░░░░▓╲
+ ╱▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓╲
+```
+
+
+SECTION 8 — Pause at Peak (Format A: Sparse Center, Light)
+
+```
+      ◆
+     ◆ ◆
+    ◆   ◆
+```
+
+
+SECTION 9 — Full Aperture (Format E: Full Expansion, Very Heavy Climax)
+
+```
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░                                  
+░  ╔═══════════════════════════════
+░  ║  Everything visible now       
+░  ║  Nothing hidden. No secrets.  
+░  ║  The aperture at maximum.     
+░  ║  Light pours through.         
+░  ║  All interior revealed.       
+░  ║                               
+░  ║  But it cannot stay open.     
+░  ║  Apertures always close again.
+░  ╚═══════════════════════════════
+░                                  
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+```
+
+
+SECTION 10 — Closing (Format D: Two Column, Medium Resolution)
+
+```
+╔──────────────┬──────────────╗
+║  Fading      │ Sealing      ║
+║              │              ║
+║  ░░░░░░░░    │ ▓▓▓▓▓▓▓▓    ║
+║  light dims  │ returns      ║
+╚──────────────┴──────────────╝
+```
+
+
+SECTION 11 — Sealed Again (Format A: Minimal Close, Light)
+
+```
+  ▓
+ ▓▓▓
+▓▓▓▓▓
+```
+
+───────────────────────────────────
+
+NOTES ON APERTURE
+
+An aperture controls what passes through. It opens to reveal,
+closes to contain. The cycle is eternal: sealed → opening →
+open → closing → sealed → repeat.
+
+In design, apertures are moments of access. A well-composed
+aperture lets the viewer see what matters, for as long as it
+matters, then closes gently.
+
+The issue follows the gallery/catalog pattern of variable scale
+and weight counterbalancing:
+
+• Section 1: Heavy opening (dense frame) — complete seal
+• Section 2: Light crack (sparse) — first opening
+• Section 3: Medium threshold (two-column) — between states
+• Section 4: Heavy iris (geometric) — aperture mechanism visible
+• Section 5: Minimal breath (one point) — pause
+• Section 6: Typography (medium) — light entering
+• Section 7: Heavy radiating (expanding) — opening widening
+• Section 8: Sparse peak (three points) — moment of maximum
+• Section 9: Very heavy climax (full spread) — completely open
+• Section 10: Medium closing (two-column) — returning
+• Section 11: Minimal seal (sparse) — closure complete
+
+Scale varies: 10 lines → 3 lines → 6 lines → 8 lines → 1 line →
+3 lines → 8 lines → 3 lines → 12 lines → 7 lines → 3 lines.
+
+No consecutive sections repeat. The composition breathes.
+The eye knows where to pause. The theme guides the form.
+
+═══════════════════════════════════
+  End Issue 010 — Aperture
+═══════════════════════════════════
