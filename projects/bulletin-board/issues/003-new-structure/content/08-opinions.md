@@ -1,0 +1,3 @@
+**Opinions**
+
+Friction as feature. Choosing slow methods means choosing presence over efficiency. The rejected optimization becomes the argument.

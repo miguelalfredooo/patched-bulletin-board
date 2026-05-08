@@ -84,59 +84,71 @@
       {
         "order": 1,
         "name": "Art",
-        "file": "act-2/01-art.md"
+        "file": "act-2/01-art.md",
+        "type": "visual"
       },
       {
         "order": 2,
         "name": "Painting",
-        "file": "act-2/02-painting.md"
+        "file": "act-2/02-painting.md",
+        "type": "visual"
       },
       {
         "order": 3,
         "name": "Illustration",
-        "file": "act-2/03-illustration.md"
+        "file": "act-2/03-illustration.md",
+        "type": "visual"
       },
       {
         "order": 4,
         "name": "Sculpture",
-        "file": "act-2/04-sculpture.md"
+        "file": "act-2/04-sculpture.md",
+        "type": "visual"
       },
       {
         "order": 5,
         "name": "Culture",
-        "file": "act-2/05-culture.md"
+        "file": "act-2/05-culture.md",
+        "type": "prose"
       },
       {
         "order": 6,
         "name": "Photography",
-        "file": "act-2/06-photography.md"
+        "file": "act-2/06-photography.md",
+        "type": "visual"
       },
       {
         "order": 7,
         "name": "Art History",
-        "file": "act-2/07-art-history.md"
+        "file": "act-2/07-art-history.md",
+        "type": "prose"
       },
       {
         "order": 8,
         "name": "Opinions",
-        "file": "act-2/08-opinions.md"
+        "file": "act-2/08-opinions.md",
+        "type": "prose"
       },
       {
         "order": 9,
         "name": "Design & AI Tools",
-        "file": "act-2/09-design-ai-tools.md"
+        "file": "act-2/09-design-ai-tools.md",
+        "type": "visual"
       },
       {
         "order": 10,
         "name": "Product & Process",
-        "file": "act-2/10-product-process.md"
+        "file": "act-2/10-product-process.md",
+        "type": "prose"
       },
       {
         "order": 11,
         "name": "Visual & Brand",
-        "file": "act-2/11-visual-brand.md"
+        "file": "act-2/11-visual-brand.md",
+        "type": "visual"
       }
     ],
     "closing": "act-2/closing.md"
-  }
+  },
+  "cover": "art/00-cover.txt"
 }
