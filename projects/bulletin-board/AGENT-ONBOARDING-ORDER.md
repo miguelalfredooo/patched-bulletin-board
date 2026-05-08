@@ -4,129 +4,143 @@
 
 ---
 
-## PHASE 1: UNDERSTAND THE SYSTEM (15 min)
+## PHASE 1: FOUNDATIONAL KNOWLEDGE (12 min)
 
-Read these in order to understand what you're building:
+Read these ONCE at the beginning to build mental models:
 
 ### 1. **VISUAL-DIFFERENTIATION-STANDARDS.md** (8 min)
-**Why first:** You need to understand the design system before anything else. This explains:
+**When:** First, before anything else  
+**Why:** Understand design constraints before executing.
 - How each issue is visually unique (HERO-TALL characters)
 - How sections are visually consistent across all issues
-- The visual language and why it matters
 - What can vary vs. what must stay fixed
 
-**Mental model after reading:** "I understand that each issue has a unique character, all sections have canonical boxes, and this creates a coherent but varied system."
+**Mental model:** "Each issue has a unique character. All sections have canonical ASCII boxes. Design varies per issue but structure is fixed."
 
 ---
 
-### 2. **BOT-COMPONENTS.md** (7 min)
-**Why second:** Now that you understand the design philosophy, learn the actual component system.
-- Component naming (COMPONENT-1 through COMPONENT-5)
-- How components nest and relate to each other
-- Where assets are stored
-
-**Mental model after reading:** "I know the 5 components exist, what they contain, and where to find them."
-
----
-
-## PHASE 2: UNDERSTAND THE PROCESS (10 min)
-
-### 3. **WORKFLOW-ORDER-OF-OPERATIONS.md** (10 min)
-**Why third:** Before learning to create, understand the full workflow from start to finish.
-- 8 phases from project setup to documentation
-- What to check at each phase
-- How information flows through the system
+### 2. **WORKFLOW-ORDER-OF-OPERATIONS.md** (4 min)
+**When:** Right after visual standards  
+**Why:** Understand the 8-phase workflow so later steps make sense.
+- The full pipeline from project open to Telegram delivery
+- What happens before/during/after each phase
 - Dependency order (curator → editorial → design → delivery)
 
-**Mental model after reading:** "I understand the complete process end-to-end. I know what happens before my work, what I'm responsible for, and what happens after."
+**Mental model:** "I know the complete process. I understand workflow dependencies."
 
 ---
 
-## PHASE 3: LEARN TO BUILD (15 min)
+## PHASE 2: DURING ISSUE CREATION (Just-in-Time)
 
-### 4. **ISSUE-CREATION-TEMPLATE.md** (10 min)
-**Why fourth:** Now learn the exact format and structure.
-- File naming convention
-- Exact section order (fixed)
-- Format rules (line widths, spacing, dividers)
-- All 11 sections and their order
+### 3. **ISSUE-CREATION-TEMPLATE.md** (10 min)
+**When:** As you're creating the issue file  
+**Why:** Exact reference for format, file naming, structure.
+- File naming convention (`ISSUE-NNN-theme-slug-complete.md`)
+- Header format (exact spacing and date format)
 - HERO-TALL pyramid formula
-- Character assignments for 001–011
+- Character assignments (001–011)
+- The 11 sections in fixed order
 - Validation checklist
 
-**Mental model after reading:** "I can create a new issue file that complies with the standard. I know what goes where, the exact format, and how to validate before committing."
+**Mental model:** "I can build a compliant issue file. I know exact format rules."
 
 ---
 
+### 4. **ASCII-ART-LIBRARY or COMPONENTS-MASTER-GUIDE.txt** (5 min)
+**When:** After editor submits prose, before finalizing ASCII art  
+**Why:** This is when you're working with ASCII—content must be locked first.
+- Reference the 11 canonical section ASCII boxes
+- Verify each section art matches the standard
+- Confirm line widths ≤35 chars
+- Verify ASCII art appears in both ACT 1 preview and ACT 2 full edition
+
+**Mental model:** "I know which ASCII goes in each section. I can validate correctness."
+
+---
+
+## PHASE 3: BEFORE DELIVERY (Just-in-Time)
+
 ### 5. **QA-DELIVERY-CHECKLIST.md** (5 min)
-**Why fifth:** Learn verification and delivery standards.
-- MarkdownV2 escaping function (copy-paste ready)
+**When:** Right before sending to Telegram  
+**Why:** Verification and delivery instructions.
+- MarkdownV2 escaping function (copy-paste)
 - Telegram API payload format
 - Post-send verification checklist
 - Known issues and solutions
-- Python delivery template
 
-**Mental model after reading:** "I understand how to format content for Telegram, what to verify before sending, and how to handle special characters correctly."
+**Mental model:** "I know how to format for Telegram and verify before sending."
 
 ---
 
-## PHASE 4: EXECUTE WITH CONFIDENCE (Ongoing)
+## PHASE 4: REFERENCE AS NEEDED
 
-### 6. **Project folder structure** (As needed)
+### 6. **BOT-COMPONENTS.md**
+**When:** If you need to understand asset structure  
+**Reference:** Component naming (1–5), nesting, file locations
+
+### 7. **Project folder structure**
 - `projects/bulletin-board/ISSUE-NNN-*-complete.md` — Main issue files
 - `projects/bulletin-board/sessions/` — Session records
-- `projects/bulletin-board/curator-reports/` — Curator agent output
-- `projects/bulletin-board/ascii-art-library/` — ASCII art assets
+- `projects/bulletin-board/curator-reports/` — Curator output
+- `projects/bulletin-board/ascii-art-library/master/` — Master ASCII assets
 
 ---
 
-## QUICK REFERENCE: What to Read When
+## QUICK REFERENCE: Just-in-Time Reading
 
-| Task | Documents | Time |
-|------|-----------|------|
-| **Understanding the project** | VISUAL-DIFFERENTIATION-STANDARDS.md + BOT-COMPONENTS.md | 15 min |
-| **Creating a new issue** | ISSUE-CREATION-TEMPLATE.md + VISUAL-DIFFERENTIATION-STANDARDS.md | 15 min |
-| **Sending to Telegram** | QA-DELIVERY-CHECKLIST.md + WORKFLOW-ORDER-OF-OPERATIONS.md (Phase 6) | 10 min |
-| **Full workflow (new agent)** | All documents in order above | 40 min |
-| **Modifying existing issue** | ISSUE-CREATION-TEMPLATE.md (for format ref) + QA-DELIVERY-CHECKLIST.md | 10 min |
-
----
-
-## Why This Order?
-
-1. **Visual standards first** → Understand the design constraints before worrying about execution
-2. **Components second** → Know the asset structure
-3. **Workflow third** → Understand the full process so specific steps make sense
-4. **Template fourth** → Learn the format rules
-5. **QA fifth** → Learn verification and delivery
-
-This order prevents agents from getting lost in implementation details before understanding the bigger picture.
+| Stage | When | Read | Time |
+|-------|------|------|------|
+| **Onboarding** | First time on this project | VISUAL-DIFFERENTIATION-STANDARDS.md + WORKFLOW-ORDER-OF-OPERATIONS.md | 12 min |
+| **Creating issue** | As you're building the file | ISSUE-CREATION-TEMPLATE.md | 10 min |
+| **Adding ASCII art** | After editor submits prose, before finalizing | ASCII-ART-LIBRARY or COMPONENTS-MASTER-GUIDE.txt | 5 min |
+| **Delivery prep** | Right before sending to Telegram | QA-DELIVERY-CHECKLIST.md | 5 min |
+| **Stuck?** | At any point if unsure | VISUAL-DIFFERENTIATION-STANDARDS.md (constraints) or WORKFLOW-ORDER-OF-OPERATIONS.md (process) | 5 min |
 
 ---
 
-## Checkpoint: Am I Ready?
+## Why This Structure?
 
-After reading all 5 documents, ask yourself:
+This is **workflow-based reading**, not sequential onboarding:
 
-- [ ] Can I name the 11 sections in order?
-- [ ] Can I explain why Issue 006 uses ▶ instead of another character?
-- [ ] Do I know what a HERO-TALL pyramid is and how to generate one?
-- [ ] Can I name the 5 components?
+1. **Foundation first (once):** VISUAL-DIFFERENTIATION-STANDARDS + WORKFLOW-ORDER-OF-OPERATIONS establish constraints and process
+2. **Just-in-time during work:** Read documents as you need them in the actual workflow
+   - Template when creating
+   - ASCII-art-library when working with visual assets
+   - QA-checklist when delivering
+3. **Prevents context-switching:** You don't read about delivery before you have anything to deliver
+
+The critical insight: **ASCII rules are not foundational—they're a checkpoint in the workflow. Read them when the prose is locked and you're finalizing visuals.**
+
+---
+
+## Foundational Checkpoint (After initial reading)
+
+After reading VISUAL-DIFFERENTIATION-STANDARDS.md + WORKFLOW-ORDER-OF-OPERATIONS.md, ask yourself:
+
+- [ ] Can I name the 11 sections in order? (Art, Painting, Illustration, Sculpture, Culture, Photography, Art History, Opinions, Design & AI Tools, Product & Process, Visual & Brand)
+- [ ] Can I explain why each issue has a different HERO-TALL character?
+- [ ] Do I understand what a HERO-TALL pyramid is and the constraint (15 rows, max 35 chars per line)?
 - [ ] Do I understand the 8-phase workflow?
-- [ ] Can I create a new issue file from scratch?
-- [ ] Do I know what MarkdownV2 escaping is and why it matters?
-- [ ] Can I verify content before sending to Telegram?
+- [ ] Can I identify what stays fixed (section boxes) vs. what varies (character, prose tone)?
 
-**If yes to all:** You're ready to work on bulletin board tasks.  
-**If no to any:** Go back and re-read that section.
+**If yes to all:** You're ready to work on issue creation.
+
+---
+
+## Workflow Checkpoints (As you work)
+
+**Before creating:** Have you read ISSUE-CREATION-TEMPLATE.md?  
+**Before finalizing ASCII:** Have you read ASCII-ART-LIBRARY or COMPONENTS-MASTER-GUIDE.txt?  
+**Before sending:** Have you read QA-DELIVERY-CHECKLIST.md?
 
 ---
 
 ## For Agents Coming Back to This Project
 
-If you've already read this documentation before:
-- **Refresher (2 min):** Re-read WORKFLOW-ORDER-OF-OPERATIONS.md Phase numbers to ground yourself
-- **Creating new issue (5 min):** Check ISSUE-CREATION-TEMPLATE.md for the validation checklist
-- **Sending to Telegram (3 min):** Copy the escape function from QA-DELIVERY-CHECKLIST.md
-- **Stuck?** Re-read VISUAL-DIFFERENTIATION-STANDARDS.md to remember the constraints
+If you've already done foundational reading:
+- **Grounding (2 min):** Skim WORKFLOW-ORDER-OF-OPERATIONS.md to remember the phase you're in
+- **Creating issue (as needed):** Open ISSUE-CREATION-TEMPLATE.md to the validation checklist
+- **Working with ASCII (as needed):** Reference ASCII-ART-LIBRARY for the canonical section boxes
+- **Before delivery (as needed):** Copy escape function from QA-DELIVERY-CHECKLIST.md
+- **Confused about rules?** Check VISUAL-DIFFERENTIATION-STANDARDS.md for constraints
 
