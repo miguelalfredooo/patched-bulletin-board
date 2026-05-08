@@ -160,7 +160,11 @@ The Mark • May 6, 2026
 ## ACT 2 — FULL EDITION
 
 ```
-[ASCII art: Art]
+◇
+   ◇ ◇
+  ◇ ◇ ◇
+ ◇ ◇ ◇ ◇
+◇ ◇ ◇ ◇ ◇
 ```
 
 **Art — White-Gloved Evidence**
@@ -172,7 +176,12 @@ At Frieze New York, handlers transfer work so delicately the precaution becomes 
 ---
 
 ```
-[ASCII art: Painting]
+┌─────────┐
+│ ░░░░░░░ │
+│ ░░▓▓░░░ │
+│ ░░▓▓░░░ │
+│ ░░░░░░░ │
+└─────────┘
 ```
 
 **Painting — The Brush Mark**
@@ -184,7 +193,12 @@ Lucas Arruda's seascapes have no horizon to fix on. The blurred mark of the brus
 ---
 
 ```
-[ASCII art: Illustration]
+╱╲
+ ╱  ╲
+╱    ╲
+╲    ╱
+ ╲  ╱
+  ╲╱
 ```
 
 **Illustration — Imprecision as Intent**
@@ -196,7 +210,11 @@ Marzena Szumlas hand-draws lettering so slowly the ink bleeds at each stop. The 
 ---
 
 ```
-[ASCII art: Sculpture]
+▲
+   ╱ ╲
+  ╱   ╲
+ ╱     ╲
+═════════
 ```
 
 **Sculpture — The Assembled Fragment**
@@ -208,7 +226,11 @@ Isa Genzken's Venice assemblages hold broken umbrellas and foil sheeting inside 
 ---
 
 ```
-[ASCII art: Culture]
+░▒▓█ █▓▒░
+▓█  ●  █▓
+█  ░█░  █
+▓█  ●  █▓
+░▒▓█ █▓▒░
 ```
 
 **Culture — Deliberate Typo as Proof**
@@ -220,7 +242,11 @@ Designers leaving intentional typos, handwritten credits, prison-tattoo covers. 
 ---
 
 ```
-[ASCII art: Photography]
+┏━━━━━━━━┓
+┃ ◯ ◯ ◯ ┃
+┃ ◯ ★ ◯ ┃
+┃ ◯ ◯ ◯ ┃
+┗━━━━━━━━┛
 ```
 
 **Photography — Chemistry as Time**
@@ -232,7 +258,11 @@ Tarrah Krajnak's expired film self-portraits use the chemistry's failures — fo
 ---
 
 ```
-[ASCII art: Art History]
+◆───────◆
+│ ░░░░░ │
+│ ░░░░░ │
+│ ░░░░░ │
+◆───────◆
 ```
 
 **Art History — Klein's Pressed Bodies**
@@ -244,7 +274,10 @@ In 1960, Yves Klein pressed gold-painted models into canvas while silence played
 ---
 
 ```
-[ASCII art: Opinions]
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
 ```
 
 **Opinions — Tasteslop and Authenticity**
@@ -256,7 +289,11 @@ When AI-generated content becomes indistinguishable from curation, the deliberat
 ---
 
 ```
-[ASCII art: Design & AI Tools]
+⊡─────⊡
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+⊡─────⊡
 ```
 
 **Design & AI Tools — Citation as Evidence**
@@ -268,7 +305,11 @@ Anthropic's citation feature traces which part of a source each sentence came fr
 ---
 
 ```
-[ASCII art: Product & Process]
+①→②→③→④
+│ │ │ │
+⑤→⑥→⑦→⑧
+│ │ │ │
+⑨→⑩
 ```
 
 **Product & Process — Authorship in Decision**
@@ -280,7 +321,11 @@ The most durable design decisions are ones with a visible author who can say "I 
 ---
 
 ```
-[ASCII art: Visual & Brand]
+╔═══════╗
+║ ▀▄▀▄▀ ║
+║ ▄▀▄▀▄ ║
+║ ▀▄▀▄▀ ║
+╚═══════╝
 ```
 
 **Visual & Brand — The Glove as Logo**

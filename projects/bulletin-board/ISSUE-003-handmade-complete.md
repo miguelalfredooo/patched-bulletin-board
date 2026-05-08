@@ -160,7 +160,11 @@ Handmade • May 6, 2026
 ## ACT 2 — FULL EDITION
 
 ```
-[ASCII art: Art]
+◇
+   ◇ ◇
+  ◇ ◇ ◇
+ ◇ ◇ ◇ ◇
+◇ ◇ ◇ ◇ ◇
 ```
 
 **Art — The Handmade Object as Refusal**
@@ -172,7 +176,12 @@ The split nib chosen, held, accepted. These works assert human imperfection not 
 ---
 
 ```
-[ASCII art: Painting]
+┌─────────┐
+│ ░░░░░░░ │
+│ ░░▓▓░░░ │
+│ ░░▓▓░░░ │
+│ ░░░░░░░ │
+└─────────┘
 ```
 
 **Painting — Paint as Trace of Gesture**
@@ -184,7 +193,12 @@ Brush strokes that no algorithm could replicate, not because they are clumsy but
 ---
 
 ```
-[ASCII art: Illustration]
+╱╲
+ ╱  ╲
+╱    ╲
+╲    ╱
+ ╲  ╱
+  ╲╱
 ```
 
 **Illustration — Drawing Without Correction Tools**
@@ -196,7 +210,11 @@ The line stays wrong because fixing it is the point. Pen and paper, no undo, no 
 ---
 
 ```
-[ASCII art: Sculpture]
+▲
+   ╱ ╲
+  ╱   ╲
+ ╱     ╲
+═════════
 ```
 
 **Sculpture — Clay and the Hand**
@@ -208,7 +226,11 @@ Coil-built vessels hold the thumb ridge as signature. The seam is proud, visible
 ---
 
 ```
-[ASCII art: Culture]
+░▒▓█ █▓▒░
+▓█  ●  █▓
+█  ░█░  █
+▓█  ●  █▓
+░▒▓█ █▓▒░
 ```
 
 **Culture — Lo-Fi as Movement, Not Aesthetic**
@@ -220,7 +242,11 @@ Zines hand-bound, typography irregular, the small-run publication rejecting poli
 ---
 
 ```
-[ASCII art: Photography]
+┏━━━━━━━━┓
+┃ ◯ ◯ ◯ ┃
+┃ ◯ ★ ◯ ┃
+┃ ◯ ◯ ◯ ┃
+┗━━━━━━━━┛
 ```
 
 **Photography — The Grain as Refusal**
@@ -232,7 +258,11 @@ Film grain chosen, desired, shot for — the imperfection is the selection, not 
 ---
 
 ```
-[ASCII art: Art History]
+◆───────◆
+│ ░░░░░ │
+│ ░░░░░ │
+│ ░░░░░ │
+◆───────◆
 ```
 
 **Art History — Craft Tradition as Counter-Narrative**
@@ -244,7 +274,10 @@ Medieval illumination, folk pottery lineages, Shaker precision through hand work
 ---
 
 ```
-[ASCII art: Opinions]
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
 ```
 
 **Opinions — The Slowness Case**
@@ -256,7 +289,11 @@ Friction as feature. Choosing slow methods means choosing presence over efficien
 ---
 
 ```
-[ASCII art: Design & AI Tools]
+⊡─────⊡
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+⊡─────⊡
 ```
 
 **Design & AI Tools — Hand-Coded as Aesthetic Choice**
@@ -268,7 +305,11 @@ Design systems built by hand, type foundries returning to manual lettering, tool
 ---
 
 ```
-[ASCII art: Product & Process]
+①→②→③→④
+│ │ │ │
+⑤→⑥→⑦→⑧
+│ │ │ │
+⑨→⑩
 ```
 
 **Product & Process — Making Visible**
@@ -280,7 +321,11 @@ Studio visits documented, maker interviews archived, the process becomes the fin
 ---
 
 ```
-[ASCII art: Visual & Brand]
+╔═══════╗
+║ ▀▄▀▄▀ ║
+║ ▄▀▄▀▄ ║
+║ ▀▄▀▄▀ ║
+╚═══════╝
 ```
 
 **Visual & Brand — Typography of Imperfection**

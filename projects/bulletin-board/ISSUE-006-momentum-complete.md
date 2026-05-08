@@ -184,7 +184,15 @@ Momentum • May 9, 2026
 ## ACT 2 — FULL EDITION
 
 ```
-[ASCII art: Art]
+►
+               ►►
+              ►►►
+             ►►►►
+            ►►►►►
+           ►►►►►►
+          ►►►►►►►
+         ►►►►►►►►
+        ►►►►►►►►►
 ```
 
 **Art — Fast-Moving Practice**
@@ -196,7 +204,13 @@ Artists working at scale and speed, studio systems enabling rapid production. Qu
 ---
 
 ```
-[ASCII art: Painting]
+╔════════════════╗
+            ║ ═══════════════║
+            ║ ║ ▒▒▒▒▒ ║    ║
+            ║ ║ ▒▒▒▒▒ ║    ║
+            ║ ║ ▒▒▒▒▒ ║    ║
+            ║ ═══════════════║
+            ╚════════════════╝
 ```
 
 **Painting — Gestural Speed**
@@ -208,7 +222,14 @@ Painters working in short bursts, immediate mark-making. The canvas completed in
 ---
 
 ```
-[ASCII art: Illustration]
+╱─────╲
+                ╱       ╲
+               ╱    ▲    ╲
+              ╱     ║     ╲
+             ╱    ──╫──    ╲
+                    ║
+                    ║
+                    ║
 ```
 
 **Illustration — Rapid Prototyping**
@@ -220,7 +241,16 @@ Illustration as quick ideation, fast iteration. Multiple versions testing speed 
 ---
 
 ```
-[ASCII art: Sculpture]
+◆
+                 ╱▲╲
+                ╱██▲╲
+               ╱████▲╲
+              ╱███████╲
+              ║███████║
+              ║███████║
+              ║███████║
+              ║███████║
+              ╚═══════╝
 ```
 
 **Sculpture — Dynamic Forms**
@@ -232,7 +262,13 @@ Sculptures suggesting motion in stillness. Spirals, angles, asymmetry frozen in 
 ---
 
 ```
-[ASCII art: Culture]
+░▒▓█████▓▒░
+            ▓█       █▓
+            █  ▲ ▲ ▲  █
+              ║ ║ ║
+            █  ║ ║ ║  █
+            ▓█       █▓
+            ░▒▓█████▓▒░
 ```
 
 **Culture — Speed Culture**
@@ -244,7 +280,11 @@ Cultural FOMO accelerating trend cycles. Crypto, NFTs, TikTok pacing compress me
 ---
 
 ```
-[ASCII art: Photography]
+┏━━━━━━━━━┓
+            ┃ ► ► ► ┃
+            ┃ ▲ ★ ▲ ┃
+            ┃ ► ► ► ┃
+            ┗━━━━━━━━━┛
 ```
 
 **Photography — Motion in the Frame**
@@ -256,7 +296,15 @@ Blurred movement, fast shutter, high ISO capturing velocity. The photograph as p
 ---
 
 ```
-[ASCII art: Art History]
+◆───────◆
+            │ ═════ │
+            │ ║ ▓ ║ │
+            │ ║ ▓ ║ │
+            │ ║ ▓ ║ │
+            │ ════════│
+            │ ═════ │
+            │ ◄ ◄ ◄ │
+            ◆───────◆
 ```
 
 **Art History — Futurism**
@@ -268,7 +316,11 @@ Speed as ideology, F.T. Marinetti's cult of velocity. The early 20th-century obs
 ---
 
 ```
-[ASCII art: Opinions]
+├─────────┤
+               │ ▲▲▲▲▲ │
+               │ ► ▲ ► │
+               │ ▲▲▲▲▲ │
+               └─────────┘
 ```
 
 **Opinions — Tool Velocity**
@@ -280,7 +332,11 @@ Faster tools create new constraints. Speed as liberation and prison simultaneous
 ---
 
 ```
-[ASCII art: Design & AI Tools]
+═══════════════════
+        ║ ► ► ► ► ► ► ║
+        ║ ▲ ░ ▒ ▓ █ ║
+        ║ ► ► ► ► ► ► ║
+        ═══════════════════
 ```
 
 **Design & AI Tools — AI Model Releases**
@@ -292,7 +348,11 @@ Latest tool versions accelerating iteration. Rendering speed, faster design cycl
 ---
 
 ```
-[ASCII art: Product & Process]
+╔═══════════╗
+            ║ 1 2 3 4 5 ║
+            ║ ▓▓▓▓▓▓▓▓► ║
+            ║ 1 2 3 4 5 ║
+            ╚═══════════╝
 ```
 
 **Product & Process — Sprint Methodologies**
@@ -304,7 +364,13 @@ Agile, sprints, rapid prototyping. How product teams move at velocity while main
 ---
 
 ```
-[ASCII art: Visual & Brand]
+◆
+                   ◆▲◆
+                  ◆████◆
+                 ◆██████◆
+                  ◆████◆
+                   ◆▲◆
+                    ◆
 ```
 
 **Visual & Brand — Brand Velocity**

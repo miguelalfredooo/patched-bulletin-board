@@ -162,7 +162,11 @@ Threshold • May 10, 2026
 ## ACT 2 — FULL EDITION
 
 ```
-[ASCII art: Art]
+◇
+   ◇ ◇
+  ◇ ◇ ◇
+ ◇ ◇ ◇ ◇
+◇ ◇ ◇ ◇ ◇
 ```
 
 **Art — Figures at the Edge**
@@ -174,7 +178,12 @@ Paintings and sculptures depicting the moment before crossing. The back-turned f
 ---
 
 ```
-[ASCII art: Painting]
+┌─────────┐
+│ ░░░░░░░ │
+│ ░░▓▓░░░ │
+│ ░░▓▓░░░ │
+│ ░░░░░░░ │
+└─────────┘
 ```
 
 **Painting — Light Crossing**
@@ -186,7 +195,12 @@ Paintings about the moment light transforms. Dawn and dusk captured mid-transiti
 ---
 
 ```
-[ASCII art: Illustration]
+╱╲
+ ╱  ╲
+╱    ╲
+╲    ╱
+ ╲  ╱
+  ╲╱
 ```
 
 **Illustration — Portal Moments**
@@ -198,7 +212,11 @@ Illustration of doorways, windows, gates as visual anchor. Thresholds becoming t
 ---
 
 ```
-[ASCII art: Sculpture]
+▲
+   ╱ ╲
+  ╱   ╲
+ ╱     ╲
+═════════
 ```
 
 **Sculpture — Nengudi's Loaded Mesh**
@@ -210,7 +228,11 @@ Nylon holding without tearing, material at breaking point. Tension made visible 
 ---
 
 ```
-[ASCII art: Culture]
+░▒▓█ █▓▒░
+▓█  ●  █▓
+█  ░█░  █
+▓█  ●  █▓
+░▒▓█ █▓▒░
 ```
 
 **Culture — Liminality in Ritual**
@@ -222,7 +244,11 @@ Threshold moments in culture: initiation, transition, coming-of-age. Anthropolog
 ---
 
 ```
-[ASCII art: Photography]
+┏━━━━━━━━┓
+┃ ◯ ◯ ◯ ┃
+┃ ◯ ★ ◯ ┃
+┃ ◯ ◯ ◯ ┃
+┗━━━━━━━━┛
 ```
 
 **Photography — Kawauchi's Light**
@@ -234,7 +260,11 @@ Photography about light crossing surfaces, illumination entering. Where brightne
 ---
 
 ```
-[ASCII art: Art History]
+◆───────◆
+│ ░░░░░ │
+│ ░░░░░ │
+│ ░░░░░ │
+◆───────◆
 ```
 
 **Art History — Rückenfigur Tradition**
@@ -246,7 +276,10 @@ The back-turned figure in art history, Caspar David Friedrich's gesture. Contemp
 ---
 
 ```
-[ASCII art: Opinions]
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
 ```
 
 **Opinions — Decision-Making at Threshold**
@@ -258,7 +291,11 @@ The moment before commitment, living in the question. The threshold as design sp
 ---
 
 ```
-[ASCII art: Design & AI Tools]
+⊡─────⊡
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+⊡─────⊡
 ```
 
 **Design & AI Tools — Figma Variables**
@@ -270,7 +307,11 @@ Variables as decision points, theming systems as toggle between states. The desi
 ---
 
 ```
-[ASCII art: Product & Process]
+①→②→③→④
+│ │ │ │
+⑤→⑥→⑦→⑧
+│ │ │ │
+⑨→⑩
 ```
 
 **Product & Process — MVP as Threshold**
@@ -282,7 +323,11 @@ The minimum viable product: good enough to ship but not finished. Living in the 
 ---
 
 ```
-[ASCII art: Visual & Brand]
+╔═══════╗
+║ ▀▄▀▄▀ ║
+║ ▄▀▄▀▄ ║
+║ ▀▄▀▄▀ ║
+╚═══════╝
 ```
 
 **Visual & Brand — Transition Animations**

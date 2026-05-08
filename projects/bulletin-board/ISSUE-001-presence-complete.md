@@ -164,7 +164,11 @@ Presence • May 5, 2026
 ## ACT 2 — FULL EDITION
 
 ```
-[ASCII art: Art]
+◇
+   ◇ ◇
+  ◇ ◇ ◇
+ ◇ ◇ ◇ ◇
+◇ ◇ ◇ ◇ ◇
 ```
 
 **Art — The Visible Gesture**
@@ -176,7 +180,12 @@ Artists making work that announces itself without apology. Form that declares pr
 ---
 
 ```
-[ASCII art: Painting]
+┌─────────┐
+│ ░░░░░░░ │
+│ ░░▓▓░░░ │
+│ ░░▓▓░░░ │
+│ ░░░░░░░ │
+└─────────┘
 ```
 
 **Painting — Color as Statement**
@@ -188,7 +197,12 @@ Painters choosing pigment not for representation but for pure declaration. The c
 ---
 
 ```
-[ASCII art: Illustration]
+╱╲
+ ╱  ╲
+╱    ╲
+╲    ╱
+ ╲  ╱
+  ╲╱
 ```
 
 **Illustration — The Hand Visible**
@@ -200,7 +214,11 @@ Illustration that shows its making. Lines that cannot hide their origin. The mar
 ---
 
 ```
-[ASCII art: Sculpture]
+▲
+   ╱ ╲
+  ╱   ╲
+ ╱     ╲
+═════════
 ```
 
 **Sculpture — Material as Witness**
@@ -212,7 +230,11 @@ Sculpture that asserts its presence through weight, through scale, through refus
 ---
 
 ```
-[ASCII art: Culture]
+░▒▓█ █▓▒░
+▓█  ●  █▓
+█  ░█░  █
+▓█  ●  █▓
+░▒▓█ █▓▒░
 ```
 
 **Culture — Being Here Now**
@@ -224,7 +246,11 @@ Design and culture that make claims on attention. That ask to be noticed. Presen
 ---
 
 ```
-[ASCII art: Photography]
+┏━━━━━━━━┓
+┃ ◯ ◯ ◯ ┃
+┃ ◯ ★ ◯ ┃
+┃ ◯ ◯ ◯ ┃
+┗━━━━━━━━┛
 ```
 
 **Photography — The Camera's Claim**
@@ -236,7 +262,11 @@ Photography that announces the moment of capture. Light, grain, framing — evid
 ---
 
 ```
-[ASCII art: Art History]
+◆───────◆
+│ ░░░░░ │
+│ ░░░░░ │
+│ ░░░░░ │
+◆───────◆
 ```
 
 **Art History — The Monument**
@@ -248,7 +278,10 @@ From ancient marks to contemporary installation, the impulse to make presence pe
 ---
 
 ```
-[ASCII art: Opinions]
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
 ```
 
 **Opinions — Attention as Rebellion**
@@ -260,7 +293,11 @@ In an age of distraction, presence means focus. It means choosing to look at one
 ---
 
 ```
-[ASCII art: Design & AI Tools]
+⊡─────⊡
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+⊡─────⊡
 ```
 
 **Design & AI Tools — Human Fingerprint**
@@ -272,7 +309,11 @@ Tools that leave evidence of their user's hand. Design systems that show decisio
 ---
 
 ```
-[ASCII art: Product & Process]
+①→②→③→④
+│ │ │ │
+⑤→⑥→⑦→⑧
+│ │ │ │
+⑨→⑩
 ```
 
 **Product & Process — Making Visible**
@@ -284,7 +325,11 @@ The best products announce their makers. Clear authorship. Visible craft. Proces
 ---
 
 ```
-[ASCII art: Visual & Brand]
+╔═══════╗
+║ ▀▄▀▄▀ ║
+║ ▄▀▄▀▄ ║
+║ ▀▄▀▄▀ ║
+╚═══════╝
 ```
 
 **Visual & Brand — The Logo as Presence**

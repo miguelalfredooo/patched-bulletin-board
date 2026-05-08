@@ -160,7 +160,11 @@ Traces • May 7, 2026
 ## ACT 2 — FULL EDITION
 
 ```
-[ASCII art: Art]
+◇
+   ◇ ◇
+  ◇ ◇ ◇
+ ◇ ◇ ◇ ◇
+◇ ◇ ◇ ◇ ◇
 ```
 
 **Art — Hidden Authorship, Visible Gestures**
@@ -172,7 +176,12 @@ Palimpsests and pentimenti reveal how the artist thought before committing. Over
 ---
 
 ```
-[ASCII art: Painting]
+┌─────────┐
+│ ░░░░░░░ │
+│ ░░▓▓░░░ │
+│ ░░▓▓░░░ │
+│ ░░░░░░░ │
+└─────────┘
 ```
 
 **Painting — Underpainting as Evidence**
@@ -184,7 +193,12 @@ The compositions below show the thinking. Earlier versions surface, marks remain
 ---
 
 ```
-[ASCII art: Illustration]
+╱╲
+ ╱  ╲
+╱    ╲
+╲    ╱
+ ╲  ╱
+  ╲╱
 ```
 
 **Illustration — Sketch Marks Remaining**
@@ -196,7 +210,11 @@ Final work keeps construction lines visible, preliminary marks intact. The finis
 ---
 
 ```
-[ASCII art: Sculpture]
+▲
+   ╱ ╲
+  ╱   ╲
+ ╱     ╲
+═════════
 ```
 
 **Sculpture — Surface as Archive**
@@ -208,7 +226,11 @@ Carved, worn, marked surfaces where each scratch records time. Stone holds memor
 ---
 
 ```
-[ASCII art: Culture]
+░▒▓█ █▓▒░
+▓█  ●  █▓
+█  ░█░  █
+▓█  ●  █▓
+░▒▓█ █▓▒░
 ```
 
 **Culture — Digital Footprint Ethics**
@@ -220,7 +242,11 @@ What traces we leave online without knowing. Metadata, behavioral recording, the
 ---
 
 ```
-[ASCII art: Photography]
+┏━━━━━━━━┓
+┃ ◯ ◯ ◯ ┃
+┃ ◯ ★ ◯ ┃
+┃ ◯ ◯ ◯ ┃
+┗━━━━━━━━┛
 ```
 
 **Photography — The Negative as Evidence**
@@ -232,7 +258,11 @@ Film grain, dust on lens, light leaks — indexical proof that something existed
 ---
 
 ```
-[ASCII art: Art History]
+◆───────◆
+│ ░░░░░ │
+│ ░░░░░ │
+│ ░░░░░ │
+◆───────◆
 ```
 
 **Art History — Forensic Art History**
@@ -244,7 +274,10 @@ X-ray fluorescence reveals artist choices hidden from sight. Technical analysis 
 ---
 
 ```
-[ASCII art: Opinions]
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
 ```
 
 **Opinions — Attention Maps**
@@ -256,7 +289,11 @@ Heatmaps show where algorithms look. The invisible made visible through color, t
 ---
 
 ```
-[ASCII art: Design & AI Tools]
+⊡─────⊡
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+⊡─────⊡
 ```
 
 **Design & AI Tools — Version Control as History**
@@ -268,7 +305,11 @@ Git as archaeology. Every commit a breadcrumb. Design systems track intent throu
 ---
 
 ```
-[ASCII art: Product & Process]
+①→②→③→④
+│ │ │ │
+⑤→⑥→⑦→⑧
+│ │ │ │
+⑨→⑩
 ```
 
 **Product & Process — The Handoff**
@@ -280,7 +321,11 @@ Passing work forward, leaving notes, clear trails for the next person. Documenta
 ---
 
 ```
-[ASCII art: Visual & Brand]
+╔═══════╗
+║ ▀▄▀▄▀ ║
+║ ▄▀▄▀▄ ║
+║ ▀▄▀▄▀ ║
+╚═══════╝
 ```
 
 **Visual & Brand — Watermarks, Signatures, Marks**

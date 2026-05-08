@@ -158,7 +158,11 @@ Worn • May 12, 2026
 ## ACT 2 — FULL EDITION
 
 ```
-[ASCII art: Art]
+◇
+   ◇ ◇
+  ◇ ◇ ◇
+ ◇ ◇ ◇ ◇
+◇ ◇ ◇ ◇ ◇
 ```
 
 **Art — Sherald's Raw Linen**
@@ -170,7 +174,12 @@ Paintings that age on the canvas. Sherald's practice treats material and time as
 ---
 
 ```
-[ASCII art: Painting]
+┌─────────┐
+│ ░░░░░░░ │
+│ ░░▓▓░░░ │
+│ ░░▓▓░░░ │
+│ ░░░░░░░ │
+└─────────┘
 ```
 
 **Painting — Dissolution Through Use**
@@ -182,7 +191,12 @@ Cecily Brown's figures dissolving into ground. Work that loses definition throug
 ---
 
 ```
-[ASCII art: Illustration]
+╱╲
+ ╱  ╲
+╱    ╲
+╲    ╱
+ ╲  ╱
+  ╲╱
 ```
 
 **Illustration — Worn Original Art**
@@ -194,7 +208,11 @@ Illustrations showing creasing, foxing, aging. The object's history becomes visi
 ---
 
 ```
-[ASCII art: Sculpture]
+▲
+   ╱ ╲
+  ╱   ╲
+ ╱     ╲
+═════════
 ```
 
 **Sculpture — Nengudi's Loaded Mesh**
@@ -206,7 +224,11 @@ Material at breaking point, nylon showing strain. Tension made visible through u
 ---
 
 ```
-[ASCII art: Culture]
+░▒▓█ █▓▒░
+▓█  ●  █▓
+█  ░█░  █
+▓█  ●  █▓
+░▒▓█ █▓▒░
 ```
 
 **Culture — Yanagi and the Craft of Use**
@@ -218,7 +240,11 @@ Japanese pottery tradition: unsigned work valued for how it wears. The user's ha
 ---
 
 ```
-[ASCII art: Photography]
+┏━━━━━━━━┓
+┃ ◯ ◯ ◯ ┃
+┃ ◯ ★ ◯ ┃
+┃ ◯ ◯ ◯ ┃
+┗━━━━━━━━┛
 ```
 
 **Photography — Fukase's Ravens**
@@ -230,7 +256,11 @@ Bird photography about sky worn by presence. Light changing through repeated vie
 ---
 
 ```
-[ASCII art: Art History]
+◆───────◆
+│ ░░░░░ │
+│ ░░░░░ │
+│ ░░░░░ │
+◆───────◆
 ```
 
 **Art History — Objects in Use**
@@ -242,7 +272,10 @@ Historical perspective: how makers designed for use, not museum. Wear patterns r
 ---
 
 ```
-[ASCII art: Opinions]
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
 ```
 
 **Opinions — Tools That Wear In**
@@ -254,7 +287,11 @@ Design tools improving through use. Patina as sign of care. Friction as feature.
 ---
 
 ```
-[ASCII art: Design & AI Tools]
+⊡─────⊡
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+⊡─────⊡
 ```
 
 **Design & AI Tools — Design Systems That Age**
@@ -266,7 +303,11 @@ Systems maturing through use, patterns becoming clearer with application. Tools 
 ---
 
 ```
-[ASCII art: Product & Process]
+①→②→③→④
+│ │ │ │
+⑤→⑥→⑦→⑧
+│ │ │ │
+⑨→⑩
 ```
 
 **Product & Process — Durability and Waste**
@@ -278,7 +319,11 @@ Products designed for longevity and repair, not obsolescence. Making things that
 ---
 
 ```
-[ASCII art: Visual & Brand]
+╔═══════╗
+║ ▀▄▀▄▀ ║
+║ ▄▀▄▀▄ ║
+║ ▀▄▀▄▀ ║
+╚═══════╝
 ```
 
 **Visual & Brand — Vintage and Patina**

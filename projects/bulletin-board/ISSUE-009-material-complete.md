@@ -164,7 +164,11 @@ Material • May 11, 2026
 ## ACT 2 — FULL EDITION
 
 ```
-[ASCII art: Art]
+◇
+   ◇ ◇
+  ◇ ◇ ◇
+ ◇ ◇ ◇ ◇
+◇ ◇ ◇ ◇ ◇
 ```
 
 **Art — Bodily Materials**
@@ -176,7 +180,12 @@ Artists using body, flesh, blood, organic matter as medium. Materiality becomes 
 ---
 
 ```
-[ASCII art: Painting]
+┌─────────┐
+│ ░░░░░░░ │
+│ ░░▓▓░░░ │
+│ ░░▓▓░░░ │
+│ ░░░░░░░ │
+└─────────┘
 ```
 
 **Painting — Paint as Substance**
@@ -188,7 +197,12 @@ The paint itself: texture, finish, thickness, behavior. Painters obsessed with h
 ---
 
 ```
-[ASCII art: Illustration]
+╱╲
+ ╱  ╲
+╱    ╲
+╲    ╱
+ ╲  ╱
+  ╲╱
 ```
 
 **Illustration — Paper as Protagonist**
@@ -200,7 +214,11 @@ Illustrators choosing specific papers: grain, weight, tooth. Paper is not substr
 ---
 
 ```
-[ASCII art: Sculpture]
+▲
+   ╱ ╲
+  ╱   ╲
+ ╱     ╲
+═════════
 ```
 
 **Sculpture — Clay and Soil**
@@ -212,7 +230,11 @@ Sculpture emerging from earth. Architecture from clay. Material specificity driv
 ---
 
 ```
-[ASCII art: Culture]
+░▒▓█ █▓▒░
+▓█  ●  █▓
+█  ░█░  █
+▓█  ●  █▓
+░▒▓█ █▓▒░
 ```
 
 **Culture — Fabric First**
@@ -224,7 +246,11 @@ Fashion and identity rooted in fabric choice. NIGO at Design Museum. Material be
 ---
 
 ```
-[ASCII art: Photography]
+┏━━━━━━━━┓
+┃ ◯ ◯ ◯ ┃
+┃ ◯ ★ ◯ ┃
+┃ ◯ ◯ ◯ ┃
+┗━━━━━━━━┛
 ```
 
 **Photography — Film Grain**
@@ -236,7 +262,11 @@ Film stock as conscious choice, grain as aesthetic decision not compromise. Mate
 ---
 
 ```
-[ASCII art: Art History]
+◆───────◆
+│ ░░░░░ │
+│ ░░░░░ │
+│ ░░░░░ │
+◆───────◆
 ```
 
 **Art History — Craft Traditions**
@@ -248,7 +278,10 @@ Lineages of material knowledge. Pottery traditions, textile traditions. Time emb
 ---
 
 ```
-[ASCII art: Opinions]
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
 ```
 
 **Opinions — Analogue Resistance**
@@ -260,7 +293,11 @@ Graphic designers choosing film, paper, manual process. Pushing back against dig
 ---
 
 ```
-[ASCII art: Design & AI Tools]
+⊡─────⊡
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+⊡─────⊡
 ```
 
 **Design & AI Tools — Figma Prototyping Limits**
@@ -272,7 +309,11 @@ When digital prototyping fails and you need paper, cardboard, foam. The limits o
 ---
 
 ```
-[ASCII art: Product & Process]
+①→②→③→④
+│ │ │ │
+⑤→⑥→⑦→⑧
+│ │ │ │
+⑨→⑩
 ```
 
 **Product & Process — Paper Prototyping**
@@ -284,7 +325,11 @@ Paper sketches outpace high-fidelity mockups. Materiality speeds thinking. The r
 ---
 
 ```
-[ASCII art: Visual & Brand]
+╔═══════╗
+║ ▀▄▀▄▀ ║
+║ ▄▀▄▀▄ ║
+║ ▀▄▀▄▀ ║
+╚═══════╝
 ```
 
 **Visual & Brand — Packaging Materiality**

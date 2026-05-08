@@ -139,7 +139,9 @@ Interval • May 8, 2026
 ## ACT 2 — FULL EDITION
 
 ```
-[ASCII art: Art]
+─ ─ ─ ─ ─
+ ─ ─ ─ ─ ─
+─ ─ ─ ─ ─
 ```
 
 **Art — Negative Space as Subject**
@@ -151,7 +153,9 @@ Artists treating emptiness as material. Agnes Martin's grids, Roman Opalka's inc
 ---
 
 ```
-[ASCII art: Painting]
+│ │ │ │ │
+ │ │ │ │ │
+│ │ │ │ │
 ```
 
 **Painting — Pause in the Gesture**
@@ -163,7 +167,9 @@ Painters working with silence between strokes. The canvas breathes. Space betwee
 ---
 
 ```
-[ASCII art: Illustration]
+┈ ┈ ┈ ┈ ┈
+ ┈ ┈ ┈ ┈ ┈
+┈ ┈ ┈ ┈ ┈
 ```
 
 **Illustration — White Space as Line**
@@ -175,7 +181,9 @@ Illustrators using the blank page as active element. What is not drawn carries m
 ---
 
 ```
-[ASCII art: Sculpture]
+▮   ▮   ▮
+ ▮   ▮   ▮
+  ▮   ▮   ▮
 ```
 
 **Sculpture — Distance and Scale**
@@ -187,7 +195,9 @@ Sculptures measured by what surrounds them. The gap between object and viewer, b
 ---
 
 ```
-[ASCII art: Culture]
+·  ·  ·  ·
+ ·  ·  ·  ·
+·  ·  ·  ·
 ```
 
 **Culture — The Comma and Colon**
@@ -199,7 +209,9 @@ Punctuation as cultural rhythm. How pauses structure meaning. The interval as gr
 ---
 
 ```
-[ASCII art: Photography]
+░ ░ ░ ░
+ ░ ░ ░ ░
+░ ░ ░ ░
 ```
 
 **Photography — Depth of Field**
@@ -211,7 +223,9 @@ Photography about what's in focus and what's not. The interval creates depth. Wh
 ---
 
 ```
-[ASCII art: Art History]
+╶  ╶  ╶  ╶
+ ╶  ╶  ╶  ╶
+╶  ╶  ╶  ╶
 ```
 
 **Art History — Modernist Reduction**
@@ -223,7 +237,9 @@ The elimination of the decorative. Artists searching for essential form through 
 ---
 
 ```
-[ASCII art: Opinions]
+…  …  …
+ …  …  …
+…  …  …
 ```
 
 **Opinions — The Power of the Pause**
@@ -235,7 +251,9 @@ Rhythm in design requires rest. The interval creates comprehension. Without spac
 ---
 
 ```
-[ASCII art: Design & AI Tools]
+‧  ‧  ‧  ‧
+ ‧  ‧  ‧  ‧
+‧  ‧  ‧  ‧
 ```
 
 **Design & AI Tools — Whitespace in Interface Design**
@@ -247,7 +265,9 @@ Breathing room in UI. The interval between elements determines usability and cla
 ---
 
 ```
-[ASCII art: Product & Process]
+⁚  ⁚  ⁚
+ ⁚  ⁚  ⁚
+⁚  ⁚  ⁚
 ```
 
 **Product & Process — The Spacing Grid**
@@ -259,7 +279,9 @@ Design systems built on intervals. Baseline grids, spacing scales, modular syste
 ---
 
 ```
-[ASCII art: Visual & Brand]
+∶  ∶  ∶
+ ∶  ∶  ∶
+∶  ∶  ∶
 ```
 
 **Visual & Brand — Kerning and Tracking**

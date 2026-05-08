@@ -166,7 +166,11 @@ Signal • May 8, 2026
 ## ACT 2 — FULL EDITION
 
 ```
-[ASCII art: Art]
+◇
+   ◇ ◇
+  ◇ ◇ ◇
+ ◇ ◇ ◇ ◇
+◇ ◇ ◇ ◇ ◇
 ```
 
 **Art — Bold Geometric Work**
@@ -178,7 +182,12 @@ Minimalism cuts through visual chaos. Primary colors make claims without decorat
 ---
 
 ```
-[ASCII art: Painting]
+┌─────────┐
+│ ░░░░░░░ │
+│ ░░▓▓░░░ │
+│ ░░▓▓░░░ │
+│ ░░░░░░░ │
+└─────────┘
 ```
 
 **Painting — Color as Communication**
@@ -190,7 +199,12 @@ Restricted palettes constrain what meaning can emerge. When painters eliminate c
 ---
 
 ```
-[ASCII art: Illustration]
+╱╲
+ ╱  ╲
+╱    ╲
+╲    ╱
+ ╲  ╱
+  ╲╱
 ```
 
 **Illustration — Icon-Like Clarity**
@@ -202,7 +216,11 @@ Illustration reduced to essential form. Every line necessary, no gesture decorat
 ---
 
 ```
-[ASCII art: Sculpture]
+▲
+   ╱ ╲
+  ╱   ╲
+ ╱     ╲
+═════════
 ```
 
 **Sculpture — Form as Argument**
@@ -214,7 +232,11 @@ Sculptural gesture arrives unmistakable. Metal, concrete, stone shaped with abso
 ---
 
 ```
-[ASCII art: Culture]
+░▒▓█ █▓▒░
+▓█  ●  █▓
+█  ░█░  █
+▓█  ●  █▓
+░▒▓█ █▓▒░
 ```
 
 **Culture — Direct Address Aesthetics**
@@ -226,7 +248,11 @@ Culture rejecting irony and ambiguity. Manifestos replace suggestion. Direct cla
 ---
 
 ```
-[ASCII art: Photography]
+┏━━━━━━━━┓
+┃ ◯ ◯ ◯ ┃
+┃ ◯ ★ ◯ ┃
+┃ ◯ ◯ ◯ ┃
+┗━━━━━━━━┛
 ```
 
 **Photography — High-Contrast Photography**
@@ -238,7 +264,11 @@ Black and white extremes eliminate gray area. Stark, readable, undeniable. The p
 ---
 
 ```
-[ASCII art: Art History]
+◆───────◆
+│ ░░░░░ │
+│ ░░░░░ │
+│ ░░░░░ │
+◆───────◆
 ```
 
 **Art History — Constructivism**
@@ -250,7 +280,10 @@ Design as political statement. Legibility becomes power. Russian avant-garde pre
 ---
 
 ```
-[ASCII art: Opinions]
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
+❝ ❞ ❝ ❞
+ ❞ ❝ ❞ ❝
 ```
 
 **Opinions — Against Ambient**
@@ -262,7 +295,11 @@ Focus and clarity demand active attention. Background music and invisible design
 ---
 
 ```
-[ASCII art: Design & AI Tools]
+⊡─────⊡
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+│ ⊕ ⊕ │
+⊡─────⊡
 ```
 
 **Design & AI Tools — Design Systems as Clarity**
@@ -274,7 +311,11 @@ Variables and constraints make decisions visible and repeatable. Design tokens f
 ---
 
 ```
-[ASCII art: Product & Process]
+①→②→③→④
+│ │ │ │
+⑤→⑥→⑦→⑧
+│ │ │ │
+⑨→⑩
 ```
 
 **Product & Process — Clear Communication**
@@ -286,7 +327,11 @@ Legibility prioritized over cleverness. Accessibility as aesthetic. Products tha
 ---
 
 ```
-[ASCII art: Visual & Brand]
+╔═══════╗
+║ ▀▄▀▄▀ ║
+║ ▄▀▄▀▄ ║
+║ ▀▄▀▄▀ ║
+╚═══════╝
 ```
 
 **Visual & Brand — Logo Systems**
