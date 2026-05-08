@@ -1,0 +1,7 @@
+**Sculpture**
+
+Coil-built vessels hold the thumb ridge as signature. The seam is proud, visible, marked by the fingers that shaped it. Clay remembers.
+
+https://frieze.com
+
+https://frieze.com

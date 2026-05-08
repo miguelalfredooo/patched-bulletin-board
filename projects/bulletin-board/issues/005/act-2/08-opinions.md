@@ -1,0 +1,7 @@
+**Opinions**
+
+Focus and clarity demand active attention. Background music and invisible design are refusals to engage. Attention is the work.
+
+https://aeon.co
+
+https://aeon.co

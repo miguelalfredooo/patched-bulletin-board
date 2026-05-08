@@ -1,0 +1,3 @@
+**Art**
+
+Artists treating emptiness as material. Agnes Martin's grids, Roman Opalka's incremental counting, Hiroshi Sugimoto's architectural voids. The space between marks is the work itself.

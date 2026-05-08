@@ -1,0 +1,3 @@
+**Illustration**
+
+The line stays wrong because fixing it is the point. Pen and paper, no undo, no layers — the analog constraint becomes the work's argument.

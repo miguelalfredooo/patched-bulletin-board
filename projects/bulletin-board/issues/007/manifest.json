@@ -1,0 +1,142 @@
+{
+  "issue": 7,
+  "theme": "Interval",
+  "date": "May 8, 2026",
+  "status": "published",
+  "tagline": {
+    "line1": "Issue 007",
+    "line2": "Interval \u2022 May 8, 2026"
+  },
+  "act1": {
+    "logo": "act-1/logo.md",
+    "masthead": "act-1/masthead.md",
+    "sections": [
+      {
+        "order": 1,
+        "name": "Art",
+        "file": "act-1/sections/01-art.md",
+        "ascii_variation": "source"
+      },
+      {
+        "order": 2,
+        "name": "Painting",
+        "file": "act-1/sections/02-painting.md",
+        "ascii_variation": "source"
+      },
+      {
+        "order": 3,
+        "name": "Illustration",
+        "file": "act-1/sections/03-illustration.md",
+        "ascii_variation": "source"
+      },
+      {
+        "order": 4,
+        "name": "Sculpture",
+        "file": "act-1/sections/04-sculpture.md",
+        "ascii_variation": "source"
+      },
+      {
+        "order": 5,
+        "name": "Culture",
+        "file": "act-1/sections/05-culture.md",
+        "ascii_variation": "source"
+      },
+      {
+        "order": 6,
+        "name": "Photography",
+        "file": "act-1/sections/06-photography.md",
+        "ascii_variation": "source"
+      },
+      {
+        "order": 7,
+        "name": "Art History",
+        "file": "act-1/sections/07-art-history.md",
+        "ascii_variation": "source"
+      },
+      {
+        "order": 8,
+        "name": "Opinions",
+        "file": "act-1/sections/08-opinions.md",
+        "ascii_variation": "source"
+      },
+      {
+        "order": 9,
+        "name": "Design & AI Tools",
+        "file": "act-1/sections/09-design-ai-tools.md",
+        "ascii_variation": "source"
+      },
+      {
+        "order": 10,
+        "name": "Product & Process",
+        "file": "act-1/sections/10-product-process.md",
+        "ascii_variation": "source"
+      },
+      {
+        "order": 11,
+        "name": "Visual & Brand",
+        "file": "act-1/sections/11-visual-brand.md",
+        "ascii_variation": "source"
+      }
+    ]
+  },
+  "act2": {
+    "sections": [
+      {
+        "order": 1,
+        "name": "Art",
+        "file": "act-2/01-art.md"
+      },
+      {
+        "order": 2,
+        "name": "Painting",
+        "file": "act-2/02-painting.md"
+      },
+      {
+        "order": 3,
+        "name": "Illustration",
+        "file": "act-2/03-illustration.md"
+      },
+      {
+        "order": 4,
+        "name": "Sculpture",
+        "file": "act-2/04-sculpture.md"
+      },
+      {
+        "order": 5,
+        "name": "Culture",
+        "file": "act-2/05-culture.md"
+      },
+      {
+        "order": 6,
+        "name": "Photography",
+        "file": "act-2/06-photography.md"
+      },
+      {
+        "order": 7,
+        "name": "Art History",
+        "file": "act-2/07-art-history.md"
+      },
+      {
+        "order": 8,
+        "name": "Opinions",
+        "file": "act-2/08-opinions.md"
+      },
+      {
+        "order": 9,
+        "name": "Design & AI Tools",
+        "file": "act-2/09-design-ai-tools.md"
+      },
+      {
+        "order": 10,
+        "name": "Product & Process",
+        "file": "act-2/10-product-process.md"
+      },
+      {
+        "order": 11,
+        "name": "Visual & Brand",
+        "file": "act-2/11-visual-brand.md"
+      }
+    ],
+    "closing": "act-2/closing.md"
+  }
+}

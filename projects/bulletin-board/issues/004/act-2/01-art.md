@@ -1,0 +1,3 @@
+**Art**
+
+Palimpsests and pentimenti reveal how the artist thought before committing. Overpainting made visible, layers exposed — the work becomes archaeological.
