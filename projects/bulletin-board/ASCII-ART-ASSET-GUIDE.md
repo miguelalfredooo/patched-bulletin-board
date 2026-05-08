@@ -55,12 +55,20 @@ compact/             (220 left & right variations)
 ├── ... (11 sections × 10 issues × 2 alignments)
 └── issue-010-visual-brand-compact-right-neon.txt
 
-hero-tall/           (110 portrait format — 15-line centered diamond)
+hero-tall/           (portrait format — 15-line centered diamond)
 ├── issue-001-art-hero-tall-neon.txt
 ├── issue-001-painting-hero-tall-neon.txt
-├── ... (11 sections × 10 issues)
+├── ... (11 sections × issues)
 └── issue-010-visual-brand-hero-tall-neon.txt
+
+original/            (art extracted verbatim from generation sessions — pre-edit originals)
+├── issue-002-art-original.txt
+├── issue-002-painting-original.txt
+├── ... (11 sections × 7 issues: 002, 005, 006, 007, 008, 009, 010, 011)
+└── README.md
 ```
+
+**Note:** Issues 001, 003, 004 have no `original/` files — their sessions were not saved at generation time.
 
 ---
 
@@ -209,11 +217,13 @@ ls compact/*-compact-left-neon.txt
 
 ## Asset Summary
 
-- **Total files:** 550+ (110 per variation + master components)
-- **Naming:** `issue-[NNN]-[section]-[variation]-neon.txt`
-- **Variations:** source, expanded, labeled, compact-left, compact-right, hero-tall
+- **Standardized library:** 550+ files (110 per variation × 5 variations + master components)
+- **Original session art:** 88 files (8 issues × 11 sections) in `original/`
+- **Naming (standardized):** `issue-[NNN]-[section]-[variation]-neon.txt`
+- **Naming (original):** `issue-[NNN]-[section]-original.txt`
+- **Variations:** source, expanded, labeled, compact-left, compact-right, hero-tall, original
 - **Sections:** 11 per issue (Art through Visual & Brand)
-- **Issues:** 10 complete (001-010)
+- **Issues:** 11 published (001–011); original art recovered for 002, 005–011
 - **Master files:** All component templates in `master/`
 
 ---

@@ -192,3 +192,111 @@ Never edit or delete existing entries. Append only.
 - PROMPT SUMMARY: Newspaper classifieds page 1966, fifty columns agate type, column grid as graphic subject
 - ARC NOTE: Closing — the broadsheet's back face, the opposite register of the opening banner headline.
 - GRID POSITION: row 3 col 4
+
+---
+
+## 2026-05-07 — Set 003
+
+### Set 003 Overview
+**Editorial Theme:** Global Creative Cultures — Spaces, Sounds, Practice, Scenes, and Tables  
+**Framework:** The Magazine™ five pillars across five format-based modules  
+**Scope:** 1960s–contemporary, global, all mediums, all cultural registers  
+**Status:** Approved and shipped
+
+---
+
+## 2026-05-07 — Set 003
+- FILE: gen_environments_026.jpg
+- MODULE: environments.md
+- PILLAR: Space + Sound
+- PROMPT SUMMARY: 1987 Tokyo music producer's studio, Moog synthesizer and Tascam tape deck, neon light through venetian blinds
+- ARC NOTE: Opening — breaks collection's register entirely. Moves from print production to creative environment. 1987 Tokyo city pop era signals geographic and cultural expansion.
+- GRID POSITION: row 1 col 1
+
+## 2026-05-07 — Set 003
+- FILE: gen_archives_027.jpg
+- MODULE: archives.md
+- PILLAR: Sound
+- PROMPT SUMMARY: 1978 Nigerian Afrobeat album cover, hand-lettered band name in bold serif, portrait and drum imagery
+- ARC NOTE: Sound deepens. Geography shift (Tokyo to Lagos). Era shift (1987 to 1978). Shows how music was documented and sold in a specific scene.
+- GRID POSITION: row 1 col 2
+
+## 2026-05-07 — Set 003
+- FILE: gen_archives_028.jpg
+- MODULE: archives.md
+- PILLAR: Scene
+- PROMPT SUMMARY: 1992 London rave flyer, neon risograph print, overlapped typography, warehouse location codes
+- ARC NOTE: Scene enters. Underground network signal. Illegibility serves content (code for the initiated). 1990s London. High-contrast color anchors grid corner.
+- GRID POSITION: row 1 col 3
+
+## 2026-05-07 — Set 003
+- FILE: gen_artifacts_029.jpg
+- MODULE: artifacts.md
+- PILLAR: Practice
+- PROMPT SUMMARY: Japanese kanna woodworking plane, blade edge close-up, sharpening marks and patina from decades of use
+- ARC NOTE: Practice shifts from print to craft tradition. 30+ years of daily use visible in material. Photograph of physical object. Horizontal format reads as tool documentation.
+- GRID POSITION: row 1 col 4
+
+## 2026-05-07 — Set 003
+- FILE: gen_archives_030.jpg
+- MODULE: archives.md
+- PILLAR: Table
+- PROMPT SUMMARY: 1960s Japanese bento box cardboard wrapper, illustrated mountain landscape and calligraphy, food-stained corners from actual use
+- ARC NOTE: Table enters. Food culture. Packaging-as-ritual object. Stains evidence of real use. Row 2 signals shift in register and introduction of new pillar.
+- GRID POSITION: row 2 col 1
+
+## 2026-05-07 — Set 003
+- FILE: gen_environments_031.jpg
+- MODULE: environments.md
+- PILLAR: Space
+- PROMPT SUMMARY: Contemporary Kyoto ceramicist's workshop, clay dust on shelves, half-finished vessels, natural light from paper screen window
+- ARC NOTE: Space deepens. Contemporary era. Kyoto but fine craft register (vs. commercial bento box). Landscape format as intimate environment documentation. Arc now spans 1960s–present.
+- GRID POSITION: row 2 col 2
+
+## 2026-05-07 — Set 003
+- FILE: gen_details_032.jpg
+- MODULE: details.md
+- PILLAR: Scene
+- PROMPT SUMMARY: 2005 São Paulo street art sticker collection, layers overlapped on concrete wall, weathered, community tag marks
+- ARC NOTE: Scene continues. Geography (Brazil). Era (2005). Same principle as London rave (subcultural marking) but completely different visual language. Weathering shows time passing and community growth.
+- GRID POSITION: row 2 col 3
+
+## 2026-05-07 — Set 003
+- FILE: gen_artifacts_033.jpg
+- MODULE: artifacts.md
+- PILLAR: Practice
+- PROMPT SUMMARY: 1970s Indian wooden block printing tool, indigo dye soaked into grain, hand-carved floral pattern
+- ARC NOTE: Practice continues. Different craft (textile vs. woodworking). Geographic diversity (India). Indigo stain is evidence of thousands of prints made. Square format for single-tool documentation.
+- GRID POSITION: row 2 col 4
+
+## 2026-05-07 — Set 003
+- FILE: gen_artifacts_034.jpg
+- MODULE: artifacts.md
+- PILLAR: Sound
+- PROMPT SUMMARY: 1999 Japanese city pop compilation CD, holographic foil cover, artist credits in dense typography, disc visible through jewel case
+- ARC NOTE: Sound continues. Echoes Tokyo studio from Piece 001 (same tradition, 12 years later). Format shift evident (analog to digital, tape to CD). Holographic surface is 1999 production technology.
+- GRID POSITION: row 3 col 1
+
+## 2026-05-07 — Set 003
+- FILE: gen_moments_035.jpg
+- MODULE: moments.md
+- PILLAR: Table
+- PROMPT SUMMARY: Contemporary restaurant kitchen prep counter, copper cookware hanging, mise en place organized for service, heat stains and wear on steel
+- ARC NOTE: Table deepens. Moves from packaged food to live kitchen practice. Landscape format as workspace documentation. Heat marks reveal service rhythm. Universal (shows principle is global).
+- GRID POSITION: row 3 col 2
+
+## 2026-05-07 — Set 003
+- FILE: gen_environments_036.jpg
+- MODULE: environments.md
+- PILLAR: Space
+- PROMPT SUMMARY: 1980s Berlin artist squat, concrete walls, found furniture, neon light from street signs through broken window
+- ARC NOTE: Space closes. Ultra-wide format (panoramic room). Berlin squat as authentic collective space. Broken window, salvaged furniture, painted walls are spatial markers. Life-as-lived, not designed.
+- GRID POSITION: row 3 col 3
+
+## 2026-05-07 — Set 003
+- FILE: gen_moments_037.jpg
+- MODULE: moments.md
+- PILLAR: Scene
+- PROMPT SUMMARY: 1995 Portland independent bookstore, hands exchanging a handmade zine across counter, shelves of zines and small-press behind
+- ARC NOTE: Closing — returns to 4:3 (echoes Piece 001). Hands-to-hands exchange shows how underground culture was distributed. Fluorescent light and wooden shelves are material reality. Human-scale, gallery-like moment. Strong closing.
+- GRID POSITION: row 3 col 4

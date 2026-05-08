@@ -1,0 +1,15 @@
+{
+  "claude.mcp.enabled": true,
+  "claude.mcp.servers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-filesystem", "/Users/blackmachete/projects/patched-editorial"],
+      "disabled": false
+    },
+    "git": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-git", "/Users/blackmachete/projects/patched-editorial"],
+      "disabled": false
+    }
+  }
+}

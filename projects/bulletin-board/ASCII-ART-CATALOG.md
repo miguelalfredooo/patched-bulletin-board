@@ -24,20 +24,30 @@ All 11 sections with 5 color variations each (55 total variations).
 | 10 | Product & Process | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | 11 | Visual & Brand | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Issues 001-005, 008-010 (⏳ Pending)
+## Original Session Art (✓ Recovered)
 
-ASCII art not yet generated or restored for remaining issues. Placeholder text remains in issue files.
+Original pre-edit art extracted from generation sessions, stored in `ascii-art-library/original/`.
 
-### Status
+| Issue | Theme | Sections | Source |
+|-------|-------|----------|--------|
+| 002 | The Mark | 11 | `sessions/issue-002-the-mark.md` |
+| 005 | Signal | 11 | `sessions/issue-005-signal.txt` |
+| 006 | Momentum | 11 | `sessions/issue-006-momentum.txt` |
+| 007 | Palimpsest (now Interval) | 11 | `sessions/issue-007-palimpsest.txt` |
+| 008 | Emergence (now Threshold) | 11 | `sessions/issue-008-emergence.txt` |
+| 009 | Fold (now Material) | 11 | `sessions/issue-009-fold.txt` |
+| 010 | Aperture (now Worn) | 11 | `sessions/issue-010-aperture.txt` |
+| 011 | Invisible | 11 | `ISSUE-011-invisible-complete.md` |
 
-- **001 — Presence**: Needs ASCII art
-- **002 — The Mark**: Needs ASCII art
-- **003 — Handmade**: Needs ASCII art
-- **004 — Traces**: Needs ASCII art
-- **005 — Signal**: Needs ASCII art
-- **008 — Threshold**: Needs ASCII art
-- **009 — Material**: Needs ASCII art
-- **010 — Worn**: Needs ASCII art
+Issues 001, 003, 004: no original session art was saved at time of generation.
+
+## Issues with Placeholder Art
+
+Current standardized section art (`source/`) is a 9×5 canvas placeholder for these issues:
+
+- **001 — Presence**: Placeholder ◇ diamond
+- **003 — Handmade**: Placeholder ◇ diamond
+- **004 — Traces**: Placeholder ◇ diamond
 
 ## Usage
 
@@ -47,7 +57,8 @@ Each issue includes ASCII art in its **ACT 1 — VISUAL PREVIEW** section, organ
 
 Pure text versions (no color codes) are used in markdown files for clean rendering.
 
-Current status: Only Issue 006 (Momentum) populated with actual ASCII art.
+**Original art:** `ascii-art-library/original/issue-[NNN]-[section]-original.txt`
+**Standardized art:** `ascii-art-library/source/issue-[NNN]-[section]-neon.txt`
 
 ### For Gallery Feature
 

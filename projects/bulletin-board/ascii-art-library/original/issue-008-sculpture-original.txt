@@ -1,0 +1,7 @@
+╭──────────────┬──────────────╮
+│  Order       │  Meaning     │
+│  ─────       │  ────────    │
+│  Grid        │  Purpose     │
+│  System      │  Direction   │
+│  Rules       │  Intent      │
+╰──────────────┴──────────────╯

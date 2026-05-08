@@ -17,6 +17,15 @@ Append-only. One entry per issue.
 - **CURATOR NOTE:** [editorial observation on decisions and signals]
 -->
 
+## Issue 011 — 2026-05-13
+- **THEME:** Invisible
+- **EDITORIAL MIX:** Music 55%, Visual 85%, Research 60%, Process 50%, Theme 80%, AI Culture 45%
+- **SONIC REFERENCE:** Arca — *KiCk i* (2020): synthetic, barely-there textures; sound that exists at the edge of perception
+- **RENDERING:** Text-only markdown (component system, ACT 1 v1 grid)
+- **CLOSING SENTENCE:** "The most powerful things are the ones we never notice at all."
+- **STATUS:** Published May 13, 2026
+- **CURATOR NOTE:** Hidden systems, background layers, invisible architecture. The grid underneath the composition, the underpainting beneath the color, the algorithm behind the interface. What works precisely because we don't see it working.
+
 ## Issue 010 — 2026-05-12
 - **THEME:** Worn
 - **EDITORIAL MIX:** Music 50%, Visual 80%, Research 60%, Process 55%, Theme 70%, AI Culture 40%
