@@ -37,6 +37,10 @@ The Mark • May 6, 2026
       ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
 
                     **THE MARK**
+
+  +  THE MARK / SIGNATURE  +
+  +  A CLAIM OF AUTHORSHIP  +
+  +  +  +  +  +  +  +  +  +
 ```
 
 ### Section 1 — Art
