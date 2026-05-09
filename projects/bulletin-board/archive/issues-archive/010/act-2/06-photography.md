@@ -1,0 +1,3 @@
+**Photography**
+
+Bird photography about sky worn by presence. Light changing through repeated viewings and use of the negative. The image accumulates meaning.

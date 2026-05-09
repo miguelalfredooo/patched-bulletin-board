@@ -1,0 +1,3 @@
+**Opinions**
+
+Faster tools create new constraints. Speed as liberation and prison simultaneously. Do faster tools produce better work, or only more work?

@@ -1,0 +1,40 @@
+Masthead Asset — Design By Bulletin™
+=====================================
+
+This is the official masthead structure for all covers. Use AFTER the 6-line DBB logo.
+
+**Masthead Template (5 lines, fits in 34-char width):**
+
+Design By Bulletin™               
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+Issue [NUMBER] · [THEME]          
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+                                  
+
+**Usage in Covers:**
+1. Place 6-line DBB logo at top
+2. Leave blank line
+3. Place masthead (5 lines above)
+4. Then theme visual below
+
+**Character Width:**
+All masthead lines: 34 characters each (already padded)
+
+**Fill in:**
+- [NUMBER]: Issue number (e.g., 024, 025)
+- [THEME]: Theme name (e.g., Icons, Memory)
+
+**Example (Issue 024):**
+
+Design By Bulletin™               
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+Issue 024 · Icons                 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  
+                                  
+
+**Do NOT modify:**
+- "Design By Bulletin™" text
+- Divider lines (━ character)
+- Spacing/padding (all 34 chars)
+
+**Required in all covers.**

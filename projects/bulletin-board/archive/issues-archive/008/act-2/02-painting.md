@@ -1,0 +1,3 @@
+**Painting**
+
+Paintings about the moment light transforms. Dawn and dusk captured mid-transition. The canvas holds the sun at horizon, neither day nor night.

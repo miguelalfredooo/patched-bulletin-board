@@ -1,0 +1,31 @@
+DBB Logo Asset — Design By Bulletin™
+====================================
+
+This is the official DBB logo for use in all covers.
+
+**Logo (6 lines, fits in 34-char width):**
+
+██████╗ ██████╗ ██████╗ ™         
+██╔══██╗██╔══██╗██╔══██╗          
+██║  ██║██████╔╝██████╔╝          
+██║  ██║██╔══██╗██╔══██╗          
+██████╔╝██████╔╝██████╔╝          
+╚═════╝ ╚═════╝ ╚═════╝           
+
+**Usage in Covers:**
+- Place at top of 34×30 cover
+- Logo is 6 lines (full height)
+- Followed by blank line
+- Then divider line
+- Then issue number/date
+- Then theme and visual
+
+**Character Width:**
+All 6 logo lines: 34 characters each (already padded)
+
+**Do NOT modify:**
+- Logo characters (use exact block characters)
+- Logo proportions (all 6 lines required)
+- TM symbol
+
+**Required in all covers.**

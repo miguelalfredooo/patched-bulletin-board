@@ -1,0 +1,1 @@
+"The most powerful systems don't prescribe every detail—they set the conditions and trust emergence to do the rest."

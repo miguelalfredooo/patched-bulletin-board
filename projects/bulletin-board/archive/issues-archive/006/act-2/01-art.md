@@ -1,0 +1,3 @@
+**Art**
+
+Artists working at scale and speed, studio systems enabling rapid production. Quantity strategies replace perfectionism. Volume becomes its own form of ambition.

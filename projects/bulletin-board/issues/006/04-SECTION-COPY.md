@@ -1,0 +1,3 @@
+**Sculpture**
+
+Sculptures suggesting motion in stillness. Spirals, angles, asymmetry frozen in material. The static object contains velocity through form alone.

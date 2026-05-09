@@ -1,0 +1,3 @@
+**Product & Process**
+
+Design systems built on intervals. Baseline grids, spacing scales, modular systems. The space between is the glue.

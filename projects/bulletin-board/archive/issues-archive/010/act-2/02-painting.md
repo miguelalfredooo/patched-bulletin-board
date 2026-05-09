@@ -1,0 +1,3 @@
+**Painting**
+
+Cecily Brown's figures dissolving into ground. Work that loses definition through handling and repeated viewing. The image becomes palimpsest through engagement.

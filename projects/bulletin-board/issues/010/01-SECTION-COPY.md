@@ -1,0 +1,3 @@
+**Art**
+
+Paintings that age on the canvas. Sherald's practice treats material and time as collaborators. The painting wears in rather than deteriorates.

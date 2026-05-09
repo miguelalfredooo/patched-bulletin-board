@@ -1,0 +1,3 @@
+Cultural meaning isn't fragile—it's rooted. It grows, spreads, multiplies, but remains anchored. Protected meanings are living, not static.
+
+Home isn't just a place anymore. It's a practice. And that practice travels.

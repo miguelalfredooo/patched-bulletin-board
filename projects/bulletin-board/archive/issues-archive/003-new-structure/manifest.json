@@ -1,0 +1,80 @@
+{
+  "issue": 3,
+  "theme": "Handmade",
+  "date": "May 6, 2026",
+  "structure": "new",
+  "art_folder": "art/",
+  "content_folder": "content/",
+  "logo": "art/00-logo.txt",
+  "masthead": "art/masthead.txt",
+  "closing": "content/closing.md",
+  "sections": [
+    {
+      "order": 1,
+      "name": "Art",
+      "art_file": "art/01-art.txt",
+      "content_file": "content/01-art.md"
+    },
+    {
+      "order": 2,
+      "name": "Painting",
+      "art_file": "art/02-painting.txt",
+      "content_file": "content/02-painting.md"
+    },
+    {
+      "order": 3,
+      "name": "Illustration",
+      "art_file": "art/03-illustration.txt",
+      "content_file": "content/03-illustration.md"
+    },
+    {
+      "order": 4,
+      "name": "Sculpture",
+      "art_file": "art/04-sculpture.txt",
+      "content_file": "content/04-sculpture.md"
+    },
+    {
+      "order": 5,
+      "name": "Culture",
+      "art_file": "art/05-culture.txt",
+      "content_file": "content/05-culture.md"
+    },
+    {
+      "order": 6,
+      "name": "Photography",
+      "art_file": "art/06-photography.txt",
+      "content_file": "content/06-photography.md"
+    },
+    {
+      "order": 7,
+      "name": "Art History",
+      "art_file": "art/07-art-history.txt",
+      "content_file": "content/07-art-history.md"
+    },
+    {
+      "order": 8,
+      "name": "Opinions",
+      "art_file": "art/08-opinions.txt",
+      "content_file": "content/08-opinions.md"
+    },
+    {
+      "order": 9,
+      "name": "Design & AI Tools",
+      "art_file": "art/09-design-ai-tools.txt",
+      "content_file": "content/09-design-ai-tools.md"
+    },
+    {
+      "order": 10,
+      "name": "Product & Process",
+      "art_file": "art/10-product-process.txt",
+      "content_file": "content/10-product-process.md"
+    },
+    {
+      "order": 11,
+      "name": "Visual & Brand",
+      "art_file": "art/11-visual-brand.txt",
+      "content_file": "content/11-visual-brand.md"
+    }
+  ],
+  "cover": "art/00-cover.txt"
+}

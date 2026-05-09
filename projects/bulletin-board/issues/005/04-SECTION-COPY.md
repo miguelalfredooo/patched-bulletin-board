@@ -1,0 +1,7 @@
+**Sculpture**
+
+Sculptural gesture arrives unmistakable. Metal, concrete, stone shaped with absolute clarity. The material declares its presence without apology.
+
+https://frieze.com
+
+https://frieze.com

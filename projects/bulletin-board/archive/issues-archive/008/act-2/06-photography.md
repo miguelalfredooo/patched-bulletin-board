@@ -1,0 +1,3 @@
+**Photography**
+
+Photography about light crossing surfaces, illumination entering. Where brightness meets darkness, transition becomes visible. The negative space carries weight.

@@ -1,0 +1,3 @@
+**Opinions**
+
+Rhythm in design requires rest. The interval creates comprehension. Without space, there is only noise.

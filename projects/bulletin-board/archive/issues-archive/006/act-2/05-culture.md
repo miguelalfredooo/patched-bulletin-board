@@ -1,0 +1,7 @@
+**Culture**
+
+Cultural FOMO accelerating trend cycles. Crypto, NFTs, TikTok pacing compress meaning-making into real-time response. The rush becomes aesthetic in itself.
+
+https://www.newyorker.com
+
+https://www.newyorker.com

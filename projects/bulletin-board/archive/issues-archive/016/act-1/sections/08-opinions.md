@@ -1,0 +1,10 @@
+┌─────────────────────┐
+│  TERMS OF OUR OWN   │
+├─────────────────────┤
+│                     │
+│  When the world     │
+│  reaches in, we     │
+│  reach back on      │
+│  our terms.         │
+│                     │
+└─────────────────────┘

@@ -1,0 +1,3 @@
+**Art**
+
+The split nib chosen, held, accepted. These works assert human imperfection not as apology but as argument — the hand's tremor is the point.

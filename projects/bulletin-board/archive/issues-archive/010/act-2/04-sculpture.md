@@ -1,0 +1,7 @@
+**Sculpture**
+
+Material at breaking point, nylon showing strain. Tension made visible through use. What holds under pressure becomes beautiful through visibility of stress.
+
+https://frieze.com
+
+https://frieze.com
