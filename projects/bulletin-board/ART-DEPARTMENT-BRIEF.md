@@ -193,11 +193,6 @@ See: ART-DEPT-WIDTH-HEIGHT-VALIDATION.md for technical details.
 
 **You must include observations about your process. These inform Editorial Director.**
 
-### Announcement Format
-
-Start with narrative, then send cover in isolated code block, then send each section with narrative.
-
-**Opening:**
 ```
 Art complete. Cover + 11 visuals + footer created and validated.
 
@@ -208,22 +203,7 @@ Deliverables:
 ✅ All 13 files in /issues/[NUMBER]/
 ✅ Cover: 34×30 with exact logo + masthead
 ✅ Sections: 34×≤15 each
-```
 
-**Cover (isolated code block):**
-```
-COVER ART:
-
-[Paste entire 00-COVER-ART.txt here in code block]
-```
-
-**Section visuals with narrative:**
-For each of 11 sections, send:
-- Brief narrative about the section (1-2 sentences)
-- Section art in its own code block
-
-**Closing observations (required):**
-```
 Observations (required):
 - Copy-to-art translation: [How did you interpret the Managing Editor copy visually? Any tension between copy and visual?]
 - Dimension constraints: [Were 34-char width and section height limits restrictive? How did you work within them?]
@@ -232,13 +212,6 @@ Observations (required):
 
 Ready for Editorial Director spot-check.
 ```
-
-### Code Block Rules
-
-- **Cover:** One code block, full 34×30 (do not break)
-- **Sections:** Each section gets its own code block (isolate from other sections)
-- **No mixing:** Do not combine cover + sections in same block
-- **No splitting:** Do not break a single section across multiple blocks
 
 **Do not announce before validation passes. Do not skip observations.**
 
