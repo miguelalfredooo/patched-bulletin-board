@@ -1,3 +1,0 @@
-**Painting**
-
-The compositions below show the thinking. Earlier versions surface, marks remain. A painting is not a finished state but a record of arrivals.

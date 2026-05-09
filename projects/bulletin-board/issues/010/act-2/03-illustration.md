@@ -1,7 +1,0 @@
-**Illustration**
-
-Illustrations showing creasing, foxing, aging. The object's history becomes visible. Time becomes medium, wear becomes evidence of care.
-
-https://www.eyeondesign.aiga.org
-
-https://www.eyeondesign.aiga.org

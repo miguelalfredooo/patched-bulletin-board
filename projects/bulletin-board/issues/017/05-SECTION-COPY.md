@@ -1,0 +1,5 @@
+**Culture**
+
+In 1958, Switzerland was exporting more than chocolate and banks; it was exporting modernism, grid systems, geometric precision, and the belief that rational design could solve human problems. Bass—an American designer influenced by Swiss modernism—used Swiss typography to explore American anxiety. This contradiction is historically perfect: post-war optimism collided with emerging fears about conformity, technology, and rationalized living. The choice to use rational design language for psychological chaos reflects this moment precisely, suggesting that even breakdown can be systematized, even fear can be designed. This was the cultural moment when modernism met American cinema. Typography didn't just communicate the film's content; it reflected the era's anxieties about technology, rationality, and whether design could tame human irrationality.
+
+https://en.wikipedia.org/wiki/Swiss_style

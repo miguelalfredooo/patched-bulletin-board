@@ -1,7 +1,0 @@
-**Sculpture**
-
-Sculpture emerging from earth. Architecture from clay. Material specificity drives the form. Morelos' work with earth becomes the irreducible fact of creation.
-
-https://frieze.com
-
-https://frieze.com

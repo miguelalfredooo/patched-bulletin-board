@@ -1,7 +1,0 @@
-**Sculpture**
-
-Nylon holding without tearing, material at breaking point. Tension made visible through suspension. The threshold becomes the place where opposite forces balance.
-
-https://frieze.com
-
-https://frieze.com

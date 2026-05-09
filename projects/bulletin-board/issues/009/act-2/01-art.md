@@ -1,3 +1,0 @@
-**Art**
-
-Artists using body, flesh, blood, organic matter as medium. Materiality becomes politics. Audie Murray's practice makes irreducible substance the artwork's foundation.

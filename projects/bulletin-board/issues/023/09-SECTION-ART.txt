@@ -1,0 +1,8 @@
+  aged font  |  trained on
+  ───────────┼────────────
+  ░▒▓██ worn │  ten million
+  texture    │  old
+  ▒▓████▓▒░  │  documents
+  simulated  │  ░░▒▒▓▓▓▒▒░
+  grain      │  the model
+  ░░░▒▒░░░   │  knows age

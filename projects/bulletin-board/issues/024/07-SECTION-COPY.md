@@ -1,0 +1,3 @@
+# Art History
+
+Pictograms predate writing by millennia. The cave paintings at Lascaux are not records — they're language. Egyptian hieroglyphics demonstrate the moment a symbol begins its migration from image to sound to meaning. Ancient wayfinding systems — Roman road markers, medieval heraldry, guild signs — are the direct ancestors of the icon sets we tap every day. The history of visual communication is a story of radical compression: what can a single mark hold? Semiotics arrived in the twentieth century to name what humans had always been doing. Icons are not a modern invention. They're the original interface.

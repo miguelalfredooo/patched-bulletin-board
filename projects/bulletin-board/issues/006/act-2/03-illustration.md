@@ -1,3 +1,0 @@
-**Illustration**
-
-Illustration as quick ideation, fast iteration. Multiple versions testing speed of thought. Fast sketching outpaces the hesitation of refinement.

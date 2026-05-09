@@ -1,0 +1,3 @@
+# Design & AI Tools
+
+AI-generated icons expose something worth examining: the model has ingested every icon ever made and produces statistically central ones. The output is competent and culturally average by construction. If your icon set looks like it could belong to any app in any category, it probably came from a prompt. The more interesting use of AI in icon work is constraint testing — generate fifty variations of a concept, identify which shapes hold at 16px, which survive color removal, which survive a glance. Use the machine for volume and speed. Use judgment for which symbol actually communicates. The gap between those two tasks is where design still lives.

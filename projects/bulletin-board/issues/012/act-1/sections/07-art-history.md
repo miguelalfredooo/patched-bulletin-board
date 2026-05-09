@@ -1,1 +1,0 @@
-[Visual for Art History]

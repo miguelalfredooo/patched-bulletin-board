@@ -1,0 +1,13 @@
+┌─────────────────────┐
+    │                     │
+    │       ·             │
+    │                     │
+    │                     │
+    │                     │
+    │             ·       │
+    │                     │
+    └─────────────────────┘
+    
+    Two points. One frame.
+    The space between
+    is the message.

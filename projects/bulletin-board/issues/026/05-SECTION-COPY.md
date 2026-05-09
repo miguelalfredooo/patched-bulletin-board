@@ -1,0 +1,3 @@
+# Construct
+
+Architecture is not metaphor in Inception — it's the literal mechanism of reality. Dreams are built. Spaces are shaped. Physics is a design decision. This is closer to how designers actually think than most people realize. A product is not discovered; it is constructed, piece by piece, with the same care a set designer brings to a room that needs to feel both believable and elevated. The construct is what allows the experience. Remove it and the dream collapses. Every typeface choice, every spacing decision, every interaction pattern is part of the structure that makes the experience possible. The user never sees the scaffold. They only feel whether it holds.

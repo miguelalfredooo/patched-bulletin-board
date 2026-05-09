@@ -1,0 +1,3 @@
+# Opinions
+
+The homogenization of icons might be design's most underexamined problem. When every app's home button, notification bell, and settings gear is identical, we've traded visual culture for visual infrastructure. The argument for it is accessibility — shared symbols reduce cognitive load. The argument against it is that identical symbols enforce identical thinking. Icons become hegemonic; the metaphors they encode (the floppy disk for save, the envelope for email) outlive the objects they represent and shape how we conceive of digital action. That's not neutral. Every icon is a brief argument about what a thing is and how you should relate to it.

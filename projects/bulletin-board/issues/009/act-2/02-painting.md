@@ -1,3 +1,0 @@
-**Painting**
-
-The paint itself: texture, finish, thickness, behavior. Painters obsessed with how pigment moves and settles. Materiality becomes more important than image.

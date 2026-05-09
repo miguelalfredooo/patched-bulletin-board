@@ -1,0 +1,7 @@
+light → enters
+    ↓
+aperture shapes
+    ↓
+shadow → reveals
+    ↓
+form → fixed

@@ -1,1 +1,0 @@
-"Momentum is not a direction — it's a state of permission."

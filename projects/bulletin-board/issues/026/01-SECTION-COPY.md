@@ -1,0 +1,3 @@
+# Dreams
+
+Every design begins as a dream — an image that doesn't yet exist, visible only to the person holding the brief. This is the condition all designers know: the gap between what you see internally and what the world can hold. Inception understood this. A dream is a space where physics bends to intention, where the rules are yours to write. Good design operates on the same logic. You construct a world that didn't exist, then make it feel inevitable. The skill is not in the imagining — anyone can dream. It's in the discipline of building the dream so precisely that others inhabit it without noticing the seams.

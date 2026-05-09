@@ -1,0 +1,4 @@
+**Visual & Brand**
+Visible authorship claims, brands that announce presence subtly, marks that prove someone was here thinking. The signature as substance.
+
+https://www.underconsideration.com/brandnew

@@ -1,0 +1,9 @@
+****** *** ******                 
+* CANON - CANON *                 
+****** *** ******                 
+   o o o o o o o                  
+   hidden->visible                
+   footnotes->core                
+   old->uncertain                 
+   worn->revealed                 
+   authority soft                 

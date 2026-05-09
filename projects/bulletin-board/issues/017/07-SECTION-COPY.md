@@ -1,0 +1,5 @@
+**Art History**
+
+Before the 1950s, film posters used ornate, baroque typography—letters decorated with flourish and embellishment, promising spectacle. In the 1950s, modernism introduced a radical idea: restraint creates more power than ornament; showing less accomplishes more. Bass didn't invent this shift—he inherited it from Swiss and European modernism—but he applied it to American cinema with radical clarity. His choice of clean typefaces and minimal composition challenged what American audiences expected from entertainment, suggesting: "This film respects your intelligence." This transformation—from decoration to restraint, from spectacle to suggestion—is one of the great design transformations of the 20th century. Typography traces this history visually; each era's posters reveal what that era believed about communication, meaning, and the relationship between designer and audience.
+
+https://www.smithsonianmag.com/smithsonian-institution/

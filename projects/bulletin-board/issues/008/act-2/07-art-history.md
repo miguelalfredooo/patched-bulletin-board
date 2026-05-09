@@ -1,7 +1,0 @@
-**Art History**
-
-The back-turned figure in art history, Caspar David Friedrich's gesture. Contemplation at the edge, standing alone at the threshold between known and unknown.
-
-https://www.theartnewspaper.com
-
-https://www.theartnewspaper.com

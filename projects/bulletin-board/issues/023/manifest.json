@@ -1,0 +1,19 @@
+{
+  "issue": 23,
+  "theme": "Patina",
+  "published": true,
+  "date": "2026-05-09",
+  "sections": 12,
+  "format": "flat",
+  "rendering": "monochromatic",
+  "sonic_reference": "Ryuichi Sakamoto — async (2017)",
+  "closing_word": "STILL",
+  "editorial_mix": {
+    "music": 8,
+    "visual": 25,
+    "research": 20,
+    "process": 18,
+    "theme": 14,
+    "ai_culture": 15
+  }
+}

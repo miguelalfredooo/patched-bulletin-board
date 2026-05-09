@@ -1,1 +1,0 @@
-"Every threshold is a place where you are still both things at once."

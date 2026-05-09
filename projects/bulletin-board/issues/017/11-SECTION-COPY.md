@@ -1,0 +1,5 @@
+**Visual & Brand**
+
+A film poster is brand communication. It tells audiences: "Here's the kind of experience you're about to have. Here's the mood. Here's the intelligence level. Here's what we expect from you." The Vertigo poster's clean, geometric typography communicates: "We trust you to understand abstraction. We won't explain everything. We won't shout. We'll suggest, and you'll do the work of interpretation." This is a brand promise that says something about the film, but also something about the audience Bass and Hitchcock expected—educated, sophisticated, willing to engage with ambiguity and contradiction. Typography brands a film; it establishes the contract between filmmaker and audience. Bass's choice of geometric restraint branded Hitchcock's films as intelligent, modernist, designed for adults who could handle complexity. Every typographic choice is a brand commitment.
+
+https://www.criterion.com/

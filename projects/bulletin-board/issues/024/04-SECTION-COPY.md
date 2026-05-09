@@ -1,0 +1,3 @@
+# Sculpture
+
+A sculpture becomes an icon when it escapes its location. Brancusi's Bird in Space doesn't represent a bird — it represents the idea of ascent, of form released from mass. The Statue of Liberty stopped being a gift from France sometime in the early twentieth century and became a pure symbol, legible from a container ship at dusk, readable in a child's drawing. What makes three-dimensional objects achieve this? Reduction. A silhouette that survives any angle. The less a form depends on material detail, the more it can carry. Iconicity in sculpture is the art of the irreducible shape.

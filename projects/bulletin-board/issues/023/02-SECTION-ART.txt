@@ -1,0 +1,9 @@
+  old paint  |  new eye
+  ───────────┼───────────
+  ░░▒▒▓████  │  fresh
+  ▒▓███████  │  stroke
+  ████▓▒░░░  │  over
+  ▒▒░ crack  │  older
+  ░▒▓██████  │  mark
+  ────────── │  ──────
+  layer over │  layer

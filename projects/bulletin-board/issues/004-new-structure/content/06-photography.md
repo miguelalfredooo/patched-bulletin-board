@@ -1,3 +1,0 @@
-**Photography**
-
-Film grain, dust on lens, light leaks — indexical proof that something existed in front of the camera. The photograph as forensic document.

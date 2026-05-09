@@ -1,0 +1,8 @@
+  constraint
+      ↓
+  not cage
+      ↓
+  aperture
+      ↓
+  what's
+  possible

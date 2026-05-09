@@ -1,0 +1,3 @@
+# Paradox
+
+The Penrose staircase is the emblem of Inception: a structure that appears logical at every step and yet arrives nowhere. Design has its own paradoxes. The product that's usable but not desirable. The brand that's consistent but not distinctive. The interface that's clear but not memorable. These are not failures of execution — they're failures of intention, or of asking the question too late. Paradox in design is often a signal: the brief is contradictory, the constraints are incompatible, or the goal was never fully defined. Good designers find the paradox early. They surface it to the client before committing twelve weeks to a staircase that goes nowhere. Naming the paradox is not pessimism. It's precision.

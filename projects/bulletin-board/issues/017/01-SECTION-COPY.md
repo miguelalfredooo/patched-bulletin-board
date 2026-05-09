@@ -1,0 +1,5 @@
+**Art**
+
+Film posters are contracts. They promise audiences a certain kind of experience through visual language. Hitchcock's Vertigo breaks that contract immediately—the poster uses clean, geometric circles that suggest system and order, yet the film explores psychological breakdown and paranoia. The contradiction is electric. Bass understood that a poster isn't a preview of the film; it's a curation of how we should approach it. His choice of typography tells audiences: "We trust you to understand abstraction. We won't explain. We'll suggest." This contradiction reveals something profound: the suggestion that breakdown itself can be designed, that fear can be rendered through geometric abstraction, that meaning lives in the space between what we see and what we feel.
+
+https://en.wikipedia.org/wiki/Vertigo_(film)

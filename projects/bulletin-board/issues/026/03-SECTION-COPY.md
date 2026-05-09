@@ -1,0 +1,3 @@
+# Reality
+
+The question Inception kept asking — are you awake? — is not as far from design practice as it sounds. Designers who work too long in mockups lose their grip on how things behave in the actual world: in low light, on cheap screens, under deadline, by users who are distracted, anxious, and moving fast. Reality is the test. The prototype that looked pristine in Figma falls apart on an Android in direct sunlight. The brand identity that read beautifully in a PDF dies at 32px. Reality has specific gravity. Design that survives contact with it is the only kind that counts. You have to keep putting the totem down and watching what it does.

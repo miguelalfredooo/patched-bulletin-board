@@ -1,3 +1,0 @@
-**Sculpture**
-
-Sculptures measured by what surrounds them. The gap between object and viewer, between elements within a work. Richard Serra's intervals, James Turrell's voids.

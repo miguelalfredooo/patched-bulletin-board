@@ -1,0 +1,3 @@
+# Collapse
+
+Dreams collapse when the logic breaks. A single wrong element — too obviously placed, too convenient, too much — and the coherence fails. The viewer feels it before they can name it. Designs collapse the same way. A misaligned element. A tone that shifts without reason. A component that behaves differently than the one next to it. Users rarely articulate what broke; they just leave. Collapse is almost always quiet. The structure degrades before it falls. What prevents it is not perfection — it's internal consistency, the kind that comes from knowing your own rules well enough to apply them even under pressure. A dream that knows its own logic holds. One built on borrowed assumptions doesn't.

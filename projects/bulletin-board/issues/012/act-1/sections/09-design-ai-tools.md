@@ -1,1 +1,0 @@
-[Visual for Design & AI Tools]

@@ -1,0 +1,3 @@
+# Layers
+
+Design always operates in strata. There is the surface — the thing people see. Then the logic beneath it — the grid, the type system, the component hierarchy. Beneath that, the principles: consistency, tension, hierarchy, rhythm. And deeper still, the values the work is actually communicating. Inception mapped this as dream levels. Each layer has its own physics, its own time signature. Designers navigate them constantly, moving between fine-grain pixel decisions and ten-thousand-foot strategy, between today's component and the system that will outlast it. Understanding which layer you're working on at any moment is the discipline. Confusing them is where most design problems start.

@@ -1,0 +1,3 @@
+# Descent
+
+The deeper into a project you go, the stranger the rules become. Early on, constraints feel like obstacles. Deeper in, they become structure — the thing holding the whole architecture up. This is the designer's descent: from open possibility to committed specificity, from "anything could work" to "only this will work." It requires a willingness to go further than comfort allows. Inception's deeper dream levels ran on compressed time, with higher stakes and sharper physics. Late-stage design work has the same quality. You're making permanent calls with incomplete information, under compounding pressure, where every decision forecloses others. Going deep is not optional. It's where the actual work is.

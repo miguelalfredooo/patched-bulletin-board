@@ -1,0 +1,8 @@
+v.1.0 SHARP PIXELS                
+v.1.5 mostly sharp                
+v.2.0 ~ blurred edges             
+v.3.0  ~  softer more             
+v.4.0  ~~~  averaged              
+v.5.0  ~~~~  generic              
+v.6.0  ~~~~~  flat                
+v.7.0  ~~~~~~ bland               

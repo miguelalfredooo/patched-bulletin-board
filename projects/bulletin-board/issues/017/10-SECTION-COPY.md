@@ -1,0 +1,5 @@
+**Product & Process**
+
+What we see as restraint—clean lines, minimal type, geometric spirals—is the result of process. Bass likely created dozens of iterations before arriving at the final design, testing compositional approaches, typeface options, and color palettes. The minimalism we see isn't accidental; it's designed. Every element was considered and reconsidered. This process—iterative, thoughtful, removing elements rather than adding them—reveals that restraint isn't the absence of effort; it's the presence of careful judgment. Bass's final design doesn't feel minimal because he ran out of ideas; it feels minimal because he removed anything that wasn't essential. This is slow design, careful design, design that respects the audience enough to give them room to interpret. Understanding the process of restraint is crucial to understanding why the final form is so powerful.
+
+https://www.aiga.org/design/

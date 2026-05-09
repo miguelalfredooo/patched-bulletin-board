@@ -1,1 +1,0 @@
-[Closing sentence not found]

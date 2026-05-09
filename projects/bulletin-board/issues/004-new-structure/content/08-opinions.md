@@ -1,3 +1,0 @@
-**Opinions**
-
-Heatmaps show where algorithms look. The invisible made visible through color, the machine's gaze rendered as image. What was hidden becomes undeniable.

@@ -1,1 +1,0 @@
-"The space between is where meaning lives."

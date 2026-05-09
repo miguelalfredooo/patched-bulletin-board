@@ -1,3 +1,0 @@
-**Culture**
-
-What traces we leave online without knowing. Metadata, behavioral recording, the read without the reader knowing they were read. The archive that remembers everything.

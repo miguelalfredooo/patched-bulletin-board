@@ -1,0 +1,3 @@
+# Photography
+
+Some photographs become icons not because they document but because they distill. Nick Ut's Napalm Girl. Dorothea Lange's Migrant Mother. Alberto Korda's Che. Each image arrived at a moment when it captured something larger than the subject — grief, hunger, resistance — and then refused to stay tethered to its moment. The frame froze a gesture that turned out to be universal. What elevates a photograph to icon status isn't resolution or composition — it's the feeling that you've seen it before you've seen it. Recognition without memory. That instant of contact is what symbols live on.

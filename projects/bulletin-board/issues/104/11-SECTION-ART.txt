@@ -1,0 +1,9 @@
+1980        1990                  
+[LOGO]      [LOGO]                
+detailed -> simpler               
+1995        2005                  
+[LOGO]      [LOGO]                
+refined -> flatter                
+2015        2024                  
+[LOGO]      [LOGO]                
+smooth -> generic                 

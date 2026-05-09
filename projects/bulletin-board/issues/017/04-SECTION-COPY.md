@@ -1,0 +1,5 @@
+**Sculpture**
+
+The Vertigo poster doesn't arrange typography in conventional ways. The spiraling circles aren't just letters; they're spatial elements that occupy three-dimensional space, creating depth through repetition and density variation. The poster becomes an architectural system—letters that define space, geometry that suggests movement, spirals that echo the film's central metaphor of descent and vertigo itself. This transforms typography from decoration into structure, where clean, geometric letterforms enable spatial thinking in ways baroque serif fonts couldn't. When typography becomes spatial, it stops being about readable text and starts being about how letters shape the space around them. The restraint of the letterforms allows Bass to use them as building blocks in a larger architectural composition.
+
+https://www.criterion.com/films/31-vertigo

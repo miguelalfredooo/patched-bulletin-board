@@ -1,0 +1,3 @@
+# Recursion
+
+Design systems recurse. The principles that govern an atom also govern a molecule, a component, a page, a product, a brand. The same logic at different scales. Inception built recursion into its architecture: dreams within dreams within dreams, each following the same rules with compressed stakes. Systems design understands this. A well-built design token doesn't just define a color — it carries the brand's stance toward contrast, readability, and emotional temperature all the way through to a specific pixel on a specific screen. The recursion is the point. Rules that work at every scale are not just efficient — they're evidence that the underlying thinking was correct. Shallow design decisions don't survive recursion.

@@ -1,0 +1,5 @@
+**Design & AI Tools**
+
+Futura was designed in 1927, but it became a visual phenomenon in the 1950s because of new printing technologies—grid systems, offset printing, photomechanical reproduction—that made geometric precision affordable and reproducible. Bass didn't invent geometric posters; he used tools available to him in 1958. These technologies made his aesthetic possible and enabled the restraint his design philosophy required. Every era's design aesthetic is shaped by its tools; understanding the tools that made Bass's work possible helps us understand why that particular restraint was radical in that moment. Today, digital tools make different aesthetics possible. The question isn't whether tools limit or expand our creative philosophy—it's whether we're intentional about the choices our tools enable or whether we let the tools choose for us.
+
+https://www.myfonts.com/fonts/urw/futura/

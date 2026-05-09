@@ -1,0 +1,19 @@
+╔════════════════════════════════════════╗
+║  VISUAL THINKING                       ║
+║  How We Perceive Social Objects        ║
+╚════════════════════════════════════════╝
+
+    ◯  ◯  ◯          ◯  ◯
+  ◯   ◯ ◯            ◯ ◯
+    ◯  ◯  ◯          ◯  ◯
+
+    The table brings us near
+
+  ◯ ─ ◯ ─ ◯      ◯ ─ ◯ ─ ◯
+  │   │   │      │   │   │
+  ◯ ─ ◯ ─ ◯      ◯ ─ ◯ ─ ◯
+
+   Shape signals purpose
+   Round: conversation
+   Long: formality
+   Small: intimacy

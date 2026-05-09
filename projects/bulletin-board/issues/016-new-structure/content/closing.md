@@ -1,3 +1,0 @@
-We are alone in a way that scares us. So we send messages into the void, build antennae, scan the skies, listen for signals. And in doing this, we reveal something profound: we are looking for ourselves. Every transmission we send is an echo of our loneliness. Every UFO sighting is a projection of our deepest questions: Are we unique? Are we watched? Does anything out there recognize us as alive? The obsession with contact isn't really about aliens. It's about the hunger to know we're not the only ones wondering if anyone is listening.
-
-https://en.wikipedia.org/wiki/Loneliness

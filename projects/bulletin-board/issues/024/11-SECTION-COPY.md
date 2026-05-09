@@ -1,0 +1,3 @@
+# Visual & Brand
+
+A brand's icon is its most compressed statement. The Apple logo doesn't describe a computer company — it carries four decades of accumulated meaning about simplicity, premium quality, and a particular kind of aspiration. Nike's swoosh is a study in how much a shape can hold when it's been applied consistently enough. Brand icons succeed when they stop asking to be read and start asking to be recognized. The danger is mistaking the symbol for the substance. A well-drawn icon for a mediocre product is just efficient confusion. Iconicity in branding is earned by behavior first. The mark follows. It never leads.

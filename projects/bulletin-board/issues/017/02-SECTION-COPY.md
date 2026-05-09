@@ -1,0 +1,5 @@
+**Painting**
+
+Before the 1950s, typography on posters was utility—letters communicated information and remained invisible labor. Saul Bass changed that: he made typography visual. The typeface itself became the image. This shift mirrors what was happening in visual art simultaneously—abstraction was emerging, minimalism was challenging ornament, systems thinking was replacing decorative excess. When typography becomes visual art, it demands to be seen, not merely read. It becomes a statement about restraint, about the power of negative space, about what happens when we remove everything unnecessary. Bass's choice for Vertigo—clean, geometric, precise—transformed letters from decorative flourishes into primary visual elements that create the poster's entire emotional landscape.
+
+https://www.aiga.org/design-archives-saul-bass

@@ -1,0 +1,5 @@
+**Illustration**
+
+Every typeface carries personality. Futura—likely Bass's choice for Vertigo—suggests optimism, rationality, forward-looking geometry, progress. To use Futura on a poster about psychological breakdown is an act of profound contradiction: like casting an optimistic actor in a role of despair, or using a major key to underscore tragedy. The mismatch creates tension; the typeface promises rationality while the narrative suggests chaos. This contradiction becomes the poster's primary meaning. Bass understood that sometimes the most powerful communication comes from working against expectation—not matching form to content, but using contrast to create deeper resonance. The typeface's personality contradicts the film's psychology, and in that gap, the poster's power lives.
+
+https://www.myfonts.com/fonts/urw/futura/

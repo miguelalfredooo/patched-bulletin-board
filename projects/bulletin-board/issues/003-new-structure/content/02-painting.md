@@ -1,3 +1,0 @@
-**Painting**
-
-Brush strokes that no algorithm could replicate, not because they are clumsy but because they carry intention the machine cannot read. Medium specificity becomes medium resistance.

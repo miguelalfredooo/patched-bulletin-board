@@ -1,0 +1,5 @@
+**Opinions**
+
+A film poster is never neutral. Every typographic choice is an argument about meaning. Bass's use of Futura and geometric spirals argues: "Psychological states can be rendered as systems. Chaos can be made rational. Fear is not irrational; it follows a logic." This isn't the argument the film makes (which is messier, more psychologically complex); it's an argument about how the film can be understood. By choosing rationalist typography, Bass shapes how we approach the narrative—he's curating our interpretation, not being dishonest, but being editorial. This raises a profound question: Is it dishonest for a poster's typography to contradict the film's tone, or is it honest curation—a designer choosing what we should pay attention to, what we should notice, what we should feel? Typography reveals that all design is argument.
+
+https://www.eyeondesign.aiga.org/

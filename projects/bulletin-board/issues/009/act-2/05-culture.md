@@ -1,7 +1,0 @@
-**Culture**
-
-Fashion and identity rooted in fabric choice. NIGO at Design Museum. Material becomes statement. What things are made of matters more than what they mean.
-
-https://www.newyorker.com
-
-https://www.newyorker.com

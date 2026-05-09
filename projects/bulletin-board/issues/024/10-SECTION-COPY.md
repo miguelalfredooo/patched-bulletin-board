@@ -1,0 +1,3 @@
+# Product & Process
+
+Icon design is a test of whether a designer can think in abstraction. The process that works: start with the concept, not the shape. What is the mental model this icon supports? What action does the user expect to take? What context will it live in? Then sketch without a grid — thumbnail fast, ten per minute, without judging. The worst icons come from designers who open Figma first and push vectors around until something looks like an icon. The best come from designers who understand that they're not drawing objects. They're encoding verbs. The vector work at the end is just finishing.

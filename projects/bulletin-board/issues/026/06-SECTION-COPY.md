@@ -1,0 +1,3 @@
+# Architecture
+
+In Inception, architecture is the discipline of building space that makes sense from the inside while remaining impossible from the outside. Penrose stairs. Cities folding onto themselves. Staircases that loop back to their own beginning. Designers understand this tension. A product has to be internally coherent — logical to navigate, consistent in its language, reliable in its behavior. But from the outside, from the competition, it should feel like something that couldn't quite exist in any other form. That signature is what architecture gives you. Not decoration — structure. The decision about where things go, how they relate, what contains what. Get the architecture right and the rest becomes followable.

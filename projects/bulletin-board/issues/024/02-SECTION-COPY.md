@@ -1,0 +1,3 @@
+# Painting
+
+Byzantine icon painting was never decorative. Each gold panel was a system — strict proportions, defined hierarchies of gaze, halos as presence rather than ornament. The flatness wasn't a technical limitation. It was theology made visible. When Rothko collapsed representation into rectangles of trembling color, he was doing something adjacent: stripping the image back to its load-bearing elements. What remains when you remove narrative? Signal. The painters who understood icons best understood that the symbol only works when everything unnecessary is removed. What's left carries the full weight.
