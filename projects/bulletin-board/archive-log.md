@@ -8,6 +8,10 @@
 
 | Issue | Theme | Date | Status | Path |
 |-------|-------|------|--------|------|
+| 107 | PUERTO RICAN CUISINE | May 9, 2026 | finalized | ✅ PASS | issues/107/ |
+|-------|-------|------|--------|------|
+| 106 | DETAIL | May 9, 2026 | finalized | ✅ PASS | issues/106/ |
+|-------|-------|------|--------|------|
 | 016 | Puerto Rico | May 8, 2026 | published | issues-archive/016/ |
 | 015 | Resonance | May 8, 2026 | published | issues-archive/015/ |
 | 014 | Emergence | May 22, 2026 | published | issues-archive/014/ |
