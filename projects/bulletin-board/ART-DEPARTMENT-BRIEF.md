@@ -76,15 +76,22 @@ Copy verbatim. Do not paraphrase. Do not approximate.
 
 ### Dimensions
 
-**Cover:** Exactly 34 chars wide × 30 lines tall
-- Lines 1-6: Logo
-- Line 7: Blank
-- Lines 8-12: Masthead
+**CRITICAL: All widths are display characters (visual width), not bytes.**
+
+Unicode characters (★, •, ◆, ━, etc.) = 1 display character each.
+Python `len()` counts correctly. Bash `awk length()` does not (counts bytes).
+
+**Cover:** Exactly 34 display chars wide × 30 lines tall
+- Lines 1-6: Logo (copy verbatim from asset)
+- Line 7: Blank (34 spaces)
+- Lines 8-12: Masthead (copy verbatim from asset, fill [NUMBER] and [THEME])
 - Lines 13-30: Your visual (18 lines)
 
-**Sections:** Exactly 34 chars wide × ≤15 lines tall
+**Sections:** Exactly 34 display chars wide × ≤15 lines tall
 
-**Every line must be padded to exact width with trailing spaces. No short lines.**
+**Every line must be padded to exact width with trailing spaces. Use Python to verify.**
+
+See: ART-DEPT-WIDTH-HEIGHT-VALIDATION.md for examples of correct/incorrect counting.
 
 ### File Organization
 
@@ -158,8 +165,9 @@ Before you announce, run through this:
 - [ ] All 13 files created in that directory (00-12)
 - [ ] Cover starts with exact DBB logo + masthead
 - [ ] Cover is exactly 34×30
-- [ ] All sections are exactly 34×≤15
+- [ ] All sections are exactly 34×≤15 (display characters, not bytes)
 - [ ] Every line padded to exact width with spaces
+- [ ] Used Python `len()` to verify character count, not bash `awk` or `wc`
 - [ ] File names match exactly (NN-SECTION-ART.txt)
 - [ ] Ran validation script: `bash validate-cover.sh /issues/[NUMBER]/00-COVER-ART.txt`
 - [ ] Script output shows ✅ VALIDATION PASSED
