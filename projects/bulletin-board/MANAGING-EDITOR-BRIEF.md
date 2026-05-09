@@ -139,6 +139,9 @@ The voice should be:
 
 **You must include observations about your process. These inform Art Department and Editorial Director.**
 
+### Announcement Format
+
+**Opening:**
 ```
 Copy complete. All 11 sections written and saved.
 
@@ -150,7 +153,16 @@ Deliverables:
 - ✅ Apartamento voice throughout
 - ✅ 1-2 URLs per section
 - ✅ All theme-anchored
+```
 
+**Section copy (isolated code blocks):**
+For each of 11 sections, send:
+- Section header (e.g., "Section 1: Art")
+- Copy in its own code block (one block per section, not combined)
+- Brief note about the section
+
+**Closing observations (required):**
+```
 Observations (required):
 - Theme clarity: [Was the Editorial Brief clear? Any ambiguities?]
 - Voice challenge: [What was hardest about maintaining consistent voice?]
@@ -159,6 +171,12 @@ Observations (required):
 
 Art Department now has copy to work from.
 ```
+
+### Code Block Rules
+
+- **Each section:** Gets its own code block (isolate from other sections)
+- **No combining:** Do not merge multiple sections into one block
+- **No splitting:** Do not break a section across multiple blocks
 
 ---
 
