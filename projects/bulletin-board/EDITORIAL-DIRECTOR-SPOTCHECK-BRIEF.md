@@ -65,8 +65,10 @@ Verify both Managing Editor and Art Department delivered real work. Own the appr
 - [ ] Each is 34 chars wide, ≤15 lines tall (spot-check a few)
 - [ ] Visually, art complements the copy for that section
 
-**Delivery order check:**
-- [ ] Art Department delivered sections with art first, then copy (not reversed)
+**Delivery order check (final sanity check):**
+- [ ] Art Department announced each section: Art (code block) → Copy (not reversed)
+- [ ] This is verified by reading the announcement thread/messages
+- [ ] If delivery order is wrong, ask Art Department to re-announce in correct order before approving
 
 **For footer file (12-METADATA-FOOTER.txt):**
 - [ ] File exists
