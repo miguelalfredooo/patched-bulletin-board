@@ -193,6 +193,26 @@ See: ART-DEPT-WIDTH-HEIGHT-VALIDATION.md for technical details.
 
 **You must include observations about your process. These inform Editorial Director.**
 
+### Section Delivery Order
+
+**Always: Art first, then copy.**
+
+For each section, send:
+1. Section header (e.g., "Section 1: Art")
+2. Art in code block (isolated)
+3. Copy text below the code block
+
+Example:
+```
+Section 1: Art
+
+[ART CODE BLOCK]
+
+[COPY TEXT]
+```
+
+### Announcement
+
 ```
 Art complete. Cover + 11 visuals + footer created and validated.
 

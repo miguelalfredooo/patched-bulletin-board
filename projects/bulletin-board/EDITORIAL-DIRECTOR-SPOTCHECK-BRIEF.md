@@ -65,6 +65,9 @@ Verify both Managing Editor and Art Department delivered real work. Own the appr
 - [ ] Each is 34 chars wide, ≤15 lines tall (spot-check a few)
 - [ ] Visually, art complements the copy for that section
 
+**Delivery order check:**
+- [ ] Art Department delivered sections with art first, then copy (not reversed)
+
 **For footer file (12-METADATA-FOOTER.txt):**
 - [ ] File exists
 - [ ] Contains closing statement (not empty, not placeholder)
