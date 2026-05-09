@@ -96,44 +96,17 @@ All checks pass:
 - ✅ All 12 art files exist, real ASCII art, validated dimensions, proper naming
 - ✅ All 24 files present in `/issues/[NUMBER]/`
 
-**Before announcing, regenerate archive log for bot:**
+**Automatic bot registration:**
 
-The bot reads `archive-log.md` to know which issues are finalized. After ED approval, update it:
+Run this command to automatically register the issue with the bot:
 
 ```bash
-# Update archive log to register the finalized issue
-python3 << 'PYTHON_EOF'
-import os
-
-issue_num = "[NUMBER]"
-theme = "[THEME]"
-archive_log = os.path.expanduser("~/projects/patched-editorial/projects/bulletin-board/archive-log.md")
-
-# Read current log
-with open(archive_log, 'r') as f:
-    lines = f.readlines()
-
-# Find and update the Current Issues table
-updated_lines = []
-for i, line in enumerate(lines):
-    updated_lines.append(line)
-    # After the table header row, insert new issue (keep issues sorted descending)
-    if "| Issue | Theme | Date |" in line and i+1 < len(lines) and "|---|" in lines[i+1]:
-        # Insert after the separator, in descending order
-        new_entry = f"| {issue_num} | {theme} | May 9, 2026 | finalized | ✅ PASS | issues/{issue_num}/ |\n"
-        if i+2 < len(lines):
-            updated_lines.append(lines[i+1])  # Add separator if not already there
-            updated_lines.append(new_entry)
-
-# Write back
-with open(archive_log, 'w') as f:
-    f.writelines(updated_lines)
-
-print(f"✅ Issue {issue_num} registered in archive log")
-PYTHON_EOF
+bash ~/projects/patched-editorial/projects/bulletin-board/register-with-bot.sh [NUMBER] [THEME]
 ```
 
-Verify the issue appears in archive log:
+This updates archive-log.md so the bot knows the issue is finalized and ready for publication.
+
+Verify registration:
 ```bash
 grep "| [NUMBER] |" ~/projects/patched-editorial/projects/bulletin-board/archive-log.md
 ```
@@ -148,7 +121,7 @@ Deliverables:
 ✅ Managing Editor: All 11 sections, consistent voice, theme-aligned
 ✅ Art Department: Cover + 11 visuals + footer, all validated, naming correct
 ✅ File structure verified (24 files total in /issues/[NUMBER]/)
-✅ Archive log regenerated (issue registered with bot)
+✅ Registered with bot (archive-log.md updated)
 
 Observations reviewed:
 - ME observations: [key insight from their observations]
